@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.plugin.core.function.ThunkReferenceAddressDialogTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.plugin.core.function.ThunkReferenceAddressDialogTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.plugin.core.function.html">ghidra.app.plugin.core.function</a> &gt; ThunkReferenceAddressDialogTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">8.960s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testSetThunkedFunction</td>
+<td class="success">1.226s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetThunkedFunctionWithNamespace</td>
+<td class="success">1.220s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetThunkedFunctionWithOriginalName</td>
+<td class="success">1.520s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetThunkedFunctionWithOriginalNameConflict</td>
+<td class="success">4.994s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_7abed466-5af5-4ad4-9775-f54c3bbe7802/temp.data
+13:19:08 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:19:08 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_7abed466-5af5-4ad4-9775-f54c3bbe7802/temp.data/application.log   (LoggingInitialization.java:60) 
+13:19:08 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_7abed466-5af5-4ad4-9775-f54c3bbe7802/temp.data/preferences   (Preferences.java:122) 
+13:19:09 INFO  Class search complete (524 ms)   (ClassSearcher.java:250) 
+13:19:09 DEBUG Wed Sep 04 13:19:09 CST 2019
+***** STARTING Test: ThunkReferenceAddressDialogTest - testSetThunkedFunctionWithOriginalNameConflict *****   (AbstractGenericTest.java:114) 
+13:19:14 ERROR Ambiguous Symbol Name: Specified symbol is ambiguous.  Try full namespace name, mangled name or address.   (ThunkReferenceAddressDialog.java:116) 
+13:19:14 DEBUG Exec Task Create Thunk Function   (ToolTaskManager.java:302) 
+13:19:14 DEBUG   task finish (0.012 secs)   (ToolTaskManager.java:357) 
+13:19:14 DEBUG     Queue - Auto Analysis   (ToolTaskManager.java:370) 
+13:19:14 DEBUG    (0.005 secs)   (ToolTaskManager.java:376) 
+13:19:14 DEBUG   task Complete (0.077 secs)   (ToolTaskManager.java:407) 
+13:19:14 DEBUG 	✓ PASSED Test: ThunkReferenceAddressDialogTest - testSetThunkedFunctionWithOriginalNameConflict ✓	   (AbstractGenericTest.java:114) 
+13:19:14 DEBUG Wed Sep 04 13:19:14 CST 2019
+***** STARTING Test: ThunkReferenceAddressDialogTest - testSetThunkedFunctionWithOriginalName *****   (AbstractGenericTest.java:114) 
+13:19:16 DEBUG Exec Task Create Thunk Function   (ToolTaskManager.java:302) 
+13:19:16 DEBUG   task finish (0.002 secs)   (ToolTaskManager.java:357) 
+13:19:16 DEBUG     Queue - Auto Analysis   (ToolTaskManager.java:370) 
+13:19:16 DEBUG    (0.008 secs)   (ToolTaskManager.java:376) 
+13:19:16 DEBUG   task Complete (0.038 secs)   (ToolTaskManager.java:407) 
+13:19:16 DEBUG 	✓ PASSED Test: ThunkReferenceAddressDialogTest - testSetThunkedFunctionWithOriginalName ✓	   (AbstractGenericTest.java:114) 
+13:19:16 DEBUG Wed Sep 04 13:19:16 CST 2019
+***** STARTING Test: ThunkReferenceAddressDialogTest - testSetThunkedFunctionWithNamespace *****   (AbstractGenericTest.java:114) 
+13:19:17 DEBUG Exec Task Create Thunk Function   (ToolTaskManager.java:302) 
+13:19:17 DEBUG   task finish (0.001 secs)   (ToolTaskManager.java:357) 
+13:19:17 DEBUG     Queue - Auto Analysis   (ToolTaskManager.java:370) 
+13:19:17 DEBUG    (0.005 secs)   (ToolTaskManager.java:376) 
+13:19:17 DEBUG   task Complete (0.028 secs)   (ToolTaskManager.java:407) 
+13:19:17 DEBUG 	✓ PASSED Test: ThunkReferenceAddressDialogTest - testSetThunkedFunctionWithNamespace ✓	   (AbstractGenericTest.java:114) 
+13:19:17 DEBUG Wed Sep 04 13:19:17 CST 2019
+***** STARTING Test: ThunkReferenceAddressDialogTest - testSetThunkedFunction *****   (AbstractGenericTest.java:114) 
+13:19:18 ERROR Invalid Entry Error: Invalid thunk reference address or name specified: bar   (ThunkReferenceAddressDialog.java:123) 
+13:19:18 DEBUG Exec Task Create Thunk Function   (ToolTaskManager.java:302) 
+13:19:18 DEBUG   task finish (0.013 secs)   (ToolTaskManager.java:357) 
+13:19:18 DEBUG     Queue - Auto Analysis   (ToolTaskManager.java:370) 
+13:19:18 DEBUG    (0.001 secs)   (ToolTaskManager.java:376) 
+13:19:18 DEBUG   task Complete (0.025 secs)   (ToolTaskManager.java:407) 
+13:19:18 DEBUG 	✓ PASSED Test: ThunkReferenceAddressDialogTest - testSetThunkedFunction ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

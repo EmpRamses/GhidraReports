@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.plugin.core.decompile.DecompilerFindReferencesToActionTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.plugin.core.decompile.DecompilerFindReferencesToActionTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.plugin.core.decompile.html">ghidra.app.plugin.core.decompile</a> &gt; DecompilerFindReferencesToActionTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">7</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.698s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testActionEnablement"></a>
+<h3 class="failures">testActionEnablement</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFindDataTypeReferences_ToCastSymbol"></a>
+<h3 class="failures">testFindDataTypeReferences_ToCastSymbol</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFindDataTypeReferences_ToCurrentAddress"></a>
+<h3 class="failures">testFindDataTypeReferences_ToCurrentAddress</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFindDataTypeReferences_ToCurrentFunction"></a>
+<h3 class="failures">testFindDataTypeReferences_ToCurrentFunction</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFindDataTypeReferences_ToEntireDataType_FromParameter"></a>
+<h3 class="failures">testFindDataTypeReferences_ToEntireDataType_FromParameter</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFindDataTypeReferences_ToEntireDataType_FromVariable"></a>
+<h3 class="failures">testFindDataTypeReferences_ToEntireDataType_FromVariable</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFindDataTypeReferences_ToFieldOfDataType"></a>
+<h3 class="failures">testFindDataTypeReferences_ToFieldOfDataType</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testActionEnablement</td>
+<td class="failures">0.514s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFindDataTypeReferences_ToCastSymbol</td>
+<td class="failures">0.758s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFindDataTypeReferences_ToCurrentAddress</td>
+<td class="failures">0.518s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFindDataTypeReferences_ToCurrentFunction</td>
+<td class="failures">0.423s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFindDataTypeReferences_ToEntireDataType_FromParameter</td>
+<td class="failures">0.411s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFindDataTypeReferences_ToEntireDataType_FromVariable</td>
+<td class="failures">1.755s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFindDataTypeReferences_ToFieldOfDataType</td>
+<td class="failures">0.319s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_79356af5-e9e6-4eb2-8719-0226d28265da/temp.data
+14:00:11 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:00:11 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_79356af5-e9e6-4eb2-8719-0226d28265da/temp.data/application.log   (LoggingInitialization.java:60) 
+14:00:11 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_79356af5-e9e6-4eb2-8719-0226d28265da/temp.data/preferences   (Preferences.java:122) 
+14:00:12 INFO  Class search complete (466 ms)   (ClassSearcher.java:250) 
+14:00:12 DEBUG Wed Sep 04 14:00:12 CST 2019
+***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromVariable *****   (AbstractGenericTest.java:114) 
+14:00:12 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+14:00:12 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+14:00:12 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+14:00:14 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromVariable ✖	   (AbstractGenericTest.java:114) 
+14:00:14 DEBUG Wed Sep 04 14:00:14 CST 2019
+***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCastSymbol *****   (AbstractGenericTest.java:114) 
+14:00:14 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:14 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+14:00:14 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+14:00:14 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+14:00:15 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCastSymbol ✖	   (AbstractGenericTest.java:114) 
+14:00:15 DEBUG Wed Sep 04 14:00:15 CST 2019
+***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentAddress *****   (AbstractGenericTest.java:114) 
+14:00:15 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:15 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+14:00:15 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+14:00:15 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+14:00:15 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentAddress ✖	   (AbstractGenericTest.java:114) 
+14:00:15 DEBUG Wed Sep 04 14:00:15 CST 2019
+***** STARTING Test: DecompilerFindReferencesToActionTest - testActionEnablement *****   (AbstractGenericTest.java:114) 
+14:00:15 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:15 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+14:00:15 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+14:00:15 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+14:00:16 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testActionEnablement ✖	   (AbstractGenericTest.java:114) 
+14:00:16 DEBUG Wed Sep 04 14:00:16 CST 2019
+***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromParameter *****   (AbstractGenericTest.java:114) 
+14:00:16 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:16 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+14:00:16 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+14:00:16 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+14:00:16 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromParameter ✖	   (AbstractGenericTest.java:114) 
+14:00:16 DEBUG Wed Sep 04 14:00:16 CST 2019
+***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToFieldOfDataType *****   (AbstractGenericTest.java:114) 
+14:00:16 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:16 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+14:00:16 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+14:00:16 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+14:00:16 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToFieldOfDataType ✖	   (AbstractGenericTest.java:114) 
+14:00:16 DEBUG Wed Sep 04 14:00:16 CST 2019
+***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentFunction *****   (AbstractGenericTest.java:114) 
+14:00:16 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:17 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+14:00:17 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+14:00:17 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+14:00:17 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentFunction ✖	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

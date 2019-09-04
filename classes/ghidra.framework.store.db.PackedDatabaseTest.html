@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.framework.store.db.PackedDatabaseTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.framework.store.db.PackedDatabaseTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.framework.store.db.html">ghidra.framework.store.db</a> &gt; PackedDatabaseTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.040s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAutoDisposeOnClose</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAutoDisposeOnClose_Cached</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAutoDisposeOnSaveAs</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCache</td>
+<td class="success">0.222s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreatePackedDatabase</td>
+<td class="success">0.203s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreatePackedDatabaseWithSpecificId</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDispose</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDispose_Cached</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data
+14:04:59 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:04:59 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/application.log   (LoggingInitialization.java:60) 
+14:04:59 DEBUG Wed Sep 04 14:04:59 CST 2019
+***** STARTING Test: PackedDatabaseTest - testCache *****   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp89E0AFF6.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCache.11432263535578504993.pf   (PackedDatabase.java:718) 
+14:04:59 INFO  Packed database cache: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed-db-cache   (PackedDatabaseCache.java:64) 
+14:04:59 DEBUG Caching packed database: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/a,b,c,d.pdb   (PackedDatabaseCache.java:362) 
+14:04:59 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/a,b,c,d.pdb -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed-db-cache/pdb6545CE5D/db.1.gbf   (PackedDatabase.java:521) 
+14:04:59 DEBUG Cache update completed: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/a,b,c,d.pdb   (PackedDatabaseCache.java:397) 
+14:04:59 DEBUG Using cached packed database: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/a,b,c,d.pdb   (PackedDatabaseCache.java:365) 
+14:04:59 DEBUG Using cached packed database: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/a,b,c,d.pdb   (PackedDatabaseCache.java:365) 
+14:04:59 DEBUG 	✓ PASSED Test: PackedDatabaseTest - testCache ✓	   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Wed Sep 04 14:04:59 CST 2019
+***** STARTING Test: PackedDatabaseTest - testAutoDisposeOnSaveAs *****   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmpC0245193.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testAutoDisposeOnSaveAs.14785563083206411143.pf   (PackedDatabase.java:718) 
+14:04:59 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testAutoDisposeOnSaveAs.14785563083206411143.pf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmpB51EF0CF.pdb.db/db.1.gbf   (PackedDatabase.java:521) 
+14:04:59 DEBUG 	✓ PASSED Test: PackedDatabaseTest - testAutoDisposeOnSaveAs ✓	   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Wed Sep 04 14:04:59 CST 2019
+***** STARTING Test: PackedDatabaseTest - testDispose_Cached *****   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp7BD09344.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testDispose_Cached.10201381537475631733.pf   (PackedDatabase.java:718) 
+14:04:59 DEBUG Caching packed database: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testDispose_Cached.10201381537475631733.pf   (PackedDatabaseCache.java:362) 
+14:04:59 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testDispose_Cached.10201381537475631733.pf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed-db-cache/pdb26320BEF/db.1.gbf   (PackedDatabase.java:521) 
+14:04:59 DEBUG Cache update completed: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testDispose_Cached.10201381537475631733.pf   (PackedDatabaseCache.java:397) 
+14:04:59 DEBUG 	✓ PASSED Test: PackedDatabaseTest - testDispose_Cached ✓	   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Wed Sep 04 14:04:59 CST 2019
+***** STARTING Test: PackedDatabaseTest - testCreatePackedDatabaseWithSpecificId *****   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp2A879DAA.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabaseWithSpecificId.17529117033982608036.pf   (PackedDatabase.java:718) 
+14:04:59 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabaseWithSpecificId.17529117033982608036.pf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp048B8C21.pdb.db/db.1.gbf   (PackedDatabase.java:521) 
+14:04:59 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp17E15101.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabaseWithSpecificId.17529117033982608036.pfa   (PackedDatabase.java:718) 
+14:04:59 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmpA52C0061.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabaseWithSpecificId.17529117033982608036.pfb   (PackedDatabase.java:718) 
+14:04:59 DEBUG Caching packed database: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabaseWithSpecificId.17529117033982608036.pfb   (PackedDatabaseCache.java:362) 
+14:04:59 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabaseWithSpecificId.17529117033982608036.pfb -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed-db-cache/pdb8B5B6A40/db.1.gbf   (PackedDatabase.java:521) 
+14:04:59 DEBUG Cache update completed: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabaseWithSpecificId.17529117033982608036.pfb   (PackedDatabaseCache.java:397) 
+14:04:59 DEBUG 	✓ PASSED Test: PackedDatabaseTest - testCreatePackedDatabaseWithSpecificId ✓	   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Wed Sep 04 14:04:59 CST 2019
+***** STARTING Test: PackedDatabaseTest - testAutoDisposeOnClose_Cached *****   (AbstractGenericTest.java:114) 
+14:04:59 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp6A639F57.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testAutoDisposeOnClose_Cached.17326710904656119073.pf   (PackedDatabase.java:718) 
+14:04:59 DEBUG Caching packed database: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testAutoDisposeOnClose_Cached.17326710904656119073.pf   (PackedDatabaseCache.java:362) 
+14:04:59 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testAutoDisposeOnClose_Cached.17326710904656119073.pf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed-db-cache/pdb02680E28/db.1.gbf   (PackedDatabase.java:521) 
+14:04:59 DEBUG Cache update completed: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testAutoDisposeOnClose_Cached.17326710904656119073.pf   (PackedDatabaseCache.java:397) 
+14:05:00 DEBUG 	✓ PASSED Test: PackedDatabaseTest - testAutoDisposeOnClose_Cached ✓	   (AbstractGenericTest.java:114) 
+14:05:00 DEBUG Wed Sep 04 14:05:00 CST 2019
+***** STARTING Test: PackedDatabaseTest - testAutoDisposeOnClose *****   (AbstractGenericTest.java:114) 
+14:05:00 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp117A8699.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testAutoDisposeOnClose.4863359069180488031.pf   (PackedDatabase.java:718) 
+14:05:00 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testAutoDisposeOnClose.4863359069180488031.pf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp2E4F3ADB.pdb.db/db.1.gbf   (PackedDatabase.java:521) 
+14:05:00 DEBUG 	✓ PASSED Test: PackedDatabaseTest - testAutoDisposeOnClose ✓	   (AbstractGenericTest.java:114) 
+14:05:00 DEBUG Wed Sep 04 14:05:00 CST 2019
+***** STARTING Test: PackedDatabaseTest - testDispose *****   (AbstractGenericTest.java:114) 
+14:05:00 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp27F76BB1.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testDispose.7525890412429239518.pf   (PackedDatabase.java:718) 
+14:05:00 DEBUG 	✓ PASSED Test: PackedDatabaseTest - testDispose ✓	   (AbstractGenericTest.java:114) 
+14:05:00 DEBUG Wed Sep 04 14:05:00 CST 2019
+***** STARTING Test: PackedDatabaseTest - testCreatePackedDatabase *****   (AbstractGenericTest.java:114) 
+14:05:00 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp7C3455A3.pdb.db/db.1.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf   (PackedDatabase.java:718) 
+14:05:00 DEBUG Caching packed database: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf   (PackedDatabaseCache.java:362) 
+14:05:00 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed-db-cache/pdb820D9336/db.1.gbf   (PackedDatabase.java:521) 
+14:05:00 DEBUG Cache update completed: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf   (PackedDatabaseCache.java:397) 
+14:05:00 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp632A0706.pdb.db/db.1.gbf   (PackedDatabase.java:521) 
+14:05:00 DEBUG Packing database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/~tmp632A0706.pdb.db/db.2.gbf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf   (PackedDatabase.java:718) 
+14:05:00 DEBUG Using cached packed database: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf   (PackedDatabaseCache.java:365) 
+14:05:00 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed-db-cache/pdb820D9336/db.2.gbf   (PackedDatabase.java:521) 
+14:05:00 DEBUG Cache update completed: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_65b12c94-66f5-4fd6-b037-904956bad0b7/temp.data/packed.db.testCreatePackedDatabase.15680147671392877282.pf   (PackedDatabaseCache.java:397) 
+14:05:00 DEBUG 	✓ PASSED Test: PackedDatabaseTest - testCreatePackedDatabase ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.util.extensions.ExtensionUtilsTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.util.extensions.ExtensionUtilsTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.util.extensions.html">ghidra.util.extensions</a> &gt; ExtensionUtilsTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.147s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBadInputs</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetExtensions</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInstallExtensionDuplicate</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInstallExtensionFromFolder</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInstallExtensionFromZip</td>
+<td class="success">0.323s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsExtension_Folder</td>
+<td class="success">0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsExtension_Zip</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsZip</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUninstallExtension</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_fab5407e-1637-467d-aa5e-92a7338375bf/temp.data
+13:57:04 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:57:04 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_fab5407e-1637-467d-aa5e-92a7338375bf/temp.data/application.log   (LoggingInitialization.java:60) 
+13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testInstallExtensionFromZip *****   (AbstractGenericTest.java:114) 
+13:57:04 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
+	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
+	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.SystemUtilities.runIfSwingOrPostSwingLater(SystemUtilities.java:267)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:630)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:623)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:611)
+	at ghidra.util.task.TaskDialog.lambda$new$0(TaskDialog.java:60)
+	at ghidra.util.task.SwingUpdateManager.doWork(SwingUpdateManager.java:309)
+	at ghidra.util.task.SwingUpdateManager.checkForWork(SwingUpdateManager.java:263)
+	at ghidra.util.Swing.doRun(Swing.java:285)
+	at ghidra.util.Swing.runLater(Swing.java:111)
+	at ghidra.util.SystemUtilities.runSwingLater(SystemUtilities.java:263)
+	at ghidra.util.task.SwingUpdateManager.update(SwingUpdateManager.java:161)
+	at ghidra.util.task.TaskDialog.setMessage(TaskDialog.java:315)
+	at ghidra.util.task.WrappingTaskMonitor.setDelegate(WrappingTaskMonitor.java:73)
+	at ghidra.util.task.TaskRunner.showTaskDialog(TaskRunner.java:130)
+	at ghidra.util.task.TaskRunner.lambda$run$0(TaskRunner.java:53)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.task.TaskRunner.run(TaskRunner.java:53)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:223)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:205)
+	at ghidra.util.task.TaskLauncher.launchModal(TaskLauncher.java:116)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.runInstallTask(ExtensionUtils.java:537)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.install(ExtensionUtils.java:253)
+	at ghidra.util.extensions.ExtensionUtilsTest.testInstallExtensionFromZip(ExtensionUtilsTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (SystemUtilities.java:353) 
+13:57:04 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionFromZip ✓	   (AbstractGenericTest.java:114) 
+13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testIsZip *****   (AbstractGenericTest.java:114) 
+13:57:04 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsZip ✓	   (AbstractGenericTest.java:114) 
+13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testIsExtension_Zip *****   (AbstractGenericTest.java:114) 
+13:57:04 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsExtension_Zip ✓	   (AbstractGenericTest.java:114) 
+13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testUninstallExtension *****   (AbstractGenericTest.java:114) 
+13:57:04 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
+	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
+	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.SystemUtilities.runIfSwingOrPostSwingLater(SystemUtilities.java:267)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:630)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:623)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:611)
+	at ghidra.util.task.TaskDialog.lambda$new$0(TaskDialog.java:60)
+	at ghidra.util.task.SwingUpdateManager.doWork(SwingUpdateManager.java:309)
+	at ghidra.util.task.SwingUpdateManager.checkForWork(SwingUpdateManager.java:263)
+	at ghidra.util.Swing.doRun(Swing.java:285)
+	at ghidra.util.Swing.runLater(Swing.java:111)
+	at ghidra.util.SystemUtilities.runSwingLater(SystemUtilities.java:263)
+	at ghidra.util.task.SwingUpdateManager.update(SwingUpdateManager.java:161)
+	at ghidra.util.task.TaskDialog.setMessage(TaskDialog.java:315)
+	at ghidra.util.task.WrappingTaskMonitor.setDelegate(WrappingTaskMonitor.java:73)
+	at ghidra.util.task.TaskRunner.showTaskDialog(TaskRunner.java:130)
+	at ghidra.util.task.TaskRunner.lambda$run$0(TaskRunner.java:53)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.task.TaskRunner.run(TaskRunner.java:53)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:223)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:205)
+	at ghidra.util.task.TaskLauncher.launchModal(TaskLauncher.java:116)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.runInstallTask(ExtensionUtils.java:537)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.install(ExtensionUtils.java:253)
+	at ghidra.util.extensions.ExtensionUtilsTest.testUninstallExtension(ExtensionUtilsTest.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (SystemUtilities.java:353) 
+13:57:04 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testUninstallExtension ✓	   (AbstractGenericTest.java:114) 
+13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testInstallExtensionDuplicate *****   (AbstractGenericTest.java:114) 
+13:57:04 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
+	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
+	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.SystemUtilities.runIfSwingOrPostSwingLater(SystemUtilities.java:267)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:630)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:623)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:611)
+	at ghidra.util.task.TaskDialog.lambda$new$0(TaskDialog.java:60)
+	at ghidra.util.task.SwingUpdateManager.doWork(SwingUpdateManager.java:309)
+	at ghidra.util.task.SwingUpdateManager.checkForWork(SwingUpdateManager.java:263)
+	at ghidra.util.Swing.doRun(Swing.java:285)
+	at ghidra.util.Swing.runLater(Swing.java:111)
+	at ghidra.util.SystemUtilities.runSwingLater(SystemUtilities.java:263)
+	at ghidra.util.task.SwingUpdateManager.update(SwingUpdateManager.java:161)
+	at ghidra.util.task.TaskDialog.setMessage(TaskDialog.java:315)
+	at ghidra.util.task.WrappingTaskMonitor.setDelegate(WrappingTaskMonitor.java:73)
+	at ghidra.util.task.TaskRunner.showTaskDialog(TaskRunner.java:130)
+	at ghidra.util.task.TaskRunner.lambda$run$0(TaskRunner.java:53)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.task.TaskRunner.run(TaskRunner.java:53)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:223)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:205)
+	at ghidra.util.task.TaskLauncher.launchModal(TaskLauncher.java:116)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.runInstallTask(ExtensionUtils.java:537)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.install(ExtensionUtils.java:253)
+	at ghidra.util.extensions.ExtensionUtilsTest.testInstallExtensionDuplicate(ExtensionUtilsTest.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (SystemUtilities.java:353) 
+13:57:04 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
+	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
+	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.SystemUtilities.runIfSwingOrPostSwingLater(SystemUtilities.java:267)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:630)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:623)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:611)
+	at ghidra.util.task.TaskDialog.lambda$new$0(TaskDialog.java:60)
+	at ghidra.util.task.SwingUpdateManager.doWork(SwingUpdateManager.java:309)
+	at ghidra.util.task.SwingUpdateManager.checkForWork(SwingUpdateManager.java:263)
+	at ghidra.util.Swing.doRun(Swing.java:285)
+	at ghidra.util.Swing.runLater(Swing.java:111)
+	at ghidra.util.SystemUtilities.runSwingLater(SystemUtilities.java:263)
+	at ghidra.util.task.SwingUpdateManager.update(SwingUpdateManager.java:161)
+	at ghidra.util.task.TaskDialog.setMessage(TaskDialog.java:315)
+	at ghidra.util.task.WrappingTaskMonitor.setDelegate(WrappingTaskMonitor.java:73)
+	at ghidra.util.task.TaskRunner.showTaskDialog(TaskRunner.java:130)
+	at ghidra.util.task.TaskRunner.lambda$run$0(TaskRunner.java:53)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.task.TaskRunner.run(TaskRunner.java:53)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:223)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:205)
+	at ghidra.util.task.TaskLauncher.launchModal(TaskLauncher.java:116)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.runInstallTask(ExtensionUtils.java:537)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.install(ExtensionUtils.java:253)
+	at ghidra.util.extensions.ExtensionUtilsTest.testInstallExtensionDuplicate(ExtensionUtilsTest.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (SystemUtilities.java:353) 
+13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionDuplicate ✓	   (AbstractGenericTest.java:114) 
+13:57:05 DEBUG Wed Sep 04 13:57:05 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testGetExtensions *****   (AbstractGenericTest.java:114) 
+13:57:05 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
+	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
+	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.SystemUtilities.runIfSwingOrPostSwingLater(SystemUtilities.java:267)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:630)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:623)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:611)
+	at ghidra.util.task.TaskDialog.lambda$new$0(TaskDialog.java:60)
+	at ghidra.util.task.SwingUpdateManager.doWork(SwingUpdateManager.java:309)
+	at ghidra.util.task.SwingUpdateManager.checkForWork(SwingUpdateManager.java:263)
+	at ghidra.util.Swing.doRun(Swing.java:285)
+	at ghidra.util.Swing.runLater(Swing.java:111)
+	at ghidra.util.SystemUtilities.runSwingLater(SystemUtilities.java:263)
+	at ghidra.util.task.SwingUpdateManager.update(SwingUpdateManager.java:161)
+	at ghidra.util.task.TaskDialog.setMessage(TaskDialog.java:315)
+	at ghidra.util.task.WrappingTaskMonitor.setDelegate(WrappingTaskMonitor.java:73)
+	at ghidra.util.task.TaskRunner.showTaskDialog(TaskRunner.java:130)
+	at ghidra.util.task.TaskRunner.lambda$run$0(TaskRunner.java:53)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.task.TaskRunner.run(TaskRunner.java:53)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:223)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:205)
+	at ghidra.util.task.TaskLauncher.launchModal(TaskLauncher.java:116)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.runInstallTask(ExtensionUtils.java:537)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.install(ExtensionUtils.java:253)
+	at ghidra.util.extensions.ExtensionUtilsTest.testGetExtensions(ExtensionUtilsTest.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (SystemUtilities.java:353) 
+13:57:05 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
+	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
+	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.SystemUtilities.runIfSwingOrPostSwingLater(SystemUtilities.java:267)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:630)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:623)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:611)
+	at ghidra.util.task.TaskDialog.lambda$new$0(TaskDialog.java:60)
+	at ghidra.util.task.SwingUpdateManager.doWork(SwingUpdateManager.java:309)
+	at ghidra.util.task.SwingUpdateManager.checkForWork(SwingUpdateManager.java:263)
+	at ghidra.util.Swing.doRun(Swing.java:285)
+	at ghidra.util.Swing.runLater(Swing.java:111)
+	at ghidra.util.SystemUtilities.runSwingLater(SystemUtilities.java:263)
+	at ghidra.util.task.SwingUpdateManager.update(SwingUpdateManager.java:161)
+	at ghidra.util.task.TaskDialog.setMessage(TaskDialog.java:315)
+	at ghidra.util.task.WrappingTaskMonitor.setDelegate(WrappingTaskMonitor.java:73)
+	at ghidra.util.task.TaskRunner.showTaskDialog(TaskRunner.java:130)
+	at ghidra.util.task.TaskRunner.lambda$run$0(TaskRunner.java:53)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.task.TaskRunner.run(TaskRunner.java:53)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:223)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:205)
+	at ghidra.util.task.TaskLauncher.launchModal(TaskLauncher.java:116)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.runInstallTask(ExtensionUtils.java:537)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.install(ExtensionUtils.java:253)
+	at ghidra.util.extensions.ExtensionUtilsTest.testGetExtensions(ExtensionUtilsTest.java:206)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (SystemUtilities.java:353) 
+13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testGetExtensions ✓	   (AbstractGenericTest.java:114) 
+13:57:05 DEBUG Wed Sep 04 13:57:05 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testInstallExtensionFromFolder *****   (AbstractGenericTest.java:114) 
+13:57:05 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
+	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
+	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.SystemUtilities.runIfSwingOrPostSwingLater(SystemUtilities.java:267)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:630)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:623)
+	at docking.DialogComponentProvider.setStatusText(DialogComponentProvider.java:611)
+	at ghidra.util.task.TaskDialog.lambda$new$0(TaskDialog.java:60)
+	at ghidra.util.task.SwingUpdateManager.doWork(SwingUpdateManager.java:309)
+	at ghidra.util.task.SwingUpdateManager.checkForWork(SwingUpdateManager.java:263)
+	at ghidra.util.Swing.doRun(Swing.java:285)
+	at ghidra.util.Swing.runLater(Swing.java:111)
+	at ghidra.util.SystemUtilities.runSwingLater(SystemUtilities.java:263)
+	at ghidra.util.task.SwingUpdateManager.update(SwingUpdateManager.java:161)
+	at ghidra.util.task.TaskDialog.setMessage(TaskDialog.java:315)
+	at ghidra.util.task.WrappingTaskMonitor.setDelegate(WrappingTaskMonitor.java:73)
+	at ghidra.util.task.TaskRunner.showTaskDialog(TaskRunner.java:130)
+	at ghidra.util.task.TaskRunner.lambda$run$0(TaskRunner.java:53)
+	at ghidra.util.Swing.runIfSwingOrRunLater(Swing.java:122)
+	at ghidra.util.task.TaskRunner.run(TaskRunner.java:53)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:223)
+	at ghidra.util.task.TaskLauncher.&lt;init&gt;(TaskLauncher.java:205)
+	at ghidra.util.task.TaskLauncher.launchModal(TaskLauncher.java:116)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.runInstallTask(ExtensionUtils.java:537)
+	at ghidra.framework.plugintool.dialog.ExtensionUtils.install(ExtensionUtils.java:253)
+	at ghidra.util.extensions.ExtensionUtilsTest.testInstallExtensionFromFolder(ExtensionUtilsTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (SystemUtilities.java:353) 
+13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionFromFolder ✓	   (AbstractGenericTest.java:114) 
+13:57:05 DEBUG Wed Sep 04 13:57:05 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testIsExtension_Folder *****   (AbstractGenericTest.java:114) 
+13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsExtension_Folder ✓	   (AbstractGenericTest.java:114) 
+13:57:05 DEBUG Wed Sep 04 13:57:05 CST 2019
+***** STARTING Test: ExtensionUtilsTest - testBadInputs *****   (AbstractGenericTest.java:114) 
+13:57:05 WARN  Extension to uninstall cannot be null   (ExtensionUtils.java:330) 
+13:57:05 WARN  File to inspect cannot be null   (ExtensionUtils.java:360) 
+13:57:05 WARN  File to inspect cannot be null   (ExtensionUtils.java:429) 
+13:57:05 WARN  /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/this/file/does/not/exist does not point to a valid ghidra extension   (ExtensionUtils.java:242) 
+13:57:05 WARN  Install file cannot be null   (ExtensionUtils.java:236) 
+13:57:05 WARN  Extension to install cannot be null   (ExtensionUtils.java:266) 
+13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testBadInputs ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:48 PM</p>
+</div>
+</div>
+</body>
+</html>

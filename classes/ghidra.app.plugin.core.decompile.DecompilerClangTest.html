@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.plugin.core.decompile.DecompilerClangTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.plugin.core.decompile.DecompilerClangTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.plugin.core.decompile.html">ghidra.app.plugin.core.decompile</a> &gt; DecompilerClangTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">5</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.164s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testClangTextField_getNextTokenIndex"></a>
+<h3 class="failures">testClangTextField_getNextTokenIndex</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testClangTextField_getTokenIndex"></a>
+<h3 class="failures">testClangTextField_getTokenIndex</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testCommentAnnotation"></a>
+<h3 class="failures">testCommentAnnotation</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testDecompiler_CopyFromSymbolWithoutSelection"></a>
+<h3 class="failures">testDecompiler_CopyFromSymbolWithoutSelection</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testNewDecompileNavigatesToFunctionSignature"></a>
+<h3 class="failures">testNewDecompileNavigatesToFunctionSignature</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testClangTextField_getNextTokenIndex</td>
+<td class="failures">0.735s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testClangTextField_getTokenIndex</td>
+<td class="failures">0.515s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testCommentAnnotation</td>
+<td class="failures">0.629s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testDecompiler_CopyFromSymbolWithoutSelection</td>
+<td class="failures">0.438s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testNewDecompileNavigatesToFunctionSignature</td>
+<td class="failures">1.847s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_4c0ae71e-8d11-48b1-8d5b-b7a88af2e849/temp.data
+14:00:05 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:00:05 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_4c0ae71e-8d11-48b1-8d5b-b7a88af2e849/temp.data/application.log   (LoggingInitialization.java:60) 
+14:00:05 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_4c0ae71e-8d11-48b1-8d5b-b7a88af2e849/temp.data/preferences   (Preferences.java:122) 
+14:00:06 INFO  Class search complete (494 ms)   (ClassSearcher.java:250) 
+14:00:06 DEBUG Wed Sep 04 14:00:06 CST 2019
+***** STARTING Test: DecompilerClangTest - testNewDecompileNavigatesToFunctionSignature *****   (AbstractGenericTest.java:114) 
+14:00:06 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+14:00:06 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+14:00:06 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+14:00:08 DEBUG 	✖ FAILED Test: DecompilerClangTest - testNewDecompileNavigatesToFunctionSignature ✖	   (AbstractGenericTest.java:114) 
+14:00:08 DEBUG Wed Sep 04 14:00:08 CST 2019
+***** STARTING Test: DecompilerClangTest - testClangTextField_getNextTokenIndex *****   (AbstractGenericTest.java:114) 
+14:00:08 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:08 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+14:00:08 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+14:00:08 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+14:00:08 DEBUG 	✖ FAILED Test: DecompilerClangTest - testClangTextField_getNextTokenIndex ✖	   (AbstractGenericTest.java:114) 
+14:00:08 DEBUG Wed Sep 04 14:00:08 CST 2019
+***** STARTING Test: DecompilerClangTest - testCommentAnnotation *****   (AbstractGenericTest.java:114) 
+14:00:08 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:09 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+14:00:09 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+14:00:09 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+14:00:09 DEBUG 	✖ FAILED Test: DecompilerClangTest - testCommentAnnotation ✖	   (AbstractGenericTest.java:114) 
+14:00:09 DEBUG Wed Sep 04 14:00:09 CST 2019
+***** STARTING Test: DecompilerClangTest - testDecompiler_CopyFromSymbolWithoutSelection *****   (AbstractGenericTest.java:114) 
+14:00:09 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:09 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+14:00:09 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+14:00:09 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+14:00:09 DEBUG 	✖ FAILED Test: DecompilerClangTest - testDecompiler_CopyFromSymbolWithoutSelection ✖	   (AbstractGenericTest.java:114) 
+14:00:09 DEBUG Wed Sep 04 14:00:09 CST 2019
+***** STARTING Test: DecompilerClangTest - testClangTextField_getTokenIndex *****   (AbstractGenericTest.java:114) 
+14:00:10 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:10 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+14:00:10 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+14:00:10 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+14:00:10 DEBUG 	✖ FAILED Test: DecompilerClangTest - testClangTextField_getTokenIndex ✖	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

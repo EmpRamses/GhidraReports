@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.merge.tree.ProgramTreeMergeManager2Test</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.merge.tree.ProgramTreeMergeManager2Test</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.merge.tree.html">ghidra.app.merge.tree</a> &gt; ProgramTreeMergeManager2Test</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">29.081s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">91%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testMultipleConflicts"></a>
+<h3 class="failures">testMultipleConflicts</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Merge Tool is unexpectedly still not completed after timeout (ms): 20000
+Thread Traces:
+Thread: Reference Handler
+	at java.base@12.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@12.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@12.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+Thread: Test worker
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at app//generic.test.ConcurrentTestExceptionStatement.waitForTestUnlessExceptions(ConcurrentTestExceptionStatement.java:145)
+	at app//generic.test.ConcurrentTestExceptionStatement.evaluate(ConcurrentTestExceptionStatement.java:68)
+	at app//org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at app//org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at app//org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@12.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@12.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@12.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@12.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: /0:0:0:0:0:0:0:1:45898 to /0:0:0:0:0:0:0:1:37632 workers Thread 3
+	at java.base@12.0.2/sun.nio.ch.EPoll.wait(Native Method)
+	at java.base@12.0.2/sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:120)
+	at java.base@12.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:124)
+	at java.base@12.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+	at org.gradle.internal.remote.internal.inet.SocketConnection$SocketInputStream.read(SocketConnection.java:182)
+	at com.esotericsoftware.kryo.io.Input.fill(Input.java:146)
+	at com.esotericsoftware.kryo.io.Input.require(Input.java:178)
+	at com.esotericsoftware.kryo.io.Input.readByte(Input.java:295)
+	at org.gradle.internal.serialize.kryo.KryoBackedDecoder.readByte(KryoBackedDecoder.java:81)
+	at org.gradle.internal.remote.internal.hub.InterHubMessageSerializer$MessageReader.read(InterHubMessageSerializer.java:64)
+	at org.gradle.internal.remote.internal.hub.InterHubMessageSerializer$MessageReader.read(InterHubMessageSerializer.java:52)
+	at org.gradle.internal.remote.internal.inet.SocketConnection.receive(SocketConnection.java:81)
+	at org.gradle.internal.remote.internal.hub.MessageHub$ConnectionReceive.run(MessageHub.java:268)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: Log4j2-TF-4-Scheduled-1
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@12.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@12.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: Common-Cleaner
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@12.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+	at java.base@12.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+Thread: TimerQueue
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@12.0.2/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+	at java.desktop@12.0.2/javax.swing.TimerQueue.run(TimerQueue.java:171)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: GTimer
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+	at java.base@12.0.2/java.util.TimerThread.run(Timer.java:506)
+Thread: Thread-20
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.Object.wait(Object.java:326)
+	at java.desktop@12.0.2/java.awt.EventQueue.invokeAndWait(EventQueue.java:1361)
+	at java.desktop@12.0.2/java.awt.EventQueue.invokeAndWait(EventQueue.java:1342)
+	at java.desktop@12.0.2/javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1480)
+	at app//ghidra.app.merge.MergeManager.merge(MergeManager.java:136)
+	at app//ghidra.app.merge.MergeManager.merge(MergeManager.java:229)
+	at app//ghidra.app.merge.tree.AbstractProgramTreeMergeManagerTest.lambda$merge$0(AbstractProgramTreeMergeManagerTest.java:71)
+	at app//ghidra.app.merge.tree.AbstractProgramTreeMergeManagerTest$$Lambda$405/0x000000080185f840.run(Unknown Source)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: Signal Dispatcher
+Thread: AWT-EventQueue-0
+	at java.desktop@12.0.2/java.awt.Component.firePropertyChange(Component.java:8725)
+	at java.desktop@12.0.2/java.awt.Component.setForeground(Component.java:1817)
+	at java.desktop@12.0.2/javax.swing.JComponent.setForeground(JComponent.java:2726)
+	at app//ghidra.framework.main.LogPanel.lambda$messageLogged$1(LogPanel.java:93)
+	at app//ghidra.framework.main.LogPanel$$Lambda$486/0x000000080193d840.run(Unknown Source)
+	at java.desktop@12.0.2/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop@12.0.2/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop@12.0.2/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop@12.0.2/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base@12.0.2/java.security.AccessController.executePrivileged(AccessController.java:751)
+	at java.base@12.0.2/java.security.AccessController.doPrivileged(AccessController.java:389)
+	at java.base@12.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop@12.0.2/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117)
+	at java.desktop@12.0.2/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.desktop@12.0.2/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.desktop@12.0.2/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.base@12.0.2/java.security.AccessController.executePrivileged(AccessController.java:751)
+	at java.base@12.0.2/java.security.AccessController.doPrivileged(AccessController.java:310)
+	at java.desktop@12.0.2/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.desktop@12.0.2/java.awt.Dialog.show(Dialog.java:1070)
+	at java.desktop@12.0.2/java.awt.Component.show(Component.java:1716)
+	at java.desktop@12.0.2/java.awt.Component.setVisible(Component.java:1663)
+	at java.desktop@12.0.2/java.awt.Window.setVisible(Window.java:1021)
+	at java.desktop@12.0.2/java.awt.Dialog.setVisible(Dialog.java:1005)
+	at app//docking.RootNode.setVisible(RootNode.java:196)
+	at app//docking.DockingWindowManager.setVisible(DockingWindowManager.java:443)
+	at app//docking.AbstractDockingTool.setVisible(AbstractDockingTool.java:47)
+	at app//ghidra.app.merge.MergeManager$1.run(MergeManager.java:177)
+	at java.desktop@12.0.2/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:303)
+	at java.desktop@12.0.2/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop@12.0.2/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop@12.0.2/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base@12.0.2/java.security.AccessController.executePrivileged(AccessController.java:751)
+	at java.base@12.0.2/java.security.AccessController.doPrivileged(AccessController.java:389)
+	at java.base@12.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop@12.0.2/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Thread: Java2D Disposer
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.desktop@12.0.2/sun.java2d.Disposer.run(Disposer.java:144)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: Finalizer
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@12.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+Thread: AWT-XAWT
+	at java.desktop@12.0.2/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+	at java.desktop@12.0.2/sun.awt.X11.XToolkit.run(XToolkit.java:688)
+	at java.desktop@12.0.2/sun.awt.X11.XToolkit.run(XToolkit.java:652)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: AWT-Shutdown
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.Object.wait(Object.java:326)
+	at java.desktop@12.0.2/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: GhidraSwinglessTimer
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+	at java.base@12.0.2/java.util.TimerThread.run(Timer.java:506)
+Thread: Run Manager Worker-pool-6-thread-1
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.Object.wait(Object.java:326)
+	at app//ghidra.app.merge.MergeManager.waitForInput(MergeManager.java:475)
+	at app//ghidra.app.merge.ProgramMultiUserMergeManager.showComponent(ProgramMultiUserMergeManager.java:230)
+	at app//ghidra.app.merge.tree.ProgramTreeMergeManager.showMergePanel(ProgramTreeMergeManager.java:902)
+	at app//ghidra.app.merge.tree.ProgramTreeMergeManager.waitForUserInput(ProgramTreeMergeManager.java:735)
+	at app//ghidra.app.merge.tree.ProgramTreeMergeManager.namesChanged(ProgramTreeMergeManager.java:671)
+	at app//ghidra.app.merge.tree.ProgramTreeMergeManager.processConflicts(ProgramTreeMergeManager.java:547)
+	at app//ghidra.app.merge.tree.ProgramTreeMergeManager.merge(ProgramTreeMergeManager.java:207)
+	at app//ghidra.app.merge.MergeManager.lambda$scheduleMerge$5(MergeManager.java:431)
+	at app//ghidra.app.merge.MergeManager$$Lambda$445/0x0000000801895c40.monitoredRun(Unknown Source)
+	at app//ghidra.util.task.RunManager$RunnerJob.doExecute(RunManager.java:334)
+	at app//ghidra.util.task.RunManager$RunnerJob.run(RunManager.java:309)
+	at app//ghidra.util.worker.AbstractWorker$JobCallback.process(AbstractWorker.java:133)
+	at app//ghidra.util.worker.AbstractWorker$JobCallback.process(AbstractWorker.java:123)
+	at app//generic.concurrent.ConcurrentQ$CallbackCallable.call(ConcurrentQ.java:655)
+	at java.base@12.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at app//generic.concurrent.FutureTaskMonitor.run(FutureTaskMonitor.java:75)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: File System Listener
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.Object.wait(Object.java:326)
+	at app//ghidra.framework.store.FileSystemListenerList$FileSystemEventProcessingThread.doWait(FileSystemListenerList.java:301)
+	at app//ghidra.framework.store.FileSystemListenerList$FileSystemEventProcessingThread.run(FileSystemListenerList.java:292)
+Thread: main
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:885)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1039)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1345)
+	at java.base@12.0.2/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:232)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:72)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:46)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:91)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:34)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:70)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:68)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:73)
+Thread: Test-Thread-19
+	at java.base@12.0.2/java.lang.Thread.dumpThreads(Native Method)
+	at java.base@12.0.2/java.lang.Thread.getAllStackTraces(Thread.java:1653)
+	at app//utilities.util.reflection.ReflectionUtilities.createStackTraceForAllThreads(ReflectionUtilities.java:385)
+	at app//generic.test.TestUtils.createStackTraceForAllThreads(TestUtils.java:47)
+	at app//generic.test.AbstractGenericTest.createStackTraceForAllThreads(AbstractGenericTest.java:1380)
+	at app//ghidra.app.merge.AbstractMergeTest.waitForMergeCompletion(AbstractMergeTest.java:153)
+	at app//ghidra.app.merge.tree.ProgramTreeMergeManager2Test.selectButtonAndApply(ProgramTreeMergeManager2Test.java:875)
+	at app//ghidra.app.merge.tree.ProgramTreeMergeManager2Test.testMultipleConflicts(ProgramTreeMergeManager2Test.java:829)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@12.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@12.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at app//mockit.integration.junit4.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:157)
+	at app//mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at app//mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at app//org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at app//generic.test.TestThread.run(TestThread.java:106)
+Thread: /0:0:0:0:0:0:0:1:45898 to /0:0:0:0:0:0:0:1:37632 workers Thread 2
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at org.gradle.internal.remote.internal.hub.queue.EndPointQueue.take(EndPointQueue.java:49)
+	at org.gradle.internal.remote.internal.hub.MessageHub$ConnectionDispatch.run(MessageHub.java:320)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+
+	at ghidra.app.merge.AbstractMergeTest.waitForMergeCompletion(AbstractMergeTest.java:154)
+	at ghidra.app.merge.tree.ProgramTreeMergeManager2Test.selectButtonAndApply(ProgramTreeMergeManager2Test.java:875)
+	at ghidra.app.merge.tree.ProgramTreeMergeManager2Test.testMultipleConflicts(ProgramTreeMergeManager2Test.java:829)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testContentsNamesChanged</td>
+<td class="success">0.614s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testMultipleConflicts</td>
+<td class="failures">20.934s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testNameConflictOpt1</td>
+<td class="success">0.527s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNameConflictOpt2</td>
+<td class="success">0.516s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNameConflictOpt3</td>
+<td class="success">0.559s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOtherNameContentChangedOpt1</td>
+<td class="success">2.451s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOtherNameContentChangedOpt2</td>
+<td class="success">0.721s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOtherNameContentChangedOpt3</td>
+<td class="success">0.618s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOtherNameContentChangedOpt4</td>
+<td class="success">0.609s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOtherPrivateNameContentChangedOpt1</td>
+<td class="success">0.513s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOtherPrivateNameContentChangedOpt2</td>
+<td class="success">0.507s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOtherPrivateNameContentChangedOpt3</td>
+<td class="success">0.512s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_710a26ea-a39f-4e93-b6df-89dc29711eaf/temp.data
+12:54:08 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+12:54:08 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_710a26ea-a39f-4e93-b6df-89dc29711eaf/temp.data/application.log   (LoggingInitialization.java:60) 
+12:54:08 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_710a26ea-a39f-4e93-b6df-89dc29711eaf/temp.data/preferences   (Preferences.java:122) 
+12:54:09 INFO  Class search complete (505 ms)   (ClassSearcher.java:250) 
+12:54:09 DEBUG Wed Sep 04 12:54:09 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testOtherNameContentChangedOpt1 *****   (AbstractGenericTest.java:114) 
+12:54:12 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testOtherNameContentChangedOpt1 ✓	   (AbstractGenericTest.java:114) 
+12:54:12 DEBUG Wed Sep 04 12:54:12 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testOtherNameContentChangedOpt2 *****   (AbstractGenericTest.java:114) 
+12:54:12 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testOtherNameContentChangedOpt2 ✓	   (AbstractGenericTest.java:114) 
+12:54:12 DEBUG Wed Sep 04 12:54:12 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testOtherNameContentChangedOpt3 *****   (AbstractGenericTest.java:114) 
+12:54:13 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testOtherNameContentChangedOpt3 ✓	   (AbstractGenericTest.java:114) 
+12:54:13 DEBUG Wed Sep 04 12:54:13 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testOtherNameContentChangedOpt4 *****   (AbstractGenericTest.java:114) 
+12:54:14 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testOtherNameContentChangedOpt4 ✓	   (AbstractGenericTest.java:114) 
+12:54:14 DEBUG Wed Sep 04 12:54:14 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testNameConflictOpt1 *****   (AbstractGenericTest.java:114) 
+12:54:14 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testNameConflictOpt1 ✓	   (AbstractGenericTest.java:114) 
+12:54:14 DEBUG Wed Sep 04 12:54:14 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testNameConflictOpt2 *****   (AbstractGenericTest.java:114) 
+12:54:15 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testNameConflictOpt2 ✓	   (AbstractGenericTest.java:114) 
+12:54:15 DEBUG Wed Sep 04 12:54:15 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testNameConflictOpt3 *****   (AbstractGenericTest.java:114) 
+12:54:15 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testNameConflictOpt3 ✓	   (AbstractGenericTest.java:114) 
+12:54:15 DEBUG Wed Sep 04 12:54:15 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testMultipleConflicts *****   (AbstractGenericTest.java:114) 
+12:54:36 DEBUG Open modal dialog:    (AbstractMergeTest.java:148) 
+12:54:36 ERROR Unable to capture dialog: javax.swing.JDialog[dialog0,95,87,1740x900,invalid,layout=java.awt.BorderLayout,APPLICATION_MODAL,title=Merge Tool: /notepad,defaultCloseOperation=DO_NOTHING_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1740x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@52801c3e,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]   (AbstractMergeTest.java:168) 
+12:54:36 DEBUG Uh-Oh  Still processing in TearDown() ...   (AbstractMergeTest.java:84) 
+12:54:36 DEBUG Open windows: 
+Frame: 'null' (not showing)
+	Dialog: 'Merge Tool: /notepad'
+   (AbstractDockingTest.java:1958) 
+12:54:36 DEBUG 	✖ FAILED Test: ProgramTreeMergeManager2Test - testMultipleConflicts ✖	   (AbstractGenericTest.java:114) 
+12:54:36 DEBUG Wed Sep 04 12:54:36 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testContentsNamesChanged *****   (AbstractGenericTest.java:114) 
+12:54:37 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testContentsNamesChanged ✓	   (AbstractGenericTest.java:114) 
+12:54:37 DEBUG Wed Sep 04 12:54:37 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testOtherPrivateNameContentChangedOpt1 *****   (AbstractGenericTest.java:114) 
+12:54:37 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testOtherPrivateNameContentChangedOpt1 ✓	   (AbstractGenericTest.java:114) 
+12:54:37 DEBUG Wed Sep 04 12:54:37 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testOtherPrivateNameContentChangedOpt2 *****   (AbstractGenericTest.java:114) 
+12:54:38 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testOtherPrivateNameContentChangedOpt2 ✓	   (AbstractGenericTest.java:114) 
+12:54:38 DEBUG Wed Sep 04 12:54:38 CST 2019
+***** STARTING Test: ProgramTreeMergeManager2Test - testOtherPrivateNameContentChangedOpt3 *****   (AbstractGenericTest.java:114) 
+12:54:38 DEBUG 	✓ PASSED Test: ProgramTreeMergeManager2Test - testOtherPrivateNameContentChangedOpt3 ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>java.io.FileNotFoundException: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/JUnit/reports/ProgramTreeMergeManager2Test/testMultipleConflicts/modal.dialog.Merge_Tool:_/notepad.png (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:347)
+	at java.base/java.io.RandomAccessFile.&lt;init&gt;(RandomAccessFile.java:261)
+	at java.base/java.io.RandomAccessFile.&lt;init&gt;(RandomAccessFile.java:216)
+	at java.desktop/javax.imageio.stream.FileImageOutputStream.&lt;init&gt;(FileImageOutputStream.java:69)
+	at java.desktop/com.sun.imageio.spi.FileImageOutputStreamSpi.createOutputStreamInstance(FileImageOutputStreamSpi.java:55)
+	at java.desktop/javax.imageio.ImageIO.createImageOutputStream(ImageIO.java:419)
+	at java.desktop/javax.imageio.ImageIO.write(ImageIO.java:1549)
+	at generic.util.image.ImageUtils.writeFile(ImageUtils.java:248)
+	at docking.test.AbstractDockingTest.writeImage(AbstractDockingTest.java:2311)
+	at docking.test.AbstractDockingTest.writeImage(AbstractDockingTest.java:2250)
+	at docking.test.AbstractDockingTest.writeImage(AbstractDockingTest.java:2240)
+	at ghidra.app.merge.AbstractMergeTest.capture(AbstractMergeTest.java:165)
+	at ghidra.app.merge.AbstractMergeTest.waitForMergeCompletion(AbstractMergeTest.java:150)
+	at ghidra.app.merge.tree.ProgramTreeMergeManager2Test.selectButtonAndApply(ProgramTreeMergeManager2Test.java:875)
+	at ghidra.app.merge.tree.ProgramTreeMergeManager2Test.testMultipleConflicts(ProgramTreeMergeManager2Test.java:829)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:157)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

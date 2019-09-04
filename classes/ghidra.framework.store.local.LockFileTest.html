@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.framework.store.local.LockFileTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.framework.store.local.LockFileTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.framework.store.local.html">ghidra.framework.store.local</a> &gt; LockFileTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">8.663s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testLock</td>
+<td class="success">8.663s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_b8c6f42a-a065-4fd9-bcbb-2ca505f37077/temp.data
+14:04:41 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:04:41 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_b8c6f42a-a065-4fd9-bcbb-2ca505f37077/temp.data/application.log   (LoggingInitialization.java:60) 
+14:04:41 DEBUG Wed Sep 04 14:04:41 CST 2019
+***** STARTING Test: LockFileTest - testLock *****   (AbstractGenericTest.java:114) 
+Create lock: test.lock(0,Test-Thread-4)
+Create a new lock w/ hold (must wait for old lock to expire)...
+14:04:43 WARN  Forcefully removing lock owned by &lt;Unknown&gt;: test.lock(1,GTimer)   (LockFile.java:587) 
+Verify that lock is holding...
+Verify again that lock is holding...
+Get second immediate lock...
+Remove first lock immediate...
+Remove second lock...
+Create immediate lock: test.lock(0,Test-Thread-4)
+14:04:50 ERROR &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Expected Exception   (LockFileTest.java:110) 
+14:04:50 ERROR Unexpected Exception: Lock time = 1567577090240 ghidra.util.exception.AssertException: Lock time = 1567577090240
+	at ghidra.framework.store.local.LockFile.removeLock(LockFile.java:338)
+	at ghidra.framework.store.local.LockFileTest.testLock(LockFileTest.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:157)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (LockFile.java:341) 
+14:04:50 ERROR &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; End Expected Exception   (LockFileTest.java:112) 
+Remove lock...
+14:04:50 DEBUG 	✓ PASSED Test: LockFileTest - testLock ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

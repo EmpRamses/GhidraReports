@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.program.database.util.SharedRangeMapDBTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.program.database.util.SharedRangeMapDBTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.program.database.util.html">ghidra.program.database.util</a> &gt; SharedRangeMapDBTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.564s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAdd</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetValueIterator</td>
+<td class="success">0.256s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetValueRangeIterator</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemove</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_caa1c350-3899-4e0e-8d15-bdd650e7ec68/temp.data
+13:48:57 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:48:57 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_caa1c350-3899-4e0e-8d15-bdd650e7ec68/temp.data/application.log   (LoggingInitialization.java:60) 
+13:48:57 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_caa1c350-3899-4e0e-8d15-bdd650e7ec68/temp.data/preferences   (Preferences.java:122) 
+13:48:58 INFO  Class search complete (518 ms)   (ClassSearcher.java:250) 
+13:48:58 DEBUG Wed Sep 04 13:48:58 CST 2019
+***** STARTING Test: SharedRangeMapDBTest - testGetValueIterator *****   (AbstractGenericTest.java:114) 
+13:48:58 DEBUG 	✓ PASSED Test: SharedRangeMapDBTest - testGetValueIterator ✓	   (AbstractGenericTest.java:114) 
+13:48:58 DEBUG Wed Sep 04 13:48:58 CST 2019
+***** STARTING Test: SharedRangeMapDBTest - testAdd *****   (AbstractGenericTest.java:114) 
+Inspecting---
+  Range: 10 - 20
+  Range: 30 - 40
+  Range: 50 - 60
+  Range: 70 - 80
+  Map entry: rangeKey=10, value=1
+  Map entry: rangeKey=30, value=1
+  Map entry: rangeKey=50, value=1
+  Map entry: rangeKey=70, value=1
+Inspecting---
+  Range: 10 - 20
+  Range: 30 - 40
+  Range: 50 - 60
+  Range: 70 - 80
+  Map entry: rangeKey=10, value=1
+  Map entry: rangeKey=30, value=1
+  Map entry: rangeKey=50, value=1
+  Map entry: rangeKey=70, value=1
+Inspecting---
+  Range: 10 - 40
+  Range: 50 - 60
+  Range: 70 - 80
+  Map entry: rangeKey=50, value=1
+  Map entry: rangeKey=70, value=1
+  Map entry: rangeKey=10, value=1
+Inspecting---
+  Range: 10 - 60
+  Range: 70 - 80
+  Map entry: rangeKey=70, value=1
+  Map entry: rangeKey=10, value=1
+Inspecting---
+  Range: 10 - 90
+  Map entry: rangeKey=10, value=1
+Inspecting---
+  Range: 10 - 19
+  Range: 20 - 30
+  Range: 31 - 90
+  Map entry: rangeKey=10, value=1
+  Map entry: rangeKey=20, value=1
+  Map entry: rangeKey=31, value=1
+  Map entry: rangeKey=20, value=2
+Inspecting---
+  Range: 10 - 19
+  Range: 20 - 27
+  Range: 28 - 30
+  Range: 31 - 35
+  Range: 36 - 90
+  Map entry: rangeKey=10, value=1
+  Map entry: rangeKey=20, value=1
+  Map entry: rangeKey=31, value=1
+  Map entry: rangeKey=20, value=2
+  Map entry: rangeKey=28, value=1
+  Map entry: rangeKey=28, value=2
+  Map entry: rangeKey=28, value=3
+  Map entry: rangeKey=36, value=1
+  Map entry: rangeKey=31, value=3
+Inspecting---
+  Range: 10 - 19
+  Range: 20 - 27
+  Range: 28 - 30
+  Range: 31 - 35
+  Range: 36 - 90
+  Map entry: rangeKey=10, value=1
+  Map entry: rangeKey=20, value=1
+  Map entry: rangeKey=31, value=1
+  Map entry: rangeKey=20, value=2
+  Map entry: rangeKey=28, value=1
+  Map entry: rangeKey=28, value=2
+  Map entry: rangeKey=28, value=3
+  Map entry: rangeKey=36, value=1
+  Map entry: rangeKey=31, value=3
+  Map entry: rangeKey=28, value=4
+  Map entry: rangeKey=31, value=4
+Inspecting---
+  Range: 10 - 19
+  Range: 20 - 24
+  Range: 25 - 27
+  Range: 28 - 30
+  Range: 31 - 35
+  Range: 36 - 39
+  Range: 40 - 90
+  Map entry: rangeKey=10, value=1
+  Map entry: rangeKey=20, value=1
+  Map entry: rangeKey=31, value=1
+  Map entry: rangeKey=20, value=2
+  Map entry: rangeKey=28, value=1
+  Map entry: rangeKey=28, value=2
+  Map entry: rangeKey=28, value=3
+  Map entry: rangeKey=36, value=1
+  Map entry: rangeKey=31, value=3
+  Map entry: rangeKey=25, value=1
+  Map entry: rangeKey=25, value=2
+  Map entry: rangeKey=25, value=4
+  Map entry: rangeKey=28, value=4
+  Map entry: rangeKey=31, value=4
+  Map entry: rangeKey=40, value=1
+  Map entry: rangeKey=36, value=4
+13:48:58 DEBUG 	✓ PASSED Test: SharedRangeMapDBTest - testAdd ✓	   (AbstractGenericTest.java:114) 
+13:48:58 DEBUG Wed Sep 04 13:48:58 CST 2019
+***** STARTING Test: SharedRangeMapDBTest - testGetValueRangeIterator *****   (AbstractGenericTest.java:114) 
+testGetValueRangeIterator ---
+  Range: 20 - 24
+  Range: 28 - 30
+  Range: 25 - 27
+13:48:58 DEBUG 	✓ PASSED Test: SharedRangeMapDBTest - testGetValueRangeIterator ✓	   (AbstractGenericTest.java:114) 
+13:48:58 DEBUG Wed Sep 04 13:48:58 CST 2019
+***** STARTING Test: SharedRangeMapDBTest - testRemove *****   (AbstractGenericTest.java:114) 
+Inspecting---
+  Range: 10 - 19
+  Range: 20 - 27
+  Range: 28 - 30
+  Range: 31 - 35
+  Range: 36 - 90
+  Map entry: rangeKey=10, value=1
+  Map entry: rangeKey=20, value=1
+  Map entry: rangeKey=31, value=1
+  Map entry: rangeKey=20, value=2
+  Map entry: rangeKey=28, value=1
+  Map entry: rangeKey=28, value=2
+  Map entry: rangeKey=28, value=3
+  Map entry: rangeKey=36, value=1
+  Map entry: rangeKey=31, value=3
+Inspecting---
+  Range: 10 - 19
+  Range: 20 - 30
+  Range: 31 - 90
+  Map entry: rangeKey=10, value=1
+  Map entry: rangeKey=20, value=1
+  Map entry: rangeKey=31, value=1
+  Map entry: rangeKey=20, value=2
+Inspecting---
+  Range: 10 - 90
+  Map entry: rangeKey=10, value=1
+13:48:58 DEBUG 	✓ PASSED Test: SharedRangeMapDBTest - testRemove ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

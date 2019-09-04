@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.framework.main.ProjectInfoDialogTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.framework.main.ProjectInfoDialogTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.framework.main.html">ghidra.framework.main</a> &gt; ProjectInfoDialogTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">28.135s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testConvertProjectCanceled</td>
+<td class="success">3.123s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConvertProjectCanceled2</td>
+<td class="success">4.909s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConvertProjectFilesCheckedOut</td>
+<td class="success">3.322s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConvertProjectToShared</td>
+<td class="success">3.749s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOpenFiles</td>
+<td class="success">5.365s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdateSharedProjectInfo</td>
+<td class="success">3.937s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdateSharedProjectInfoWithCheckouts</td>
+<td class="success">3.730s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data
+14:16:57 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:16:57 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/application.log   (LoggingInitialization.java:60) 
+14:16:57 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/preferences   (Preferences.java:122) 
+14:16:58 INFO  Class search complete (704 ms)   (ClassSearcher.java:250) 
+14:16:58 DEBUG Wed Sep 04 14:16:58 CST 2019
+***** STARTING Test: ProjectInfoDialogTest - testConvertProjectCanceled2 *****   (AbstractGenericTest.java:114) 
+14:17:00 INFO  /testA: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+14:17:00 INFO  /testA: version 1 created (lcf)   (HistoryManager.java:127) 
+14:17:00 INFO  /testA: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+14:17:00 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:00 DEBUG --- Preparing to start Ghidra Server ---   (ServerTestUtil.java:424) 
+14:17:00 DEBUG      Authentication: None   (ServerTestUtil.java:425) 
+14:17:00 DEBUG      Enable Alternate Login Name: false   (ServerTestUtil.java:427) 
+14:17:00 DEBUG      Enable Anonymous Login: false   (ServerTestUtil.java:428) 
+14:17:00 INFO  Generating self-signed CA cert: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt   (ServerTestUtil.java:904) 
+14:17:00 INFO  Generating test user key/cert (signed by test-CA, pwd: xyzzy): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test.p12   (ServerTestUtil.java:925) 
+14:17:00 INFO  Generating test server key/cert (signed by test-CA, pwd: plugh): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12   (ServerTestUtil.java:932) 
+
+/usr/java/jdk-12.0.2/bin/java -cp /home/lcf/.gradle/caches/5.6.1/workerMain/gradle-worker.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Processors/68000/build/libs/68000.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/8051/build/libs/8051.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/AARCH64/build/libs/AARCH64.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/ARM/build/libs/ARM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Atmel/build/libs/Atmel.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PowerPC/build/libs/PowerPC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/BytePatterns/build/libs/BytePatterns.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ByteViewer/build/libs/ByteViewer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Dalvik/build/libs/Dalvik.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/DATA/build/libs/DATA.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DebugUtils/build/libs/DebugUtils.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DecompilerDependent/build/libs/DecompilerDependent.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/build/libs/FunctionGraphDecompilerExtension.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/SourceCodeLookup/build/libs/SourceCodeLookup.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/libs/Decompiler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FileFormats/build/libs/FileFormats.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionID/build/libs/FunctionID.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GnuDemangler/build/libs/GnuDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GraphFunctionCalls/build/libs/GraphFunctionCalls.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/JVM/build/libs/JVM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/libs/MicrosoftCodeAnalyzer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/PDB/build/libs/PDB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDemangler/build/libs/MicrosoftDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDmang/build/libs/MicrosoftDmang.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/MIPS/build/libs/MIPS.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PIC/build/libs/PIC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/libs/ProgramDiff.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Python/build/libs/Python.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Recognizers/build/libs/Recognizers.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Sparc/build/libs/Sparc.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Toy/build/libs/Toy.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/tricore/build/libs/tricore.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/libs/VersionTracking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/x86/build/libs/x86.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-integrationTest.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GhidraServer/build/libs/GhidraServer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/libs/FileSystem.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/DB/build/libs/DB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Demangler/build/libs/Demangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/libs/Graph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Help/build/libs/Help.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Utility/build/libs/Utility.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jmockit/jmockit/1.44/1b41baa8fde0209ce90def969826532a23608df0/jmockit-1.44.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.java.dev.timingframework/timingframework/1.0/2c12a328bfd82ddb0c4389e915229ea3df1740b8/timingframework-1.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/javax.help/javahelp/2.0.05/ca70822c47a67fc3a11670270567c2d01566dae1/javahelp-2.0.05.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-ir-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-api-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-translator-2.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/4.1/dd6ba5c392d4102458494e29f54f70ac534ec2a2/asm-debug-all-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/baksmali/1.4.0/f83ca7850de3e815b0e40a75c6e50d8062729f7d/baksmali-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/dexlib/1.4.0/5b90323e0ba891f01199ab1a6acd8dcddb57a671/dexlib-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/util/1.4.0/b531df04e339f0b7af4ede52cbe59c7a3b89de74/util-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/955419d9a6fc9608052226964cb0ecf8f59f91f9/sevenzipjbinding-9.20-2.00beta.jar:/home/lcf/repo/190904/ghidra/flatRepo/AXMLPrinter2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding-all-platforms/9.20-2.00beta/3b7f8ce33994650f5a2c826843146ba71526fd3b/sevenzipjbinding-all-platforms-9.20-2.00beta.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/ch.ethz.ganymed/ganymed-ssh2/262/7761dc665d0f6993dc846d914214fb93291e2bdf/ganymed-ssh2-262.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-visualization/2.1.1/40488654daea1f57e0790e40153be19a307943dd/jung-visualization-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-algorithms/2.1.1/632bd89a61a6c1ca7ed3505aca0765cff987096e/jung-algorithms-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-graph-impl/2.1.1/8293acb2ab4c00a3939cb99a8751e5d38a4299dc/jung-graph-impl-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-api/2.1.1/e47ee4efdfacce12f0af620747d9d0e44bf2eaa4/jung-api-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jdom/jdom-legacy/1.1.3/8bdfeb39fa929c35f5e4f0b02d34350db39a1efc/jdom-legacy-1.1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/122c7cee69b53ed4a7681c03d4ee4c0e2765da5/commons-lang3-3.9.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.python/jython-standalone/2.7.1/942c3294840dc9dfb3528d775f4d02a6d57c421f/jython-standalone-2.7.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr/3.5.2/c4a65c950bfc3e7d04309c515b2177c00baf7764/antlr-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/msv/20050913/3fc5ca9708a8e7a219001da0bc3870d0a2d51c2d/msv-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/xsdlib/20050913/836b85d70c54589aeef2ea810232ab192137ea84/xsdlib-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/ST4/4.0.8/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.5.2/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/isorelax/20050913/b21859c352bd959ea22d06b2fe8c93b2e24531b9/isorelax-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/relaxngDatatype/20050913/b117e0f9182c6cc094e833489bcdddadfd414090/relaxngDatatype-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/test:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/test -Xmx512M -Xdebug -Xnoagent -Djava.compiler=NONE -Dghidra.cacerts=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt -Dghidra.keystore=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 -Dghidra.password=plugh -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:18202 -DSystemUtilities.isTesting=true ghidra.server.remote.GhidraServer -ip127.0.0.1 -p14100 /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server 
+14:17:00 INFO  Waiting for Ghidra Server RMI registration to complete...   (ServerTestUtil.java:514) 
+14:17:00 INFO  SERVER Listening for transport dt_socket at address: 18202   (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Initializing SSL Context (SSLContextInitializer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Initializing Random Number Generator... (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt (ApplicationTrustManagerFactory)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Ghidra Test CA, issued by Ghidra Test CA, S/N d44e162, expires Fri Sep 06 14:17:00 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 (ApplicationKeyManagerFactory)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 7fe224f8, expires Fri Sep 06 14:17:00 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Ghidra Server 9.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Server remote access address: 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Server listening on all interfaces (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     RMI Registry port: 14100 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     RMI SSL port: 14101 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Block Stream port: 14102 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Block Stream compression: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Auth: None (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Prompt for user ID: no (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     Anonymous server access: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  lcf starting Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Instantiating User Manager  (UserManager)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  User file contains 1 entries (UserManager)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Known Users: (UserManager)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     lcf (UserManager)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Known Repositories: (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO     &lt;none&gt; (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Starting Block Stream Server... (BlockStreamServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Registering Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:01 INFO  SERVER INFO  Registered Ghidra Server. (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:02 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:02 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:02 INFO  SERVER INFO  Authentication callbacks requested by 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:02 INFO  SERVER INFO  Repository server handle requested (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:02 INFO  Connected to Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:143) 
+14:17:02 INFO  SERVER INFO  Loading My_Repository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:02 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:02 INFO  SERVER INFO     My_Repository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:02 INFO  SERVER INFO  [My_Repository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:02 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:03 INFO  Saved project: ghidra_BatchTestProject   (FileActionManager.java:557) 
+14:17:03 INFO  Starting cache cleanup: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/fscache   (FileCache.java:174) 
+14:17:03 INFO  Finished cache cleanup, estimated storage used: 0   (FileCache.java:177) 
+14:17:03 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:03 DEBUG disposeServer() - process exist? Process[pid=82756, exitValue=&quot;not exited&quot;]   (ServerTestUtil.java:632) 
+14:17:03 DEBUG *** Terminating Ghidra Server Instance... ***   (ServerTestUtil.java:638) 
+14:17:03 DEBUG 	after call to destroy   (ServerTestUtil.java:642) 
+14:17:03 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:03 DEBUG &gt;&gt;&gt; START Ghidra Server Log Dump &gt;&gt;&gt;   (ServerTestUtil.java:675) 
+    SERVER: 2019-09-04 14:17:01 INFO  (LoggingInitialization) Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml  
+    SERVER: 2019-09-04 14:17:01 INFO  (LoggingInitialization) Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log  
+    SERVER: 2019-09-04 14:17:01 INFO  (SSLContextInitializer) Initializing SSL Context  
+    SERVER: 2019-09-04 14:17:01 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+    SERVER: 2019-09-04 14:17:01 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+    SERVER: 2019-09-04 14:17:01 INFO  (ApplicationTrustManagerFactory) Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt  
+    SERVER: 2019-09-04 14:17:01 INFO  (ApplicationKeyStore)    Ghidra Test CA, issued by Ghidra Test CA, S/N d44e162, expires Fri Sep 06 14:17:00 CST 2019  
+    SERVER: 2019-09-04 14:17:01 INFO  (ApplicationKeyManagerFactory) Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12  
+    SERVER: 2019-09-04 14:17:01 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore without password...  
+    SERVER: 2019-09-04 14:17:01 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore with property-based password...  
+    SERVER: 2019-09-04 14:17:01 INFO  (ApplicationKeyStore)    test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 7fe224f8, expires Fri Sep 06 14:17:00 CST 2019  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer) Ghidra Server 9.1  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    Server remote access address: 127.0.0.1  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    Server listening on all interfaces  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    RMI Registry port: 14100  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    RMI SSL port: 14101  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    Block Stream port: 14102  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    Block Stream compression: disabled  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    Auth: None  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    Prompt for user ID: no  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer)    Anonymous server access: disabled  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer) lcf starting Ghidra Server...  
+    SERVER: 2019-09-04 14:17:01 INFO  (RepositoryManager) Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:01 INFO  (UserManager) Instantiating User Manager   
+    SERVER: 2019-09-04 14:17:01 INFO  (UserManager) User file contains 1 entries  
+    SERVER: 2019-09-04 14:17:01 INFO  (UserManager) Known Users:  
+    SERVER: 2019-09-04 14:17:01 INFO  (UserManager)    lcf  
+    SERVER: 2019-09-04 14:17:01 INFO  (RepositoryManager) Known Repositories:  
+    SERVER: 2019-09-04 14:17:01 INFO  (RepositoryManager)    &lt;none&gt;  
+    SERVER: 2019-09-04 14:17:01 INFO  (BlockStreamServer) Starting Block Stream Server...  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer) Registering Ghidra Server...  
+    SERVER: 2019-09-04 14:17:01 INFO  (GhidraServer) Registered Ghidra Server.  
+    SERVER: 2019-09-04 14:17:02 INFO  (GhidraServer) Authentication callbacks requested by 127.0.0.1  
+    SERVER: 2019-09-04 14:17:02 INFO  (RepositoryManager) Repository server handle requested (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:02 INFO  (Repository) Loading My_Repository ...  
+    SERVER: 2019-09-04 14:17:02 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:02 INFO  (Repository)    My_Repository load complete.   
+    SERVER: 2019-09-04 14:17:02 INFO  (RepositoryManager) [My_Repository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:02 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:03 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf)  
+14:17:03 DEBUG &lt;&lt;&lt; END Ghidra Server Log Dump &lt;&lt;&lt;   (ServerTestUtil.java:687) 
+14:17:03 DEBUG 	✓ PASSED Test: ProjectInfoDialogTest - testConvertProjectCanceled2 ✓	   (AbstractGenericTest.java:114) 
+14:17:03 DEBUG Wed Sep 04 14:17:03 CST 2019
+***** STARTING Test: ProjectInfoDialogTest - testOpenFiles *****   (AbstractGenericTest.java:114) 
+14:17:03 INFO  /testA: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+14:17:03 INFO  /testA: version 1 created (lcf)   (HistoryManager.java:127) 
+14:17:03 INFO  /testA: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+14:17:03 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:03 DEBUG --- Preparing to start Ghidra Server ---   (ServerTestUtil.java:424) 
+14:17:03 DEBUG      Authentication: None   (ServerTestUtil.java:425) 
+14:17:03 DEBUG      Enable Alternate Login Name: false   (ServerTestUtil.java:427) 
+14:17:03 DEBUG      Enable Anonymous Login: false   (ServerTestUtil.java:428) 
+14:17:03 INFO  Generating self-signed CA cert: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt   (ServerTestUtil.java:904) 
+14:17:04 INFO  Generating test user key/cert (signed by test-CA, pwd: xyzzy): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test.p12   (ServerTestUtil.java:925) 
+14:17:04 INFO  Generating test server key/cert (signed by test-CA, pwd: plugh): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12   (ServerTestUtil.java:932) 
+
+/usr/java/jdk-12.0.2/bin/java -cp /home/lcf/.gradle/caches/5.6.1/workerMain/gradle-worker.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Processors/68000/build/libs/68000.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/8051/build/libs/8051.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/AARCH64/build/libs/AARCH64.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/ARM/build/libs/ARM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Atmel/build/libs/Atmel.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PowerPC/build/libs/PowerPC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/BytePatterns/build/libs/BytePatterns.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ByteViewer/build/libs/ByteViewer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Dalvik/build/libs/Dalvik.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/DATA/build/libs/DATA.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DebugUtils/build/libs/DebugUtils.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DecompilerDependent/build/libs/DecompilerDependent.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/build/libs/FunctionGraphDecompilerExtension.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/SourceCodeLookup/build/libs/SourceCodeLookup.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/libs/Decompiler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FileFormats/build/libs/FileFormats.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionID/build/libs/FunctionID.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GnuDemangler/build/libs/GnuDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GraphFunctionCalls/build/libs/GraphFunctionCalls.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/JVM/build/libs/JVM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/libs/MicrosoftCodeAnalyzer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/PDB/build/libs/PDB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDemangler/build/libs/MicrosoftDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDmang/build/libs/MicrosoftDmang.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/MIPS/build/libs/MIPS.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PIC/build/libs/PIC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/libs/ProgramDiff.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Python/build/libs/Python.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Recognizers/build/libs/Recognizers.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Sparc/build/libs/Sparc.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Toy/build/libs/Toy.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/tricore/build/libs/tricore.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/libs/VersionTracking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/x86/build/libs/x86.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-integrationTest.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GhidraServer/build/libs/GhidraServer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/libs/FileSystem.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/DB/build/libs/DB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Demangler/build/libs/Demangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/libs/Graph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Help/build/libs/Help.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Utility/build/libs/Utility.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jmockit/jmockit/1.44/1b41baa8fde0209ce90def969826532a23608df0/jmockit-1.44.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.java.dev.timingframework/timingframework/1.0/2c12a328bfd82ddb0c4389e915229ea3df1740b8/timingframework-1.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/javax.help/javahelp/2.0.05/ca70822c47a67fc3a11670270567c2d01566dae1/javahelp-2.0.05.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-ir-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-api-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-translator-2.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/4.1/dd6ba5c392d4102458494e29f54f70ac534ec2a2/asm-debug-all-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/baksmali/1.4.0/f83ca7850de3e815b0e40a75c6e50d8062729f7d/baksmali-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/dexlib/1.4.0/5b90323e0ba891f01199ab1a6acd8dcddb57a671/dexlib-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/util/1.4.0/b531df04e339f0b7af4ede52cbe59c7a3b89de74/util-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/955419d9a6fc9608052226964cb0ecf8f59f91f9/sevenzipjbinding-9.20-2.00beta.jar:/home/lcf/repo/190904/ghidra/flatRepo/AXMLPrinter2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding-all-platforms/9.20-2.00beta/3b7f8ce33994650f5a2c826843146ba71526fd3b/sevenzipjbinding-all-platforms-9.20-2.00beta.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/ch.ethz.ganymed/ganymed-ssh2/262/7761dc665d0f6993dc846d914214fb93291e2bdf/ganymed-ssh2-262.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-visualization/2.1.1/40488654daea1f57e0790e40153be19a307943dd/jung-visualization-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-algorithms/2.1.1/632bd89a61a6c1ca7ed3505aca0765cff987096e/jung-algorithms-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-graph-impl/2.1.1/8293acb2ab4c00a3939cb99a8751e5d38a4299dc/jung-graph-impl-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-api/2.1.1/e47ee4efdfacce12f0af620747d9d0e44bf2eaa4/jung-api-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jdom/jdom-legacy/1.1.3/8bdfeb39fa929c35f5e4f0b02d34350db39a1efc/jdom-legacy-1.1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/122c7cee69b53ed4a7681c03d4ee4c0e2765da5/commons-lang3-3.9.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.python/jython-standalone/2.7.1/942c3294840dc9dfb3528d775f4d02a6d57c421f/jython-standalone-2.7.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr/3.5.2/c4a65c950bfc3e7d04309c515b2177c00baf7764/antlr-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/msv/20050913/3fc5ca9708a8e7a219001da0bc3870d0a2d51c2d/msv-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/xsdlib/20050913/836b85d70c54589aeef2ea810232ab192137ea84/xsdlib-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/ST4/4.0.8/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.5.2/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/isorelax/20050913/b21859c352bd959ea22d06b2fe8c93b2e24531b9/isorelax-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/relaxngDatatype/20050913/b117e0f9182c6cc094e833489bcdddadfd414090/relaxngDatatype-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/test:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/test -Xmx512M -Xdebug -Xnoagent -Djava.compiler=NONE -Dghidra.cacerts=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt -Dghidra.keystore=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 -Dghidra.password=plugh -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:18202 -DSystemUtilities.isTesting=true ghidra.server.remote.GhidraServer -ip127.0.0.1 -p14100 /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server 
+14:17:04 INFO  Waiting for Ghidra Server RMI registration to complete...   (ServerTestUtil.java:514) 
+14:17:04 INFO  SERVER Listening for transport dt_socket at address: 18202   (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Initializing SSL Context (SSLContextInitializer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Initializing Random Number Generator... (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt (ApplicationTrustManagerFactory)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Ghidra Test CA, issued by Ghidra Test CA, S/N 4fdf3844, expires Fri Sep 06 14:17:03 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 (ApplicationKeyManagerFactory)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 2f9dd168, expires Fri Sep 06 14:17:04 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Ghidra Server 9.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Server remote access address: 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Server listening on all interfaces (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     RMI Registry port: 14100 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     RMI SSL port: 14101 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Block Stream port: 14102 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Block Stream compression: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Auth: None (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Prompt for user ID: no (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     Anonymous server access: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  lcf starting Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Instantiating User Manager  (UserManager)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  User file contains 1 entries (UserManager)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Known Users: (UserManager)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     lcf (UserManager)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Known Repositories: (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO     &lt;none&gt; (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Starting Block Stream Server... (BlockStreamServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Registering Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  SERVER INFO  Registered Ghidra Server. (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:05 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:05 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:05 WARN  Disconnected from Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:561) 
+14:17:06 INFO  SERVER INFO  Authentication callbacks requested by 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:06 INFO  SERVER INFO  Repository server handle requested (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:06 INFO  Connected to Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:143) 
+14:17:06 INFO  SERVER INFO  Loading My_Repository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:06 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:06 INFO  SERVER INFO     My_Repository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:06 INFO  SERVER INFO  [My_Repository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:06 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:06 INFO  /testA: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+14:17:08 INFO  Cannot Convert Project with Open Files: Before your project can be converted, you must close
+files in running tools and make sure you have no files
+checked out.   (ProjectInfoDialog.java:418) 
+14:17:08 INFO  Saved project: ghidra_BatchTestProject   (FileActionManager.java:557) 
+14:17:08 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:08 DEBUG disposeServer() - process exist? Process[pid=82822, exitValue=&quot;not exited&quot;]   (ServerTestUtil.java:632) 
+14:17:08 DEBUG *** Terminating Ghidra Server Instance... ***   (ServerTestUtil.java:638) 
+14:17:08 DEBUG 	after call to destroy   (ServerTestUtil.java:642) 
+14:17:08 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:08 DEBUG &gt;&gt;&gt; START Ghidra Server Log Dump &gt;&gt;&gt;   (ServerTestUtil.java:675) 
+    SERVER: 2019-09-04 14:17:05 INFO  (LoggingInitialization) Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml  
+    SERVER: 2019-09-04 14:17:05 INFO  (LoggingInitialization) Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log  
+    SERVER: 2019-09-04 14:17:05 INFO  (SSLContextInitializer) Initializing SSL Context  
+    SERVER: 2019-09-04 14:17:05 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+    SERVER: 2019-09-04 14:17:05 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+    SERVER: 2019-09-04 14:17:05 INFO  (ApplicationTrustManagerFactory) Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt  
+    SERVER: 2019-09-04 14:17:05 INFO  (ApplicationKeyStore)    Ghidra Test CA, issued by Ghidra Test CA, S/N 4fdf3844, expires Fri Sep 06 14:17:03 CST 2019  
+    SERVER: 2019-09-04 14:17:05 INFO  (ApplicationKeyManagerFactory) Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12  
+    SERVER: 2019-09-04 14:17:05 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore without password...  
+    SERVER: 2019-09-04 14:17:05 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore with property-based password...  
+    SERVER: 2019-09-04 14:17:05 INFO  (ApplicationKeyStore)    test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 2f9dd168, expires Fri Sep 06 14:17:04 CST 2019  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer) Ghidra Server 9.1  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    Server remote access address: 127.0.0.1  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    Server listening on all interfaces  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    RMI Registry port: 14100  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    RMI SSL port: 14101  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    Block Stream port: 14102  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    Block Stream compression: disabled  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    Auth: None  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    Prompt for user ID: no  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer)    Anonymous server access: disabled  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer) lcf starting Ghidra Server...  
+    SERVER: 2019-09-04 14:17:05 INFO  (RepositoryManager) Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:05 INFO  (UserManager) Instantiating User Manager   
+    SERVER: 2019-09-04 14:17:05 INFO  (UserManager) User file contains 1 entries  
+    SERVER: 2019-09-04 14:17:05 INFO  (UserManager) Known Users:  
+    SERVER: 2019-09-04 14:17:05 INFO  (UserManager)    lcf  
+    SERVER: 2019-09-04 14:17:05 INFO  (RepositoryManager) Known Repositories:  
+    SERVER: 2019-09-04 14:17:05 INFO  (RepositoryManager)    &lt;none&gt;  
+    SERVER: 2019-09-04 14:17:05 INFO  (BlockStreamServer) Starting Block Stream Server...  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer) Registering Ghidra Server...  
+    SERVER: 2019-09-04 14:17:05 INFO  (GhidraServer) Registered Ghidra Server.  
+    SERVER: 2019-09-04 14:17:06 INFO  (GhidraServer) Authentication callbacks requested by 127.0.0.1  
+    SERVER: 2019-09-04 14:17:06 INFO  (RepositoryManager) Repository server handle requested (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:06 INFO  (Repository) Loading My_Repository ...  
+    SERVER: 2019-09-04 14:17:06 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:06 INFO  (Repository)    My_Repository load complete.   
+    SERVER: 2019-09-04 14:17:06 INFO  (RepositoryManager) [My_Repository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:06 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+14:17:08 DEBUG &lt;&lt;&lt; END Ghidra Server Log Dump &lt;&lt;&lt;   (ServerTestUtil.java:687) 
+14:17:08 DEBUG 	✓ PASSED Test: ProjectInfoDialogTest - testOpenFiles ✓	   (AbstractGenericTest.java:114) 
+14:17:08 DEBUG Wed Sep 04 14:17:08 CST 2019
+***** STARTING Test: ProjectInfoDialogTest - testConvertProjectToShared *****   (AbstractGenericTest.java:114) 
+14:17:09 INFO  /testA: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+14:17:09 INFO  /testA: version 1 created (lcf)   (HistoryManager.java:127) 
+14:17:09 INFO  /testA: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+14:17:09 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:09 DEBUG --- Preparing to start Ghidra Server ---   (ServerTestUtil.java:424) 
+14:17:09 DEBUG      Authentication: None   (ServerTestUtil.java:425) 
+14:17:09 DEBUG      Enable Alternate Login Name: false   (ServerTestUtil.java:427) 
+14:17:09 DEBUG      Enable Anonymous Login: false   (ServerTestUtil.java:428) 
+14:17:09 INFO  Generating self-signed CA cert: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt   (ServerTestUtil.java:904) 
+14:17:09 INFO  Generating test user key/cert (signed by test-CA, pwd: xyzzy): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test.p12   (ServerTestUtil.java:925) 
+14:17:09 INFO  Generating test server key/cert (signed by test-CA, pwd: plugh): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12   (ServerTestUtil.java:932) 
+
+/usr/java/jdk-12.0.2/bin/java -cp /home/lcf/.gradle/caches/5.6.1/workerMain/gradle-worker.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Processors/68000/build/libs/68000.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/8051/build/libs/8051.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/AARCH64/build/libs/AARCH64.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/ARM/build/libs/ARM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Atmel/build/libs/Atmel.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PowerPC/build/libs/PowerPC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/BytePatterns/build/libs/BytePatterns.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ByteViewer/build/libs/ByteViewer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Dalvik/build/libs/Dalvik.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/DATA/build/libs/DATA.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DebugUtils/build/libs/DebugUtils.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DecompilerDependent/build/libs/DecompilerDependent.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/build/libs/FunctionGraphDecompilerExtension.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/SourceCodeLookup/build/libs/SourceCodeLookup.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/libs/Decompiler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FileFormats/build/libs/FileFormats.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionID/build/libs/FunctionID.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GnuDemangler/build/libs/GnuDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GraphFunctionCalls/build/libs/GraphFunctionCalls.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/JVM/build/libs/JVM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/libs/MicrosoftCodeAnalyzer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/PDB/build/libs/PDB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDemangler/build/libs/MicrosoftDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDmang/build/libs/MicrosoftDmang.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/MIPS/build/libs/MIPS.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PIC/build/libs/PIC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/libs/ProgramDiff.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Python/build/libs/Python.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Recognizers/build/libs/Recognizers.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Sparc/build/libs/Sparc.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Toy/build/libs/Toy.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/tricore/build/libs/tricore.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/libs/VersionTracking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/x86/build/libs/x86.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-integrationTest.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GhidraServer/build/libs/GhidraServer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/libs/FileSystem.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/DB/build/libs/DB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Demangler/build/libs/Demangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/libs/Graph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Help/build/libs/Help.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Utility/build/libs/Utility.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jmockit/jmockit/1.44/1b41baa8fde0209ce90def969826532a23608df0/jmockit-1.44.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.java.dev.timingframework/timingframework/1.0/2c12a328bfd82ddb0c4389e915229ea3df1740b8/timingframework-1.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/javax.help/javahelp/2.0.05/ca70822c47a67fc3a11670270567c2d01566dae1/javahelp-2.0.05.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-ir-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-api-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-translator-2.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/4.1/dd6ba5c392d4102458494e29f54f70ac534ec2a2/asm-debug-all-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/baksmali/1.4.0/f83ca7850de3e815b0e40a75c6e50d8062729f7d/baksmali-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/dexlib/1.4.0/5b90323e0ba891f01199ab1a6acd8dcddb57a671/dexlib-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/util/1.4.0/b531df04e339f0b7af4ede52cbe59c7a3b89de74/util-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/955419d9a6fc9608052226964cb0ecf8f59f91f9/sevenzipjbinding-9.20-2.00beta.jar:/home/lcf/repo/190904/ghidra/flatRepo/AXMLPrinter2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding-all-platforms/9.20-2.00beta/3b7f8ce33994650f5a2c826843146ba71526fd3b/sevenzipjbinding-all-platforms-9.20-2.00beta.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/ch.ethz.ganymed/ganymed-ssh2/262/7761dc665d0f6993dc846d914214fb93291e2bdf/ganymed-ssh2-262.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-visualization/2.1.1/40488654daea1f57e0790e40153be19a307943dd/jung-visualization-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-algorithms/2.1.1/632bd89a61a6c1ca7ed3505aca0765cff987096e/jung-algorithms-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-graph-impl/2.1.1/8293acb2ab4c00a3939cb99a8751e5d38a4299dc/jung-graph-impl-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-api/2.1.1/e47ee4efdfacce12f0af620747d9d0e44bf2eaa4/jung-api-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jdom/jdom-legacy/1.1.3/8bdfeb39fa929c35f5e4f0b02d34350db39a1efc/jdom-legacy-1.1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/122c7cee69b53ed4a7681c03d4ee4c0e2765da5/commons-lang3-3.9.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.python/jython-standalone/2.7.1/942c3294840dc9dfb3528d775f4d02a6d57c421f/jython-standalone-2.7.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr/3.5.2/c4a65c950bfc3e7d04309c515b2177c00baf7764/antlr-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/msv/20050913/3fc5ca9708a8e7a219001da0bc3870d0a2d51c2d/msv-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/xsdlib/20050913/836b85d70c54589aeef2ea810232ab192137ea84/xsdlib-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/ST4/4.0.8/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.5.2/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/isorelax/20050913/b21859c352bd959ea22d06b2fe8c93b2e24531b9/isorelax-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/relaxngDatatype/20050913/b117e0f9182c6cc094e833489bcdddadfd414090/relaxngDatatype-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/test:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/test -Xmx512M -Xdebug -Xnoagent -Djava.compiler=NONE -Dghidra.cacerts=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt -Dghidra.keystore=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 -Dghidra.password=plugh -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:18202 -DSystemUtilities.isTesting=true ghidra.server.remote.GhidraServer -ip127.0.0.1 -p14100 /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server 
+14:17:09 INFO  Waiting for Ghidra Server RMI registration to complete...   (ServerTestUtil.java:514) 
+14:17:09 INFO  SERVER Listening for transport dt_socket at address: 18202   (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Initializing SSL Context (SSLContextInitializer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Initializing Random Number Generator... (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt (ApplicationTrustManagerFactory)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Ghidra Test CA, issued by Ghidra Test CA, S/N 50cc131, expires Fri Sep 06 14:17:09 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 (ApplicationKeyManagerFactory)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 17e9be51, expires Fri Sep 06 14:17:09 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Ghidra Server 9.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Server remote access address: 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Server listening on all interfaces (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     RMI Registry port: 14100 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     RMI SSL port: 14101 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Block Stream port: 14102 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Block Stream compression: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Auth: None (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Prompt for user ID: no (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     Anonymous server access: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  lcf starting Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Instantiating User Manager  (UserManager)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  User file contains 1 entries (UserManager)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Known Users: (UserManager)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     lcf (UserManager)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Known Repositories: (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO     &lt;none&gt; (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Starting Block Stream Server... (BlockStreamServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Registering Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:10 INFO  SERVER INFO  Registered Ghidra Server. (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:11 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:11 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:11 WARN  Disconnected from Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:561) 
+14:17:11 INFO  SERVER INFO  Authentication callbacks requested by 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:11 INFO  SERVER INFO  Repository server handle requested (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:11 INFO  Connected to Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:143) 
+14:17:11 INFO  SERVER INFO  Loading My_Repository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:11 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:11 INFO  SERVER INFO     My_Repository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:11 INFO  SERVER INFO  [My_Repository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:11 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:11 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:11 INFO  Connected to repository 'My_Repository'   (RepositoryAdapter.java:186) 
+14:17:11 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:11 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:11 INFO  SERVER INFO  [My_Repository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:11 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:12 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:12 INFO  Connected to repository 'My_Repository'   (RepositoryAdapter.java:186) 
+14:17:12 INFO  Opened project: ghidra_BatchTestProject   (FileActionManager.java:341) 
+14:17:12 INFO  Saved project: ghidra_BatchTestProject   (FileActionManager.java:557) 
+14:17:12 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:12 INFO  SERVER INFO  [My_Repository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:12 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:12 DEBUG disposeServer() - process exist? Process[pid=82902, exitValue=&quot;not exited&quot;]   (ServerTestUtil.java:632) 
+14:17:12 DEBUG *** Terminating Ghidra Server Instance... ***   (ServerTestUtil.java:638) 
+14:17:12 DEBUG 	after call to destroy   (ServerTestUtil.java:642) 
+14:17:12 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:12 DEBUG &gt;&gt;&gt; START Ghidra Server Log Dump &gt;&gt;&gt;   (ServerTestUtil.java:675) 
+    SERVER: 2019-09-04 14:17:10 INFO  (LoggingInitialization) Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml  
+    SERVER: 2019-09-04 14:17:10 INFO  (LoggingInitialization) Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log  
+    SERVER: 2019-09-04 14:17:10 INFO  (SSLContextInitializer) Initializing SSL Context  
+    SERVER: 2019-09-04 14:17:10 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+    SERVER: 2019-09-04 14:17:10 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+    SERVER: 2019-09-04 14:17:10 INFO  (ApplicationTrustManagerFactory) Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt  
+    SERVER: 2019-09-04 14:17:10 INFO  (ApplicationKeyStore)    Ghidra Test CA, issued by Ghidra Test CA, S/N 50cc131, expires Fri Sep 06 14:17:09 CST 2019  
+    SERVER: 2019-09-04 14:17:10 INFO  (ApplicationKeyManagerFactory) Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12  
+    SERVER: 2019-09-04 14:17:10 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore without password...  
+    SERVER: 2019-09-04 14:17:10 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore with property-based password...  
+    SERVER: 2019-09-04 14:17:10 INFO  (ApplicationKeyStore)    test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 17e9be51, expires Fri Sep 06 14:17:09 CST 2019  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer) Ghidra Server 9.1  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    Server remote access address: 127.0.0.1  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    Server listening on all interfaces  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    RMI Registry port: 14100  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    RMI SSL port: 14101  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    Block Stream port: 14102  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    Block Stream compression: disabled  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    Auth: None  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    Prompt for user ID: no  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer)    Anonymous server access: disabled  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer) lcf starting Ghidra Server...  
+    SERVER: 2019-09-04 14:17:10 INFO  (RepositoryManager) Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:10 INFO  (UserManager) Instantiating User Manager   
+    SERVER: 2019-09-04 14:17:10 INFO  (UserManager) User file contains 1 entries  
+    SERVER: 2019-09-04 14:17:10 INFO  (UserManager) Known Users:  
+    SERVER: 2019-09-04 14:17:10 INFO  (UserManager)    lcf  
+    SERVER: 2019-09-04 14:17:10 INFO  (RepositoryManager) Known Repositories:  
+    SERVER: 2019-09-04 14:17:10 INFO  (RepositoryManager)    &lt;none&gt;  
+    SERVER: 2019-09-04 14:17:10 INFO  (BlockStreamServer) Starting Block Stream Server...  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer) Registering Ghidra Server...  
+    SERVER: 2019-09-04 14:17:10 INFO  (GhidraServer) Registered Ghidra Server.  
+    SERVER: 2019-09-04 14:17:11 INFO  (GhidraServer) Authentication callbacks requested by 127.0.0.1  
+    SERVER: 2019-09-04 14:17:11 INFO  (RepositoryManager) Repository server handle requested (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:11 INFO  (Repository) Loading My_Repository ...  
+    SERVER: 2019-09-04 14:17:11 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:11 INFO  (Repository)    My_Repository load complete.   
+    SERVER: 2019-09-04 14:17:11 INFO  (RepositoryManager) [My_Repository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:11 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:11 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:11 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:12 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:12 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:12 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf)  
+    SERVER: 2019-09-04 14:17:12 INFO  (GhidraServer) Ghidra server terminated.  
+    SERVER: 2019-09-04 14:17:12 INFO  (BlockStreamServer) Shutdown Block Stream Server completed  
+14:17:12 DEBUG &lt;&lt;&lt; END Ghidra Server Log Dump &lt;&lt;&lt;   (ServerTestUtil.java:687) 
+14:17:12 DEBUG 	✓ PASSED Test: ProjectInfoDialogTest - testConvertProjectToShared ✓	   (AbstractGenericTest.java:114) 
+14:17:12 DEBUG Wed Sep 04 14:17:12 CST 2019
+***** STARTING Test: ProjectInfoDialogTest - testUpdateSharedProjectInfo *****   (AbstractGenericTest.java:114) 
+14:17:12 INFO  /testA: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+14:17:12 INFO  /testA: version 1 created (lcf)   (HistoryManager.java:127) 
+14:17:12 INFO  /testA: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+14:17:12 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:12 DEBUG --- Preparing to start Ghidra Server ---   (ServerTestUtil.java:424) 
+14:17:12 DEBUG      Authentication: None   (ServerTestUtil.java:425) 
+14:17:12 DEBUG      Enable Alternate Login Name: false   (ServerTestUtil.java:427) 
+14:17:12 DEBUG      Enable Anonymous Login: false   (ServerTestUtil.java:428) 
+14:17:12 INFO  Generating self-signed CA cert: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt   (ServerTestUtil.java:904) 
+14:17:13 INFO  Generating test user key/cert (signed by test-CA, pwd: xyzzy): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test.p12   (ServerTestUtil.java:925) 
+14:17:13 INFO  Generating test server key/cert (signed by test-CA, pwd: plugh): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12   (ServerTestUtil.java:932) 
+
+/usr/java/jdk-12.0.2/bin/java -cp /home/lcf/.gradle/caches/5.6.1/workerMain/gradle-worker.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Processors/68000/build/libs/68000.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/8051/build/libs/8051.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/AARCH64/build/libs/AARCH64.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/ARM/build/libs/ARM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Atmel/build/libs/Atmel.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PowerPC/build/libs/PowerPC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/BytePatterns/build/libs/BytePatterns.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ByteViewer/build/libs/ByteViewer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Dalvik/build/libs/Dalvik.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/DATA/build/libs/DATA.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DebugUtils/build/libs/DebugUtils.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DecompilerDependent/build/libs/DecompilerDependent.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/build/libs/FunctionGraphDecompilerExtension.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/SourceCodeLookup/build/libs/SourceCodeLookup.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/libs/Decompiler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FileFormats/build/libs/FileFormats.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionID/build/libs/FunctionID.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GnuDemangler/build/libs/GnuDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GraphFunctionCalls/build/libs/GraphFunctionCalls.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/JVM/build/libs/JVM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/libs/MicrosoftCodeAnalyzer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/PDB/build/libs/PDB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDemangler/build/libs/MicrosoftDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDmang/build/libs/MicrosoftDmang.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/MIPS/build/libs/MIPS.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PIC/build/libs/PIC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/libs/ProgramDiff.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Python/build/libs/Python.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Recognizers/build/libs/Recognizers.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Sparc/build/libs/Sparc.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Toy/build/libs/Toy.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/tricore/build/libs/tricore.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/libs/VersionTracking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/x86/build/libs/x86.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-integrationTest.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GhidraServer/build/libs/GhidraServer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/libs/FileSystem.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/DB/build/libs/DB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Demangler/build/libs/Demangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/libs/Graph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Help/build/libs/Help.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Utility/build/libs/Utility.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jmockit/jmockit/1.44/1b41baa8fde0209ce90def969826532a23608df0/jmockit-1.44.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.java.dev.timingframework/timingframework/1.0/2c12a328bfd82ddb0c4389e915229ea3df1740b8/timingframework-1.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/javax.help/javahelp/2.0.05/ca70822c47a67fc3a11670270567c2d01566dae1/javahelp-2.0.05.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-ir-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-api-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-translator-2.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/4.1/dd6ba5c392d4102458494e29f54f70ac534ec2a2/asm-debug-all-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/baksmali/1.4.0/f83ca7850de3e815b0e40a75c6e50d8062729f7d/baksmali-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/dexlib/1.4.0/5b90323e0ba891f01199ab1a6acd8dcddb57a671/dexlib-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/util/1.4.0/b531df04e339f0b7af4ede52cbe59c7a3b89de74/util-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/955419d9a6fc9608052226964cb0ecf8f59f91f9/sevenzipjbinding-9.20-2.00beta.jar:/home/lcf/repo/190904/ghidra/flatRepo/AXMLPrinter2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding-all-platforms/9.20-2.00beta/3b7f8ce33994650f5a2c826843146ba71526fd3b/sevenzipjbinding-all-platforms-9.20-2.00beta.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/ch.ethz.ganymed/ganymed-ssh2/262/7761dc665d0f6993dc846d914214fb93291e2bdf/ganymed-ssh2-262.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-visualization/2.1.1/40488654daea1f57e0790e40153be19a307943dd/jung-visualization-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-algorithms/2.1.1/632bd89a61a6c1ca7ed3505aca0765cff987096e/jung-algorithms-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-graph-impl/2.1.1/8293acb2ab4c00a3939cb99a8751e5d38a4299dc/jung-graph-impl-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-api/2.1.1/e47ee4efdfacce12f0af620747d9d0e44bf2eaa4/jung-api-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jdom/jdom-legacy/1.1.3/8bdfeb39fa929c35f5e4f0b02d34350db39a1efc/jdom-legacy-1.1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/122c7cee69b53ed4a7681c03d4ee4c0e2765da5/commons-lang3-3.9.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.python/jython-standalone/2.7.1/942c3294840dc9dfb3528d775f4d02a6d57c421f/jython-standalone-2.7.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr/3.5.2/c4a65c950bfc3e7d04309c515b2177c00baf7764/antlr-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/msv/20050913/3fc5ca9708a8e7a219001da0bc3870d0a2d51c2d/msv-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/xsdlib/20050913/836b85d70c54589aeef2ea810232ab192137ea84/xsdlib-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/ST4/4.0.8/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.5.2/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/isorelax/20050913/b21859c352bd959ea22d06b2fe8c93b2e24531b9/isorelax-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/relaxngDatatype/20050913/b117e0f9182c6cc094e833489bcdddadfd414090/relaxngDatatype-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/test:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/test -Xmx512M -Xdebug -Xnoagent -Djava.compiler=NONE -Dghidra.cacerts=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt -Dghidra.keystore=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 -Dghidra.password=plugh -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:18202 -DSystemUtilities.isTesting=true ghidra.server.remote.GhidraServer -ip127.0.0.1 -p14100 /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server 
+14:17:13 INFO  Waiting for Ghidra Server RMI registration to complete...   (ServerTestUtil.java:514) 
+14:17:13 INFO  SERVER Listening for transport dt_socket at address: 18202   (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Initializing SSL Context (SSLContextInitializer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Initializing Random Number Generator... (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt (ApplicationTrustManagerFactory)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Ghidra Test CA, issued by Ghidra Test CA, S/N 351be6f0, expires Fri Sep 06 14:17:12 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 (ApplicationKeyManagerFactory)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 28b73d6a, expires Fri Sep 06 14:17:13 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Ghidra Server 9.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Server remote access address: 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Server listening on all interfaces (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     RMI Registry port: 14100 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     RMI SSL port: 14101 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Block Stream port: 14102 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Block Stream compression: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Auth: None (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Prompt for user ID: no (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     Anonymous server access: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  lcf starting Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Instantiating User Manager  (UserManager)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  User file contains 1 entries (UserManager)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Known Users: (UserManager)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     lcf (UserManager)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Known Repositories: (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO     &lt;none&gt; (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Starting Block Stream Server... (BlockStreamServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Registering Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  SERVER INFO  Registered Ghidra Server. (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:14 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:15 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:15 WARN  Disconnected from Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:561) 
+14:17:15 INFO  SERVER INFO  Authentication callbacks requested by 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO  Repository server handle requested (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  Connected to Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:143) 
+14:17:15 INFO  SERVER INFO  Loading My_Repository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO     My_Repository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO  [My_Repository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  Connected to repository 'My_Repository'   (RepositoryAdapter.java:186) 
+14:17:15 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:15 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:15 INFO  SERVER INFO  [My_Repository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:15 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  Connected to repository 'My_Repository'   (RepositoryAdapter.java:186) 
+14:17:15 INFO  Opened project: ghidra_BatchTestProject   (FileActionManager.java:341) 
+14:17:15 INFO  SERVER INFO  Loading AnotherRepository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO     AnotherRepository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO  [AnotherRepository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  SERVER INFO  [AnotherRepository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:15 INFO  SERVER INFO  [My_Repository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:15 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:16 INFO  SERVER INFO  [AnotherRepository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:16 INFO  Connected to repository 'AnotherRepository'   (RepositoryAdapter.java:186) 
+14:17:16 INFO  Opened project: ghidra_BatchTestProject   (FileActionManager.java:341) 
+14:17:16 INFO  Saved project: ghidra_BatchTestProject   (FileActionManager.java:557) 
+14:17:16 INFO  Disconnected from repository 'AnotherRepository'   (RepositoryAdapter.java:892) 
+14:17:16 INFO  SERVER INFO  [AnotherRepository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:16 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:16 DEBUG disposeServer() - process exist? Process[pid=82964, exitValue=&quot;not exited&quot;]   (ServerTestUtil.java:632) 
+14:17:16 DEBUG *** Terminating Ghidra Server Instance... ***   (ServerTestUtil.java:638) 
+14:17:16 DEBUG 	after call to destroy   (ServerTestUtil.java:642) 
+14:17:16 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:16 DEBUG &gt;&gt;&gt; START Ghidra Server Log Dump &gt;&gt;&gt;   (ServerTestUtil.java:675) 
+    SERVER: 2019-09-04 14:17:14 INFO  (LoggingInitialization) Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml  
+    SERVER: 2019-09-04 14:17:14 INFO  (LoggingInitialization) Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log  
+    SERVER: 2019-09-04 14:17:14 INFO  (SSLContextInitializer) Initializing SSL Context  
+    SERVER: 2019-09-04 14:17:14 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+    SERVER: 2019-09-04 14:17:14 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+    SERVER: 2019-09-04 14:17:14 INFO  (ApplicationTrustManagerFactory) Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt  
+    SERVER: 2019-09-04 14:17:14 INFO  (ApplicationKeyStore)    Ghidra Test CA, issued by Ghidra Test CA, S/N 351be6f0, expires Fri Sep 06 14:17:12 CST 2019  
+    SERVER: 2019-09-04 14:17:14 INFO  (ApplicationKeyManagerFactory) Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12  
+    SERVER: 2019-09-04 14:17:14 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore without password...  
+    SERVER: 2019-09-04 14:17:14 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore with property-based password...  
+    SERVER: 2019-09-04 14:17:14 INFO  (ApplicationKeyStore)    test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 28b73d6a, expires Fri Sep 06 14:17:13 CST 2019  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer) Ghidra Server 9.1  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    Server remote access address: 127.0.0.1  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    Server listening on all interfaces  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    RMI Registry port: 14100  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    RMI SSL port: 14101  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    Block Stream port: 14102  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    Block Stream compression: disabled  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    Auth: None  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    Prompt for user ID: no  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer)    Anonymous server access: disabled  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer) lcf starting Ghidra Server...  
+    SERVER: 2019-09-04 14:17:14 INFO  (RepositoryManager) Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:14 INFO  (UserManager) Instantiating User Manager   
+    SERVER: 2019-09-04 14:17:14 INFO  (UserManager) User file contains 1 entries  
+    SERVER: 2019-09-04 14:17:14 INFO  (UserManager) Known Users:  
+    SERVER: 2019-09-04 14:17:14 INFO  (UserManager)    lcf  
+    SERVER: 2019-09-04 14:17:14 INFO  (RepositoryManager) Known Repositories:  
+    SERVER: 2019-09-04 14:17:14 INFO  (RepositoryManager)    &lt;none&gt;  
+    SERVER: 2019-09-04 14:17:14 INFO  (BlockStreamServer) Starting Block Stream Server...  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer) Registering Ghidra Server...  
+    SERVER: 2019-09-04 14:17:14 INFO  (GhidraServer) Registered Ghidra Server.  
+    SERVER: 2019-09-04 14:17:15 INFO  (GhidraServer) Authentication callbacks requested by 127.0.0.1  
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) Repository server handle requested (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:15 INFO  (Repository) Loading My_Repository ...  
+    SERVER: 2019-09-04 14:17:15 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:15 INFO  (Repository)    My_Repository load complete.   
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) [My_Repository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:15 INFO  (Repository) Loading AnotherRepository ...  
+    SERVER: 2019-09-04 14:17:15 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:15 INFO  (Repository)    AnotherRepository load complete.   
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) [AnotherRepository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) [AnotherRepository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:15 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:16 INFO  (RepositoryManager) [AnotherRepository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:16 INFO  (RepositoryManager) [AnotherRepository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:16 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf)  
+    SERVER: 2019-09-04 14:17:16 INFO  (RepositoryManager) [AnotherRepository]: handle disposed (lcf)  
+    SERVER: 2019-09-04 14:17:16 INFO  (GhidraServer) Ghidra server terminated.  
+    SERVER: 2019-09-04 14:17:16 INFO  (BlockStreamServer) Shutdown Block Stream Server completed  
+14:17:16 DEBUG &lt;&lt;&lt; END Ghidra Server Log Dump &lt;&lt;&lt;   (ServerTestUtil.java:687) 
+14:17:16 WARN  Disconnected from Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:561) 
+14:17:16 INFO  Disconnected from repository 'AnotherRepository'   (RepositoryAdapter.java:892) 
+14:17:16 DEBUG 	✓ PASSED Test: ProjectInfoDialogTest - testUpdateSharedProjectInfo ✓	   (AbstractGenericTest.java:114) 
+14:17:16 DEBUG Wed Sep 04 14:17:16 CST 2019
+***** STARTING Test: ProjectInfoDialogTest - testUpdateSharedProjectInfoWithCheckouts *****   (AbstractGenericTest.java:114) 
+14:17:16 INFO  /testA: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+14:17:16 INFO  /testA: version 1 created (lcf)   (HistoryManager.java:127) 
+14:17:16 INFO  /testA: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+14:17:16 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:16 DEBUG --- Preparing to start Ghidra Server ---   (ServerTestUtil.java:424) 
+14:17:16 DEBUG      Authentication: None   (ServerTestUtil.java:425) 
+14:17:16 DEBUG      Enable Alternate Login Name: false   (ServerTestUtil.java:427) 
+14:17:16 DEBUG      Enable Anonymous Login: false   (ServerTestUtil.java:428) 
+14:17:16 INFO  Generating self-signed CA cert: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt   (ServerTestUtil.java:904) 
+14:17:17 INFO  Generating test user key/cert (signed by test-CA, pwd: xyzzy): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test.p12   (ServerTestUtil.java:925) 
+14:17:17 INFO  Generating test server key/cert (signed by test-CA, pwd: plugh): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12   (ServerTestUtil.java:932) 
+
+/usr/java/jdk-12.0.2/bin/java -cp /home/lcf/.gradle/caches/5.6.1/workerMain/gradle-worker.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Processors/68000/build/libs/68000.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/8051/build/libs/8051.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/AARCH64/build/libs/AARCH64.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/ARM/build/libs/ARM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Atmel/build/libs/Atmel.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PowerPC/build/libs/PowerPC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/BytePatterns/build/libs/BytePatterns.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ByteViewer/build/libs/ByteViewer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Dalvik/build/libs/Dalvik.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/DATA/build/libs/DATA.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DebugUtils/build/libs/DebugUtils.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DecompilerDependent/build/libs/DecompilerDependent.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/build/libs/FunctionGraphDecompilerExtension.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/SourceCodeLookup/build/libs/SourceCodeLookup.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/libs/Decompiler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FileFormats/build/libs/FileFormats.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionID/build/libs/FunctionID.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GnuDemangler/build/libs/GnuDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GraphFunctionCalls/build/libs/GraphFunctionCalls.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/JVM/build/libs/JVM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/libs/MicrosoftCodeAnalyzer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/PDB/build/libs/PDB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDemangler/build/libs/MicrosoftDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDmang/build/libs/MicrosoftDmang.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/MIPS/build/libs/MIPS.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PIC/build/libs/PIC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/libs/ProgramDiff.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Python/build/libs/Python.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Recognizers/build/libs/Recognizers.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Sparc/build/libs/Sparc.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Toy/build/libs/Toy.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/tricore/build/libs/tricore.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/libs/VersionTracking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/x86/build/libs/x86.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-integrationTest.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GhidraServer/build/libs/GhidraServer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/libs/FileSystem.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/DB/build/libs/DB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Demangler/build/libs/Demangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/libs/Graph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Help/build/libs/Help.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Utility/build/libs/Utility.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jmockit/jmockit/1.44/1b41baa8fde0209ce90def969826532a23608df0/jmockit-1.44.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.java.dev.timingframework/timingframework/1.0/2c12a328bfd82ddb0c4389e915229ea3df1740b8/timingframework-1.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/javax.help/javahelp/2.0.05/ca70822c47a67fc3a11670270567c2d01566dae1/javahelp-2.0.05.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-ir-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-api-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-translator-2.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/4.1/dd6ba5c392d4102458494e29f54f70ac534ec2a2/asm-debug-all-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/baksmali/1.4.0/f83ca7850de3e815b0e40a75c6e50d8062729f7d/baksmali-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/dexlib/1.4.0/5b90323e0ba891f01199ab1a6acd8dcddb57a671/dexlib-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/util/1.4.0/b531df04e339f0b7af4ede52cbe59c7a3b89de74/util-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/955419d9a6fc9608052226964cb0ecf8f59f91f9/sevenzipjbinding-9.20-2.00beta.jar:/home/lcf/repo/190904/ghidra/flatRepo/AXMLPrinter2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding-all-platforms/9.20-2.00beta/3b7f8ce33994650f5a2c826843146ba71526fd3b/sevenzipjbinding-all-platforms-9.20-2.00beta.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/ch.ethz.ganymed/ganymed-ssh2/262/7761dc665d0f6993dc846d914214fb93291e2bdf/ganymed-ssh2-262.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-visualization/2.1.1/40488654daea1f57e0790e40153be19a307943dd/jung-visualization-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-algorithms/2.1.1/632bd89a61a6c1ca7ed3505aca0765cff987096e/jung-algorithms-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-graph-impl/2.1.1/8293acb2ab4c00a3939cb99a8751e5d38a4299dc/jung-graph-impl-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-api/2.1.1/e47ee4efdfacce12f0af620747d9d0e44bf2eaa4/jung-api-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jdom/jdom-legacy/1.1.3/8bdfeb39fa929c35f5e4f0b02d34350db39a1efc/jdom-legacy-1.1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/122c7cee69b53ed4a7681c03d4ee4c0e2765da5/commons-lang3-3.9.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.python/jython-standalone/2.7.1/942c3294840dc9dfb3528d775f4d02a6d57c421f/jython-standalone-2.7.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr/3.5.2/c4a65c950bfc3e7d04309c515b2177c00baf7764/antlr-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/msv/20050913/3fc5ca9708a8e7a219001da0bc3870d0a2d51c2d/msv-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/xsdlib/20050913/836b85d70c54589aeef2ea810232ab192137ea84/xsdlib-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/ST4/4.0.8/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.5.2/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/isorelax/20050913/b21859c352bd959ea22d06b2fe8c93b2e24531b9/isorelax-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/relaxngDatatype/20050913/b117e0f9182c6cc094e833489bcdddadfd414090/relaxngDatatype-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/test:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/test -Xmx512M -Xdebug -Xnoagent -Djava.compiler=NONE -Dghidra.cacerts=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt -Dghidra.keystore=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 -Dghidra.password=plugh -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:18202 -DSystemUtilities.isTesting=true ghidra.server.remote.GhidraServer -ip127.0.0.1 -p14100 /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server 
+14:17:17 INFO  Waiting for Ghidra Server RMI registration to complete...   (ServerTestUtil.java:514) 
+14:17:17 INFO  SERVER Listening for transport dt_socket at address: 18202   (ServerTestUtil.java:160) 
+14:17:17 INFO  SERVER INFO  Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:17 INFO  SERVER INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:17 INFO  SERVER INFO  Initializing SSL Context (SSLContextInitializer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Initializing Random Number Generator... (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt (ApplicationTrustManagerFactory)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Ghidra Test CA, issued by Ghidra Test CA, S/N 4fa81643, expires Fri Sep 06 14:17:16 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 (ApplicationKeyManagerFactory)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 1d28bc73, expires Fri Sep 06 14:17:17 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Ghidra Server 9.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Server remote access address: 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Server listening on all interfaces (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     RMI Registry port: 14100 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     RMI SSL port: 14101 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Block Stream port: 14102 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Block Stream compression: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Auth: None (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Prompt for user ID: no (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     Anonymous server access: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  lcf starting Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Instantiating User Manager  (UserManager)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  User file contains 1 entries (UserManager)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Known Users: (UserManager)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     lcf (UserManager)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Known Repositories: (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO     &lt;none&gt; (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Starting Block Stream Server... (BlockStreamServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Registering Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  SERVER INFO  Registered Ghidra Server. (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:18 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:18 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:19 INFO  SERVER INFO  Authentication callbacks requested by 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  Repository server handle requested (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  Connected to Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:143) 
+14:17:19 INFO  SERVER INFO  Loading My_Repository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO     My_Repository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [My_Repository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  Connected to repository 'My_Repository'   (RepositoryAdapter.java:186) 
+14:17:19 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:19 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:19 INFO  SERVER INFO  [My_Repository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:19 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  Connected to repository 'My_Repository'   (RepositoryAdapter.java:186) 
+14:17:19 INFO  Opened project: ghidra_BatchTestProject   (FileActionManager.java:341) 
+14:17:19 INFO  SERVER INFO  [My_Repository]/testA: checkout (1) granted (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [My_Repository]/testA: file created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [My_Repository]/testA: version 1 created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [My_Repository]/testA: checkout (1) ended (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [My_Repository]/testA: checkout (2) granted (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  Loading AnotherRepository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO     AnotherRepository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [AnotherRepository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  SERVER INFO  [AnotherRepository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 ERROR Failed to Update Shared Project Info: Conversion to shared project failed:
+File /testA is checked out.   (ProjectInfoDialog.java:569) 
+14:17:19 INFO  Saved project: ghidra_BatchTestProject   (FileActionManager.java:557) 
+14:17:19 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:19 INFO  SERVER INFO  [My_Repository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:19 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:19 DEBUG disposeServer() - process exist? Process[pid=83037, exitValue=&quot;not exited&quot;]   (ServerTestUtil.java:632) 
+14:17:19 DEBUG *** Terminating Ghidra Server Instance... ***   (ServerTestUtil.java:638) 
+14:17:19 DEBUG 	after call to destroy   (ServerTestUtil.java:642) 
+14:17:19 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:20 DEBUG &gt;&gt;&gt; START Ghidra Server Log Dump &gt;&gt;&gt;   (ServerTestUtil.java:675) 
+    SERVER: 2019-09-04 14:17:17 INFO  (LoggingInitialization) Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml  
+    SERVER: 2019-09-04 14:17:17 INFO  (LoggingInitialization) Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log  
+    SERVER: 2019-09-04 14:17:17 INFO  (SSLContextInitializer) Initializing SSL Context  
+    SERVER: 2019-09-04 14:17:18 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+    SERVER: 2019-09-04 14:17:18 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+    SERVER: 2019-09-04 14:17:18 INFO  (ApplicationTrustManagerFactory) Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt  
+    SERVER: 2019-09-04 14:17:18 INFO  (ApplicationKeyStore)    Ghidra Test CA, issued by Ghidra Test CA, S/N 4fa81643, expires Fri Sep 06 14:17:16 CST 2019  
+    SERVER: 2019-09-04 14:17:18 INFO  (ApplicationKeyManagerFactory) Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12  
+    SERVER: 2019-09-04 14:17:18 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore without password...  
+    SERVER: 2019-09-04 14:17:18 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore with property-based password...  
+    SERVER: 2019-09-04 14:17:18 INFO  (ApplicationKeyStore)    test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 1d28bc73, expires Fri Sep 06 14:17:17 CST 2019  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer) Ghidra Server 9.1  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    Server remote access address: 127.0.0.1  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    Server listening on all interfaces  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    RMI Registry port: 14100  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    RMI SSL port: 14101  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    Block Stream port: 14102  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    Block Stream compression: disabled  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    Auth: None  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    Prompt for user ID: no  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer)    Anonymous server access: disabled  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer) lcf starting Ghidra Server...  
+    SERVER: 2019-09-04 14:17:18 INFO  (RepositoryManager) Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:18 INFO  (UserManager) Instantiating User Manager   
+    SERVER: 2019-09-04 14:17:18 INFO  (UserManager) User file contains 1 entries  
+    SERVER: 2019-09-04 14:17:18 INFO  (UserManager) Known Users:  
+    SERVER: 2019-09-04 14:17:18 INFO  (UserManager)    lcf  
+    SERVER: 2019-09-04 14:17:18 INFO  (RepositoryManager) Known Repositories:  
+    SERVER: 2019-09-04 14:17:18 INFO  (RepositoryManager)    &lt;none&gt;  
+    SERVER: 2019-09-04 14:17:18 INFO  (BlockStreamServer) Starting Block Stream Server...  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer) Registering Ghidra Server...  
+    SERVER: 2019-09-04 14:17:18 INFO  (GhidraServer) Registered Ghidra Server.  
+    SERVER: 2019-09-04 14:17:19 INFO  (GhidraServer) Authentication callbacks requested by 127.0.0.1  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) Repository server handle requested (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (Repository) Loading My_Repository ...  
+    SERVER: 2019-09-04 14:17:19 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:19 INFO  (Repository)    My_Repository load complete.   
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]/testA: checkout (1) granted (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]/testA: file created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]/testA: version 1 created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]/testA: checkout (1) ended (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]/testA: checkout (2) granted (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (Repository) Loading AnotherRepository ...  
+    SERVER: 2019-09-04 14:17:19 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:19 INFO  (Repository)    AnotherRepository load complete.   
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [AnotherRepository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [AnotherRepository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:19 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf)  
+14:17:20 DEBUG &lt;&lt;&lt; END Ghidra Server Log Dump &lt;&lt;&lt;   (ServerTestUtil.java:687) 
+14:17:20 WARN  Disconnected from Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:561) 
+14:17:20 INFO  Disconnected from repository 'AnotherRepository'   (RepositoryAdapter.java:892) 
+14:17:20 DEBUG 	✓ PASSED Test: ProjectInfoDialogTest - testUpdateSharedProjectInfoWithCheckouts ✓	   (AbstractGenericTest.java:114) 
+14:17:20 DEBUG Wed Sep 04 14:17:20 CST 2019
+***** STARTING Test: ProjectInfoDialogTest - testConvertProjectCanceled *****   (AbstractGenericTest.java:114) 
+14:17:20 INFO  /testA: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+14:17:20 INFO  /testA: version 1 created (lcf)   (HistoryManager.java:127) 
+14:17:20 INFO  /testA: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+14:17:20 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:20 DEBUG --- Preparing to start Ghidra Server ---   (ServerTestUtil.java:424) 
+14:17:20 DEBUG      Authentication: None   (ServerTestUtil.java:425) 
+14:17:20 DEBUG      Enable Alternate Login Name: false   (ServerTestUtil.java:427) 
+14:17:20 DEBUG      Enable Anonymous Login: false   (ServerTestUtil.java:428) 
+14:17:20 INFO  Generating self-signed CA cert: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt   (ServerTestUtil.java:904) 
+14:17:20 INFO  Generating test user key/cert (signed by test-CA, pwd: xyzzy): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test.p12   (ServerTestUtil.java:925) 
+14:17:20 INFO  Generating test server key/cert (signed by test-CA, pwd: plugh): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12   (ServerTestUtil.java:932) 
+
+/usr/java/jdk-12.0.2/bin/java -cp /home/lcf/.gradle/caches/5.6.1/workerMain/gradle-worker.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Processors/68000/build/libs/68000.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/8051/build/libs/8051.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/AARCH64/build/libs/AARCH64.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/ARM/build/libs/ARM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Atmel/build/libs/Atmel.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PowerPC/build/libs/PowerPC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/BytePatterns/build/libs/BytePatterns.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ByteViewer/build/libs/ByteViewer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Dalvik/build/libs/Dalvik.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/DATA/build/libs/DATA.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DebugUtils/build/libs/DebugUtils.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DecompilerDependent/build/libs/DecompilerDependent.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/build/libs/FunctionGraphDecompilerExtension.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/SourceCodeLookup/build/libs/SourceCodeLookup.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/libs/Decompiler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FileFormats/build/libs/FileFormats.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionID/build/libs/FunctionID.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GnuDemangler/build/libs/GnuDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GraphFunctionCalls/build/libs/GraphFunctionCalls.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/JVM/build/libs/JVM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/libs/MicrosoftCodeAnalyzer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/PDB/build/libs/PDB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDemangler/build/libs/MicrosoftDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDmang/build/libs/MicrosoftDmang.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/MIPS/build/libs/MIPS.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PIC/build/libs/PIC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/libs/ProgramDiff.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Python/build/libs/Python.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Recognizers/build/libs/Recognizers.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Sparc/build/libs/Sparc.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Toy/build/libs/Toy.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/tricore/build/libs/tricore.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/libs/VersionTracking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/x86/build/libs/x86.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-integrationTest.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GhidraServer/build/libs/GhidraServer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/libs/FileSystem.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/DB/build/libs/DB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Demangler/build/libs/Demangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/libs/Graph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Help/build/libs/Help.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Utility/build/libs/Utility.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jmockit/jmockit/1.44/1b41baa8fde0209ce90def969826532a23608df0/jmockit-1.44.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.java.dev.timingframework/timingframework/1.0/2c12a328bfd82ddb0c4389e915229ea3df1740b8/timingframework-1.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/javax.help/javahelp/2.0.05/ca70822c47a67fc3a11670270567c2d01566dae1/javahelp-2.0.05.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-ir-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-api-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-translator-2.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/4.1/dd6ba5c392d4102458494e29f54f70ac534ec2a2/asm-debug-all-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/baksmali/1.4.0/f83ca7850de3e815b0e40a75c6e50d8062729f7d/baksmali-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/dexlib/1.4.0/5b90323e0ba891f01199ab1a6acd8dcddb57a671/dexlib-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/util/1.4.0/b531df04e339f0b7af4ede52cbe59c7a3b89de74/util-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/955419d9a6fc9608052226964cb0ecf8f59f91f9/sevenzipjbinding-9.20-2.00beta.jar:/home/lcf/repo/190904/ghidra/flatRepo/AXMLPrinter2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding-all-platforms/9.20-2.00beta/3b7f8ce33994650f5a2c826843146ba71526fd3b/sevenzipjbinding-all-platforms-9.20-2.00beta.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/ch.ethz.ganymed/ganymed-ssh2/262/7761dc665d0f6993dc846d914214fb93291e2bdf/ganymed-ssh2-262.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-visualization/2.1.1/40488654daea1f57e0790e40153be19a307943dd/jung-visualization-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-algorithms/2.1.1/632bd89a61a6c1ca7ed3505aca0765cff987096e/jung-algorithms-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-graph-impl/2.1.1/8293acb2ab4c00a3939cb99a8751e5d38a4299dc/jung-graph-impl-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-api/2.1.1/e47ee4efdfacce12f0af620747d9d0e44bf2eaa4/jung-api-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jdom/jdom-legacy/1.1.3/8bdfeb39fa929c35f5e4f0b02d34350db39a1efc/jdom-legacy-1.1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/122c7cee69b53ed4a7681c03d4ee4c0e2765da5/commons-lang3-3.9.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.python/jython-standalone/2.7.1/942c3294840dc9dfb3528d775f4d02a6d57c421f/jython-standalone-2.7.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr/3.5.2/c4a65c950bfc3e7d04309c515b2177c00baf7764/antlr-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/msv/20050913/3fc5ca9708a8e7a219001da0bc3870d0a2d51c2d/msv-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/xsdlib/20050913/836b85d70c54589aeef2ea810232ab192137ea84/xsdlib-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/ST4/4.0.8/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.5.2/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/isorelax/20050913/b21859c352bd959ea22d06b2fe8c93b2e24531b9/isorelax-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/relaxngDatatype/20050913/b117e0f9182c6cc094e833489bcdddadfd414090/relaxngDatatype-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/test:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/test -Xmx512M -Xdebug -Xnoagent -Djava.compiler=NONE -Dghidra.cacerts=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt -Dghidra.keystore=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 -Dghidra.password=plugh -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:18202 -DSystemUtilities.isTesting=true ghidra.server.remote.GhidraServer -ip127.0.0.1 -p14100 /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server 
+14:17:21 INFO  Waiting for Ghidra Server RMI registration to complete...   (ServerTestUtil.java:514) 
+14:17:21 INFO  SERVER Listening for transport dt_socket at address: 18202   (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO  Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO  Initializing SSL Context (SSLContextInitializer)     (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO  Initializing Random Number Generator... (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO  Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt (ApplicationTrustManagerFactory)     (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO     Ghidra Test CA, issued by Ghidra Test CA, S/N 6e3ca9e2, expires Fri Sep 06 14:17:20 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO  Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 (ApplicationKeyManagerFactory)     (ServerTestUtil.java:160) 
+14:17:21 INFO  SERVER INFO     test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 515009e1, expires Fri Sep 06 14:17:20 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Ghidra Server 9.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     Server remote access address: 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     Server listening on all interfaces (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     RMI Registry port: 14100 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     RMI SSL port: 14101 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     Block Stream port: 14102 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     Block Stream compression: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     Auth: None (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     Prompt for user ID: no (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     Anonymous server access: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  lcf starting Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Instantiating User Manager  (UserManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  User file contains 1 entries (UserManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Known Users: (UserManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     lcf (UserManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Known Repositories: (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     &lt;none&gt; (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Starting Block Stream Server... (BlockStreamServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Registering Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Registered Ghidra Server. (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:22 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:22 INFO  SERVER INFO  Authentication callbacks requested by 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  Repository server handle requested (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  Connected to Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:143) 
+14:17:22 INFO  SERVER INFO  Loading My_Repository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO     My_Repository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  [My_Repository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:22 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:23 INFO  Saved project: ghidra_BatchTestProject   (FileActionManager.java:557) 
+14:17:23 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:23 DEBUG disposeServer() - process exist? Process[pid=83108, exitValue=&quot;not exited&quot;]   (ServerTestUtil.java:632) 
+14:17:23 DEBUG *** Terminating Ghidra Server Instance... ***   (ServerTestUtil.java:638) 
+14:17:23 DEBUG 	after call to destroy   (ServerTestUtil.java:642) 
+14:17:23 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:23 DEBUG &gt;&gt;&gt; START Ghidra Server Log Dump &gt;&gt;&gt;   (ServerTestUtil.java:675) 
+    SERVER: 2019-09-04 14:17:21 INFO  (LoggingInitialization) Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml  
+    SERVER: 2019-09-04 14:17:21 INFO  (LoggingInitialization) Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log  
+    SERVER: 2019-09-04 14:17:21 INFO  (SSLContextInitializer) Initializing SSL Context  
+    SERVER: 2019-09-04 14:17:21 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+    SERVER: 2019-09-04 14:17:21 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+    SERVER: 2019-09-04 14:17:21 INFO  (ApplicationTrustManagerFactory) Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt  
+    SERVER: 2019-09-04 14:17:21 INFO  (ApplicationKeyStore)    Ghidra Test CA, issued by Ghidra Test CA, S/N 6e3ca9e2, expires Fri Sep 06 14:17:20 CST 2019  
+    SERVER: 2019-09-04 14:17:21 INFO  (ApplicationKeyManagerFactory) Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12  
+    SERVER: 2019-09-04 14:17:21 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore without password...  
+    SERVER: 2019-09-04 14:17:21 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore with property-based password...  
+    SERVER: 2019-09-04 14:17:21 INFO  (ApplicationKeyStore)    test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 515009e1, expires Fri Sep 06 14:17:20 CST 2019  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer) Ghidra Server 9.1  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    Server remote access address: 127.0.0.1  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    Server listening on all interfaces  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    RMI Registry port: 14100  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    RMI SSL port: 14101  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    Block Stream port: 14102  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    Block Stream compression: disabled  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    Auth: None  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    Prompt for user ID: no  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer)    Anonymous server access: disabled  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer) lcf starting Ghidra Server...  
+    SERVER: 2019-09-04 14:17:22 INFO  (RepositoryManager) Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:22 INFO  (UserManager) Instantiating User Manager   
+    SERVER: 2019-09-04 14:17:22 INFO  (UserManager) User file contains 1 entries  
+    SERVER: 2019-09-04 14:17:22 INFO  (UserManager) Known Users:  
+    SERVER: 2019-09-04 14:17:22 INFO  (UserManager)    lcf  
+    SERVER: 2019-09-04 14:17:22 INFO  (RepositoryManager) Known Repositories:  
+    SERVER: 2019-09-04 14:17:22 INFO  (RepositoryManager)    &lt;none&gt;  
+    SERVER: 2019-09-04 14:17:22 INFO  (BlockStreamServer) Starting Block Stream Server...  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer) Registering Ghidra Server...  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer) Registered Ghidra Server.  
+    SERVER: 2019-09-04 14:17:22 INFO  (GhidraServer) Authentication callbacks requested by 127.0.0.1  
+    SERVER: 2019-09-04 14:17:22 INFO  (RepositoryManager) Repository server handle requested (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:22 INFO  (Repository) Loading My_Repository ...  
+    SERVER: 2019-09-04 14:17:22 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:22 INFO  (Repository)    My_Repository load complete.   
+    SERVER: 2019-09-04 14:17:22 INFO  (RepositoryManager) [My_Repository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:22 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:23 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf)  
+14:17:23 DEBUG &lt;&lt;&lt; END Ghidra Server Log Dump &lt;&lt;&lt;   (ServerTestUtil.java:687) 
+14:17:23 DEBUG 	✓ PASSED Test: ProjectInfoDialogTest - testConvertProjectCanceled ✓	   (AbstractGenericTest.java:114) 
+14:17:23 DEBUG Wed Sep 04 14:17:23 CST 2019
+***** STARTING Test: ProjectInfoDialogTest - testConvertProjectFilesCheckedOut *****   (AbstractGenericTest.java:114) 
+14:17:23 INFO  /testA: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+14:17:23 INFO  /testA: version 1 created (lcf)   (HistoryManager.java:127) 
+14:17:23 INFO  /testA: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+14:17:23 INFO  /testA: file deleted (lcf)   (LocalFolderItem.java:384) 
+14:17:23 DEBUG --- Preparing to start Ghidra Server ---   (ServerTestUtil.java:424) 
+14:17:23 DEBUG      Authentication: None   (ServerTestUtil.java:425) 
+14:17:23 DEBUG      Enable Alternate Login Name: false   (ServerTestUtil.java:427) 
+14:17:23 DEBUG      Enable Anonymous Login: false   (ServerTestUtil.java:428) 
+14:17:23 INFO  Generating self-signed CA cert: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt   (ServerTestUtil.java:904) 
+14:17:23 INFO  Generating test user key/cert (signed by test-CA, pwd: xyzzy): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test.p12   (ServerTestUtil.java:925) 
+14:17:23 INFO  Generating test server key/cert (signed by test-CA, pwd: plugh): /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12   (ServerTestUtil.java:932) 
+
+/usr/java/jdk-12.0.2/bin/java -cp /home/lcf/.gradle/caches/5.6.1/workerMain/gradle-worker.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/integrationTest:/home/lcf/repo/190904/ghidra/Ghidra/Processors/68000/build/libs/68000.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/8051/build/libs/8051.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/AARCH64/build/libs/AARCH64.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/ARM/build/libs/ARM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Atmel/build/libs/Atmel.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PowerPC/build/libs/PowerPC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/BytePatterns/build/libs/BytePatterns.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ByteViewer/build/libs/ByteViewer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Dalvik/build/libs/Dalvik.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/DATA/build/libs/DATA.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DebugUtils/build/libs/DebugUtils.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/DecompilerDependent/build/libs/DecompilerDependent.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/build/libs/FunctionGraphDecompilerExtension.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/SourceCodeLookup/build/libs/SourceCodeLookup.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/libs/Decompiler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FileFormats/build/libs/FileFormats.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionGraph/build/libs/FunctionGraph-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/FunctionID/build/libs/FunctionID.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GnuDemangler/build/libs/GnuDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GraphFunctionCalls/build/libs/GraphFunctionCalls.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/JVM/build/libs/JVM.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/libs/MicrosoftCodeAnalyzer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/PDB/build/libs/PDB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDemangler/build/libs/MicrosoftDemangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftDmang/build/libs/MicrosoftDmang.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/MIPS/build/libs/MIPS.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/PIC/build/libs/PIC.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/libs/ProgramDiff.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Python/build/libs/Python.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Recognizers/build/libs/Recognizers.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Sparc/build/libs/Sparc.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/Toy/build/libs/Toy.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/tricore/build/libs/tricore.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/libs/VersionTracking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Processors/x86/build/libs/x86.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/libs/Base-integrationTest.jar:/home/lcf/repo/190904/ghidra/Ghidra/Features/GhidraServer/build/libs/GhidraServer.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/SoftwareModeling/build/libs/SoftwareModeling-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Project/build/libs/Project-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/libs/FileSystem.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/DB/build/libs/DB.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Demangler/build/libs/Demangler.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/libs/Graph.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Help/build/libs/Help.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/libs/Docking-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic-test.jar:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Utility/build/libs/Utility.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jmockit/jmockit/1.44/1b41baa8fde0209ce90def969826532a23608df0/jmockit-1.44.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.java.dev.timingframework/timingframework/1.0/2c12a328bfd82ddb0c4389e915229ea3df1740b8/timingframework-1.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/javax.help/javahelp/2.0.05/ca70822c47a67fc3a11670270567c2d01566dae1/javahelp-2.0.05.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-ir-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-reader-api-2.0.jar:/home/lcf/repo/190904/ghidra/flatRepo/dex-translator-2.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/4.1/dd6ba5c392d4102458494e29f54f70ac534ec2a2/asm-debug-all-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/baksmali/1.4.0/f83ca7850de3e815b0e40a75c6e50d8062729f7d/baksmali-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/dexlib/1.4.0/5b90323e0ba891f01199ab1a6acd8dcddb57a671/dexlib-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.smali/util/1.4.0/b531df04e339f0b7af4ede52cbe59c7a3b89de74/util-1.4.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/955419d9a6fc9608052226964cb0ecf8f59f91f9/sevenzipjbinding-9.20-2.00beta.jar:/home/lcf/repo/190904/ghidra/flatRepo/AXMLPrinter2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.sevenzipjbinding/sevenzipjbinding-all-platforms/9.20-2.00beta/3b7f8ce33994650f5a2c826843146ba71526fd3b/sevenzipjbinding-all-platforms-9.20-2.00beta.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/ch.ethz.ganymed/ganymed-ssh2/262/7761dc665d0f6993dc846d914214fb93291e2bdf/ganymed-ssh2-262.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-visualization/2.1.1/40488654daea1f57e0790e40153be19a307943dd/jung-visualization-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-algorithms/2.1.1/632bd89a61a6c1ca7ed3505aca0765cff987096e/jung-algorithms-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-graph-impl/2.1.1/8293acb2ab4c00a3939cb99a8751e5d38a4299dc/jung-graph-impl-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/net.sf.jung/jung-api/2.1.1/e47ee4efdfacce12f0af620747d9d0e44bf2eaa4/jung-api-2.1.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.jdom/jdom-legacy/1.1.3/8bdfeb39fa929c35f5e4f0b02d34350db39a1efc/jdom-legacy-1.1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/122c7cee69b53ed4a7681c03d4ee4c0e2765da5/commons-lang3-3.9.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.python/jython-standalone/2.7.1/942c3294840dc9dfb3528d775f4d02a6d57c421f/jython-standalone-2.7.1.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr/3.5.2/c4a65c950bfc3e7d04309c515b2177c00baf7764/antlr-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/msv/20050913/3fc5ca9708a8e7a219001da0bc3870d0a2d51c2d/msv-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/xsdlib/20050913/836b85d70c54589aeef2ea810232ab192137ea84/xsdlib-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/ST4/4.0.8/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.5.2/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/isorelax/20050913/b21859c352bd959ea22d06b2fe8c93b2e24531b9/isorelax-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/msv/relaxngDatatype/20050913/b117e0f9182c6cc094e833489bcdddadfd414090/relaxngDatatype-20050913.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/lcf/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/main:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/classes/java/test:/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/resources/test -Xmx512M -Xdebug -Xnoagent -Djava.compiler=NONE -Dghidra.cacerts=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt -Dghidra.keystore=/home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 -Dghidra.password=plugh -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:18202 -DSystemUtilities.isTesting=true ghidra.server.remote.GhidraServer -ip127.0.0.1 -p14100 /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server 
+14:17:24 INFO  Waiting for Ghidra Server RMI registration to complete...   (ServerTestUtil.java:514) 
+14:17:24 INFO  SERVER Listening for transport dt_socket at address: 18202   (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log (LoggingInitialization)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Initializing SSL Context (SSLContextInitializer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Initializing Random Number Generator... (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt (ApplicationTrustManagerFactory)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Ghidra Test CA, issued by Ghidra Test CA, S/N 47c2f05a, expires Fri Sep 06 14:17:23 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12 (ApplicationKeyManagerFactory)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 488e698c, expires Fri Sep 06 14:17:23 CST 2019 (ApplicationKeyStore)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Ghidra Server 9.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Server remote access address: 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Server listening on all interfaces (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     RMI Registry port: 14100 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     RMI SSL port: 14101 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Block Stream port: 14102 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Block Stream compression: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Auth: None (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Prompt for user ID: no (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     Anonymous server access: disabled (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  lcf starting Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Instantiating User Manager  (UserManager)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  User file contains 1 entries (UserManager)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Known Users: (UserManager)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     lcf (UserManager)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Known Repositories: (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO     &lt;none&gt; (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Starting Block Stream Server... (BlockStreamServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Registering Ghidra Server... (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:24 INFO  SERVER INFO  Registered Ghidra Server. (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:25 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:25 INFO  Successfully verified Ghidra Server registration and SSL port availability   (ServerTestUtil.java:535) 
+14:17:25 WARN  Disconnected from Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:561) 
+14:17:25 INFO  SERVER INFO  Authentication callbacks requested by 127.0.0.1 (GhidraServer)     (ServerTestUtil.java:160) 
+14:17:25 INFO  SERVER INFO  Repository server handle requested (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:25 INFO  Connected to Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:143) 
+14:17:25 INFO  SERVER INFO  Loading My_Repository ... (Repository)     (ServerTestUtil.java:160) 
+14:17:25 INFO  SERVER INFO     ... loading 0 files ... (Repository)     (ServerTestUtil.java:160) 
+14:17:25 INFO  SERVER INFO     My_Repository load complete.  (Repository)     (ServerTestUtil.java:160) 
+14:17:25 INFO  SERVER INFO  [My_Repository]: repository created (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:25 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:25 INFO  /testA: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+14:17:26 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:26 INFO  Connected to repository 'My_Repository'   (RepositoryAdapter.java:186) 
+14:17:26 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:26 INFO  SERVER INFO  [My_Repository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:26 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:26 INFO  SERVER INFO  [My_Repository]: generated handle (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:26 INFO  Connected to repository 'My_Repository'   (RepositoryAdapter.java:186) 
+14:17:26 INFO  Opened project: ghidra_BatchTestProject   (FileActionManager.java:341) 
+14:17:26 INFO  Saved project: ghidra_BatchTestProject   (FileActionManager.java:557) 
+14:17:26 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:26 INFO  SERVER INFO  [My_Repository]: handle disposed (lcf@127.0.0.1) (RepositoryManager)     (ServerTestUtil.java:160) 
+14:17:26 INFO  Closed project: ghidra_BatchTestProject   (FileActionManager.java:460) 
+14:17:26 DEBUG disposeServer() - process exist? Process[pid=83162, exitValue=&quot;not exited&quot;]   (ServerTestUtil.java:632) 
+14:17:26 DEBUG *** Terminating Ghidra Server Instance... ***   (ServerTestUtil.java:638) 
+14:17:26 DEBUG 	after call to destroy   (ServerTestUtil.java:642) 
+14:17:26 DEBUG &gt;&gt;&gt; START Ghidra Server Log Dump &gt;&gt;&gt;   (ServerTestUtil.java:675) 
+    SERVER: 2019-09-04 14:17:24 INFO  (LoggingInitialization) Using log config file: jar:file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/build/libs/Generic.jar!/generic.log4j.xml  
+    SERVER: 2019-09-04 14:17:24 INFO  (LoggingInitialization) Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server/server.log  
+    SERVER: 2019-09-04 14:17:24 INFO  (SSLContextInitializer) Initializing SSL Context  
+    SERVER: 2019-09-04 14:17:24 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+    SERVER: 2019-09-04 14:17:24 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+    SERVER: 2019-09-04 14:17:24 INFO  (ApplicationTrustManagerFactory) Trust manager initializing with cacerts: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-cacerts.crt  
+    SERVER: 2019-09-04 14:17:24 INFO  (ApplicationKeyStore)    Ghidra Test CA, issued by Ghidra Test CA, S/N 47c2f05a, expires Fri Sep 06 14:17:23 CST 2019  
+    SERVER: 2019-09-04 14:17:24 INFO  (ApplicationKeyManagerFactory) Using certificate keystore: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/test-pki/test-server.p12  
+    SERVER: 2019-09-04 14:17:24 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore without password...  
+    SERVER: 2019-09-04 14:17:24 DEBUG (ApplicationKeyManagerFactory) Attempting to load keystore with property-based password...  
+    SERVER: 2019-09-04 14:17:24 INFO  (ApplicationKeyStore)    test-sig: Ghidra Test Server, issued by Ghidra Test CA, S/N 488e698c, expires Fri Sep 06 14:17:23 CST 2019  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer) Ghidra Server 9.1  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    Server remote access address: 127.0.0.1  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    Server listening on all interfaces  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    RMI Registry port: 14100  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    RMI SSL port: 14101  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    Block Stream port: 14102  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    Block Stream compression: disabled  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    Root: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    Auth: None  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    Prompt for user ID: no  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer)    Anonymous server access: disabled  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer) lcf starting Ghidra Server...  
+    SERVER: 2019-09-04 14:17:24 INFO  (RepositoryManager) Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_51a72a1f-28c4-42e1-8db1-78112a60ba24/temp.data/My_Server  
+    SERVER: 2019-09-04 14:17:24 INFO  (UserManager) Instantiating User Manager   
+    SERVER: 2019-09-04 14:17:24 INFO  (UserManager) User file contains 1 entries  
+    SERVER: 2019-09-04 14:17:24 INFO  (UserManager) Known Users:  
+    SERVER: 2019-09-04 14:17:24 INFO  (UserManager)    lcf  
+    SERVER: 2019-09-04 14:17:24 INFO  (RepositoryManager) Known Repositories:  
+    SERVER: 2019-09-04 14:17:24 INFO  (RepositoryManager)    &lt;none&gt;  
+    SERVER: 2019-09-04 14:17:24 INFO  (BlockStreamServer) Starting Block Stream Server...  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer) Registering Ghidra Server...  
+    SERVER: 2019-09-04 14:17:24 INFO  (GhidraServer) Registered Ghidra Server.  
+    SERVER: 2019-09-04 14:17:25 INFO  (GhidraServer) Authentication callbacks requested by 127.0.0.1  
+    SERVER: 2019-09-04 14:17:25 INFO  (RepositoryManager) Repository server handle requested (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:25 INFO  (Repository) Loading My_Repository ...  
+    SERVER: 2019-09-04 14:17:25 INFO  (Repository)    ... loading 0 files ...  
+    SERVER: 2019-09-04 14:17:25 INFO  (Repository)    My_Repository load complete.   
+    SERVER: 2019-09-04 14:17:25 INFO  (RepositoryManager) [My_Repository]: repository created (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:25 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:26 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:26 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:26 INFO  (RepositoryManager) [My_Repository]: generated handle (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:26 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf@127.0.0.1)  
+    SERVER: 2019-09-04 14:17:26 INFO  (RepositoryManager) [My_Repository]: handle disposed (lcf)  
+    SERVER: 2019-09-04 14:17:26 INFO  (GhidraServer) Ghidra server terminated.  
+    SERVER: 2019-09-04 14:17:26 INFO  (BlockStreamServer) Shutdown Block Stream Server completed  
+14:17:26 WARN  Disconnected from Ghidra Server at localhost:14100   (RepositoryServerAdapter.java:561) 
+14:17:26 INFO  Disconnected from repository 'My_Repository'   (RepositoryAdapter.java:892) 
+14:17:26 DEBUG &lt;&lt;&lt; END Ghidra Server Log Dump &lt;&lt;&lt;   (ServerTestUtil.java:687) 
+14:17:26 DEBUG 	✓ PASSED Test: ProjectInfoDialogTest - testConvertProjectFilesCheckedOut ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>ghidra.framework.main.ProjectInfoDialogTest	starting server...
+SharedProjectUtil.startServer()...
+SharedProjectUtil.startServer()	getting server adapter...
+SharedProjectUtil.startServer()	checking connection...
+SharedProjectUtil.startServer()	creating repository...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	pressing next button...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	found repPanel: ghidra.framework.main.RepositoryPanel[,0,0,650x388,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@2443d37c,flags=11,maximumSize=,minimumSize=,preferredSize=]
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard() done!
+	saving project
+	closing project
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources()...
+ghidra.framework.main.ProjectInfoDialogTest	disposing...
+ghidra.framework.main.ProjectInfoDialogTest	storing preferences...
+ghidra.framework.main.ProjectInfoDialogTest	deleting server root...
+ghidra.framework.main.ProjectInfoDialogTest	deleting test project...
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources() done!s
+ghidra.framework.main.ProjectInfoDialogTest	starting server...
+SharedProjectUtil.startServer()...
+SharedProjectUtil.startServer()	getting server adapter...
+SharedProjectUtil.startServer()	checking connection...
+SharedProjectUtil.startServer()	creating repository...
+	saving project
+	closing project
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources()...
+ghidra.framework.main.ProjectInfoDialogTest	disposing...
+ghidra.framework.main.ProjectInfoDialogTest	storing preferences...
+ghidra.framework.main.ProjectInfoDialogTest	deleting server root...
+ghidra.framework.main.ProjectInfoDialogTest	deleting test project...
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources() done!s
+ghidra.framework.main.ProjectInfoDialogTest	starting server...
+SharedProjectUtil.startServer()...
+SharedProjectUtil.startServer()	getting server adapter...
+SharedProjectUtil.startServer()	checking connection...
+SharedProjectUtil.startServer()	creating repository...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	pressing next button...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	found repPanel: ghidra.framework.main.RepositoryPanel[,0,0,645x388,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@360bf276,flags=9,maximumSize=,minimumSize=,preferredSize=]
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard() done!
+	saving project
+	closing project
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources()...
+ghidra.framework.main.ProjectInfoDialogTest	disposing...
+ghidra.framework.main.ProjectInfoDialogTest	storing preferences...
+ghidra.framework.main.ProjectInfoDialogTest	deleting server root...
+ghidra.framework.main.ProjectInfoDialogTest	deleting test project...
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources() done!s
+ghidra.framework.main.ProjectInfoDialogTest	starting server...
+SharedProjectUtil.startServer()...
+SharedProjectUtil.startServer()	getting server adapter...
+SharedProjectUtil.startServer()	checking connection...
+SharedProjectUtil.startServer()	creating repository...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	pressing next button...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	found repPanel: ghidra.framework.main.RepositoryPanel[,0,0,650x388,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@ff2f90d,flags=11,maximumSize=,minimumSize=,preferredSize=]
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard() done!
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	pressing next button...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	found repPanel: ghidra.framework.main.RepositoryPanel[,0,0,650x388,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@2e932a6a,flags=9,maximumSize=,minimumSize=,preferredSize=]
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard() done!
+	saving project
+	closing project
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources()...
+ghidra.framework.main.ProjectInfoDialogTest	disposing...
+ghidra.framework.main.ProjectInfoDialogTest	storing preferences...
+ghidra.framework.main.ProjectInfoDialogTest	deleting server root...
+ghidra.framework.main.ProjectInfoDialogTest	deleting test project...
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources() done!s
+ghidra.framework.main.ProjectInfoDialogTest	starting server...
+SharedProjectUtil.startServer()...
+SharedProjectUtil.startServer()	getting server adapter...
+SharedProjectUtil.startServer()	checking connection...
+SharedProjectUtil.startServer()	creating repository...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	pressing next button...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	found repPanel: ghidra.framework.main.RepositoryPanel[,0,0,650x388,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@44152ffc,flags=9,maximumSize=,minimumSize=,preferredSize=]
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard() done!
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	pressing next button...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	found repPanel: ghidra.framework.main.RepositoryPanel[,0,0,650x388,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@58698ada,flags=9,maximumSize=,minimumSize=,preferredSize=]
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard() done!
+	saving project
+	closing project
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources()...
+ghidra.framework.main.ProjectInfoDialogTest	disposing...
+ghidra.framework.main.ProjectInfoDialogTest	storing preferences...
+ghidra.framework.main.ProjectInfoDialogTest	deleting server root...
+ghidra.framework.main.ProjectInfoDialogTest	deleting test project...
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources() done!s
+ghidra.framework.main.ProjectInfoDialogTest	starting server...
+SharedProjectUtil.startServer()...
+SharedProjectUtil.startServer()	getting server adapter...
+SharedProjectUtil.startServer()	checking connection...
+SharedProjectUtil.startServer()	creating repository...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	pressing next button...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	found repPanel: ghidra.framework.main.RepositoryPanel[,0,0,650x388,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@5e43b177,flags=9,maximumSize=,minimumSize=,preferredSize=]
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard() done!
+	saving project
+	closing project
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources()...
+ghidra.framework.main.ProjectInfoDialogTest	disposing...
+ghidra.framework.main.ProjectInfoDialogTest	storing preferences...
+ghidra.framework.main.ProjectInfoDialogTest	deleting server root...
+ghidra.framework.main.ProjectInfoDialogTest	deleting test project...
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources() done!s
+ghidra.framework.main.ProjectInfoDialogTest	starting server...
+SharedProjectUtil.startServer()...
+SharedProjectUtil.startServer()	getting server adapter...
+SharedProjectUtil.startServer()	checking connection...
+SharedProjectUtil.startServer()	creating repository...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	pressing next button...
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard()	found repPanel: ghidra.framework.main.RepositoryPanel[,0,0,650x388,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@372425dc,flags=9,maximumSize=,minimumSize=,preferredSize=]
+ghidra.framework.main.ProjectInfoDialogTest.stepThroughWizard() done!
+	saving project
+	closing project
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources()...
+ghidra.framework.main.ProjectInfoDialogTest	disposing...
+ghidra.framework.main.ProjectInfoDialogTest	storing preferences...
+ghidra.framework.main.ProjectInfoDialogTest	deleting server root...
+ghidra.framework.main.ProjectInfoDialogTest	deleting test project...
+ghidra.framework.main.ProjectInfoDialogTest.cleanupResources() done!s
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

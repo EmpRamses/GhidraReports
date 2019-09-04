@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.framework.project.tool.CloseToolTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.framework.project.tool.CloseToolTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.framework.project.tool.html">ghidra.framework.project.tool</a> &gt; CloseToolTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.796s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testCannotCloseToolWithBackgroundTaskRunning</td>
+<td class="success">1.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCloseOthersInTool</td>
+<td class="success">0.621s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCloseToolWithNoData</td>
+<td class="success">0.523s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCloseToolWithOpenProgram</td>
+<td class="success">2.620s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_6921a33f-db6f-41a1-ae8b-3c180f6ab53b/temp.data
+13:44:13 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:44:13 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_6921a33f-db6f-41a1-ae8b-3c180f6ab53b/temp.data/application.log   (LoggingInitialization.java:60) 
+13:44:13 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_6921a33f-db6f-41a1-ae8b-3c180f6ab53b/temp.data/preferences   (Preferences.java:122) 
+13:44:14 INFO  Class search complete (503 ms)   (ClassSearcher.java:250) 
+13:44:14 DEBUG Wed Sep 04 13:44:14 CST 2019
+***** STARTING Test: CloseToolTest - testCloseToolWithOpenProgram *****   (AbstractGenericTest.java:114) 
+13:44:16 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:16 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:16 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:16 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:16 DEBUG 	✓ PASSED Test: CloseToolTest - testCloseToolWithOpenProgram ✓	   (AbstractGenericTest.java:114) 
+13:44:16 DEBUG Wed Sep 04 13:44:16 CST 2019
+***** STARTING Test: CloseToolTest - testCloseToolWithNoData *****   (AbstractGenericTest.java:114) 
+13:44:17 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:17 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:17 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:17 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:17 DEBUG 	✓ PASSED Test: CloseToolTest - testCloseToolWithNoData ✓	   (AbstractGenericTest.java:114) 
+13:44:17 DEBUG Wed Sep 04 13:44:17 CST 2019
+***** STARTING Test: CloseToolTest - testCloseOthersInTool *****   (AbstractGenericTest.java:114) 
+13:44:17 ERROR Tool already exists--you are doing something wrong!   (TestEnv.java:504) 
+13:44:17 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:17 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:17 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:17 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:18 DEBUG 	✓ PASSED Test: CloseToolTest - testCloseOthersInTool ✓	   (AbstractGenericTest.java:114) 
+13:44:18 DEBUG Wed Sep 04 13:44:18 CST 2019
+***** STARTING Test: CloseToolTest - testCannotCloseToolWithBackgroundTaskRunning *****   (AbstractGenericTest.java:114) 
+13:44:18 DEBUG Exec Task Test Background Command   (ToolTaskManager.java:302) 
+13:44:18 INFO  Tool Busy: You must stop all background tasks before exiting.   (PluginTool.java:1184) 
+13:44:18 INFO  Close notepad Failed: The tool is currently working in the background on notepad.
+Please stop the background processing first.   (PluginTool.java:1208) 
+13:44:18 DEBUG   task finish (0.304 secs)   (ToolTaskManager.java:357) 
+13:44:18 DEBUG   task Complete (0.309 secs)   (ToolTaskManager.java:407) 
+13:44:18 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:18 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:18 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:18 ERROR Incorrectly called yeildToSwing() from the Swing thread   (AbstractGenericTest.java:1591) 
+13:44:19 DEBUG 	✓ PASSED Test: CloseToolTest - testCannotCloseToolWithBackgroundTaskRunning ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

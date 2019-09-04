@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.util.task.RunManagerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.util.task.RunManagerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.util.task.html">ghidra.util.task</a> &gt; RunManagerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">22.901s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testCancel_MultipleRunnables</td>
+<td class="success">0.304s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCancel_SingleRunnable</td>
+<td class="success">0.304s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testManyRunCallsFromMultipleThreads</td>
+<td class="success">5.945s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProgressBarShowsAfterDelay_NoCancel</td>
+<td class="success">3.731s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProgressBarShowsAfterDelay_WithCancel</td>
+<td class="success">6.850s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRunLater</td>
+<td class="success">0.303s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRunNext</td>
+<td class="success">3.324s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRunNow</td>
+<td class="success">0.303s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSchedule_CancelOnlyStopsCurrentRunnable</td>
+<td class="success">0.808s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSwingRunnerCallback</td>
+<td class="success">0.423s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTaskListenerTaskCancelled</td>
+<td class="success">0.303s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTaskListenerTaskCompleted</td>
+<td class="success">0.303s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_f67c8f02-d646-41cd-945e-8d1e8481696b/temp.data
+14:19:58 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:19:58 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_f67c8f02-d646-41cd-945e-8d1e8481696b/temp.data/application.log   (LoggingInitialization.java:60) 
+14:19:58 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_f67c8f02-d646-41cd-945e-8d1e8481696b/temp.data/preferences   (Preferences.java:122) 
+14:19:59 INFO  Class search complete (684 ms)   (ClassSearcher.java:250) 
+14:19:59 DEBUG Wed Sep 04 14:19:59 CST 2019
+***** STARTING Test: RunManagerTest - testSwingRunnerCallback *****   (AbstractGenericTest.java:114) 
+14:20:00 DEBUG 	✓ PASSED Test: RunManagerTest - testSwingRunnerCallback ✓	   (AbstractGenericTest.java:114) 
+14:20:00 DEBUG Wed Sep 04 14:20:00 CST 2019
+***** STARTING Test: RunManagerTest - testSchedule_CancelOnlyStopsCurrentRunnable *****   (AbstractGenericTest.java:114) 
+14:20:00 DEBUG 	✓ PASSED Test: RunManagerTest - testSchedule_CancelOnlyStopsCurrentRunnable ✓	   (AbstractGenericTest.java:114) 
+14:20:00 DEBUG Wed Sep 04 14:20:00 CST 2019
+***** STARTING Test: RunManagerTest - testCancel_MultipleRunnables *****   (AbstractGenericTest.java:114) 
+14:20:01 DEBUG 	✓ PASSED Test: RunManagerTest - testCancel_MultipleRunnables ✓	   (AbstractGenericTest.java:114) 
+14:20:01 DEBUG Wed Sep 04 14:20:01 CST 2019
+***** STARTING Test: RunManagerTest - testProgressBarShowsAfterDelay_NoCancel *****   (AbstractGenericTest.java:114) 
+14:20:04 DEBUG 	✓ PASSED Test: RunManagerTest - testProgressBarShowsAfterDelay_NoCancel ✓	   (AbstractGenericTest.java:114) 
+14:20:04 DEBUG Wed Sep 04 14:20:04 CST 2019
+***** STARTING Test: RunManagerTest - testProgressBarShowsAfterDelay_WithCancel *****   (AbstractGenericTest.java:114) 
+14:20:11 DEBUG 	✓ PASSED Test: RunManagerTest - testProgressBarShowsAfterDelay_WithCancel ✓	   (AbstractGenericTest.java:114) 
+14:20:11 DEBUG Wed Sep 04 14:20:11 CST 2019
+***** STARTING Test: RunManagerTest - testManyRunCallsFromMultipleThreads *****   (AbstractGenericTest.java:114) 
+14:20:17 DEBUG 	✓ PASSED Test: RunManagerTest - testManyRunCallsFromMultipleThreads ✓	   (AbstractGenericTest.java:114) 
+14:20:17 DEBUG Wed Sep 04 14:20:17 CST 2019
+***** STARTING Test: RunManagerTest - testTaskListenerTaskCompleted *****   (AbstractGenericTest.java:114) 
+14:20:18 DEBUG 	✓ PASSED Test: RunManagerTest - testTaskListenerTaskCompleted ✓	   (AbstractGenericTest.java:114) 
+14:20:18 DEBUG Wed Sep 04 14:20:18 CST 2019
+***** STARTING Test: RunManagerTest - testRunNext *****   (AbstractGenericTest.java:114) 
+14:20:21 DEBUG 	✓ PASSED Test: RunManagerTest - testRunNext ✓	   (AbstractGenericTest.java:114) 
+14:20:21 DEBUG Wed Sep 04 14:20:21 CST 2019
+***** STARTING Test: RunManagerTest - testRunLater *****   (AbstractGenericTest.java:114) 
+14:20:21 DEBUG 	✓ PASSED Test: RunManagerTest - testRunLater ✓	   (AbstractGenericTest.java:114) 
+14:20:21 DEBUG Wed Sep 04 14:20:21 CST 2019
+***** STARTING Test: RunManagerTest - testRunNow *****   (AbstractGenericTest.java:114) 
+14:20:21 DEBUG 	✓ PASSED Test: RunManagerTest - testRunNow ✓	   (AbstractGenericTest.java:114) 
+14:20:21 DEBUG Wed Sep 04 14:20:21 CST 2019
+***** STARTING Test: RunManagerTest - testCancel_SingleRunnable *****   (AbstractGenericTest.java:114) 
+14:20:22 DEBUG 	✓ PASSED Test: RunManagerTest - testCancel_SingleRunnable ✓	   (AbstractGenericTest.java:114) 
+14:20:22 DEBUG Wed Sep 04 14:20:22 CST 2019
+***** STARTING Test: RunManagerTest - testTaskListenerTaskCancelled *****   (AbstractGenericTest.java:114) 
+14:20:22 DEBUG before waiting   (RunManagerTest.java:265) 
+14:20:22 DEBUG after waiting   (RunManagerTest.java:267) 
+14:20:22 DEBUG 	✓ PASSED Test: RunManagerTest - testTaskListenerTaskCancelled ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>TestSwingRunnable - started
+	TestSwingRunnable - sleeping
+	TestSwingRunnable - finished
+taskCompleted()
+TimeSpecificTestRunnable - started
+	TimeSpecificTestRunnable - sleeping
+Cancelling monitor!
+	TimeSpecificTestRunnable - cancelled
+taskCancelled() - null
+BasicTestRunnable - started
+	BasicTestRunnable - sleeping
+	BasicTestRunnable - finished
+BasicTestRunnable - started
+	BasicTestRunnable - sleeping
+taskCompleted()
+	BasicTestRunnable - finished
+BasicTestRunnable - started
+	BasicTestRunnable - sleeping
+taskCompleted()
+	BasicTestRunnable - finished
+taskCompleted()
+TimeSpecificTestRunnable - started
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - cancelled
+taskCancelled() - null
+LatchRunnable - started
+	LatchRunnable - sleeping
+	LatchRunnable - finished
+RunUntilCancelledTestRunnable - started
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - completed - cancelled
+Thread 4 - running runnables: 12
+Thread 1 - running runnables: 5
+Thread 2 - running runnables: 6
+Thread 3 - running runnables: 8
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - interrupted - true
+NotExpectedToBeInterruptedTestRunnable - started
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - sleeping
+	NotExpectedToBeInterruptedTestRunnable - completed normally
+BasicTestRunnable - started
+	BasicTestRunnable - sleeping
+	BasicTestRunnable - finished
+taskCompleted()
+testRunNextstarting first runnable
+TimeSpecificTestRunnable - started
+	TimeSpecificTestRunnable - sleeping
+testRunNextstarting second runnable
+testRunNextwaiting for run manager
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - finished
+taskCompleted()
+BasicTestRunnable - started
+	BasicTestRunnable - sleeping
+	BasicTestRunnable - finished
+taskCompleted()
+BasicTestRunnable - started
+	BasicTestRunnable - sleeping
+	BasicTestRunnable - finished
+taskCompleted()
+BasicTestRunnable - started
+	BasicTestRunnable - sleeping
+	BasicTestRunnable - finished
+taskCompleted()
+TimeSpecificTestRunnable - started
+	TimeSpecificTestRunnable - sleeping
+	TimeSpecificTestRunnable - cancelled
+taskCancelled() - null
+RunUntilCancelledTestRunnable - started
+	RunUntilCancelledTestRunnable - sleeping
+	RunUntilCancelledTestRunnable - completed - cancelled
+taskCancelled() - null
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:48 PM</p>
+</div>
+</div>
+</body>
+</html>

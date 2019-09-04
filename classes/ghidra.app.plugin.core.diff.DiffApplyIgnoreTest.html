@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.plugin.core.diff.DiffApplyIgnoreTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.plugin.core.diff.DiffApplyIgnoreTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.plugin.core.diff.html">ghidra.app.plugin.core.diff</a> &gt; DiffApplyIgnoreTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">16.098s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBookmarkIgnore</td>
+<td class="success">1.207s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testByteIgnore</td>
+<td class="success">1.538s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCodeUnitIgnore</td>
+<td class="success">1.318s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCommentIgnore</td>
+<td class="success">1.830s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFunctionIgnore</td>
+<td class="success">1.110s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLabelIgnore</td>
+<td class="success">4.536s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProgramContextIgnore</td>
+<td class="success">1.421s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPropertyIgnore</td>
+<td class="success">1.321s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReferenceIgnore</td>
+<td class="success">1.817s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/Ghidra_test_391f8bc5-1ff2-4473-838a-02ae6219660f/temp.data
+14:24:42 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:24:42 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/Ghidra_test_391f8bc5-1ff2-4473-838a-02ae6219660f/temp.data/application.log   (LoggingInitialization.java:60) 
+14:24:42 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/Ghidra_test_391f8bc5-1ff2-4473-838a-02ae6219660f/temp.data/preferences   (Preferences.java:122) 
+14:24:43 INFO  Class search complete (457 ms)   (ClassSearcher.java:250) 
+14:24:43 DEBUG Wed Sep 04 14:24:43 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testLabelIgnore *****   (AbstractGenericTest.java:114) 
+14:24:47 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:47 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:47 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:47 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:47 DEBUG   task finish (0.115 secs)   (ToolTaskManager.java:357) 
+14:24:47 DEBUG   task Complete (0.178 secs)   (ToolTaskManager.java:407) 
+14:24:48 ERROR Open modal dialogs - all windows: 
+Frame: 'Ghidra: ghidra_BatchTestProject'
+Frame: 'Test Tool: /DiffTestPgm1 [Read-Only]'
+	Dialog: 'Select Other Program' (not showing)
+	Dialog: 'Determine Program Differences' (not showing)
+	Dialog: 'Memory Differs'
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+   (TestEnv.java:1150) 
+14:24:48 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testLabelIgnore ✓	   (AbstractGenericTest.java:114) 
+14:24:48 DEBUG Wed Sep 04 14:24:48 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testByteIgnore *****   (AbstractGenericTest.java:114) 
+14:24:49 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:49 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:49 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:49 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:49 DEBUG   task finish (0.064 secs)   (ToolTaskManager.java:357) 
+14:24:49 DEBUG   task Complete (0.134 secs)   (ToolTaskManager.java:407) 
+14:24:49 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testByteIgnore ✓	   (AbstractGenericTest.java:114) 
+14:24:49 DEBUG Wed Sep 04 14:24:49 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testProgramContextIgnore *****   (AbstractGenericTest.java:114) 
+14:24:50 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:50 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:51 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:51 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:51 DEBUG   task finish (0.058 secs)   (ToolTaskManager.java:357) 
+14:24:51 DEBUG   task Complete (0.088 secs)   (ToolTaskManager.java:407) 
+14:24:51 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testProgramContextIgnore ✓	   (AbstractGenericTest.java:114) 
+14:24:51 DEBUG Wed Sep 04 14:24:51 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testCommentIgnore *****   (AbstractGenericTest.java:114) 
+14:24:52 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:52 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:52 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:52 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:52 DEBUG   task finish (0.043 secs)   (ToolTaskManager.java:357) 
+14:24:52 DEBUG   task Complete (0.055 secs)   (ToolTaskManager.java:407) 
+14:24:52 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:52 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:52 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:52 DEBUG   task finish (0.055 secs)   (ToolTaskManager.java:357) 
+14:24:52 DEBUG   task Complete (0.073 secs)   (ToolTaskManager.java:407) 
+14:24:52 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:52 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:52 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:52 DEBUG   task finish (0.049 secs)   (ToolTaskManager.java:357) 
+14:24:52 DEBUG   task Complete (0.064 secs)   (ToolTaskManager.java:407) 
+14:24:52 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:52 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:52 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:52 DEBUG   task finish (0.039 secs)   (ToolTaskManager.java:357) 
+14:24:52 DEBUG   task Complete (0.053 secs)   (ToolTaskManager.java:407) 
+14:24:52 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:52 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:52 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:52 DEBUG   task finish (0.062 secs)   (ToolTaskManager.java:357) 
+14:24:52 DEBUG   task Complete (0.066 secs)   (ToolTaskManager.java:407) 
+14:24:53 ERROR Open modal dialogs - all windows: 
+Frame: 'Test Tool: /DiffTestPgm1 [Read-Only]'
+	Dialog: 'Select Other Program' (not showing)
+	Dialog: 'Determine Program Differences' (not showing)
+	Dialog: 'Memory Differs'
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+		Dialog: 'Apply Differences' (not showing)
+Frame: 'Ghidra: ghidra_BatchTestProject'
+   (TestEnv.java:1150) 
+14:24:53 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testCommentIgnore ✓	   (AbstractGenericTest.java:114) 
+14:24:53 DEBUG Wed Sep 04 14:24:53 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testReferenceIgnore *****   (AbstractGenericTest.java:114) 
+14:24:53 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:54 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:54 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:54 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:54 DEBUG   task finish (0.073 secs)   (ToolTaskManager.java:357) 
+14:24:54 DEBUG   task Complete (0.088 secs)   (ToolTaskManager.java:407) 
+14:24:54 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:54 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:54 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:54 DEBUG   task finish (0.072 secs)   (ToolTaskManager.java:357) 
+14:24:54 DEBUG   task Complete (0.106 secs)   (ToolTaskManager.java:407) 
+14:24:54 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:54 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:54 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:54 DEBUG   task finish (0.071 secs)   (ToolTaskManager.java:357) 
+14:24:54 DEBUG   task Complete (0.09 secs)   (ToolTaskManager.java:407) 
+14:24:54 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testReferenceIgnore ✓	   (AbstractGenericTest.java:114) 
+14:24:54 DEBUG Wed Sep 04 14:24:54 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testCodeUnitIgnore *****   (AbstractGenericTest.java:114) 
+14:24:55 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:55 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:55 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:55 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:55 DEBUG   task finish (0.052 secs)   (ToolTaskManager.java:357) 
+14:24:55 DEBUG   task Complete (0.083 secs)   (ToolTaskManager.java:407) 
+14:24:56 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testCodeUnitIgnore ✓	   (AbstractGenericTest.java:114) 
+14:24:56 DEBUG Wed Sep 04 14:24:56 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testPropertyIgnore *****   (AbstractGenericTest.java:114) 
+14:24:56 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:57 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:57 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:57 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:57 DEBUG   task finish (0.069 secs)   (ToolTaskManager.java:357) 
+14:24:57 DEBUG   task Complete (0.127 secs)   (ToolTaskManager.java:407) 
+14:24:57 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testPropertyIgnore ✓	   (AbstractGenericTest.java:114) 
+14:24:57 DEBUG Wed Sep 04 14:24:57 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testBookmarkIgnore *****   (AbstractGenericTest.java:114) 
+14:24:58 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:58 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:58 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:58 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:58 DEBUG   task finish (0.036 secs)   (ToolTaskManager.java:357) 
+14:24:58 DEBUG   task Complete (0.066 secs)   (ToolTaskManager.java:407) 
+14:24:58 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testBookmarkIgnore ✓	   (AbstractGenericTest.java:114) 
+14:24:58 DEBUG Wed Sep 04 14:24:58 CST 2019
+***** STARTING Test: DiffApplyIgnoreTest - testFunctionIgnore *****   (AbstractGenericTest.java:114) 
+14:24:59 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:24:59 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:24:59 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:24:59 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:24:59 DEBUG   task finish (0.059 secs)   (ToolTaskManager.java:357) 
+14:24:59 DEBUG   task Complete (0.076 secs)   (ToolTaskManager.java:407) 
+14:24:59 DEBUG 	✓ PASSED Test: DiffApplyIgnoreTest - testFunctionIgnore ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

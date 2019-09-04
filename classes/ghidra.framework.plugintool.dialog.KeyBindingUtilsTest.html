@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.framework.plugintool.dialog.KeyBindingUtilsTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.framework.plugintool.dialog.KeyBindingUtilsTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.framework.plugintool.dialog.html">ghidra.framework.plugintool.dialog</a> &gt; KeyBindingUtilsTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6.344s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testExportImportKeyBindings</td>
+<td class="success">1.328s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testImportExportWithGUI</td>
+<td class="success">5.016s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d32f633c-989f-4e0d-8937-05e2b7315037/temp.data
+13:43:30 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:43:30 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d32f633c-989f-4e0d-8937-05e2b7315037/temp.data/application.log   (LoggingInitialization.java:60) 
+13:43:30 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d32f633c-989f-4e0d-8937-05e2b7315037/temp.data/preferences   (Preferences.java:122) 
+13:43:31 INFO  Class search complete (502 ms)   (ClassSearcher.java:250) 
+13:43:31 DEBUG Wed Sep 04 13:43:31 CST 2019
+***** STARTING Test: KeyBindingUtilsTest - testImportExportWithGUI *****   (AbstractGenericTest.java:114) 
+13:43:36 DEBUG 	✓ PASSED Test: KeyBindingUtilsTest - testImportExportWithGUI ✓	   (AbstractGenericTest.java:114) 
+13:43:36 DEBUG Wed Sep 04 13:43:36 CST 2019
+***** STARTING Test: KeyBindingUtilsTest - testExportImportKeyBindings *****   (AbstractGenericTest.java:114) 
+13:43:37 DEBUG Unable to find Docking Window Manager for DirectoryTable java.lang.Throwable
+	at docking.DockingWindowManager$1.hierarchyChanged(DockingWindowManager.java:2203)
+	at docking.DockingDialog.init(DockingDialog.java:175)
+	at docking.DockingDialog.&lt;init&gt;(DockingDialog.java:85)
+	at docking.DockingDialog.createDialog(DockingDialog.java:71)
+	at docking.DockingWindowManager.lambda$doShowDialog$6(DockingWindowManager.java:1719)
+	at ghidra.util.Swing.doRun(Swing.java:295)
+	at ghidra.util.Swing.runNow(Swing.java:211)
+	at ghidra.util.Swing.runNow(Swing.java:166)
+	at ghidra.util.SystemUtilities.runSwingNow(SystemUtilities.java:253)
+	at docking.DockingWindowManager.doShowDialog(DockingWindowManager.java:1724)
+	at docking.DockingWindowManager.showDialog(DockingWindowManager.java:1756)
+	at docking.widgets.filechooser.GhidraFileChooser.show(GhidraFileChooser.java:1027)
+	at docking.widgets.filechooser.GhidraFileChooser.getSelectedFile(GhidraFileChooser.java:854)
+	at docking.actions.KeyBindingUtils.getFileFromUser(KeyBindingUtils.java:832)
+	at docking.actions.KeyBindingUtils.getOutputStreamForFile(KeyBindingUtils.java:792)
+	at docking.actions.KeyBindingUtils.exportKeyBindings(KeyBindingUtils.java:149)
+	at ghidra.framework.plugintool.dialog.KeyBindingUtilsTest.lambda$exportOptions$8(KeyBindingUtilsTest.java:509)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+  (DockingWindowManager.java:2200) 
+13:43:38 DEBUG 	✓ PASSED Test: KeyBindingUtilsTest - testExportImportKeyBindings ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

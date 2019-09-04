@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class docking.DockingErrorDisplayTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class docking.DockingErrorDisplayTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/docking.html">docking</a> &gt; DockingErrorDisplayTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.755s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testDefaultErrorDisplay_NestedException</td>
+<td class="success">0.349s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDefaultErrorDisplay_SingleException</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMultipleCausesErrorDisplay</td>
+<td class="success">0.303s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_5ae689bc-4f92-48ea-9f4d-e65378f7d378/temp.data
+14:00:38 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:00:38 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_5ae689bc-4f92-48ea-9f4d-e65378f7d378/temp.data/application.log   (LoggingInitialization.java:60) 
+14:00:38 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_5ae689bc-4f92-48ea-9f4d-e65378f7d378/temp.data/preferences   (Preferences.java:122) 
+14:00:38 DEBUG Wed Sep 04 14:00:38 CST 2019
+***** STARTING Test: DockingErrorDisplayTest - testDefaultErrorDisplay_NestedException *****   (AbstractGenericTest.java:114) 
+14:00:38 DEBUG 	✓ PASSED Test: DockingErrorDisplayTest - testDefaultErrorDisplay_NestedException ✓	   (AbstractGenericTest.java:114) 
+14:00:38 DEBUG Wed Sep 04 14:00:38 CST 2019
+***** STARTING Test: DockingErrorDisplayTest - testDefaultErrorDisplay_SingleException *****   (AbstractGenericTest.java:114) 
+14:00:38 DEBUG 	✓ PASSED Test: DockingErrorDisplayTest - testDefaultErrorDisplay_SingleException ✓	   (AbstractGenericTest.java:114) 
+14:00:38 DEBUG Wed Sep 04 14:00:38 CST 2019
+***** STARTING Test: DockingErrorDisplayTest - testMultipleCausesErrorDisplay *****   (AbstractGenericTest.java:114) 
+14:00:39 DEBUG 	✓ PASSED Test: DockingErrorDisplayTest - testMultipleCausesErrorDisplay ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Expected Exception
+Test Title: Test Message
+java.lang.Exception: My test exception
+	at docking.DockingErrorDisplayTest.testDefaultErrorDisplay_NestedException(DockingErrorDisplayTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:157)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at generic.test.TestThread.run(TestThread.java:106)
+Caused by: java.lang.Exception: My nested test exception
+	at docking.DockingErrorDisplayTest.testDefaultErrorDisplay_NestedException(DockingErrorDisplayTest.java:52)
+	... 15 more
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; End Expected Exception
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Expected Exception
+Test Title: Test Message
+java.lang.Exception: My test exception
+	at docking.DockingErrorDisplayTest.testDefaultErrorDisplay_SingleException(DockingErrorDisplayTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:157)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at generic.test.TestThread.run(TestThread.java:106)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; End Expected Exception
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Expected Exception
+Test Title: Test Message
+ghidra.util.exception.MultipleCauses: Multiple Causes
+	at docking.DockingErrorDisplayTest.testMultipleCausesErrorDisplay(DockingErrorDisplayTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:157)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at generic.test.TestThread.run(TestThread.java:106)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; End Expected Exception
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

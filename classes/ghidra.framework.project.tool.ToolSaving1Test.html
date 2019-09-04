@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.framework.project.tool.ToolSaving1Test</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.framework.project.tool.ToolSaving1Test</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.framework.project.tool.html">ghidra.framework.project.tool</a> &gt; ToolSaving1Test</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">14</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">22.851s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">92%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testTwoToolsWithNoChanges"></a>
+<h3 class="failures">testTwoToolsWithNoChanges</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Tool positioning was not saved expected:&lt;java.awt.Point[x=21,y=23]&gt; but was:&lt;java.awt.Point[x=21,y=28]&gt;
+	at ghidra.framework.project.tool.ToolSaving1Test.testTwoToolsWithNoChanges(ToolSaving1Test.java:320)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAutoSaveOption</td>
+<td class="success">1.117s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAutoSaveOptionFromExitGhidra_WithToolConfigChange</td>
+<td class="success">1.452s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAutoSaveSingleTool</td>
+<td class="success">2.340s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExitGhidraWithOneTool</td>
+<td class="success">0.962s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExitGhidraWithTwoTools_OneChange</td>
+<td class="success">4.539s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExitGhidraWithTwoTools_TwoChanges</td>
+<td class="success">1.911s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSaveToolAndNotLoseOptions</td>
+<td class="success">0.917s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTwoToolsBothChanged</td>
+<td class="success">1.710s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTwoToolsChange1_close1_change2_close2</td>
+<td class="success">1.815s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTwoToolsOneChanged_save1_closeBoth</td>
+<td class="success">1.105s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testTwoToolsWithNoChanges</td>
+<td class="failures">1.623s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testTwoToolsWithOneChange_ChangedClosedFirst</td>
+<td class="success">1.639s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTwoToolsWithOneChange_UnchangedClosedFirst</td>
+<td class="success">1.116s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testZFixupTool</td>
+<td class="success">0.605s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_36a99ad8-ee15-49fe-9c66-d2e470505ba7/temp.data
+13:44:36 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:44:36 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_36a99ad8-ee15-49fe-9c66-d2e470505ba7/temp.data/application.log   (LoggingInitialization.java:60) 
+13:44:36 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_36a99ad8-ee15-49fe-9c66-d2e470505ba7/temp.data/preferences   (Preferences.java:122) 
+13:44:37 INFO  Class search complete (521 ms)   (ClassSearcher.java:250) 
+13:44:37 DEBUG Wed Sep 04 13:44:37 CST 2019
+***** STARTING Test: ToolSaving1Test - testExitGhidraWithTwoTools_OneChange *****   (AbstractGenericTest.java:114) 
+13:44:39 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (39846862)   (AbstractToolSavingTest.java:344) 
+13:44:39 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (39846862)   (AbstractToolSavingTest.java:352) 
+13:44:39 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:39 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:41 DEBUG 	✓ PASSED Test: ToolSaving1Test - testExitGhidraWithTwoTools_OneChange ✓	   (AbstractGenericTest.java:114) 
+13:44:41 DEBUG Wed Sep 04 13:44:41 CST 2019
+***** STARTING Test: ToolSaving1Test - testSaveToolAndNotLoseOptions *****   (AbstractGenericTest.java:114) 
+13:44:42 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (406367538)   (AbstractToolSavingTest.java:344) 
+13:44:42 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (406367538)   (AbstractToolSavingTest.java:352) 
+13:44:42 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:42 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:42 DEBUG break   (AbstractToolSavingTest.java:241) 
+13:44:42 DEBUG break   (AbstractToolSavingTest.java:241) 
+13:44:42 DEBUG 	✓ PASSED Test: ToolSaving1Test - testSaveToolAndNotLoseOptions ✓	   (AbstractGenericTest.java:114) 
+13:44:42 DEBUG Wed Sep 04 13:44:42 CST 2019
+***** STARTING Test: ToolSaving1Test - testAutoSaveSingleTool *****   (AbstractGenericTest.java:114) 
+13:44:43 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (892542483)   (AbstractToolSavingTest.java:344) 
+13:44:43 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (892542483)   (AbstractToolSavingTest.java:352) 
+13:44:43 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:43 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:43 DEBUG setting tool location to: java.awt.Point[x=50,y=50]
+	on window: TestCodeBrowser (151822210)   (AbstractToolSavingTest.java:344) 
+13:44:43 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=50,y=50]
+	on window: TestCodeBrowser (151822210)   (AbstractToolSavingTest.java:352) 
+13:44:43 DEBUG checking java.awt.Point[x=50,y=50] against java.awt.Point[x=50,y=50]   (AbstractToolSavingTest.java:357) 
+13:44:43 DEBUG 	tool bounds now: java.awt.Rectangle[x=50,y=50,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:45 DEBUG 	✓ PASSED Test: ToolSaving1Test - testAutoSaveSingleTool ✓	   (AbstractGenericTest.java:114) 
+13:44:45 DEBUG Wed Sep 04 13:44:45 CST 2019
+***** STARTING Test: ToolSaving1Test - testAutoSaveOptionFromExitGhidra_WithToolConfigChange *****   (AbstractGenericTest.java:114) 
+13:44:45 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1132401574)   (AbstractToolSavingTest.java:344) 
+13:44:45 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1132401574)   (AbstractToolSavingTest.java:352) 
+13:44:45 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:45 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:46 DEBUG 	✓ PASSED Test: ToolSaving1Test - testAutoSaveOptionFromExitGhidra_WithToolConfigChange ✓	   (AbstractGenericTest.java:114) 
+13:44:46 DEBUG Wed Sep 04 13:44:46 CST 2019
+***** STARTING Test: ToolSaving1Test - testTwoToolsWithOneChange_ChangedClosedFirst *****   (AbstractGenericTest.java:114) 
+13:44:46 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1663446673)   (AbstractToolSavingTest.java:344) 
+13:44:46 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1663446673)   (AbstractToolSavingTest.java:352) 
+13:44:46 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:46 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:48 DEBUG 	✓ PASSED Test: ToolSaving1Test - testTwoToolsWithOneChange_ChangedClosedFirst ✓	   (AbstractGenericTest.java:114) 
+13:44:48 DEBUG Wed Sep 04 13:44:48 CST 2019
+***** STARTING Test: ToolSaving1Test - testTwoToolsWithOneChange_UnchangedClosedFirst *****   (AbstractGenericTest.java:114) 
+13:44:48 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (466396585)   (AbstractToolSavingTest.java:344) 
+13:44:48 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (466396585)   (AbstractToolSavingTest.java:352) 
+13:44:48 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:48 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:49 DEBUG 	✓ PASSED Test: ToolSaving1Test - testTwoToolsWithOneChange_UnchangedClosedFirst ✓	   (AbstractGenericTest.java:114) 
+13:44:49 DEBUG Wed Sep 04 13:44:49 CST 2019
+***** STARTING Test: ToolSaving1Test - testTwoToolsWithNoChanges *****   (AbstractGenericTest.java:114) 
+13:44:49 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1110787473)   (AbstractToolSavingTest.java:344) 
+13:44:49 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1110787473)   (AbstractToolSavingTest.java:352) 
+13:44:49 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:49 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:50 DEBUG setting tool location to: java.awt.Point[x=11,y=11]
+	on window: TestCodeBrowser (447048846)   (AbstractToolSavingTest.java:344) 
+13:44:50 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=11,y=11]
+	on window: TestCodeBrowser (447048846)   (AbstractToolSavingTest.java:352) 
+13:44:50 DEBUG checking java.awt.Point[x=11,y=11] against java.awt.Point[x=11,y=11]   (AbstractToolSavingTest.java:357) 
+13:44:50 DEBUG 	tool bounds now: java.awt.Rectangle[x=11,y=11,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:50 DEBUG setting tool location to: java.awt.Point[x=21,y=23]
+	on window: TestCodeBrowser(2) (602580293)   (AbstractToolSavingTest.java:344) 
+13:44:50 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=21,y=23]
+	on window: TestCodeBrowser(2) (602580293)   (AbstractToolSavingTest.java:352) 
+13:44:50 DEBUG checking java.awt.Point[x=21,y=23] against java.awt.Point[x=21,y=23]   (AbstractToolSavingTest.java:357) 
+13:44:50 DEBUG 	tool bounds now: java.awt.Rectangle[x=21,y=23,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:50 DEBUG 	✖ FAILED Test: ToolSaving1Test - testTwoToolsWithNoChanges ✖	   (AbstractGenericTest.java:114) 
+13:44:50 DEBUG Wed Sep 04 13:44:50 CST 2019
+***** STARTING Test: ToolSaving1Test - testZFixupTool *****   (AbstractGenericTest.java:114) 
+13:44:51 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1838505184)   (AbstractToolSavingTest.java:344) 
+13:44:51 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1838505184)   (AbstractToolSavingTest.java:352) 
+13:44:51 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:51 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:51 DEBUG 	✓ PASSED Test: ToolSaving1Test - testZFixupTool ✓	   (AbstractGenericTest.java:114) 
+13:44:51 DEBUG Wed Sep 04 13:44:51 CST 2019
+***** STARTING Test: ToolSaving1Test - testAutoSaveOption *****   (AbstractGenericTest.java:114) 
+13:44:51 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1734521444)   (AbstractToolSavingTest.java:344) 
+13:44:51 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1734521444)   (AbstractToolSavingTest.java:352) 
+13:44:51 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:51 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:52 DEBUG 	✓ PASSED Test: ToolSaving1Test - testAutoSaveOption ✓	   (AbstractGenericTest.java:114) 
+13:44:52 DEBUG Wed Sep 04 13:44:52 CST 2019
+***** STARTING Test: ToolSaving1Test - testExitGhidraWithTwoTools_TwoChanges *****   (AbstractGenericTest.java:114) 
+13:44:52 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (90473104)   (AbstractToolSavingTest.java:344) 
+13:44:52 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (90473104)   (AbstractToolSavingTest.java:352) 
+13:44:52 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:52 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:54 DEBUG 	✓ PASSED Test: ToolSaving1Test - testExitGhidraWithTwoTools_TwoChanges ✓	   (AbstractGenericTest.java:114) 
+13:44:54 DEBUG Wed Sep 04 13:44:54 CST 2019
+***** STARTING Test: ToolSaving1Test - testTwoToolsChange1_close1_change2_close2 *****   (AbstractGenericTest.java:114) 
+13:44:54 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (2146241765)   (AbstractToolSavingTest.java:344) 
+13:44:54 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (2146241765)   (AbstractToolSavingTest.java:352) 
+13:44:54 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:54 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:56 DEBUG 	✓ PASSED Test: ToolSaving1Test - testTwoToolsChange1_close1_change2_close2 ✓	   (AbstractGenericTest.java:114) 
+13:44:56 DEBUG Wed Sep 04 13:44:56 CST 2019
+***** STARTING Test: ToolSaving1Test - testTwoToolsOneChanged_save1_closeBoth *****   (AbstractGenericTest.java:114) 
+13:44:56 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (743054887)   (AbstractToolSavingTest.java:344) 
+13:44:56 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (743054887)   (AbstractToolSavingTest.java:352) 
+13:44:56 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:56 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:57 DEBUG 	✓ PASSED Test: ToolSaving1Test - testTwoToolsOneChanged_save1_closeBoth ✓	   (AbstractGenericTest.java:114) 
+13:44:57 DEBUG Wed Sep 04 13:44:57 CST 2019
+***** STARTING Test: ToolSaving1Test - testTwoToolsBothChanged *****   (AbstractGenericTest.java:114) 
+13:44:57 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (800411749)   (AbstractToolSavingTest.java:344) 
+13:44:57 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (800411749)   (AbstractToolSavingTest.java:352) 
+13:44:57 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:57 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:44:59 DEBUG 	✓ PASSED Test: ToolSaving1Test - testTwoToolsBothChanged ✓	   (AbstractGenericTest.java:114) 
+13:44:59 DEBUG Wed Sep 04 13:44:59 CST 2019
+***** STARTING Test: ToolSaving1Test - testExitGhidraWithOneTool *****   (AbstractGenericTest.java:114) 
+13:44:59 DEBUG setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1345833628)   (AbstractToolSavingTest.java:344) 
+13:44:59 DEBUG 	attempt again - setting tool location to: java.awt.Point[x=30,y=30]
+	on window: TestCodeBrowser (1345833628)   (AbstractToolSavingTest.java:352) 
+13:44:59 DEBUG checking java.awt.Point[x=30,y=30] against java.awt.Point[x=30,y=30]   (AbstractToolSavingTest.java:357) 
+13:44:59 DEBUG 	tool bounds now: java.awt.Rectangle[x=30,y=30,width=500,height=500]   (AbstractToolSavingTest.java:363) 
+13:45:00 DEBUG 	✓ PASSED Test: ToolSaving1Test - testExitGhidraWithOneTool ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.cmd.label.DeleteLabelCmdTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.cmd.label.DeleteLabelCmdTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.cmd.label.html">ghidra.app.cmd.label</a> &gt; DeleteLabelCmdTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.647s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testDeleteDefaultFunctionLabel</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteDefaultLabel</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteEntrySymbol</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteFunctionLabelWhereMultiple</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteFunctionLabelWhereOtherHasRefs</td>
+<td class="success">0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteGlobalScopeLabel</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteLabel</td>
+<td class="success">0.520s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteLabelWhereMultiple</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOnlyFunctionLabel</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOnlyLabelNoRefs</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOnlyLabelWithRefs</td>
+<td class="success">0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOtherLabelWhereFunction</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d7a0f9f8-62c4-4b4a-999f-72b1d8d3bd0d/temp.data
+12:38:06 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+12:38:06 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d7a0f9f8-62c4-4b4a-999f-72b1d8d3bd0d/temp.data/application.log   (LoggingInitialization.java:60) 
+12:38:06 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d7a0f9f8-62c4-4b4a-999f-72b1d8d3bd0d/temp.data/preferences   (Preferences.java:122) 
+12:38:07 INFO  Class search complete (554 ms)   (ClassSearcher.java:250) 
+12:38:07 DEBUG Wed Sep 04 12:38:07 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteLabel *****   (AbstractGenericTest.java:114) 
+12:38:07 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteLabel ✓	   (AbstractGenericTest.java:114) 
+12:38:07 DEBUG Wed Sep 04 12:38:07 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteOnlyLabelNoRefs *****   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteOnlyLabelNoRefs ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteOnlyFunctionLabel *****   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteOnlyFunctionLabel ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteFunctionLabelWhereMultiple *****   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteFunctionLabelWhereMultiple ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteLabelWhereMultiple *****   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteLabelWhereMultiple ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteGlobalScopeLabel *****   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteGlobalScopeLabel ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteDefaultLabel *****   (AbstractGenericTest.java:114) 
+12:38:08 ERROR Could not apply command: Deleting the dynamic symbol &quot;LAB_00000001&quot; @ 00000001 is not allowed.   (AbstractGhidraHeadlessIntegrationTest.java:183) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteDefaultLabel ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteOtherLabelWhereFunction *****   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteOtherLabelWhereFunction ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteFunctionLabelWhereOtherHasRefs *****   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteFunctionLabelWhereOtherHasRefs ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteEntrySymbol *****   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteEntrySymbol ✓	   (AbstractGenericTest.java:114) 
+12:38:08 DEBUG Wed Sep 04 12:38:08 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteOnlyLabelWithRefs *****   (AbstractGenericTest.java:114) 
+12:38:09 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteOnlyLabelWithRefs ✓	   (AbstractGenericTest.java:114) 
+12:38:09 DEBUG Wed Sep 04 12:38:09 CST 2019
+***** STARTING Test: DeleteLabelCmdTest - testDeleteDefaultFunctionLabel *****   (AbstractGenericTest.java:114) 
+12:38:09 ERROR Could not apply command: Couldn't delete the symbol &quot;FUN_00000001&quot; @ 00000001.   (AbstractGhidraHeadlessIntegrationTest.java:183) 
+12:38:09 DEBUG 	✓ PASSED Test: DeleteLabelCmdTest - testDeleteDefaultFunctionLabel ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

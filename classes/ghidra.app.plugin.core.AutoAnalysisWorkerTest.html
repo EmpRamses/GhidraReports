@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.plugin.core.AutoAnalysisWorkerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.plugin.core.AutoAnalysisWorkerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.plugin.core.html">ghidra.app.plugin.core</a> &gt; AutoAnalysisWorkerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">11.561s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBlockerCancelled</td>
+<td class="success">1.982s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDisableIgnoreResumeAdhocThreadWorkerInvocation</td>
+<td class="success">1.415s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDisableIgnoreResumeAnalysisTaskWorkerInvocation</td>
+<td class="success">1.416s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDisableIgnoreResumeToolTaskWorkerInvocation</td>
+<td class="success">1.685s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDisableResumeAdhocThreadWorkerInvocation</td>
+<td class="success">1.310s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDisableResumeAnalysisTaskWorkerInvocation</td>
+<td class="success">1.526s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDisableResumeToolTaskWorkerInvocation</td>
+<td class="success">1.411s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSwingThreadWorkerInvocation</td>
+<td class="success">0.408s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWorkerCancelled</td>
+<td class="success">0.408s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_40c0d576-0bee-43ad-9eb5-8d090bd9da38/temp.data
+12:55:02 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+12:55:02 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_40c0d576-0bee-43ad-9eb5-8d090bd9da38/temp.data/application.log   (LoggingInitialization.java:60) 
+12:55:02 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_40c0d576-0bee-43ad-9eb5-8d090bd9da38/temp.data/preferences   (Preferences.java:122) 
+12:55:03 INFO  Class search complete (523 ms)   (ClassSearcher.java:250) 
+12:55:03 DEBUG Wed Sep 04 12:55:03 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testBlockerCancelled *****   (AbstractGenericTest.java:114) 
+12:55:05 DEBUG Scheduling analysis worker (CancelTest): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$3   (AutoAnalysisManager.java:1339) 
+12:55:05 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:05 DEBUG Invoking analysis worker (CancelTest): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$3   (AutoAnalysisManager.java:1672) 
+12:55:05 DEBUG   task finish (0.165 secs)   (ToolTaskManager.java:357) 
+12:55:05 DEBUG   task Complete (0.176 secs)   (ToolTaskManager.java:407) 
+12:55:05 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testBlockerCancelled ✓	   (AbstractGenericTest.java:114) 
+12:55:05 DEBUG Wed Sep 04 12:55:05 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testDisableIgnoreResumeToolTaskWorkerInvocation *****   (AbstractGenericTest.java:114) 
+12:55:05 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:06 DEBUG   task finish (0.513 secs)   (ToolTaskManager.java:357) 
+12:55:06 DEBUG     Queue - WorkerBackgroundCmd   (ToolTaskManager.java:370) 
+12:55:06 DEBUG Invoking analysis worker (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1672) 
+12:55:06 DEBUG Analysis worker completed (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1355) 
+12:55:06 DEBUG    (0.119 secs)   (ToolTaskManager.java:376) 
+12:55:06 DEBUG     Queue - Auto Analysis   (ToolTaskManager.java:370) 
+12:55:06 DEBUG    (0.501 secs)   (ToolTaskManager.java:376) 
+12:55:06 DEBUG   task Complete (1.155 secs)   (ToolTaskManager.java:407) 
+12:55:07 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testDisableIgnoreResumeToolTaskWorkerInvocation ✓	   (AbstractGenericTest.java:114) 
+12:55:07 DEBUG Wed Sep 04 12:55:07 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testDisableResumeAnalysisTaskWorkerInvocation *****   (AbstractGenericTest.java:114) 
+12:55:07 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:07 DEBUG Invoking analysis worker (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1672) 
+12:55:07 DEBUG Analysis worker completed (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1355) 
+12:55:08 INFO  -----------------------------------------------------
+    Basic Constant Reference Analyzer          0.013 secs
+    Call-Fixup Installer                       0.001 secs
+    Create Function                            0.009 secs
+    Non-Returning Functions - Discovered       0.006 secs
+    Reference                                  0.000 secs
+    Scalar Operand References                  0.001 secs
+    SetTestProperty                            1.002 secs
+    Shared Return Calls                        0.001 secs
+    Stack                                      0.002 secs
+    Subroutine References                      0.002 secs
+    WorkerBackgroundCmd                        0.017 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+   (AutoAnalysisManager.java:1280) 
+12:55:08 DEBUG   task finish (1.083 secs)   (ToolTaskManager.java:357) 
+12:55:08 DEBUG   task Complete (1.099 secs)   (ToolTaskManager.java:407) 
+12:55:08 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testDisableResumeAnalysisTaskWorkerInvocation ✓	   (AbstractGenericTest.java:114) 
+12:55:08 DEBUG Wed Sep 04 12:55:08 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testSwingThreadWorkerInvocation *****   (AbstractGenericTest.java:114) 
+12:55:08 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:08 DEBUG   task finish (0.021 secs)   (ToolTaskManager.java:357) 
+12:55:08 DEBUG   task Complete (0.022 secs)   (ToolTaskManager.java:407) 
+12:55:09 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testSwingThreadWorkerInvocation ✓	   (AbstractGenericTest.java:114) 
+12:55:09 DEBUG Wed Sep 04 12:55:09 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testDisableResumeToolTaskWorkerInvocation *****   (AbstractGenericTest.java:114) 
+12:55:09 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:09 DEBUG   task finish (0.513 secs)   (ToolTaskManager.java:357) 
+12:55:09 DEBUG     Queue - WorkerBackgroundCmd   (ToolTaskManager.java:370) 
+12:55:09 DEBUG Invoking analysis worker (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1672) 
+12:55:09 DEBUG Analysis worker completed (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1355) 
+12:55:09 DEBUG    (0.019 secs)   (ToolTaskManager.java:376) 
+12:55:09 DEBUG     Queue - Auto Analysis   (ToolTaskManager.java:370) 
+12:55:10 DEBUG    (0.518 secs)   (ToolTaskManager.java:376) 
+12:55:10 DEBUG   task Complete (1.056 secs)   (ToolTaskManager.java:407) 
+12:55:10 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testDisableResumeToolTaskWorkerInvocation ✓	   (AbstractGenericTest.java:114) 
+12:55:10 DEBUG Wed Sep 04 12:55:10 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testWorkerCancelled *****   (AbstractGenericTest.java:114) 
+12:55:10 DEBUG Scheduling analysis worker (CancelTest): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$2   (AutoAnalysisManager.java:1339) 
+12:55:10 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:10 DEBUG Invoking analysis worker (CancelTest): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$2   (AutoAnalysisManager.java:1672) 
+12:55:10 DEBUG   task finish (0.048 secs)   (ToolTaskManager.java:357) 
+12:55:10 DEBUG   task Complete (0.051 secs)   (ToolTaskManager.java:407) 
+12:55:10 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testWorkerCancelled ✓	   (AbstractGenericTest.java:114) 
+12:55:10 DEBUG Wed Sep 04 12:55:10 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testDisableIgnoreResumeAdhocThreadWorkerInvocation *****   (AbstractGenericTest.java:114) 
+12:55:11 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:11 DEBUG Scheduling analysis worker (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1339) 
+12:55:11 DEBUG Invoking analysis worker (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1672) 
+12:55:11 DEBUG Analysis worker completed (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1355) 
+12:55:12 INFO  -----------------------------------------------------
+    SetTestProperty                            1.000 secs
+    testAutoAnalyzeDisableResume               0.062 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+   (AutoAnalysisManager.java:1280) 
+12:55:12 DEBUG   task finish (1.085 secs)   (ToolTaskManager.java:357) 
+12:55:12 DEBUG   task Complete (1.091 secs)   (ToolTaskManager.java:407) 
+12:55:12 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testDisableIgnoreResumeAdhocThreadWorkerInvocation ✓	   (AbstractGenericTest.java:114) 
+12:55:12 DEBUG Wed Sep 04 12:55:12 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testDisableIgnoreResumeAnalysisTaskWorkerInvocation *****   (AbstractGenericTest.java:114) 
+12:55:12 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:13 DEBUG Invoking analysis worker (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1672) 
+12:55:13 DEBUG Analysis worker completed (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1355) 
+12:55:13 INFO  -----------------------------------------------------
+    SetTestProperty                            1.002 secs
+    WorkerBackgroundCmd                        0.040 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+   (AutoAnalysisManager.java:1280) 
+12:55:13 DEBUG   task finish (1.064 secs)   (ToolTaskManager.java:357) 
+12:55:13 DEBUG   task Complete (1.068 secs)   (ToolTaskManager.java:407) 
+12:55:13 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testDisableIgnoreResumeAnalysisTaskWorkerInvocation ✓	   (AbstractGenericTest.java:114) 
+12:55:13 DEBUG Wed Sep 04 12:55:13 CST 2019
+***** STARTING Test: AutoAnalysisWorkerTest - testDisableResumeAdhocThreadWorkerInvocation *****   (AbstractGenericTest.java:114) 
+12:55:13 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+12:55:13 DEBUG Scheduling analysis worker (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1339) 
+12:55:14 DEBUG Invoking analysis worker (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1672) 
+12:55:14 DEBUG Analysis worker completed (testAutoAnalyzeDisableResume): class ghidra.app.plugin.core.AutoAnalysisWorkerTest$1   (AutoAnalysisManager.java:1355) 
+12:55:14 INFO  -----------------------------------------------------
+    Basic Constant Reference Analyzer          0.002 secs
+    Call-Fixup Installer                       0.000 secs
+    Create Function                            0.001 secs
+    Non-Returning Functions - Discovered       0.000 secs
+    Reference                                  0.000 secs
+    Scalar Operand References                  0.000 secs
+    SetTestProperty                            1.000 secs
+    Shared Return Calls                        0.000 secs
+    Stack                                      0.000 secs
+    Subroutine References                      0.000 secs
+    testAutoAnalyzeDisableResume               0.011 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+   (AutoAnalysisManager.java:1280) 
+12:55:14 DEBUG   task finish (1.033 secs)   (ToolTaskManager.java:357) 
+12:55:14 DEBUG   task Complete (1.038 secs)   (ToolTaskManager.java:407) 
+12:55:15 DEBUG 	✓ PASSED Test: AutoAnalysisWorkerTest - testDisableResumeAdhocThreadWorkerInvocation ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

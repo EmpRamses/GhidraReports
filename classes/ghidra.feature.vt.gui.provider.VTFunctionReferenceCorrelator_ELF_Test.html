@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.feature.vt.gui.provider.VTFunctionReferenceCorrelator_ELF_Test</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.feature.vt.gui.provider.VTFunctionReferenceCorrelator_ELF_Test</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.feature.vt.gui.provider.html">ghidra.feature.vt.gui.provider</a> &gt; VTFunctionReferenceCorrelator_ELF_Test</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.461s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testFunctionReferenceCorrelator_allFunctionMatches"></a>
+<h3 class="failures">testFunctionReferenceCorrelator_allFunctionMatches</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.feature.vt.api.db.VTSessionDB.initializePrograms(VTSessionDB.java:138)
+	at ghidra.feature.vt.api.db.VTSessionDB.createVTSession(VTSessionDB.java:87)
+	at ghidra.feature.vt.gui.VTTestEnv.createAndOpenVTSession(VTTestEnv.java:115)
+	at ghidra.feature.vt.gui.VTTestEnv.createSession(VTTestEnv.java:105)
+	at ghidra.feature.vt.gui.provider.AbstractVTCorrelatorTest.setUp(AbstractVTCorrelatorTest.java:93)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFunctionReferenceCorrelator_onlyBobFunctionMatches"></a>
+<h3 class="failures">testFunctionReferenceCorrelator_onlyBobFunctionMatches</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.feature.vt.api.db.VTSessionDB.initializePrograms(VTSessionDB.java:138)
+	at ghidra.feature.vt.api.db.VTSessionDB.createVTSession(VTSessionDB.java:87)
+	at ghidra.feature.vt.gui.VTTestEnv.createAndOpenVTSession(VTTestEnv.java:115)
+	at ghidra.feature.vt.gui.VTTestEnv.createSession(VTTestEnv.java:105)
+	at ghidra.feature.vt.gui.provider.AbstractVTCorrelatorTest.setUp(AbstractVTCorrelatorTest.java:93)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testFunctionReferenceCorrelator_allFunctionMatches</td>
+<td class="failures">1.840s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFunctionReferenceCorrelator_onlyBobFunctionMatches</td>
+<td class="failures">0.621s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_cd9ed51c-36fd-4cec-934f-dd6e88675b4e/temp.data
+14:38:49 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:38:49 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_cd9ed51c-36fd-4cec-934f-dd6e88675b4e/temp.data/application.log   (LoggingInitialization.java:60) 
+14:38:49 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_cd9ed51c-36fd-4cec-934f-dd6e88675b4e/temp.data/preferences   (Preferences.java:122) 
+14:38:50 INFO  Class search complete (494 ms)   (ClassSearcher.java:250) 
+14:38:50 DEBUG Wed Sep 04 14:38:50 CST 2019
+***** STARTING Test: VTFunctionReferenceCorrelator_ELF_Test - testFunctionReferenceCorrelator_allFunctionMatches *****   (AbstractGenericTest.java:114) 
+14:38:52 WARN  Test data file not found: VersionTracking/helloWorld64.gzf   (AbstractGenericTest.java:381) 
+14:38:52 WARN  Test data file not found: VersionTracking/helloWorld64.xml   (AbstractGenericTest.java:381) 
+14:38:52 INFO  Test program not found: VersionTracking/helloWorld64   (TestProgramManager.java:351) 
+14:38:52 WARN  Test data file not found: VersionTracking/helloWorld32.gzf   (AbstractGenericTest.java:381) 
+14:38:52 WARN  Test data file not found: VersionTracking/helloWorld32.xml   (AbstractGenericTest.java:381) 
+14:38:52 INFO  Test program not found: VersionTracking/helloWorld32   (TestProgramManager.java:351) 
+14:38:52 DEBUG 	✖ FAILED Test: VTFunctionReferenceCorrelator_ELF_Test - testFunctionReferenceCorrelator_allFunctionMatches ✖	   (AbstractGenericTest.java:114) 
+14:38:52 DEBUG Wed Sep 04 14:38:52 CST 2019
+***** STARTING Test: VTFunctionReferenceCorrelator_ELF_Test - testFunctionReferenceCorrelator_onlyBobFunctionMatches *****   (AbstractGenericTest.java:114) 
+14:38:53 WARN  Test data file not found: VersionTracking/helloWorld64.gzf   (AbstractGenericTest.java:381) 
+14:38:53 WARN  Test data file not found: VersionTracking/helloWorld64.xml   (AbstractGenericTest.java:381) 
+14:38:53 INFO  Test program not found: VersionTracking/helloWorld64   (TestProgramManager.java:351) 
+14:38:53 WARN  Test data file not found: VersionTracking/helloWorld32.gzf   (AbstractGenericTest.java:381) 
+14:38:53 WARN  Test data file not found: VersionTracking/helloWorld32.xml   (AbstractGenericTest.java:381) 
+14:38:53 INFO  Test program not found: VersionTracking/helloWorld32   (TestProgramManager.java:351) 
+14:38:53 DEBUG 	✖ FAILED Test: VTFunctionReferenceCorrelator_ELF_Test - testFunctionReferenceCorrelator_onlyBobFunctionMatches ✖	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

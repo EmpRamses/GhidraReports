@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.program.util.ExternalFunctionDiffTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.program.util.ExternalFunctionDiffTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.program.util.html">ghidra.program.util</a> &gt; ExternalFunctionDiffTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">13</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">7.926s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAddDifferentBodyThunk</td>
+<td class="success">0.551s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddDifferentThunkAtSameSpot</td>
+<td class="success">0.413s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddSameThunkNoConflict</td>
+<td class="success">0.404s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddSameThunksDifferentOrder</td>
+<td class="success">0.514s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddThunkToJustLatest</td>
+<td class="success">0.404s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddThunkToJustMy</td>
+<td class="success">0.311s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddThunkVsNonThunk</td>
+<td class="success">2.175s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddThunksWithBodyOverlap</td>
+<td class="success">0.606s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testChangeThunkBodyDifferentlyInLatest</td>
+<td class="success">0.412s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testChangeThunkBodyDifferentlyInMy</td>
+<td class="success">0.614s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testChangeThunkPointedToDifferentlyInEach</td>
+<td class="success">0.505s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExtLabelRefAddDiff</td>
+<td class="success">0.506s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExtLabelRefAddSame</td>
+<td class="success">0.511s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_dfb4d4ec-6ad2-4c87-8bcd-9614b1978e57/temp.data
+13:49:25 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:49:25 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_dfb4d4ec-6ad2-4c87-8bcd-9614b1978e57/temp.data/application.log   (LoggingInitialization.java:60) 
+13:49:25 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_dfb4d4ec-6ad2-4c87-8bcd-9614b1978e57/temp.data/preferences   (Preferences.java:122) 
+13:49:26 INFO  Class search complete (515 ms)   (ClassSearcher.java:250) 
+13:49:26 DEBUG Wed Sep 04 13:49:26 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testAddThunkVsNonThunk *****   (AbstractGenericTest.java:114) 
+13:49:28 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testAddThunkVsNonThunk ✓	   (AbstractGenericTest.java:114) 
+13:49:28 DEBUG Wed Sep 04 13:49:28 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testAddThunksWithBodyOverlap *****   (AbstractGenericTest.java:114) 
+13:49:29 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testAddThunksWithBodyOverlap ✓	   (AbstractGenericTest.java:114) 
+13:49:29 DEBUG Wed Sep 04 13:49:29 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testChangeThunkBodyDifferentlyInMy *****   (AbstractGenericTest.java:114) 
+13:49:29 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testChangeThunkBodyDifferentlyInMy ✓	   (AbstractGenericTest.java:114) 
+13:49:29 DEBUG Wed Sep 04 13:49:29 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testChangeThunkPointedToDifferentlyInEach *****   (AbstractGenericTest.java:114) 
+13:49:30 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testChangeThunkPointedToDifferentlyInEach ✓	   (AbstractGenericTest.java:114) 
+13:49:30 DEBUG Wed Sep 04 13:49:30 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testExtLabelRefAddDiff *****   (AbstractGenericTest.java:114) 
+13:49:30 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testExtLabelRefAddDiff ✓	   (AbstractGenericTest.java:114) 
+13:49:30 DEBUG Wed Sep 04 13:49:30 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testExtLabelRefAddSame *****   (AbstractGenericTest.java:114) 
+13:49:31 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testExtLabelRefAddSame ✓	   (AbstractGenericTest.java:114) 
+13:49:31 DEBUG Wed Sep 04 13:49:31 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testAddThunkToJustLatest *****   (AbstractGenericTest.java:114) 
+13:49:31 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testAddThunkToJustLatest ✓	   (AbstractGenericTest.java:114) 
+13:49:31 DEBUG Wed Sep 04 13:49:31 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testAddDifferentThunkAtSameSpot *****   (AbstractGenericTest.java:114) 
+13:49:32 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testAddDifferentThunkAtSameSpot ✓	   (AbstractGenericTest.java:114) 
+13:49:32 DEBUG Wed Sep 04 13:49:32 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testAddSameThunksDifferentOrder *****   (AbstractGenericTest.java:114) 
+13:49:32 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testAddSameThunksDifferentOrder ✓	   (AbstractGenericTest.java:114) 
+13:49:32 DEBUG Wed Sep 04 13:49:32 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testAddSameThunkNoConflict *****   (AbstractGenericTest.java:114) 
+13:49:33 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testAddSameThunkNoConflict ✓	   (AbstractGenericTest.java:114) 
+13:49:33 DEBUG Wed Sep 04 13:49:33 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testChangeThunkBodyDifferentlyInLatest *****   (AbstractGenericTest.java:114) 
+13:49:33 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testChangeThunkBodyDifferentlyInLatest ✓	   (AbstractGenericTest.java:114) 
+13:49:33 DEBUG Wed Sep 04 13:49:33 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testAddDifferentBodyThunk *****   (AbstractGenericTest.java:114) 
+13:49:33 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testAddDifferentBodyThunk ✓	   (AbstractGenericTest.java:114) 
+13:49:33 DEBUG Wed Sep 04 13:49:33 CST 2019
+***** STARTING Test: ExternalFunctionDiffTest - testAddThunkToJustMy *****   (AbstractGenericTest.java:114) 
+13:49:34 DEBUG 	✓ PASSED Test: ExternalFunctionDiffTest - testAddThunkToJustMy ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

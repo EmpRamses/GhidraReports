@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.plugin.core.diff.DiffApplyTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.plugin.core.diff.DiffApplyTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.plugin.core.diff.html">ghidra.app.plugin.core.diff</a> &gt; DiffApplyTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">15.357s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testApplyAllDiffsAction</td>
+<td class="success">1.309s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testApplyAllDiffsActionWithSimpleLabelMerge</td>
+<td class="success">1.832s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIgnoreAllDiffsSettings</td>
+<td class="success">1.218s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInitialDiffApplySettings</td>
+<td class="success">1.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMergeAllDiffsSettings</td>
+<td class="success">1.242s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplaceAllDiffsAction</td>
+<td class="success">1.723s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplaceAllDiffsLabelConflict</td>
+<td class="success">1.308s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplaceAllDiffsSettings</td>
+<td class="success">4.304s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testShowHideDiffApplySettings</td>
+<td class="success">1.408s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/Ghidra_test_2039525c-816a-4708-a994-2d366abf5b03/temp.data
+14:25:35 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:25:35 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/Ghidra_test_2039525c-816a-4708-a994-2d366abf5b03/temp.data/application.log   (LoggingInitialization.java:60) 
+14:25:36 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/ProgramDiff/build/Ghidra_test_2039525c-816a-4708-a994-2d366abf5b03/temp.data/preferences   (Preferences.java:122) 
+14:25:36 INFO  Class search complete (450 ms)   (ClassSearcher.java:250) 
+14:25:36 DEBUG Wed Sep 04 14:25:36 CST 2019
+***** STARTING Test: DiffApplyTest - testReplaceAllDiffsSettings *****   (AbstractGenericTest.java:114) 
+14:25:40 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:25:41 DEBUG 	✓ PASSED Test: DiffApplyTest - testReplaceAllDiffsSettings ✓	   (AbstractGenericTest.java:114) 
+14:25:41 DEBUG Wed Sep 04 14:25:41 CST 2019
+***** STARTING Test: DiffApplyTest - testApplyAllDiffsActionWithSimpleLabelMerge *****   (AbstractGenericTest.java:114) 
+14:25:42 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:25:42 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:25:42 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:25:42 INFO  Conflict with existing type struct_1(), new type will be renamed with .conflict suffix   (DataTypeConflictHandler.java:74) 
+14:25:42 INFO  Conflict with existing type struct_2(), new type will be renamed with .conflict suffix   (DataTypeConflictHandler.java:74) 
+14:25:42 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:25:42 DEBUG   task finish (0.315 secs)   (ToolTaskManager.java:357) 
+14:25:42 DEBUG   task Complete (0.355 secs)   (ToolTaskManager.java:407) 
+14:25:43 DEBUG 	✓ PASSED Test: DiffApplyTest - testApplyAllDiffsActionWithSimpleLabelMerge ✓	   (AbstractGenericTest.java:114) 
+14:25:43 DEBUG Wed Sep 04 14:25:43 CST 2019
+***** STARTING Test: DiffApplyTest - testReplaceAllDiffsAction *****   (AbstractGenericTest.java:114) 
+14:25:43 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:25:44 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:25:44 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:25:44 INFO  Conflict with existing type struct_1(), new type will be renamed with .conflict suffix   (DataTypeConflictHandler.java:74) 
+14:25:44 INFO  Conflict with existing type struct_2(), new type will be renamed with .conflict suffix   (DataTypeConflictHandler.java:74) 
+14:25:44 ERROR Error retrieving function at address: 010018cf   (ProgramMerge.java:1842) 
+14:25:44 ERROR Error retrieving function at address: 01002cf5   (ProgramMerge.java:1842) 
+14:25:44 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:25:44 DEBUG   task finish (0.237 secs)   (ToolTaskManager.java:357) 
+14:25:44 DEBUG   task Complete (0.253 secs)   (ToolTaskManager.java:407) 
+14:25:44 DEBUG 	✓ PASSED Test: DiffApplyTest - testReplaceAllDiffsAction ✓	   (AbstractGenericTest.java:114) 
+14:25:44 DEBUG Wed Sep 04 14:25:44 CST 2019
+***** STARTING Test: DiffApplyTest - testMergeAllDiffsSettings *****   (AbstractGenericTest.java:114) 
+14:25:45 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:25:45 DEBUG 	✓ PASSED Test: DiffApplyTest - testMergeAllDiffsSettings ✓	   (AbstractGenericTest.java:114) 
+14:25:45 DEBUG Wed Sep 04 14:25:45 CST 2019
+***** STARTING Test: DiffApplyTest - testIgnoreAllDiffsSettings *****   (AbstractGenericTest.java:114) 
+14:25:46 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:25:47 DEBUG 	✓ PASSED Test: DiffApplyTest - testIgnoreAllDiffsSettings ✓	   (AbstractGenericTest.java:114) 
+14:25:47 DEBUG Wed Sep 04 14:25:47 CST 2019
+***** STARTING Test: DiffApplyTest - testShowHideDiffApplySettings *****   (AbstractGenericTest.java:114) 
+14:25:47 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:25:48 DEBUG 	✓ PASSED Test: DiffApplyTest - testShowHideDiffApplySettings ✓	   (AbstractGenericTest.java:114) 
+14:25:48 DEBUG Wed Sep 04 14:25:48 CST 2019
+***** STARTING Test: DiffApplyTest - testApplyAllDiffsAction *****   (AbstractGenericTest.java:114) 
+14:25:49 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:25:49 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:25:49 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:25:49 INFO  Conflict with existing type struct_1(), new type will be renamed with .conflict suffix   (DataTypeConflictHandler.java:74) 
+14:25:49 INFO  Conflict with existing type struct_2(), new type will be renamed with .conflict suffix   (DataTypeConflictHandler.java:74) 
+14:25:49 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:25:49 DEBUG   task finish (0.147 secs)   (ToolTaskManager.java:357) 
+14:25:49 DEBUG   task Complete (0.163 secs)   (ToolTaskManager.java:407) 
+14:25:49 DEBUG 	✓ PASSED Test: DiffApplyTest - testApplyAllDiffsAction ✓	   (AbstractGenericTest.java:114) 
+14:25:49 DEBUG Wed Sep 04 14:25:49 CST 2019
+***** STARTING Test: DiffApplyTest - testReplaceAllDiffsLabelConflict *****   (AbstractGenericTest.java:114) 
+14:25:50 DEBUG Exec Task Apply Differences   (ToolTaskManager.java:302) 
+14:25:51 DEBUG Invoking analysis worker (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1672) 
+14:25:51 INFO  Conflict with existing type struct_1(), new type will be renamed with .conflict suffix   (DataTypeConflictHandler.java:74) 
+14:25:51 INFO  Conflict with existing type struct_2(), new type will be renamed with .conflict suffix   (DataTypeConflictHandler.java:74) 
+14:25:51 ERROR Error retrieving function at address: 010018cf   (ProgramMerge.java:1842) 
+14:25:51 ERROR Error retrieving function at address: 01002cf5   (ProgramMerge.java:1842) 
+14:25:51 DEBUG Analysis worker completed (Apply Differences): class ghidra.app.plugin.core.diff.ApplyDiffCommand   (AutoAnalysisManager.java:1355) 
+14:25:51 DEBUG   task finish (0.128 secs)   (ToolTaskManager.java:357) 
+14:25:51 DEBUG   task Complete (0.152 secs)   (ToolTaskManager.java:407) 
+14:25:51 DEBUG 	✓ PASSED Test: DiffApplyTest - testReplaceAllDiffsLabelConflict ✓	   (AbstractGenericTest.java:114) 
+14:25:51 DEBUG Wed Sep 04 14:25:51 CST 2019
+***** STARTING Test: DiffApplyTest - testInitialDiffApplySettings *****   (AbstractGenericTest.java:114) 
+14:25:51 INFO  Memory Differs: The memory addresses defined by the two programs are not the same.
+ 
+Differences are highlighted for the addresses that are compatible between
+the two programs for the types of program information being compared by this Diff.
+ 
+Some addresses are only in program 1 : [[00000200, 000002ff] ]
+ 
+Some addresses are only in program 2 : [[00000400, 000004ff] ]
+ 
+Note: Some parts of the program are not handled by Diff (for example:
+         Markup where only one program has that memory address,
+         Registers that are not common to both programs' languages,
+         Program Trees, Data Types that haven't been applied to memory, etc.)   (CreateDiffTask.java:156) 
+14:25:52 DEBUG 	✓ PASSED Test: DiffApplyTest - testInitialDiffApplySettings ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.plugin.core.script.FindAndReplaceCommentScriptTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.plugin.core.script.FindAndReplaceCommentScriptTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.plugin.core.script.html">ghidra.app.plugin.core.script</a> &gt; FindAndReplaceCommentScriptTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">11.108s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testReplaceEOLComment</td>
+<td class="success">0.720s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplaceMultipleCommentsDifferentTypes</td>
+<td class="success">1.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplaceMultipleCommentsSameType</td>
+<td class="success">3.806s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplaceNonexistantComment</td>
+<td class="success">1.257s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplacePartialComment</td>
+<td class="success">0.928s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplacePlateComment</td>
+<td class="success">0.825s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplacePostComment</td>
+<td class="success">0.818s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplacePreComment</td>
+<td class="success">0.913s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReplaceRepeatableComment</td>
+<td class="success">0.816s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_585cafba-8d21-4bdb-bc4b-3144222a0a4b/temp.data
+13:28:00 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:28:00 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_585cafba-8d21-4bdb-bc4b-3144222a0a4b/temp.data/application.log   (LoggingInitialization.java:60) 
+13:28:00 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_585cafba-8d21-4bdb-bc4b-3144222a0a4b/temp.data/preferences   (Preferences.java:122) 
+13:28:01 INFO  Class search complete (526 ms)   (ClassSearcher.java:250) 
+13:28:01 DEBUG Wed Sep 04 13:28:01 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplaceMultipleCommentsSameType *****   (AbstractGenericTest.java:114) 
+13:28:05 INFO  
+Changed EOL Comment at address 01001500.   (FindAndReplaceCommentScript.java:52) 
+13:28:05 DEBUG Waiting for script FindAndReplaceCommentScript.java: Wed Sep 04 13:28:05 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:514) 
+13:28:05 INFO  
+Changed EOL Comment at address 01001600.   (FindAndReplaceCommentScript.java:52) 
+13:28:05 DEBUG taskCompleted(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:34) 
+13:28:05 DEBUG Script FindAndReplaceCommentScript.java completed: Wed Sep 04 13:28:05 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:523) 
+13:28:05 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplaceMultipleCommentsSameType ✓	   (AbstractGenericTest.java:114) 
+13:28:05 DEBUG Wed Sep 04 13:28:05 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplaceNonexistantComment *****   (AbstractGenericTest.java:114) 
+13:28:06 INFO  FindAndReplaceCommentScript.java&gt; No comment found with that value   (FindAndReplaceCommentScript.java:59) 
+13:28:06 DEBUG taskCancelled(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:40) 
+13:28:06 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplaceNonexistantComment ✓	   (AbstractGenericTest.java:114) 
+13:28:06 DEBUG Wed Sep 04 13:28:06 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplaceMultipleCommentsDifferentTypes *****   (AbstractGenericTest.java:114) 
+13:28:07 DEBUG Waiting for script FindAndReplaceCommentScript.java: Wed Sep 04 13:28:07 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:514) 
+13:28:07 INFO  
+Changed EOL Comment at address 01001700.   (FindAndReplaceCommentScript.java:52) 
+13:28:07 INFO  
+Changed Pre Comment at address 01001800.   (FindAndReplaceCommentScript.java:52) 
+13:28:07 INFO  
+Changed Post Comment at address 01001900.   (FindAndReplaceCommentScript.java:52) 
+13:28:07 INFO  
+Changed Plate Comment at address 01002000.   (FindAndReplaceCommentScript.java:52) 
+13:28:07 INFO  
+Changed Repeatable Comment at address 01002100.   (FindAndReplaceCommentScript.java:52) 
+13:28:07 DEBUG taskCompleted(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:34) 
+13:28:07 DEBUG Script FindAndReplaceCommentScript.java completed: Wed Sep 04 13:28:07 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:523) 
+13:28:07 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplaceMultipleCommentsDifferentTypes ✓	   (AbstractGenericTest.java:114) 
+13:28:07 DEBUG Wed Sep 04 13:28:07 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplaceRepeatableComment *****   (AbstractGenericTest.java:114) 
+13:28:08 DEBUG Waiting for script FindAndReplaceCommentScript.java: Wed Sep 04 13:28:08 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:514) 
+13:28:08 INFO  
+Changed Repeatable Comment at address 01001400.   (FindAndReplaceCommentScript.java:52) 
+13:28:08 DEBUG taskCompleted(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:34) 
+13:28:08 DEBUG Script FindAndReplaceCommentScript.java completed: Wed Sep 04 13:28:08 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:523) 
+13:28:08 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplaceRepeatableComment ✓	   (AbstractGenericTest.java:114) 
+13:28:08 DEBUG Wed Sep 04 13:28:08 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplacePartialComment *****   (AbstractGenericTest.java:114) 
+13:28:09 INFO  
+Changed EOL Comment at address 01001000.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed Pre Comment at address 01001100.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed Post Comment at address 01001200.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 DEBUG Waiting for script FindAndReplaceCommentScript.java: Wed Sep 04 13:28:09 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:514) 
+13:28:09 INFO  
+Changed Plate Comment at address 01001300.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed Repeatable Comment at address 01001400.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed EOL Comment at address 01001500.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed EOL Comment at address 01001600.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed EOL Comment at address 01001700.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed Pre Comment at address 01001800.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed Post Comment at address 01001900.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed Plate Comment at address 01002000.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 INFO  
+Changed Repeatable Comment at address 01002100.   (FindAndReplaceCommentScript.java:52) 
+13:28:09 DEBUG taskCompleted(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:34) 
+13:28:09 DEBUG Script FindAndReplaceCommentScript.java completed: Wed Sep 04 13:28:09 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:523) 
+13:28:09 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplacePartialComment ✓	   (AbstractGenericTest.java:114) 
+13:28:09 DEBUG Wed Sep 04 13:28:09 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplacePreComment *****   (AbstractGenericTest.java:114) 
+13:28:10 DEBUG Waiting for script FindAndReplaceCommentScript.java: Wed Sep 04 13:28:10 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:514) 
+13:28:10 INFO  
+Changed Pre Comment at address 01001100.   (FindAndReplaceCommentScript.java:52) 
+13:28:10 DEBUG taskCompleted(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:34) 
+13:28:10 DEBUG Script FindAndReplaceCommentScript.java completed: Wed Sep 04 13:28:10 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:523) 
+13:28:10 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplacePreComment ✓	   (AbstractGenericTest.java:114) 
+13:28:10 DEBUG Wed Sep 04 13:28:10 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplaceEOLComment *****   (AbstractGenericTest.java:114) 
+13:28:11 DEBUG Waiting for script FindAndReplaceCommentScript.java: Wed Sep 04 13:28:11 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:514) 
+13:28:11 INFO  
+Changed EOL Comment at address 01001000.   (FindAndReplaceCommentScript.java:52) 
+13:28:11 INFO  
+Changed EOL Comment at address 01001500.   (FindAndReplaceCommentScript.java:52) 
+13:28:11 INFO  
+Changed EOL Comment at address 01001600.   (FindAndReplaceCommentScript.java:52) 
+13:28:11 DEBUG taskCompleted(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:34) 
+13:28:11 DEBUG Script FindAndReplaceCommentScript.java completed: Wed Sep 04 13:28:11 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:523) 
+13:28:11 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplaceEOLComment ✓	   (AbstractGenericTest.java:114) 
+13:28:11 DEBUG Wed Sep 04 13:28:11 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplacePostComment *****   (AbstractGenericTest.java:114) 
+13:28:12 DEBUG Waiting for script FindAndReplaceCommentScript.java: Wed Sep 04 13:28:12 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:514) 
+13:28:12 INFO  
+Changed Post Comment at address 01001200.   (FindAndReplaceCommentScript.java:52) 
+13:28:12 DEBUG taskCompleted(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:34) 
+13:28:12 DEBUG Script FindAndReplaceCommentScript.java completed: Wed Sep 04 13:28:12 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:523) 
+13:28:12 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplacePostComment ✓	   (AbstractGenericTest.java:114) 
+13:28:12 DEBUG Wed Sep 04 13:28:12 CST 2019
+***** STARTING Test: FindAndReplaceCommentScriptTest - testReplacePlateComment *****   (AbstractGenericTest.java:114) 
+13:28:12 DEBUG Waiting for script FindAndReplaceCommentScript.java: Wed Sep 04 13:28:12 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:514) 
+13:28:12 INFO  
+Changed Plate Comment at address 01001300.   (FindAndReplaceCommentScript.java:52) 
+13:28:12 DEBUG taskCompleted(): FindAndReplaceCommentScript.java   (ScriptTaskListener.java:34) 
+13:28:12 DEBUG Script FindAndReplaceCommentScript.java completed: Wed Sep 04 13:28:12 CST 2019   (AbstractGhidraHeadlessIntegrationTest.java:523) 
+13:28:12 DEBUG 	✓ PASSED Test: FindAndReplaceCommentScriptTest - testReplacePlateComment ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

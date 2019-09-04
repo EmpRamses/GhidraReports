@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.program.database.symbol.SymbolManagerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.program.database.symbol.SymbolManagerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.program.database.symbol.html">ghidra.program.database.symbol</a> &gt; SymbolManagerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">79</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.137s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAddExtEntryPoint</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddReference</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddSymbolWhereDefault</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddSymbolsToDefaultFunction</td>
+<td class="success">0.649s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddSymbolsWhereNoDefault</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAssociation</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testClassParentScope</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateClassScope</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateFunction</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateLibScope</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateLocal</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateNamespace</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateSymbol</td>
+<td class="success">0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDuplicateFunctionNames</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDuplicateNameAtSameAddressDifferentNamespace</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDuplicateNameAtSameAddressSameNamespace</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDuplicateSymbol</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testExternalEntry</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetAllSymbols</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetAllSymbolsIncludingDynamic</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetByName</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetDefaultFunctionInOverlaySymbolByName</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetDefaultFunctionInOverlaySymbolByNameWith2WordSize</td>
+<td class="success">0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetDefaultFunctionSymbolByName</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetDynamic</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetLocal</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetLocalSymbols</td>
+<td class="success">0.105s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetNumSymbols</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetPrimarySymbol</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetSymbolByAddress</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetSymbolByReference</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetSymbolReferences</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetUniqueSymbol_MultipleSymbols</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetUniqueSymbol_NoSymbol</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetUniqueSymbol_OneSymbol</td>
+<td class="success">0.107s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidExternalScope</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsDescendant</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsExternalEntry</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsValidParentForCodeSymbol</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsValidParentForFunction</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsValidParentForNamespace</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLabelHistory</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLabelHistory2</td>
+<td class="success">0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLabelHistoryIterator</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLabelHistoryIterator2</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPrimarySymbolIterator</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPrimarySymbolIteratorBackwards</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPrimarySymbolIteratorSet</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPrimarySymbolIteratorSetBackwards</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPromoteLabelToFunctionWithMultipleLabels</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveAssociation</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveDefaultFunctionSymbolBeforeFunction</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveDefaultFunctionSymbolWithFunction</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveDefaultSymbol</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveExtEntryPoint</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveFunction</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveFunctionBecomesCodeSymbol</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveFunctionSymbolAfterFunction</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveFunctionSymbolBecomesDefault</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveFunctionSymbolBecomesExistingCodeSymbol</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveFunctionSymbolBecomesExistingCodeSymbolWithNamespace</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveReference</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveSymbol</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveSymbol2</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveSymbol3</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveSymbol5</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveSymbol7</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemoveSymbolWhereFunctionIs</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRenameFunctionToExistingName</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRenameSymbol</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRenameSymbol2</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSameNamesForNamespaces</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetPrimary</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetScope</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetSymbolName</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSymbolIteratorBackwards</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSymbolSearcherIterator</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSymbolSearcherIterator_WithSymbolNamesContainingWildcards</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSymbolsWithSegmentedAddresses</td>
+<td class="success">0.613s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_c6551a79-32ff-4615-bd78-e6ff63026766/temp.data
+13:48:34 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+13:48:34 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_c6551a79-32ff-4615-bd78-e6ff63026766/temp.data/application.log   (LoggingInitialization.java:60) 
+13:48:34 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_c6551a79-32ff-4615-bd78-e6ff63026766/temp.data/preferences   (Preferences.java:122) 
+13:48:35 INFO  Class search complete (522 ms)   (ClassSearcher.java:250) 
+13:48:35 DEBUG Wed Sep 04 13:48:35 CST 2019
+***** STARTING Test: SymbolManagerTest - testAddSymbolsToDefaultFunction *****   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG 	✓ PASSED Test: SymbolManagerTest - testAddSymbolsToDefaultFunction ✓	   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG Wed Sep 04 13:48:36 CST 2019
+***** STARTING Test: SymbolManagerTest - testSymbolSearcherIterator *****   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG 	✓ PASSED Test: SymbolManagerTest - testSymbolSearcherIterator ✓	   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG Wed Sep 04 13:48:36 CST 2019
+***** STARTING Test: SymbolManagerTest - testIsValidParentForCodeSymbol *****   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG 	✓ PASSED Test: SymbolManagerTest - testIsValidParentForCodeSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG Wed Sep 04 13:48:36 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetDynamic *****   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetDynamic ✓	   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG Wed Sep 04 13:48:36 CST 2019
+***** STARTING Test: SymbolManagerTest - testCreateSymbol *****   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG 	✓ PASSED Test: SymbolManagerTest - testCreateSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:36 DEBUG Wed Sep 04 13:48:36 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetLocalSymbols *****   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetLocalSymbols ✓	   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG Wed Sep 04 13:48:37 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetUniqueSymbol_MultipleSymbols *****   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetUniqueSymbol_MultipleSymbols ✓	   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG Wed Sep 04 13:48:37 CST 2019
+***** STARTING Test: SymbolManagerTest - testLabelHistory2 *****   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG 	✓ PASSED Test: SymbolManagerTest - testLabelHistory2 ✓	   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG Wed Sep 04 13:48:37 CST 2019
+***** STARTING Test: SymbolManagerTest - testSetSymbolName *****   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG 	✓ PASSED Test: SymbolManagerTest - testSetSymbolName ✓	   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG Wed Sep 04 13:48:37 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetAllSymbolsIncludingDynamic *****   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetAllSymbolsIncludingDynamic ✓	   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG Wed Sep 04 13:48:37 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetLocal *****   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetLocal ✓	   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG Wed Sep 04 13:48:37 CST 2019
+***** STARTING Test: SymbolManagerTest - testInvalidExternalScope *****   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG 	✓ PASSED Test: SymbolManagerTest - testInvalidExternalScope ✓	   (AbstractGenericTest.java:114) 
+13:48:37 DEBUG Wed Sep 04 13:48:37 CST 2019
+***** STARTING Test: SymbolManagerTest - testSymbolsWithSegmentedAddresses *****   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG 	✓ PASSED Test: SymbolManagerTest - testSymbolsWithSegmentedAddresses ✓	   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG Wed Sep 04 13:48:38 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveDefaultFunctionSymbolBeforeFunction *****   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveDefaultFunctionSymbolBeforeFunction ✓	   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG Wed Sep 04 13:48:38 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveFunction *****   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveFunction ✓	   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG Wed Sep 04 13:48:38 CST 2019
+***** STARTING Test: SymbolManagerTest - testPrimarySymbolIteratorSetBackwards *****   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG 	✓ PASSED Test: SymbolManagerTest - testPrimarySymbolIteratorSetBackwards ✓	   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG Wed Sep 04 13:48:38 CST 2019
+***** STARTING Test: SymbolManagerTest - testClassParentScope *****   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG 	✓ PASSED Test: SymbolManagerTest - testClassParentScope ✓	   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG Wed Sep 04 13:48:38 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetDefaultFunctionInOverlaySymbolByNameWith2WordSize *****   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetDefaultFunctionInOverlaySymbolByNameWith2WordSize ✓	   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG Wed Sep 04 13:48:38 CST 2019
+***** STARTING Test: SymbolManagerTest - testAddSymbolWhereDefault *****   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG 	✓ PASSED Test: SymbolManagerTest - testAddSymbolWhereDefault ✓	   (AbstractGenericTest.java:114) 
+13:48:38 DEBUG Wed Sep 04 13:48:38 CST 2019
+***** STARTING Test: SymbolManagerTest - testCreateLocal *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testCreateLocal ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testSameNamesForNamespaces *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testSameNamesForNamespaces ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveExtEntryPoint *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveExtEntryPoint ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testLabelHistoryIterator *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testLabelHistoryIterator ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testAssociation *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testAssociation ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveDefaultSymbol *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveDefaultSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveFunctionBecomesCodeSymbol *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveFunctionBecomesCodeSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveSymbolWhereFunctionIs *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveSymbolWhereFunctionIs ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveFunctionSymbolAfterFunction *****   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveFunctionSymbolAfterFunction ✓	   (AbstractGenericTest.java:114) 
+13:48:39 DEBUG Wed Sep 04 13:48:39 CST 2019
+***** STARTING Test: SymbolManagerTest - testCreateNamespace *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testCreateNamespace ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testAddExtEntryPoint *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testAddExtEntryPoint ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveAssociation *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveAssociation ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveFunctionSymbolBecomesExistingCodeSymbol *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveFunctionSymbolBecomesExistingCodeSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testPrimarySymbolIteratorSet *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testPrimarySymbolIteratorSet ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testAddReference *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testAddReference ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testIsValidParentForNamespace *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testIsValidParentForNamespace ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetDefaultFunctionSymbolByName *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetDefaultFunctionSymbolByName ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveSymbol *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testRenameFunctionToExistingName *****   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRenameFunctionToExistingName ✓	   (AbstractGenericTest.java:114) 
+13:48:40 DEBUG Wed Sep 04 13:48:40 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveFunctionSymbolBecomesExistingCodeSymbolWithNamespace *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveFunctionSymbolBecomesExistingCodeSymbolWithNamespace ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testCreateClassScope *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testCreateClassScope ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testCreateLibScope *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testCreateLibScope ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testDuplicateSymbol *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testDuplicateSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testPromoteLabelToFunctionWithMultipleLabels *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testPromoteLabelToFunctionWithMultipleLabels ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetSymbolByAddress *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetSymbolByAddress ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testDuplicateFunctionNames *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testDuplicateFunctionNames ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testAddSymbolsWhereNoDefault *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testAddSymbolsWhereNoDefault ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testPrimarySymbolIterator *****   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG 	✓ PASSED Test: SymbolManagerTest - testPrimarySymbolIterator ✓	   (AbstractGenericTest.java:114) 
+13:48:41 DEBUG Wed Sep 04 13:48:41 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetByName *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetByName ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveReference *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveReference ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testRenameSymbol *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRenameSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testCreateFunction *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testCreateFunction ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testIsValidParentForFunction *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testIsValidParentForFunction ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveFunctionSymbolBecomesDefault *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveFunctionSymbolBecomesDefault ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetUniqueSymbol_OneSymbol *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetUniqueSymbol_OneSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testSymbolIteratorBackwards *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testSymbolIteratorBackwards ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetAllSymbols *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetAllSymbols ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetSymbolByReference *****   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetSymbolByReference ✓	   (AbstractGenericTest.java:114) 
+13:48:42 DEBUG Wed Sep 04 13:48:42 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetNumSymbols *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetNumSymbols ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveSymbol2 *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveSymbol2 ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveSymbol3 *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveSymbol3 ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveSymbol5 *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveSymbol5 ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveSymbol7 *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveSymbol7 ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testDuplicateNameAtSameAddressSameNamespace *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testDuplicateNameAtSameAddressSameNamespace ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testRenameSymbol2 *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRenameSymbol2 ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testRemoveDefaultFunctionSymbolWithFunction *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testRemoveDefaultFunctionSymbolWithFunction ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testLabelHistory *****   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG 	✓ PASSED Test: SymbolManagerTest - testLabelHistory ✓	   (AbstractGenericTest.java:114) 
+13:48:43 DEBUG Wed Sep 04 13:48:43 CST 2019
+***** STARTING Test: SymbolManagerTest - testSymbolSearcherIterator_WithSymbolNamesContainingWildcards *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testSymbolSearcherIterator_WithSymbolNamesContainingWildcards ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testLabelHistoryIterator2 *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testLabelHistoryIterator2 ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetPrimarySymbol *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetPrimarySymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testDuplicateNameAtSameAddressDifferentNamespace *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testDuplicateNameAtSameAddressDifferentNamespace ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testExternalEntry *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testExternalEntry ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetDefaultFunctionInOverlaySymbolByName *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetDefaultFunctionInOverlaySymbolByName ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testSetPrimary *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testSetPrimary ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testIsExternalEntry *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testIsExternalEntry ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testPrimarySymbolIteratorBackwards *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testPrimarySymbolIteratorBackwards ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetSymbolReferences *****   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetSymbolReferences ✓	   (AbstractGenericTest.java:114) 
+13:48:44 DEBUG Wed Sep 04 13:48:44 CST 2019
+***** STARTING Test: SymbolManagerTest - testGetUniqueSymbol_NoSymbol *****   (AbstractGenericTest.java:114) 
+13:48:45 DEBUG 	✓ PASSED Test: SymbolManagerTest - testGetUniqueSymbol_NoSymbol ✓	   (AbstractGenericTest.java:114) 
+13:48:45 DEBUG Wed Sep 04 13:48:45 CST 2019
+***** STARTING Test: SymbolManagerTest - testIsDescendant *****   (AbstractGenericTest.java:114) 
+13:48:45 DEBUG 	✓ PASSED Test: SymbolManagerTest - testIsDescendant ✓	   (AbstractGenericTest.java:114) 
+13:48:45 DEBUG Wed Sep 04 13:48:45 CST 2019
+***** STARTING Test: SymbolManagerTest - testSetScope *****   (AbstractGenericTest.java:114) 
+13:48:45 DEBUG 	✓ PASSED Test: SymbolManagerTest - testSetScope ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>

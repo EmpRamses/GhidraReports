@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ghidra.app.plugin.core.decompile.DecompilerFindReferencesToNestedStructureActionTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ghidra.app.plugin.core.decompile.DecompilerFindReferencesToNestedStructureActionTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ghidra.app.plugin.core.decompile.html">ghidra.app.plugin.core.decompile</a> &gt; DecompilerFindReferencesToNestedStructureActionTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.799s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testActionEnablementOnNestedStructureField"></a>
+<h3 class="failures">testActionEnablementOnNestedStructureField</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFindDataTypeReferences_ToNestedFieldOfDataType"></a>
+<h3 class="failures">testFindDataTypeReferences_ToNestedFieldOfDataType</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Exception in Swing thread via runSwingAndWait():
+NullPointerException
+	at ghidra.test.TestEnv.lambda$launchDefaultTool$16(TestEnv.java:834)
+	at generic.test.AbstractGenericTest$ExceptionHandlingRunner.lambda$run$0(AbstractGenericTest.java:1185)
+
+Test Thread stack at that time:
+	at generic.test.AbstractGenericTest.runSwingAndWait(AbstractGenericTest.java:1251)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1123)
+	at generic.test.AbstractGenericTest.runSwing(AbstractGenericTest.java:1093)
+	at ghidra.test.TestEnv.launchDefaultTool(TestEnv.java:831)
+	at ghidra.test.AbstractProgramBasedTest.initialize(AbstractProgramBasedTest.java:65)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.setUp(AbstractDecompilerTest.java:41)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerFindReferencesActionTest.setUp(AbstractDecompilerFindReferencesActionTest.java:56)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.lambda$waitForDecompiler$0(AbstractDecompilerTest.java:72)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:435)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.waitForDecompiler(AbstractDecompilerTest.java:72)
+	at ghidra.app.plugin.core.decompile.AbstractDecompilerTest.tearDown(AbstractDecompilerTest.java:51)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testActionEnablementOnNestedStructureField</td>
+<td class="failures">0.907s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFindDataTypeReferences_ToNestedFieldOfDataType</td>
+<td class="failures">1.892s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_08e9a185-d31c-46ae-b358-5b186291656f/temp.data
+14:00:18 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+14:00:18 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_08e9a185-d31c-46ae-b358-5b186291656f/temp.data/application.log   (LoggingInitialization.java:60) 
+14:00:18 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_08e9a185-d31c-46ae-b358-5b186291656f/temp.data/preferences   (Preferences.java:122) 
+14:00:19 INFO  Class search complete (490 ms)   (ClassSearcher.java:250) 
+14:00:19 DEBUG Wed Sep 04 14:00:19 CST 2019
+***** STARTING Test: DecompilerFindReferencesToNestedStructureActionTest - testFindDataTypeReferences_ToNestedFieldOfDataType *****   (AbstractGenericTest.java:114) 
+14:00:19 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+14:00:19 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+14:00:19 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+14:00:21 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToNestedStructureActionTest - testFindDataTypeReferences_ToNestedFieldOfDataType ✖	   (AbstractGenericTest.java:114) 
+14:00:21 DEBUG Wed Sep 04 14:00:21 CST 2019
+***** STARTING Test: DecompilerFindReferencesToNestedStructureActionTest - testActionEnablementOnNestedStructureField *****   (AbstractGenericTest.java:114) 
+14:00:21 ERROR 
+	Found non-disposed() TestEnv instances.  Please examine this test!
+
+   (TestEnv.java:162) 
+14:00:21 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+14:00:21 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+14:00:21 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+14:00:22 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToNestedStructureActionTest - testActionEnablementOnNestedStructureField ✖	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+</div>
+</div>
+</body>
+</html>
