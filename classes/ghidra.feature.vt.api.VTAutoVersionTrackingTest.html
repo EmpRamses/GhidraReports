@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.413s</div>
+<div class="counter">4.309s</div>
 <p>duration</p>
 </div>
 </td>
@@ -220,32 +220,32 @@
 </thead>
 <tr>
 <td class="failures">testBlocked</td>
-<td class="failures">0.210s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">testDuplicateMatches_DifferentConstantOperands_allUnique</td>
 <td class="failures">0.304s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
+<td class="failures">testDuplicateMatches_DifferentConstantOperands_allUnique</td>
+<td class="failures">0.310s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
 <td class="failures">testDuplicateMatches_DifferentRegisterOperands_allUnique</td>
-<td class="failures">0.307s</td>
+<td class="failures">0.309s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testDuplicateMatches_DifferentRegisterOperands_someNotUnique</td>
-<td class="failures">0.308s</td>
+<td class="failures">0.309s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testDuplicateMatches_allIdentical</td>
-<td class="failures">0.205s</td>
+<td class="failures">0.203s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testDuplicateMatches_threeIdenticalthreeUnique</td>
-<td class="failures">1.643s</td>
+<td class="failures">1.334s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -255,12 +255,12 @@
 </tr>
 <tr>
 <td class="failures">testMarkup_AllMarkupShouldApply_UniqueMatch</td>
-<td class="failures">0.312s</td>
+<td class="failures">0.405s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testMarkup_MissingDestinationAddresses</td>
-<td class="failures">0.206s</td>
+<td class="failures">0.203s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@
 </tr>
 <tr>
 <td class="failures">testRunAutoVT_moreCautious</td>
-<td class="failures">0.411s</td>
+<td class="failures">0.425s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -278,110 +278,110 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_38dee226-b2a8-4746-927a-23b4867401d3/temp.data
-14:35:16 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:35:16 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_38dee226-b2a8-4746-927a-23b4867401d3/temp.data/application.log   (LoggingInitialization.java:60) 
-14:35:16 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_38dee226-b2a8-4746-927a-23b4867401d3/temp.data/preferences   (Preferences.java:122) 
-14:35:17 INFO  Class search complete (501 ms)   (ClassSearcher.java:250) 
-14:35:17 DEBUG Wed Sep 04 14:35:17 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_38a491d3-7a8b-4043-8e16-5bb55d2676d4/temp.data
+10:58:02 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:58:02 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_38a491d3-7a8b-4043-8e16-5bb55d2676d4/temp.data/application.log   (LoggingInitialization.java:60) 
+10:58:02 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_38a491d3-7a8b-4043-8e16-5bb55d2676d4/temp.data/preferences   (Preferences.java:122) 
+10:58:03 INFO  Class search complete (488 ms)   (ClassSearcher.java:250) 
+10:58:03 DEBUG Thu Sep 05 10:58:03 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testDuplicateMatches_threeIdenticalthreeUnique *****   (AbstractGenericTest.java:114) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:19 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:19 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:19 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_threeIdenticalthreeUnique ✖	   (AbstractGenericTest.java:114) 
-14:35:19 DEBUG Wed Sep 04 14:35:19 CST 2019
+10:58:04 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:04 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:04 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:04 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:04 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:04 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:04 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_threeIdenticalthreeUnique ✖	   (AbstractGenericTest.java:114) 
+10:58:04 DEBUG Thu Sep 05 10:58:04 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testRunAutoVT_moreCautious *****   (AbstractGenericTest.java:114) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:19 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:19 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:19 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testRunAutoVT_moreCautious ✖	   (AbstractGenericTest.java:114) 
-14:35:19 DEBUG Wed Sep 04 14:35:19 CST 2019
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:05 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:05 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:05 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testRunAutoVT_moreCautious ✖	   (AbstractGenericTest.java:114) 
+10:58:05 DEBUG Thu Sep 05 10:58:05 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testMarkup_AllMarkupShouldApply_UniqueMatch *****   (AbstractGenericTest.java:114) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:19 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:19 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:19 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testMarkup_AllMarkupShouldApply_UniqueMatch ✖	   (AbstractGenericTest.java:114) 
-14:35:19 DEBUG Wed Sep 04 14:35:19 CST 2019
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:05 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:05 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:05 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testMarkup_AllMarkupShouldApply_UniqueMatch ✖	   (AbstractGenericTest.java:114) 
+10:58:05 DEBUG Thu Sep 05 10:58:05 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testBlocked *****   (AbstractGenericTest.java:114) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:19 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:19 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:20 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testBlocked ✖	   (AbstractGenericTest.java:114) 
-14:35:20 DEBUG Wed Sep 04 14:35:20 CST 2019
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:05 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:05 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:05 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:05 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testBlocked ✖	   (AbstractGenericTest.java:114) 
+10:58:05 DEBUG Thu Sep 05 10:58:05 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentRegisterOperands_allUnique *****   (AbstractGenericTest.java:114) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:20 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentRegisterOperands_allUnique ✖	   (AbstractGenericTest.java:114) 
-14:35:20 DEBUG Wed Sep 04 14:35:20 CST 2019
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:06 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:06 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:06 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentRegisterOperands_allUnique ✖	   (AbstractGenericTest.java:114) 
+10:58:06 DEBUG Thu Sep 05 10:58:06 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testRunAutoVT_aLittleLessCautious *****   (AbstractGenericTest.java:114) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:20 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testRunAutoVT_aLittleLessCautious ✖	   (AbstractGenericTest.java:114) 
-14:35:20 DEBUG Wed Sep 04 14:35:20 CST 2019
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:06 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:06 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:06 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testRunAutoVT_aLittleLessCautious ✖	   (AbstractGenericTest.java:114) 
+10:58:06 DEBUG Thu Sep 05 10:58:06 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentRegisterOperands_someNotUnique *****   (AbstractGenericTest.java:114) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:20 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentRegisterOperands_someNotUnique ✖	   (AbstractGenericTest.java:114) 
-14:35:20 DEBUG Wed Sep 04 14:35:20 CST 2019
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:06 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:06 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:06 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:06 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentRegisterOperands_someNotUnique ✖	   (AbstractGenericTest.java:114) 
+10:58:06 DEBUG Thu Sep 05 10:58:06 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentConstantOperands_allUnique *****   (AbstractGenericTest.java:114) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:21 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentConstantOperands_allUnique ✖	   (AbstractGenericTest.java:114) 
-14:35:21 DEBUG Wed Sep 04 14:35:21 CST 2019
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:07 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:07 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:07 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_DifferentConstantOperands_allUnique ✖	   (AbstractGenericTest.java:114) 
+10:58:07 DEBUG Thu Sep 05 10:58:07 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testDuplicateMatches_allIdentical *****   (AbstractGenericTest.java:114) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:21 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_allIdentical ✖	   (AbstractGenericTest.java:114) 
-14:35:21 DEBUG Wed Sep 04 14:35:21 CST 2019
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:07 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:07 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:07 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testDuplicateMatches_allIdentical ✖	   (AbstractGenericTest.java:114) 
+10:58:07 DEBUG Thu Sep 05 10:58:07 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testMarkup_AllMarkupShouldApply_DuplicateMatch *****   (AbstractGenericTest.java:114) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:21 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testMarkup_AllMarkupShouldApply_DuplicateMatch ✖	   (AbstractGenericTest.java:114) 
-14:35:21 DEBUG Wed Sep 04 14:35:21 CST 2019
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:07 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:07 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:07 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testMarkup_AllMarkupShouldApply_DuplicateMatch ✖	   (AbstractGenericTest.java:114) 
+10:58:07 DEBUG Thu Sep 05 10:58:07 CST 2019
 ***** STARTING Test: VTAutoVersionTrackingTest - testMarkup_MissingDestinationAddresses *****   (AbstractGenericTest.java:114) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:35:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:35:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:35:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:35:21 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testMarkup_MissingDestinationAddresses ✖	   (AbstractGenericTest.java:114) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:07 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:07 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:07 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:07 DEBUG 	✖ FAILED Test: VTAutoVersionTrackingTest - testMarkup_MissingDestinationAddresses ✖	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -393,7 +393,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

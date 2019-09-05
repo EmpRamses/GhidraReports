@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">32.737s</div>
+<div class="counter">30.259s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">96%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,30 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testF2EditKey"></a>
+<h3 class="failures">testF2EditKey</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Should be editing [row,modelColumn] of [0,0] but is not.
+	at ghidra.app.plugin.core.compositeeditor.AbstractEditorTest.assertIsEditingField(AbstractEditorTest.java:761)
+	at ghidra.app.plugin.core.stackeditor.StackEditorCellEditTest.testF2EditKey(StackEditorCellEditTest.java:62)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -79,289 +96,289 @@
 </thead>
 <tr>
 <td class="success">testApplyOnDefinedCommentEdit</td>
-<td class="success">1.606s</td>
+<td class="success">1.612s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testApplyOnDefinedNameEdit</td>
-<td class="success">1.606s</td>
+<td class="success">1.609s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testApplyOnUndefinedCommentEdit</td>
-<td class="success">3.653s</td>
+<td class="success">3.363s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testApplyOnUndefinedNameEdit</td>
-<td class="success">1.209s</td>
+<td class="success">1.312s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testCantLeaveEditField</td>
-<td class="success">1.410s</td>
+<td class="success">1.413s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testChangeDataTypeBigger</td>
-<td class="success">1.005s</td>
+<td class="success">1.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testChangeDataTypeBiggerNoFit</td>
-<td class="success">0.908s</td>
+<td class="success">1.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testChangeDataTypeSameSize</td>
-<td class="success">1.328s</td>
+<td class="success">1.356s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testChangeDataTypeSmaller</td>
-<td class="success">0.805s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testChangeDataTypeToCrossBoundary</td>
-<td class="success">1.126s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testDownOnEditField</td>
-<td class="success">1.315s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditFieldOnDataTypeColumn</td>
-<td class="success">0.905s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditFieldOnDefinedCommentColumn</td>
-<td class="success">1.307s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditFieldOnDefinedNameColumn</td>
-<td class="success">1.113s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditFieldOnLengthColumn</td>
-<td class="success">0.622s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditFieldOnOffsetColumn</td>
-<td class="success">0.613s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditFieldOnUndefinedCommentColumn</td>
-<td class="success">1.608s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditFieldOnUndefinedNameColumn</td>
-<td class="success">1.209s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditLocalVarOffset</td>
-<td class="success">3.827s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditOffsetBadMove</td>
-<td class="success">0.914s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditOffsetGoodMove</td>
-<td class="success">0.908s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditOffsetMoveCrossesBounds</td>
 <td class="success">0.810s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testEditOffsetMoveNoFit</td>
-<td class="success">0.809s</td>
+<td class="success">testChangeDataTypeToCrossBoundary</td>
+<td class="success">0.816s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testF2EditKey</td>
-<td class="success">0.506s</td>
+<td class="success">testDownOnEditField</td>
+<td class="success">1.206s</td>
 <td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditFieldOnDataTypeColumn</td>
+<td class="success">0.908s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditFieldOnDefinedCommentColumn</td>
+<td class="success">1.410s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditFieldOnDefinedNameColumn</td>
+<td class="success">1.215s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditFieldOnLengthColumn</td>
+<td class="success">0.606s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditFieldOnOffsetColumn</td>
+<td class="success">0.806s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditFieldOnUndefinedCommentColumn</td>
+<td class="success">1.316s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditFieldOnUndefinedNameColumn</td>
+<td class="success">1.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditLocalVarOffset</td>
+<td class="success">1.717s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditOffsetBadMove</td>
+<td class="success">0.906s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditOffsetGoodMove</td>
+<td class="success">1.121s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditOffsetMoveCrossesBounds</td>
+<td class="success">0.805s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditOffsetMoveNoFit</td>
+<td class="success">0.806s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testF2EditKey</td>
+<td class="failures">0.507s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testUpOnEditField</td>
-<td class="success">1.615s</td>
+<td class="success">1.513s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_b378a359-8f72-4fef-8075-e9f8025e2c07/temp.data
-13:35:16 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-13:35:16 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_b378a359-8f72-4fef-8075-e9f8025e2c07/temp.data/application.log   (LoggingInitialization.java:60) 
-13:35:16 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_b378a359-8f72-4fef-8075-e9f8025e2c07/temp.data/preferences   (Preferences.java:122) 
-13:35:17 INFO  Class search complete (514 ms)   (ClassSearcher.java:250) 
-13:35:17 DEBUG Wed Sep 04 13:35:17 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_ba3305ee-6688-4187-9889-4a7ee127df1d/temp.data
+09:41:59 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+09:41:59 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_ba3305ee-6688-4187-9889-4a7ee127df1d/temp.data/application.log   (LoggingInitialization.java:60) 
+09:41:59 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_ba3305ee-6688-4187-9889-4a7ee127df1d/temp.data/preferences   (Preferences.java:122) 
+09:42:00 INFO  Class search complete (515 ms)   (ClassSearcher.java:250) 
+09:42:00 DEBUG Thu Sep 05 09:42:00 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testApplyOnUndefinedCommentEdit *****   (AbstractGenericTest.java:114) 
-13:35:19 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:19 DEBUG   task finish (0.157 secs)   (ToolTaskManager.java:357) 
-13:35:19 DEBUG   task Complete (0.178 secs)   (ToolTaskManager.java:407) 
-13:35:21 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testApplyOnUndefinedCommentEdit ✓	   (AbstractGenericTest.java:114) 
-13:35:21 DEBUG Wed Sep 04 13:35:21 CST 2019
+09:42:02 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:02 DEBUG   task finish (0.164 secs)   (ToolTaskManager.java:357) 
+09:42:02 DEBUG   task Complete (0.171 secs)   (ToolTaskManager.java:407) 
+09:42:03 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testApplyOnUndefinedCommentEdit ✓	   (AbstractGenericTest.java:114) 
+09:42:03 DEBUG Thu Sep 05 09:42:03 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testChangeDataTypeSameSize *****   (AbstractGenericTest.java:114) 
-13:35:21 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:21 DEBUG   task finish (0.086 secs)   (ToolTaskManager.java:357) 
-13:35:21 DEBUG   task Complete (0.088 secs)   (ToolTaskManager.java:407) 
-13:35:22 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeSameSize ✓	   (AbstractGenericTest.java:114) 
-13:35:22 DEBUG Wed Sep 04 13:35:22 CST 2019
+09:42:04 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:04 DEBUG   task finish (0.068 secs)   (ToolTaskManager.java:357) 
+09:42:04 DEBUG   task Complete (0.069 secs)   (ToolTaskManager.java:407) 
+09:42:05 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeSameSize ✓	   (AbstractGenericTest.java:114) 
+09:42:05 DEBUG Thu Sep 05 09:42:05 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditOffsetGoodMove *****   (AbstractGenericTest.java:114) 
-13:35:22 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:23 DEBUG   task finish (0.109 secs)   (ToolTaskManager.java:357) 
-13:35:23 DEBUG   task Complete (0.111 secs)   (ToolTaskManager.java:407) 
-13:35:23 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditOffsetGoodMove ✓	   (AbstractGenericTest.java:114) 
-13:35:23 DEBUG Wed Sep 04 13:35:23 CST 2019
+09:42:05 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:05 DEBUG   task finish (0.032 secs)   (ToolTaskManager.java:357) 
+09:42:05 DEBUG   task Complete (0.056 secs)   (ToolTaskManager.java:407) 
+09:42:06 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditOffsetGoodMove ✓	   (AbstractGenericTest.java:114) 
+09:42:06 DEBUG Thu Sep 05 09:42:06 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testChangeDataTypeToCrossBoundary *****   (AbstractGenericTest.java:114) 
-13:35:23 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:23 DEBUG   task finish (0.097 secs)   (ToolTaskManager.java:357) 
-13:35:23 DEBUG   task Complete (0.101 secs)   (ToolTaskManager.java:407) 
-13:35:24 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeToCrossBoundary ✓	   (AbstractGenericTest.java:114) 
-13:35:24 DEBUG Wed Sep 04 13:35:24 CST 2019
+09:42:06 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:06 DEBUG   task finish (0.079 secs)   (ToolTaskManager.java:357) 
+09:42:06 DEBUG   task Complete (0.08 secs)   (ToolTaskManager.java:407) 
+09:42:07 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeToCrossBoundary ✓	   (AbstractGenericTest.java:114) 
+09:42:07 DEBUG Thu Sep 05 09:42:07 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testUpOnEditField *****   (AbstractGenericTest.java:114) 
-13:35:25 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:25 DEBUG   task finish (0.085 secs)   (ToolTaskManager.java:357) 
-13:35:25 DEBUG   task Complete (0.086 secs)   (ToolTaskManager.java:407) 
-13:35:26 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testUpOnEditField ✓	   (AbstractGenericTest.java:114) 
-13:35:26 DEBUG Wed Sep 04 13:35:26 CST 2019
+09:42:07 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:07 DEBUG   task finish (0.105 secs)   (ToolTaskManager.java:357) 
+09:42:07 DEBUG   task Complete (0.107 secs)   (ToolTaskManager.java:407) 
+09:42:08 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testUpOnEditField ✓	   (AbstractGenericTest.java:114) 
+09:42:08 DEBUG Thu Sep 05 09:42:08 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditFieldOnLengthColumn *****   (AbstractGenericTest.java:114) 
-13:35:26 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:26 DEBUG   task finish (0.026 secs)   (ToolTaskManager.java:357) 
-13:35:26 DEBUG   task Complete (0.027 secs)   (ToolTaskManager.java:407) 
-13:35:27 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnLengthColumn ✓	   (AbstractGenericTest.java:114) 
-13:35:27 DEBUG Wed Sep 04 13:35:27 CST 2019
+09:42:08 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:08 DEBUG   task finish (0.034 secs)   (ToolTaskManager.java:357) 
+09:42:08 DEBUG   task Complete (0.036 secs)   (ToolTaskManager.java:407) 
+09:42:09 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnLengthColumn ✓	   (AbstractGenericTest.java:114) 
+09:42:09 DEBUG Thu Sep 05 09:42:09 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditFieldOnDefinedNameColumn *****   (AbstractGenericTest.java:114) 
-13:35:27 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:27 DEBUG   task finish (0.074 secs)   (ToolTaskManager.java:357) 
-13:35:27 DEBUG   task Complete (0.076 secs)   (ToolTaskManager.java:407) 
-13:35:28 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnDefinedNameColumn ✓	   (AbstractGenericTest.java:114) 
-13:35:28 DEBUG Wed Sep 04 13:35:28 CST 2019
+09:42:09 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:09 DEBUG   task finish (0.084 secs)   (ToolTaskManager.java:357) 
+09:42:09 DEBUG   task Complete (0.087 secs)   (ToolTaskManager.java:407) 
+09:42:10 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnDefinedNameColumn ✓	   (AbstractGenericTest.java:114) 
+09:42:10 DEBUG Thu Sep 05 09:42:10 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditFieldOnUndefinedCommentColumn *****   (AbstractGenericTest.java:114) 
-13:35:28 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:28 DEBUG   task finish (0.082 secs)   (ToolTaskManager.java:357) 
-13:35:28 DEBUG   task Complete (0.084 secs)   (ToolTaskManager.java:407) 
-13:35:29 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnUndefinedCommentColumn ✓	   (AbstractGenericTest.java:114) 
-13:35:29 DEBUG Wed Sep 04 13:35:29 CST 2019
+09:42:10 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:10 DEBUG   task finish (0.065 secs)   (ToolTaskManager.java:357) 
+09:42:10 DEBUG   task Complete (0.067 secs)   (ToolTaskManager.java:407) 
+09:42:11 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnUndefinedCommentColumn ✓	   (AbstractGenericTest.java:114) 
+09:42:11 DEBUG Thu Sep 05 09:42:11 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testCantLeaveEditField *****   (AbstractGenericTest.java:114) 
-13:35:29 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:29 DEBUG   task finish (0.018 secs)   (ToolTaskManager.java:357) 
-13:35:29 DEBUG   task Complete (0.02 secs)   (ToolTaskManager.java:407) 
-13:35:31 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testCantLeaveEditField ✓	   (AbstractGenericTest.java:114) 
-13:35:31 DEBUG Wed Sep 04 13:35:31 CST 2019
+09:42:12 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:12 DEBUG   task finish (0.004 secs)   (ToolTaskManager.java:357) 
+09:42:12 DEBUG   task Complete (0.005 secs)   (ToolTaskManager.java:407) 
+09:42:13 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testCantLeaveEditField ✓	   (AbstractGenericTest.java:114) 
+09:42:13 DEBUG Thu Sep 05 09:42:13 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testApplyOnDefinedCommentEdit *****   (AbstractGenericTest.java:114) 
-13:35:31 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:31 DEBUG   task finish (0.006 secs)   (ToolTaskManager.java:357) 
-13:35:31 DEBUG   task Complete (0.007 secs)   (ToolTaskManager.java:407) 
-13:35:32 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testApplyOnDefinedCommentEdit ✓	   (AbstractGenericTest.java:114) 
-13:35:32 DEBUG Wed Sep 04 13:35:32 CST 2019
+09:42:13 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:13 DEBUG   task finish (0.072 secs)   (ToolTaskManager.java:357) 
+09:42:13 DEBUG   task Complete (0.073 secs)   (ToolTaskManager.java:407) 
+09:42:14 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testApplyOnDefinedCommentEdit ✓	   (AbstractGenericTest.java:114) 
+09:42:14 DEBUG Thu Sep 05 09:42:14 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditFieldOnUndefinedNameColumn *****   (AbstractGenericTest.java:114) 
-13:35:32 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:33 DEBUG   task finish (0.029 secs)   (ToolTaskManager.java:357) 
-13:35:33 DEBUG   task Complete (0.03 secs)   (ToolTaskManager.java:407) 
-13:35:33 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnUndefinedNameColumn ✓	   (AbstractGenericTest.java:114) 
-13:35:33 DEBUG Wed Sep 04 13:35:33 CST 2019
+09:42:15 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:15 DEBUG   task finish (0.064 secs)   (ToolTaskManager.java:357) 
+09:42:15 DEBUG   task Complete (0.066 secs)   (ToolTaskManager.java:407) 
+09:42:15 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnUndefinedNameColumn ✓	   (AbstractGenericTest.java:114) 
+09:42:15 DEBUG Thu Sep 05 09:42:15 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditLocalVarOffset *****   (AbstractGenericTest.java:114) 
-13:35:34 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:34 DEBUG   task finish (0.015 secs)   (ToolTaskManager.java:357) 
-13:35:34 DEBUG   task Complete (0.016 secs)   (ToolTaskManager.java:407) 
-13:35:37 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditLocalVarOffset ✓	   (AbstractGenericTest.java:114) 
-13:35:37 DEBUG Wed Sep 04 13:35:37 CST 2019
+09:42:16 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:16 DEBUG   task finish (0.054 secs)   (ToolTaskManager.java:357) 
+09:42:16 DEBUG   task Complete (0.06 secs)   (ToolTaskManager.java:407) 
+09:42:17 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditLocalVarOffset ✓	   (AbstractGenericTest.java:114) 
+09:42:17 DEBUG Thu Sep 05 09:42:17 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testChangeDataTypeBiggerNoFit *****   (AbstractGenericTest.java:114) 
-13:35:38 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:38 DEBUG   task finish (0.064 secs)   (ToolTaskManager.java:357) 
-13:35:38 DEBUG   task Complete (0.068 secs)   (ToolTaskManager.java:407) 
-13:35:38 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeBiggerNoFit ✓	   (AbstractGenericTest.java:114) 
-13:35:38 DEBUG Wed Sep 04 13:35:38 CST 2019
+09:42:17 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:17 DEBUG   task finish (0.023 secs)   (ToolTaskManager.java:357) 
+09:42:17 DEBUG   task Complete (0.024 secs)   (ToolTaskManager.java:407) 
+09:42:18 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeBiggerNoFit ✓	   (AbstractGenericTest.java:114) 
+09:42:18 DEBUG Thu Sep 05 09:42:18 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testDownOnEditField *****   (AbstractGenericTest.java:114) 
-13:35:38 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:38 DEBUG   task finish (0.02 secs)   (ToolTaskManager.java:357) 
-13:35:38 DEBUG   task Complete (0.066 secs)   (ToolTaskManager.java:407) 
-13:35:40 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testDownOnEditField ✓	   (AbstractGenericTest.java:114) 
-13:35:40 DEBUG Wed Sep 04 13:35:40 CST 2019
+09:42:18 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:18 DEBUG   task finish (0.015 secs)   (ToolTaskManager.java:357) 
+09:42:18 DEBUG   task Complete (0.015 secs)   (ToolTaskManager.java:407) 
+09:42:19 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testDownOnEditField ✓	   (AbstractGenericTest.java:114) 
+09:42:19 DEBUG Thu Sep 05 09:42:19 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditFieldOnOffsetColumn *****   (AbstractGenericTest.java:114) 
-13:35:40 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:40 DEBUG   task finish (0.027 secs)   (ToolTaskManager.java:357) 
-13:35:40 DEBUG   task Complete (0.028 secs)   (ToolTaskManager.java:407) 
-13:35:40 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnOffsetColumn ✓	   (AbstractGenericTest.java:114) 
-13:35:40 DEBUG Wed Sep 04 13:35:40 CST 2019
+09:42:20 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:20 DEBUG   task finish (0.014 secs)   (ToolTaskManager.java:357) 
+09:42:20 DEBUG   task Complete (0.015 secs)   (ToolTaskManager.java:407) 
+09:42:20 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnOffsetColumn ✓	   (AbstractGenericTest.java:114) 
+09:42:20 DEBUG Thu Sep 05 09:42:20 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditFieldOnDefinedCommentColumn *****   (AbstractGenericTest.java:114) 
-13:35:40 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:40 DEBUG   task finish (0.02 secs)   (ToolTaskManager.java:357) 
-13:35:40 DEBUG   task Complete (0.021 secs)   (ToolTaskManager.java:407) 
-13:35:41 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnDefinedCommentColumn ✓	   (AbstractGenericTest.java:114) 
-13:35:41 DEBUG Wed Sep 04 13:35:41 CST 2019
+09:42:20 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:20 DEBUG   task finish (0.058 secs)   (ToolTaskManager.java:357) 
+09:42:20 DEBUG   task Complete (0.06 secs)   (ToolTaskManager.java:407) 
+09:42:22 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnDefinedCommentColumn ✓	   (AbstractGenericTest.java:114) 
+09:42:22 DEBUG Thu Sep 05 09:42:22 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditOffsetMoveNoFit *****   (AbstractGenericTest.java:114) 
-13:35:42 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:42 DEBUG   task finish (0.005 secs)   (ToolTaskManager.java:357) 
-13:35:42 DEBUG   task Complete (0.007 secs)   (ToolTaskManager.java:407) 
-13:35:42 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditOffsetMoveNoFit ✓	   (AbstractGenericTest.java:114) 
-13:35:42 DEBUG Wed Sep 04 13:35:42 CST 2019
+09:42:22 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:22 DEBUG   task finish (0.007 secs)   (ToolTaskManager.java:357) 
+09:42:22 DEBUG   task Complete (0.008 secs)   (ToolTaskManager.java:407) 
+09:42:22 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditOffsetMoveNoFit ✓	   (AbstractGenericTest.java:114) 
+09:42:22 DEBUG Thu Sep 05 09:42:22 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testApplyOnDefinedNameEdit *****   (AbstractGenericTest.java:114) 
-13:35:42 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:42 DEBUG   task finish (0.017 secs)   (ToolTaskManager.java:357) 
-13:35:42 DEBUG   task Complete (0.018 secs)   (ToolTaskManager.java:407) 
-13:35:44 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testApplyOnDefinedNameEdit ✓	   (AbstractGenericTest.java:114) 
-13:35:44 DEBUG Wed Sep 04 13:35:44 CST 2019
+09:42:23 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:23 DEBUG   task finish (0.013 secs)   (ToolTaskManager.java:357) 
+09:42:23 DEBUG   task Complete (0.014 secs)   (ToolTaskManager.java:407) 
+09:42:24 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testApplyOnDefinedNameEdit ✓	   (AbstractGenericTest.java:114) 
+09:42:24 DEBUG Thu Sep 05 09:42:24 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditOffsetBadMove *****   (AbstractGenericTest.java:114) 
-13:35:44 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:44 DEBUG   task finish (0.051 secs)   (ToolTaskManager.java:357) 
-13:35:44 DEBUG   task Complete (0.052 secs)   (ToolTaskManager.java:407) 
-13:35:45 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditOffsetBadMove ✓	   (AbstractGenericTest.java:114) 
-13:35:45 DEBUG Wed Sep 04 13:35:45 CST 2019
+09:42:24 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:24 DEBUG   task finish (0.016 secs)   (ToolTaskManager.java:357) 
+09:42:24 DEBUG   task Complete (0.017 secs)   (ToolTaskManager.java:407) 
+09:42:25 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditOffsetBadMove ✓	   (AbstractGenericTest.java:114) 
+09:42:25 DEBUG Thu Sep 05 09:42:25 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testApplyOnUndefinedNameEdit *****   (AbstractGenericTest.java:114) 
-13:35:45 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:45 DEBUG   task finish (0.007 secs)   (ToolTaskManager.java:357) 
-13:35:45 DEBUG   task Complete (0.008 secs)   (ToolTaskManager.java:407) 
-13:35:46 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testApplyOnUndefinedNameEdit ✓	   (AbstractGenericTest.java:114) 
-13:35:46 DEBUG Wed Sep 04 13:35:46 CST 2019
+09:42:25 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:25 DEBUG   task finish (0.019 secs)   (ToolTaskManager.java:357) 
+09:42:25 DEBUG   task Complete (0.02 secs)   (ToolTaskManager.java:407) 
+09:42:26 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testApplyOnUndefinedNameEdit ✓	   (AbstractGenericTest.java:114) 
+09:42:26 DEBUG Thu Sep 05 09:42:26 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditFieldOnDataTypeColumn *****   (AbstractGenericTest.java:114) 
-13:35:46 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:46 DEBUG   task finish (0.048 secs)   (ToolTaskManager.java:357) 
-13:35:46 DEBUG   task Complete (0.062 secs)   (ToolTaskManager.java:407) 
-13:35:47 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnDataTypeColumn ✓	   (AbstractGenericTest.java:114) 
-13:35:47 DEBUG Wed Sep 04 13:35:47 CST 2019
+09:42:26 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:26 DEBUG   task finish (0.013 secs)   (ToolTaskManager.java:357) 
+09:42:27 DEBUG   task Complete (0.058 secs)   (ToolTaskManager.java:407) 
+09:42:27 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditFieldOnDataTypeColumn ✓	   (AbstractGenericTest.java:114) 
+09:42:27 DEBUG Thu Sep 05 09:42:27 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testEditOffsetMoveCrossesBounds *****   (AbstractGenericTest.java:114) 
-13:35:47 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:47 DEBUG   task finish (0.014 secs)   (ToolTaskManager.java:357) 
-13:35:47 DEBUG   task Complete (0.015 secs)   (ToolTaskManager.java:407) 
-13:35:48 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditOffsetMoveCrossesBounds ✓	   (AbstractGenericTest.java:114) 
-13:35:48 DEBUG Wed Sep 04 13:35:48 CST 2019
+09:42:27 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:27 DEBUG   task finish (0.013 secs)   (ToolTaskManager.java:357) 
+09:42:27 DEBUG   task Complete (0.014 secs)   (ToolTaskManager.java:407) 
+09:42:28 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testEditOffsetMoveCrossesBounds ✓	   (AbstractGenericTest.java:114) 
+09:42:28 DEBUG Thu Sep 05 09:42:28 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testChangeDataTypeSmaller *****   (AbstractGenericTest.java:114) 
-13:35:48 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:48 DEBUG   task finish (0.014 secs)   (ToolTaskManager.java:357) 
-13:35:48 DEBUG   task Complete (0.015 secs)   (ToolTaskManager.java:407) 
-13:35:49 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeSmaller ✓	   (AbstractGenericTest.java:114) 
-13:35:49 DEBUG Wed Sep 04 13:35:49 CST 2019
+09:42:28 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:28 DEBUG   task finish (0.051 secs)   (ToolTaskManager.java:357) 
+09:42:28 DEBUG   task Complete (0.052 secs)   (ToolTaskManager.java:407) 
+09:42:29 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeSmaller ✓	   (AbstractGenericTest.java:114) 
+09:42:29 DEBUG Thu Sep 05 09:42:29 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testChangeDataTypeBigger *****   (AbstractGenericTest.java:114) 
-13:35:49 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:49 DEBUG   task finish (0.016 secs)   (ToolTaskManager.java:357) 
-13:35:49 DEBUG   task Complete (0.017 secs)   (ToolTaskManager.java:407) 
-13:35:50 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeBigger ✓	   (AbstractGenericTest.java:114) 
-13:35:50 DEBUG Wed Sep 04 13:35:50 CST 2019
+09:42:29 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:29 DEBUG   task finish (0.029 secs)   (ToolTaskManager.java:357) 
+09:42:29 DEBUG   task Complete (0.03 secs)   (ToolTaskManager.java:407) 
+09:42:30 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testChangeDataTypeBigger ✓	   (AbstractGenericTest.java:114) 
+09:42:30 DEBUG Thu Sep 05 09:42:30 CST 2019
 ***** STARTING Test: StackEditorCellEditTest - testF2EditKey *****   (AbstractGenericTest.java:114) 
-13:35:50 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-13:35:50 DEBUG   task finish (0.02 secs)   (ToolTaskManager.java:357) 
-13:35:50 DEBUG   task Complete (0.02 secs)   (ToolTaskManager.java:407) 
-13:35:50 DEBUG 	✓ PASSED Test: StackEditorCellEditTest - testF2EditKey ✓	   (AbstractGenericTest.java:114) 
+09:42:30 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:42:30 DEBUG   task finish (0.015 secs)   (ToolTaskManager.java:357) 
+09:42:30 DEBUG   task Complete (0.018 secs)   (ToolTaskManager.java:407) 
+09:42:30 DEBUG 	✖ FAILED Test: StackEditorCellEditTest - testF2EditKey ✖	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -373,7 +390,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

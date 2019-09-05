@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.220s</div>
+<div class="counter">1.222s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">testDeleteDataBaseVersions</td>
-<td class="success">1.220s</td>
+<td class="success">1.222s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,48 +87,48 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_6e9668e9-a8d6-4aba-945d-2347f3ad08e3/temp.data
-14:19:49 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:19:49 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_6e9668e9-a8d6-4aba-945d-2347f3ad08e3/temp.data/application.log   (LoggingInitialization.java:60) 
-14:19:49 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_6e9668e9-a8d6-4aba-945d-2347f3ad08e3/temp.data/preferences   (Preferences.java:122) 
-14:19:50 INFO  Class search complete (711 ms)   (ClassSearcher.java:250) 
-14:19:50 DEBUG Wed Sep 04 14:19:50 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_8803bbd7-4ed4-4ab0-bd0a-f0c52d7c6257/temp.data
+10:41:26 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:41:26 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_8803bbd7-4ed4-4ab0-bd0a-f0c52d7c6257/temp.data/application.log   (LoggingInitialization.java:60) 
+10:41:26 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_8803bbd7-4ed4-4ab0-bd0a-f0c52d7c6257/temp.data/preferences   (Preferences.java:122) 
+10:41:27 INFO  Class search complete (690 ms)   (ClassSearcher.java:250) 
+10:41:27 DEBUG Thu Sep 05 10:41:27 CST 2019
 ***** STARTING Test: RepositoryFileSystemTest - testDeleteDataBaseVersions *****   (AbstractGenericTest.java:114) 
-14:19:50 INFO  Instantiating Repository Manager for /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_6e9668e9-a8d6-4aba-945d-2347f3ad08e3/temp.data/generic.test.temp.dir4153425673861456447/RepositoryFileSystemTest/My_Server   (RepositoryManager.java:61) 
-14:19:50 INFO  Instantiating User Manager    (UserManager.java:86) 
-14:19:50 INFO  User file contains 0 entries   (UserManager.java:93) 
-14:19:50 INFO  Known Users:   (UserManager.java:102) 
-14:19:50 INFO  Known Repositories:   (RepositoryManager.java:267) 
-14:19:50 INFO     &lt;none&gt;   (RepositoryManager.java:273) 
-14:19:50 INFO  Loading My_Repository ...   (Repository.java:85) 
-14:19:50 INFO     ... loading 0 files ...   (Repository.java:102) 
-14:19:50 INFO     My_Repository load complete.    (Repository.java:126) 
-14:19:50 INFO  [My_Repository]: repository created (lcf)   (RepositoryManager.java:137) 
-14:19:50 INFO  [My_Repository]/abc: folder created (lcf)   (RepositoryFolder.java:241) 
-14:19:50 INFO  [My_Repository]/abc/fred: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:19:50 INFO  [My_Repository]/abc/fred: file created (lcf)   (RepositoryFolder.java:270) 
-14:19:50 INFO  [My_Repository]/abc/fred: version 1 created (lcf)   (HistoryManager.java:127) 
-14:19:50 INFO  [My_Repository]/abc/fred: check-in started (lcf)   (RepositoryFile.java:196) 
-14:19:50 INFO  [My_Repository]/abc/fred: version 1 opened read-only (lcf)   (RepositoryFile.java:170) 
-14:19:50 DEBUG Added record to test table, key=2   (RepositoryFileSystemTest.java:122) 
-14:19:50 DEBUG Added record to Record count for test table: 1   (RepositoryFileSystemTest.java:123) 
-14:19:50 DEBUG Saving database version 2   (RepositoryFileSystemTest.java:128) 
-14:19:50 INFO  [My_Repository]/abc/fred: version 2 created (lcf)   (HistoryManager.java:127) 
-14:19:50 INFO  [My_Repository]/abc/fred: check-in started (lcf)   (RepositoryFile.java:196) 
-14:19:50 INFO  [My_Repository]/abc/fred: version 1 opened read-only (lcf)   (RepositoryFile.java:170) 
-14:19:50 DEBUG Added record to test table, key=3   (RepositoryFileSystemTest.java:122) 
-14:19:50 DEBUG Added record to Record count for test table: 2   (RepositoryFileSystemTest.java:123) 
-14:19:50 DEBUG Saving database version 3   (RepositoryFileSystemTest.java:128) 
-14:19:50 INFO  [My_Repository]/abc/fred: version 3 created (lcf)   (HistoryManager.java:127) 
-14:19:50 INFO  [My_Repository]/abc/fred: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:19:50 INFO  [My_Repository]/abc/fred: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:19:50 INFO  [My_Repository]/abc/fred: version 1 deleted (lcf)   (HistoryManager.java:172) 
-14:19:50 INFO  [My_Repository]/abc/fred: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:19:50 INFO  [My_Repository]/abc/fred: version 3 deleted (lcf)   (HistoryManager.java:172) 
-14:19:50 INFO  [My_Repository]/abc/fred: version 2 opened read-only (lcf)   (RepositoryFile.java:170) 
-14:19:50 INFO  [My_Repository]/abc/fred: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:19:50 INFO  [My_Repository]/abc/fred: file deleted (lcf)   (RepositoryFile.java:277) 
-14:19:51 DEBUG 	✓ PASSED Test: RepositoryFileSystemTest - testDeleteDataBaseVersions ✓	   (AbstractGenericTest.java:114) 
+10:41:27 INFO  Instantiating Repository Manager for /home/lcf/repo/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_8803bbd7-4ed4-4ab0-bd0a-f0c52d7c6257/temp.data/generic.test.temp.dir422550244913340900/RepositoryFileSystemTest/My_Server   (RepositoryManager.java:61) 
+10:41:27 INFO  Instantiating User Manager    (UserManager.java:86) 
+10:41:27 INFO  User file contains 0 entries   (UserManager.java:93) 
+10:41:27 INFO  Known Users:   (UserManager.java:102) 
+10:41:27 INFO  Known Repositories:   (RepositoryManager.java:267) 
+10:41:27 INFO     &lt;none&gt;   (RepositoryManager.java:273) 
+10:41:27 INFO  Loading My_Repository ...   (Repository.java:85) 
+10:41:27 INFO     ... loading 0 files ...   (Repository.java:102) 
+10:41:27 INFO     My_Repository load complete.    (Repository.java:126) 
+10:41:27 INFO  [My_Repository]: repository created (lcf)   (RepositoryManager.java:137) 
+10:41:27 INFO  [My_Repository]/abc: folder created (lcf)   (RepositoryFolder.java:241) 
+10:41:27 INFO  [My_Repository]/abc/fred: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:41:27 INFO  [My_Repository]/abc/fred: file created (lcf)   (RepositoryFolder.java:270) 
+10:41:27 INFO  [My_Repository]/abc/fred: version 1 created (lcf)   (HistoryManager.java:127) 
+10:41:27 INFO  [My_Repository]/abc/fred: check-in started (lcf)   (RepositoryFile.java:196) 
+10:41:27 INFO  [My_Repository]/abc/fred: version 1 opened read-only (lcf)   (RepositoryFile.java:170) 
+10:41:27 DEBUG Added record to test table, key=2   (RepositoryFileSystemTest.java:122) 
+10:41:27 DEBUG Added record to Record count for test table: 1   (RepositoryFileSystemTest.java:123) 
+10:41:27 DEBUG Saving database version 2   (RepositoryFileSystemTest.java:128) 
+10:41:27 INFO  [My_Repository]/abc/fred: version 2 created (lcf)   (HistoryManager.java:127) 
+10:41:27 INFO  [My_Repository]/abc/fred: check-in started (lcf)   (RepositoryFile.java:196) 
+10:41:27 INFO  [My_Repository]/abc/fred: version 1 opened read-only (lcf)   (RepositoryFile.java:170) 
+10:41:27 DEBUG Added record to test table, key=3   (RepositoryFileSystemTest.java:122) 
+10:41:27 DEBUG Added record to Record count for test table: 2   (RepositoryFileSystemTest.java:123) 
+10:41:27 DEBUG Saving database version 3   (RepositoryFileSystemTest.java:128) 
+10:41:27 INFO  [My_Repository]/abc/fred: version 3 created (lcf)   (HistoryManager.java:127) 
+10:41:27 INFO  [My_Repository]/abc/fred: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:41:27 INFO  [My_Repository]/abc/fred: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:41:27 INFO  [My_Repository]/abc/fred: version 1 deleted (lcf)   (HistoryManager.java:172) 
+10:41:27 INFO  [My_Repository]/abc/fred: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:41:27 INFO  [My_Repository]/abc/fred: version 3 deleted (lcf)   (HistoryManager.java:172) 
+10:41:27 INFO  [My_Repository]/abc/fred: version 2 opened read-only (lcf)   (RepositoryFile.java:170) 
+10:41:27 INFO  [My_Repository]/abc/fred: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:41:27 INFO  [My_Repository]/abc/fred: file deleted (lcf)   (RepositoryFile.java:277) 
+10:41:28 DEBUG 	✓ PASSED Test: RepositoryFileSystemTest - testDeleteDataBaseVersions ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -140,7 +140,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

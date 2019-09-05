@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">4</div>
+<div class="counter">3</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">20.047s</div>
+<div class="counter">22.569s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">87%</div>
+<div class="percent">90%</div>
 <p>successful</p>
 </div>
 </td>
@@ -73,45 +73,34 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="testEditComponentDataTypeAtEnd"></a>
-<h3 class="failures">testEditComponentDataTypeAtEnd</h3>
+<a name="testEditComponentName"></a>
+<h3 class="failures">testEditComponentName</h3>
 <span class="code">
-<pre>java.lang.AssertionError: Should be editing [row,modelColumn] of [7,3] but is not.
+<pre>java.lang.AssertionError: Should be editing [row,modelColumn] of [3,4] but is not.
 	at ghidra.app.plugin.core.compositeeditor.AbstractEditorTest.assertIsEditingField(AbstractEditorTest.java:761)
-	at ghidra.app.plugin.core.compositeeditor.StructureEditorUnlockedCellEdit2Test.testEditComponentDataTypeAtEnd(StructureEditorUnlockedCellEdit2Test.java:284)
+	at ghidra.app.plugin.core.compositeeditor.StructureEditorUnlockedCellEdit2Test.testEditComponentName(StructureEditorUnlockedCellEdit2Test.java:608)
 	at generic.test.TestThread.run(TestThread.java:106)
 </pre>
 </span>
 </div>
 <div class="test">
-<a name="testEditComponentDataTypeComplex"></a>
-<h3 class="failures">testEditComponentDataTypeComplex</h3>
+<a name="testEditPointerToPointer"></a>
+<h3 class="failures">testEditPointerToPointer</h3>
 <span class="code">
-<pre>java.lang.AssertionError: Should be editing [row,modelColumn] of [7,3] but is not.
-	at ghidra.app.plugin.core.compositeeditor.AbstractEditorTest.assertIsEditingField(AbstractEditorTest.java:761)
-	at ghidra.app.plugin.core.compositeeditor.StructureEditorUnlockedCellEdit2Test.testEditComponentDataTypeComplex(StructureEditorUnlockedCellEdit2Test.java:479)
+<pre>java.lang.AssertionError: Editing cell when it should not be.
+	at ghidra.app.plugin.core.compositeeditor.AbstractEditorTest.assertNotEditingField(AbstractEditorTest.java:767)
+	at ghidra.app.plugin.core.compositeeditor.StructureEditorUnlockedCellEdit2Test.testEditPointerToPointer(StructureEditorUnlockedCellEdit2Test.java:416)
 	at generic.test.TestThread.run(TestThread.java:106)
 </pre>
 </span>
 </div>
 <div class="test">
-<a name="testEditFieldOnDataTypeColumn"></a>
-<h3 class="failures">testEditFieldOnDataTypeColumn</h3>
+<a name="testEditUpField"></a>
+<h3 class="failures">testEditUpField</h3>
 <span class="code">
-<pre>java.lang.AssertionError: Should be editing [row,modelColumn] of [0,3] but is not.
+<pre>java.lang.AssertionError: Should be editing [row,modelColumn] of [3,4] but is not.
 	at ghidra.app.plugin.core.compositeeditor.AbstractEditorTest.assertIsEditingField(AbstractEditorTest.java:761)
-	at ghidra.app.plugin.core.compositeeditor.StructureEditorUnlockedCellEdit2Test.testEditFieldOnDataTypeColumn(StructureEditorUnlockedCellEdit2Test.java:95)
-	at generic.test.TestThread.run(TestThread.java:106)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testEditToSizedPointer"></a>
-<h3 class="failures">testEditToSizedPointer</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Should be editing [row,modelColumn] of [3,3] but is not.
-	at ghidra.app.plugin.core.compositeeditor.AbstractEditorTest.assertIsEditingField(AbstractEditorTest.java:761)
-	at ghidra.app.plugin.core.compositeeditor.StructureEditorUnlockedCellEdit2Test.testEditToSizedPointer(StructureEditorUnlockedCellEdit2Test.java:359)
+	at ghidra.app.plugin.core.compositeeditor.StructureEditorUnlockedCellEdit2Test.testEditUpField(StructureEditorUnlockedCellEdit2Test.java:691)
 	at generic.test.TestThread.run(TestThread.java:106)
 </pre>
 </span>
@@ -129,77 +118,77 @@
 </thead>
 <tr>
 <td class="success">testCantLeaveEditField</td>
-<td class="success">0.513s</td>
+<td class="success">0.808s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDownOnEditField</td>
-<td class="success">0.514s</td>
+<td class="success">0.515s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditComponentComment</td>
-<td class="success">0.305s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">testEditComponentDataTypeAtEnd</td>
-<td class="failures">0.405s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">testEditComponentDataTypeBigger</td>
-<td class="success">0.603s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">testEditComponentDataTypeComplex</td>
-<td class="failures">0.305s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">testEditComponentDataTypeInvalid</td>
-<td class="success">2.081s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditComponentDataTypeNoFit</td>
-<td class="success">0.407s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditComponentDataTypeSmaller</td>
-<td class="success">0.907s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditComponentName</td>
-<td class="success">2.315s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditDataTypeNotSelf</td>
 <td class="success">0.405s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testEditDataTypeSelfPointer</td>
-<td class="success">0.621s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditDataTypeWithDynamic</td>
-<td class="success">0.415s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditDataTypeWithFactory</td>
+<td class="success">testEditComponentDataTypeAtEnd</td>
 <td class="success">0.403s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testEditDefaultField</td>
+<td class="success">testEditComponentDataTypeBigger</td>
 <td class="success">0.705s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditComponentDataTypeComplex</td>
+<td class="success">0.404s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditComponentDataTypeInvalid</td>
+<td class="success">2.222s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditComponentDataTypeNoFit</td>
+<td class="success">0.406s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditComponentDataTypeSmaller</td>
+<td class="success">0.831s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testEditComponentName</td>
+<td class="failures">0.310s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testEditDataTypeNotSelf</td>
+<td class="success">0.402s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditDataTypeSelfPointer</td>
+<td class="success">0.706s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditDataTypeWithDynamic</td>
+<td class="success">0.403s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditDataTypeWithFactory</td>
+<td class="success">0.503s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditDefaultField</td>
+<td class="success">2.524s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -209,7 +198,7 @@
 </tr>
 <tr>
 <td class="success">testEditFieldOnBlankRow</td>
-<td class="success">0.503s</td>
+<td class="success">2.412s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -218,78 +207,78 @@
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testEditFieldOnDataTypeColumn</td>
-<td class="failures">0.304s</td>
-<td class="failures">failed</td>
+<td class="success">testEditFieldOnDataTypeColumn</td>
+<td class="success">0.408s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditFieldOnLengthColumn</td>
-<td class="success">0.405s</td>
+<td class="success">0.403s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditFieldOnMnemonicColumn</td>
-<td class="success">0.409s</td>
+<td class="success">0.407s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditFieldOnNameColumn</td>
-<td class="success">0.405s</td>
+<td class="success">0.306s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditFieldOnOffsetColumn</td>
-<td class="success">0.403s</td>
+<td class="success">0.406s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditNextField</td>
-<td class="success">0.504s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditPointerToPointer</td>
-<td class="success">0.508s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditPreviousField</td>
-<td class="success">0.607s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditToBasicPointer</td>
-<td class="success">0.405s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEditToComplexPointerArray</td>
-<td class="success">0.510s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">testEditToSizedPointer</td>
-<td class="failures">0.410s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">testEditUpField</td>
 <td class="success">0.403s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="failures">testEditPointerToPointer</td>
+<td class="failures">0.510s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testEditPreviousField</td>
+<td class="success">0.611s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditToBasicPointer</td>
+<td class="success">0.513s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditToComplexPointerArray</td>
+<td class="success">0.509s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEditToSizedPointer</td>
+<td class="success">0.405s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testEditUpField</td>
+<td class="failures">0.304s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
 <td class="success">testF2EditKey</td>
-<td class="success">0.314s</td>
+<td class="success">0.304s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testManyWithSameDtName</td>
-<td class="success">1.737s</td>
+<td class="success">1.912s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpOnEditField</td>
-<td class="success">0.610s</td>
+<td class="success">0.503s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -297,110 +286,110 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_083deb22-ded2-4a32-8d6f-feda8514c08f/temp.data
-13:02:47 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-13:02:47 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_083deb22-ded2-4a32-8d6f-feda8514c08f/temp.data/application.log   (LoggingInitialization.java:60) 
-13:02:47 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_083deb22-ded2-4a32-8d6f-feda8514c08f/temp.data/preferences   (Preferences.java:122) 
-13:02:48 INFO  Class search complete (537 ms)   (ClassSearcher.java:250) 
-13:02:48 DEBUG Wed Sep 04 13:02:48 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_0ded53d9-5558-4877-baa5-de5efbff9c1b/temp.data
+08:58:27 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+08:58:27 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_0ded53d9-5558-4877-baa5-de5efbff9c1b/temp.data/application.log   (LoggingInitialization.java:60) 
+08:58:27 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_0ded53d9-5558-4877-baa5-de5efbff9c1b/temp.data/preferences   (Preferences.java:122) 
+08:58:28 INFO  Class search complete (721 ms)   (ClassSearcher.java:250) 
+08:58:28 DEBUG Thu Sep 05 08:58:28 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeInvalid *****   (AbstractGenericTest.java:114) 
-13:02:50 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeInvalid ✓	   (AbstractGenericTest.java:114) 
-13:02:50 DEBUG Wed Sep 04 13:02:50 CST 2019
+08:58:31 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeInvalid ✓	   (AbstractGenericTest.java:114) 
+08:58:31 DEBUG Thu Sep 05 08:58:31 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeSelfPointer *****   (AbstractGenericTest.java:114) 
-13:02:51 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeSelfPointer ✓	   (AbstractGenericTest.java:114) 
-13:02:51 DEBUG Wed Sep 04 13:02:51 CST 2019
+08:58:31 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeSelfPointer ✓	   (AbstractGenericTest.java:114) 
+08:58:31 DEBUG Thu Sep 05 08:58:31 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeSmaller *****   (AbstractGenericTest.java:114) 
-13:02:51 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeSmaller ✓	   (AbstractGenericTest.java:114) 
-13:02:51 DEBUG Wed Sep 04 13:02:51 CST 2019
+08:58:32 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeSmaller ✓	   (AbstractGenericTest.java:114) 
+08:58:32 DEBUG Thu Sep 05 08:58:32 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditPreviousField *****   (AbstractGenericTest.java:114) 
-13:02:52 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditPreviousField ✓	   (AbstractGenericTest.java:114) 
-13:02:52 DEBUG Wed Sep 04 13:02:52 CST 2019
+08:58:33 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditPreviousField ✓	   (AbstractGenericTest.java:114) 
+08:58:33 DEBUG Thu Sep 05 08:58:33 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testUpOnEditField *****   (AbstractGenericTest.java:114) 
-13:02:53 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testUpOnEditField ✓	   (AbstractGenericTest.java:114) 
-13:02:53 DEBUG Wed Sep 04 13:02:53 CST 2019
+08:58:33 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testUpOnEditField ✓	   (AbstractGenericTest.java:114) 
+08:58:33 DEBUG Thu Sep 05 08:58:33 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnLengthColumn *****   (AbstractGenericTest.java:114) 
-13:02:53 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnLengthColumn ✓	   (AbstractGenericTest.java:114) 
-13:02:53 DEBUG Wed Sep 04 13:02:53 CST 2019
+08:58:34 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnLengthColumn ✓	   (AbstractGenericTest.java:114) 
+08:58:34 DEBUG Thu Sep 05 08:58:34 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeWithDynamic *****   (AbstractGenericTest.java:114) 
-13:02:54 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeWithDynamic ✓	   (AbstractGenericTest.java:114) 
-13:02:54 DEBUG Wed Sep 04 13:02:54 CST 2019
+08:58:34 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeWithDynamic ✓	   (AbstractGenericTest.java:114) 
+08:58:34 DEBUG Thu Sep 05 08:58:34 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testManyWithSameDtName *****   (AbstractGenericTest.java:114) 
-13:02:55 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testManyWithSameDtName ✓	   (AbstractGenericTest.java:114) 
-13:02:55 DEBUG Wed Sep 04 13:02:55 CST 2019
+08:58:36 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testManyWithSameDtName ✓	   (AbstractGenericTest.java:114) 
+08:58:36 DEBUG Thu Sep 05 08:58:36 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditToSizedPointer *****   (AbstractGenericTest.java:114) 
-13:02:56 DEBUG 	✖ FAILED Test: StructureEditorUnlockedCellEdit2Test - testEditToSizedPointer ✖	   (AbstractGenericTest.java:114) 
-13:02:56 DEBUG Wed Sep 04 13:02:56 CST 2019
+08:58:36 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditToSizedPointer ✓	   (AbstractGenericTest.java:114) 
+08:58:36 DEBUG Thu Sep 05 08:58:36 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditToComplexPointerArray *****   (AbstractGenericTest.java:114) 
-13:02:56 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditToComplexPointerArray ✓	   (AbstractGenericTest.java:114) 
-13:02:56 DEBUG Wed Sep 04 13:02:56 CST 2019
+08:58:37 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditToComplexPointerArray ✓	   (AbstractGenericTest.java:114) 
+08:58:37 DEBUG Thu Sep 05 08:58:37 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeBigger *****   (AbstractGenericTest.java:114) 
-13:02:57 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeBigger ✓	   (AbstractGenericTest.java:114) 
-13:02:57 DEBUG Wed Sep 04 13:02:57 CST 2019
+08:58:38 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeBigger ✓	   (AbstractGenericTest.java:114) 
+08:58:38 DEBUG Thu Sep 05 08:58:38 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditToBasicPointer *****   (AbstractGenericTest.java:114) 
-13:02:57 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditToBasicPointer ✓	   (AbstractGenericTest.java:114) 
-13:02:57 DEBUG Wed Sep 04 13:02:57 CST 2019
+08:58:38 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditToBasicPointer ✓	   (AbstractGenericTest.java:114) 
+08:58:38 DEBUG Thu Sep 05 08:58:38 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeAtEnd *****   (AbstractGenericTest.java:114) 
-13:02:58 DEBUG 	✖ FAILED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeAtEnd ✖	   (AbstractGenericTest.java:114) 
-13:02:58 DEBUG Wed Sep 04 13:02:58 CST 2019
+08:58:38 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeAtEnd ✓	   (AbstractGenericTest.java:114) 
+08:58:38 DEBUG Thu Sep 05 08:58:38 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeNoFit *****   (AbstractGenericTest.java:114) 
-13:02:58 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeNoFit ✓	   (AbstractGenericTest.java:114) 
-13:02:58 DEBUG Wed Sep 04 13:02:58 CST 2019
+08:58:39 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeNoFit ✓	   (AbstractGenericTest.java:114) 
+08:58:39 DEBUG Thu Sep 05 08:58:39 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnNameColumn *****   (AbstractGenericTest.java:114) 
-13:02:58 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnNameColumn ✓	   (AbstractGenericTest.java:114) 
-13:02:58 DEBUG Wed Sep 04 13:02:58 CST 2019
+08:58:39 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnNameColumn ✓	   (AbstractGenericTest.java:114) 
+08:58:39 DEBUG Thu Sep 05 08:58:39 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testCantLeaveEditField *****   (AbstractGenericTest.java:114) 
-13:02:59 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testCantLeaveEditField ✓	   (AbstractGenericTest.java:114) 
-13:02:59 DEBUG Wed Sep 04 13:02:59 CST 2019
+08:58:40 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testCantLeaveEditField ✓	   (AbstractGenericTest.java:114) 
+08:58:40 DEBUG Thu Sep 05 08:58:40 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeWithFactory *****   (AbstractGenericTest.java:114) 
-13:02:59 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeWithFactory ✓	   (AbstractGenericTest.java:114) 
-13:02:59 DEBUG Wed Sep 04 13:02:59 CST 2019
+08:58:41 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeWithFactory ✓	   (AbstractGenericTest.java:114) 
+08:58:41 DEBUG Thu Sep 05 08:58:41 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnMnemonicColumn *****   (AbstractGenericTest.java:114) 
-13:03:00 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnMnemonicColumn ✓	   (AbstractGenericTest.java:114) 
-13:03:00 DEBUG Wed Sep 04 13:03:00 CST 2019
+08:58:41 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnMnemonicColumn ✓	   (AbstractGenericTest.java:114) 
+08:58:41 DEBUG Thu Sep 05 08:58:41 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditNextField *****   (AbstractGenericTest.java:114) 
-13:03:00 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditNextField ✓	   (AbstractGenericTest.java:114) 
-13:03:00 DEBUG Wed Sep 04 13:03:00 CST 2019
+08:58:41 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditNextField ✓	   (AbstractGenericTest.java:114) 
+08:58:41 DEBUG Thu Sep 05 08:58:41 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditDownField *****   (AbstractGenericTest.java:114) 
-13:03:01 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDownField ✓	   (AbstractGenericTest.java:114) 
-13:03:01 DEBUG Wed Sep 04 13:03:01 CST 2019
+08:58:42 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDownField ✓	   (AbstractGenericTest.java:114) 
+08:58:42 DEBUG Thu Sep 05 08:58:42 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testDownOnEditField *****   (AbstractGenericTest.java:114) 
-13:03:01 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testDownOnEditField ✓	   (AbstractGenericTest.java:114) 
-13:03:01 DEBUG Wed Sep 04 13:03:01 CST 2019
+08:58:42 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testDownOnEditField ✓	   (AbstractGenericTest.java:114) 
+08:58:42 DEBUG Thu Sep 05 08:58:42 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditPointerToPointer *****   (AbstractGenericTest.java:114) 
-13:03:02 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditPointerToPointer ✓	   (AbstractGenericTest.java:114) 
-13:03:02 DEBUG Wed Sep 04 13:03:02 CST 2019
+08:58:43 DEBUG 	✖ FAILED Test: StructureEditorUnlockedCellEdit2Test - testEditPointerToPointer ✖	   (AbstractGenericTest.java:114) 
+08:58:43 DEBUG Thu Sep 05 08:58:43 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnOffsetColumn *****   (AbstractGenericTest.java:114) 
-13:03:02 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnOffsetColumn ✓	   (AbstractGenericTest.java:114) 
-13:03:02 DEBUG Wed Sep 04 13:03:02 CST 2019
+08:58:43 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnOffsetColumn ✓	   (AbstractGenericTest.java:114) 
+08:58:43 DEBUG Thu Sep 05 08:58:43 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditComponentComment *****   (AbstractGenericTest.java:114) 
-13:03:02 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentComment ✓	   (AbstractGenericTest.java:114) 
-13:03:02 DEBUG Wed Sep 04 13:03:02 CST 2019
+08:58:44 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentComment ✓	   (AbstractGenericTest.java:114) 
+08:58:44 DEBUG Thu Sep 05 08:58:44 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnCommentColumn *****   (AbstractGenericTest.java:114) 
-13:03:03 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnCommentColumn ✓	   (AbstractGenericTest.java:114) 
-13:03:03 DEBUG Wed Sep 04 13:03:03 CST 2019
+08:58:44 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnCommentColumn ✓	   (AbstractGenericTest.java:114) 
+08:58:44 DEBUG Thu Sep 05 08:58:44 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditComponentName *****   (AbstractGenericTest.java:114) 
-13:03:05 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentName ✓	   (AbstractGenericTest.java:114) 
-13:03:05 DEBUG Wed Sep 04 13:03:05 CST 2019
+08:58:44 DEBUG 	✖ FAILED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentName ✖	   (AbstractGenericTest.java:114) 
+08:58:44 DEBUG Thu Sep 05 08:58:44 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditUpField *****   (AbstractGenericTest.java:114) 
-13:03:05 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditUpField ✓	   (AbstractGenericTest.java:114) 
-13:03:05 DEBUG Wed Sep 04 13:03:05 CST 2019
+08:58:45 DEBUG 	✖ FAILED Test: StructureEditorUnlockedCellEdit2Test - testEditUpField ✖	   (AbstractGenericTest.java:114) 
+08:58:45 DEBUG Thu Sep 05 08:58:45 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeComplex *****   (AbstractGenericTest.java:114) 
-13:03:06 DEBUG 	✖ FAILED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeComplex ✖	   (AbstractGenericTest.java:114) 
-13:03:06 DEBUG Wed Sep 04 13:03:06 CST 2019
+08:58:45 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditComponentDataTypeComplex ✓	   (AbstractGenericTest.java:114) 
+08:58:45 DEBUG Thu Sep 05 08:58:45 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnDataTypeColumn *****   (AbstractGenericTest.java:114) 
-13:03:06 DEBUG 	✖ FAILED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnDataTypeColumn ✖	   (AbstractGenericTest.java:114) 
-13:03:06 DEBUG Wed Sep 04 13:03:06 CST 2019
+08:58:45 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnDataTypeColumn ✓	   (AbstractGenericTest.java:114) 
+08:58:45 DEBUG Thu Sep 05 08:58:45 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeNotSelf *****   (AbstractGenericTest.java:114) 
-13:03:06 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeNotSelf ✓	   (AbstractGenericTest.java:114) 
-13:03:06 DEBUG Wed Sep 04 13:03:06 CST 2019
+08:58:46 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDataTypeNotSelf ✓	   (AbstractGenericTest.java:114) 
+08:58:46 DEBUG Thu Sep 05 08:58:46 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnBlankRow *****   (AbstractGenericTest.java:114) 
-13:03:07 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnBlankRow ✓	   (AbstractGenericTest.java:114) 
-13:03:07 DEBUG Wed Sep 04 13:03:07 CST 2019
+08:58:48 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditFieldOnBlankRow ✓	   (AbstractGenericTest.java:114) 
+08:58:48 DEBUG Thu Sep 05 08:58:48 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testEditDefaultField *****   (AbstractGenericTest.java:114) 
-13:03:08 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDefaultField ✓	   (AbstractGenericTest.java:114) 
-13:03:08 DEBUG Wed Sep 04 13:03:08 CST 2019
+08:58:51 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testEditDefaultField ✓	   (AbstractGenericTest.java:114) 
+08:58:51 DEBUG Thu Sep 05 08:58:51 CST 2019
 ***** STARTING Test: StructureEditorUnlockedCellEdit2Test - testF2EditKey *****   (AbstractGenericTest.java:114) 
-13:03:08 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testF2EditKey ✓	   (AbstractGenericTest.java:114) 
+08:58:51 DEBUG 	✓ PASSED Test: StructureEditorUnlockedCellEdit2Test - testF2EditKey ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -412,7 +401,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

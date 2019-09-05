@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">12.121s</div>
+<div class="counter">15.743s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,13 +73,12 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="testEdgeFocusMode_INOUT"></a>
-<h3 class="failures">testEdgeFocusMode_INOUT</h3>
+<a name="testClearEdgeCache"></a>
+<h3 class="failures">testClearEdgeCache</h3>
 <span class="code">
-<pre>java.lang.AssertionError: Edge was not selected: [1, 2]
+<pre>java.lang.AssertionError: Edge was not selected: [2, 3]
 	at ghidra.graph.viewer.edge.VisualGraphPathHighlighterTest.assertInFocusedPath(VisualGraphPathHighlighterTest.java:668)
-	at ghidra.graph.viewer.edge.VisualGraphPathHighlighterTest.assertAllEdgesInFocusedPath(VisualGraphPathHighlighterTest.java:718)
-	at ghidra.graph.viewer.edge.VisualGraphPathHighlighterTest.testEdgeFocusMode_INOUT(VisualGraphPathHighlighterTest.java:152)
+	at ghidra.graph.viewer.edge.VisualGraphPathHighlighterTest.testClearEdgeCache(VisualGraphPathHighlighterTest.java:587)
 	at generic.test.TestThread.run(TestThread.java:106)
 </pre>
 </span>
@@ -96,78 +95,78 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testClearEdgeCache</td>
-<td class="success">0.103s</td>
-<td class="success">passed</td>
+<td class="failures">testClearEdgeCache</td>
+<td class="failures">0.103s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testEdgeFocusMode_ALLCYCLE</td>
-<td class="success">0.605s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeFocusMode_CYCLE</td>
-<td class="success">0.605s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeFocusMode_IN</td>
-<td class="success">0.206s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testEdgeFocusMode_INOUT</td>
-<td class="failures">0.106s</td>
-<td class="failures">failed</td>
+<td class="success">testEdgeFocusMode_INOUT</td>
+<td class="success">0.202s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeFocusMode_OUT</td>
-<td class="success">0.606s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeFocusMode_SCOPED_FORWARD</td>
-<td class="success">0.203s</td>
+<td class="success">0.604s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeFocusMode_SCOPED_REVERSE</td>
-<td class="success">0.207s</td>
+<td class="success">0.206s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeHoverMode_CYCLE</td>
-<td class="success">1.106s</td>
+<td class="success">1.607s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeHoverMode_IN</td>
-<td class="success">3.439s</td>
+<td class="success">1.425s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeHoverMode_INOUT</td>
-<td class="success">0.303s</td>
+<td class="success">1.612s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeHoverMode_OUT</td>
-<td class="success">0.204s</td>
+<td class="success">0.808s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeHoverMode_PATH</td>
-<td class="success">0.205s</td>
+<td class="success">3.729s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeHoverMode_SCOPED_FORWARD</td>
-<td class="success">2.412s</td>
+<td class="success">1.820s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEdgeHoverMode_SCOPED_REVERSE</td>
-<td class="success">1.811s</td>
+<td class="success">3.217s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -175,55 +174,55 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_2f09b9f0-2f91-4643-a0c5-d71a8f4a2f2b/temp.data
-14:13:25 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:13:25 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_2f09b9f0-2f91-4643-a0c5-d71a8f4a2f2b/temp.data/application.log   (LoggingInitialization.java:60) 
-14:13:25 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_2f09b9f0-2f91-4643-a0c5-d71a8f4a2f2b/temp.data/preferences   (Preferences.java:122) 
-14:13:25 DEBUG Wed Sep 04 14:13:25 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_6d5d6bb8-4bb2-4eca-83f2-0a1bdd55a623/temp.data
+10:35:11 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:35:11 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_6d5d6bb8-4bb2-4eca-83f2-0a1bdd55a623/temp.data/application.log   (LoggingInitialization.java:60) 
+10:35:11 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_6d5d6bb8-4bb2-4eca-83f2-0a1bdd55a623/temp.data/preferences   (Preferences.java:122) 
+10:35:11 DEBUG Thu Sep 05 10:35:11 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_IN *****   (AbstractGenericTest.java:114) 
-14:13:29 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_IN ✓	   (AbstractGenericTest.java:114) 
-14:13:29 DEBUG Wed Sep 04 14:13:29 CST 2019
+10:35:12 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_IN ✓	   (AbstractGenericTest.java:114) 
+10:35:12 DEBUG Thu Sep 05 10:35:12 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_SCOPED_FORWARD *****   (AbstractGenericTest.java:114) 
-14:13:31 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_SCOPED_FORWARD ✓	   (AbstractGenericTest.java:114) 
-14:13:31 DEBUG Wed Sep 04 14:13:31 CST 2019
+10:35:14 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_SCOPED_FORWARD ✓	   (AbstractGenericTest.java:114) 
+10:35:14 DEBUG Thu Sep 05 10:35:14 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_SCOPED_REVERSE *****   (AbstractGenericTest.java:114) 
-14:13:31 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_SCOPED_REVERSE ✓	   (AbstractGenericTest.java:114) 
-14:13:31 DEBUG Wed Sep 04 14:13:31 CST 2019
+10:35:14 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_SCOPED_REVERSE ✓	   (AbstractGenericTest.java:114) 
+10:35:14 DEBUG Thu Sep 05 10:35:14 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_PATH *****   (AbstractGenericTest.java:114) 
-14:13:31 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_PATH ✓	   (AbstractGenericTest.java:114) 
-14:13:31 DEBUG Wed Sep 04 14:13:31 CST 2019
+10:35:18 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_PATH ✓	   (AbstractGenericTest.java:114) 
+10:35:18 DEBUG Thu Sep 05 10:35:18 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_OUT *****   (AbstractGenericTest.java:114) 
-14:13:32 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_OUT ✓	   (AbstractGenericTest.java:114) 
-14:13:32 DEBUG Wed Sep 04 14:13:32 CST 2019
+10:35:18 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_OUT ✓	   (AbstractGenericTest.java:114) 
+10:35:18 DEBUG Thu Sep 05 10:35:18 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_CYCLE *****   (AbstractGenericTest.java:114) 
-14:13:33 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_CYCLE ✓	   (AbstractGenericTest.java:114) 
-14:13:33 DEBUG Wed Sep 04 14:13:33 CST 2019
+10:35:18 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_CYCLE ✓	   (AbstractGenericTest.java:114) 
+10:35:18 DEBUG Thu Sep 05 10:35:18 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_INOUT *****   (AbstractGenericTest.java:114) 
-14:13:33 DEBUG 	✖ FAILED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_INOUT ✖	   (AbstractGenericTest.java:114) 
-14:13:33 DEBUG Wed Sep 04 14:13:33 CST 2019
+10:35:19 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_INOUT ✓	   (AbstractGenericTest.java:114) 
+10:35:19 DEBUG Thu Sep 05 10:35:19 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_OUT *****   (AbstractGenericTest.java:114) 
-14:13:33 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_OUT ✓	   (AbstractGenericTest.java:114) 
-14:13:33 DEBUG Wed Sep 04 14:13:33 CST 2019
+10:35:19 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_OUT ✓	   (AbstractGenericTest.java:114) 
+10:35:19 DEBUG Thu Sep 05 10:35:19 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_SCOPED_REVERSE *****   (AbstractGenericTest.java:114) 
-14:13:35 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_SCOPED_REVERSE ✓	   (AbstractGenericTest.java:114) 
-14:13:35 DEBUG Wed Sep 04 14:13:35 CST 2019
+10:35:23 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_SCOPED_REVERSE ✓	   (AbstractGenericTest.java:114) 
+10:35:23 DEBUG Thu Sep 05 10:35:23 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_ALLCYCLE *****   (AbstractGenericTest.java:114) 
-14:13:35 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_ALLCYCLE ✓	   (AbstractGenericTest.java:114) 
-14:13:35 DEBUG Wed Sep 04 14:13:35 CST 2019
+10:35:23 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_ALLCYCLE ✓	   (AbstractGenericTest.java:114) 
+10:35:23 DEBUG Thu Sep 05 10:35:23 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_IN *****   (AbstractGenericTest.java:114) 
-14:13:36 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_IN ✓	   (AbstractGenericTest.java:114) 
-14:13:36 DEBUG Wed Sep 04 14:13:36 CST 2019
+10:35:23 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_IN ✓	   (AbstractGenericTest.java:114) 
+10:35:23 DEBUG Thu Sep 05 10:35:23 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_CYCLE *****   (AbstractGenericTest.java:114) 
-14:13:37 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_CYCLE ✓	   (AbstractGenericTest.java:114) 
-14:13:37 DEBUG Wed Sep 04 14:13:37 CST 2019
+10:35:24 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_CYCLE ✓	   (AbstractGenericTest.java:114) 
+10:35:24 DEBUG Thu Sep 05 10:35:24 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_INOUT *****   (AbstractGenericTest.java:114) 
-14:13:37 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_INOUT ✓	   (AbstractGenericTest.java:114) 
-14:13:37 DEBUG Wed Sep 04 14:13:37 CST 2019
+10:35:26 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeHoverMode_INOUT ✓	   (AbstractGenericTest.java:114) 
+10:35:26 DEBUG Thu Sep 05 10:35:26 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_SCOPED_FORWARD *****   (AbstractGenericTest.java:114) 
-14:13:37 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_SCOPED_FORWARD ✓	   (AbstractGenericTest.java:114) 
-14:13:37 DEBUG Wed Sep 04 14:13:37 CST 2019
+10:35:27 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testEdgeFocusMode_SCOPED_FORWARD ✓	   (AbstractGenericTest.java:114) 
+10:35:27 DEBUG Thu Sep 05 10:35:27 CST 2019
 ***** STARTING Test: VisualGraphPathHighlighterTest - testClearEdgeCache *****   (AbstractGenericTest.java:114) 
-14:13:37 DEBUG 	✓ PASSED Test: VisualGraphPathHighlighterTest - testClearEdgeCache ✓	   (AbstractGenericTest.java:114) 
+10:35:27 DEBUG 	✖ FAILED Test: VisualGraphPathHighlighterTest - testClearEdgeCache ✖	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -235,7 +234,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

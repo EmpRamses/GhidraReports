@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">5.389s</div>
+<div class="counter">5.501s</div>
 <p>duration</p>
 </div>
 </td>
@@ -309,27 +309,27 @@
 </thead>
 <tr>
 <td class="failures">testDontReplaceDefinedReturnTypeWithDefinedForUndefinedOnly</td>
-<td class="failures">0.204s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">testDontReplaceDefinedReturnTypeWithUndefined</td>
 <td class="failures">0.211s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
+<td class="failures">testDontReplaceDefinedReturnTypeWithUndefined</td>
+<td class="failures">0.203s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
 <td class="failures">testExcludeCallingConvention</td>
-<td class="failures">0.205s</td>
+<td class="failures">0.305s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testExcludeReturnType</td>
-<td class="failures">0.404s</td>
+<td class="failures">0.419s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testExcludeSrcCallFixupDifferentDestCallFixup</td>
-<td class="failures">0.313s</td>
+<td class="failures">0.205s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -339,32 +339,32 @@
 </tr>
 <tr>
 <td class="failures">testNameMatchReplaceCallingConventionBothSpecified</td>
-<td class="failures">0.306s</td>
+<td class="failures">0.309s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testReplaceDefaultReturnTypeWithUndefined</td>
-<td class="failures">0.208s</td>
+<td class="failures">0.202s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testReplaceDefinedReturnTypeWithDefined</td>
-<td class="failures">1.399s</td>
+<td class="failures">1.380s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testReplaceNoSrcCallFixupDestCallFixup</td>
-<td class="failures">0.306s</td>
+<td class="failures">0.312s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testReplaceNoSrcCallFixupNoDestCallFixup</td>
-<td class="failures">0.412s</td>
+<td class="failures">0.419s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testReplaceSrcCallFixupDifferentDestCallFixup</td>
-<td class="failures">0.304s</td>
+<td class="failures">0.302s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -374,7 +374,7 @@
 </tr>
 <tr>
 <td class="failures">testReplaceSrcCallFixupSameDestCallFixup</td>
-<td class="failures">0.304s</td>
+<td class="failures">0.313s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -384,7 +384,7 @@
 </tr>
 <tr>
 <td class="failures">testReplaceUndefinedReturnTypeWithDefinedForUndefinedOnly</td>
-<td class="failures">0.205s</td>
+<td class="failures">0.313s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -392,155 +392,155 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_2209c37f-022f-442c-af73-8f36ce8b41f1/temp.data
-14:37:18 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:37:18 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_2209c37f-022f-442c-af73-8f36ce8b41f1/temp.data/application.log   (LoggingInitialization.java:60) 
-14:37:18 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_2209c37f-022f-442c-af73-8f36ce8b41f1/temp.data/preferences   (Preferences.java:122) 
-14:37:19 INFO  Class search complete (498 ms)   (ClassSearcher.java:250) 
-14:37:19 DEBUG Wed Sep 04 14:37:19 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_eebf111e-a79e-4524-988e-89c1b1d364ac/temp.data
+10:58:38 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:58:38 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_eebf111e-a79e-4524-988e-89c1b1d364ac/temp.data/application.log   (LoggingInitialization.java:60) 
+10:58:38 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_eebf111e-a79e-4524-988e-89c1b1d364ac/temp.data/preferences   (Preferences.java:122) 
+10:58:39 INFO  Class search complete (491 ms)   (ClassSearcher.java:250) 
+10:58:39 DEBUG Thu Sep 05 10:58:39 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceDefinedReturnTypeWithDefined *****   (AbstractGenericTest.java:114) 
-14:37:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:20 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceDefinedReturnTypeWithDefined ✖	   (AbstractGenericTest.java:114) 
-14:37:20 DEBUG Wed Sep 04 14:37:20 CST 2019
+10:58:40 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:40 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:40 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:40 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:40 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:40 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:41 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceDefinedReturnTypeWithDefined ✖	   (AbstractGenericTest.java:114) 
+10:58:41 DEBUG Thu Sep 05 10:58:41 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceNoSrcCallFixupNoDestCallFixup *****   (AbstractGenericTest.java:114) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:21 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceNoSrcCallFixupNoDestCallFixup ✖	   (AbstractGenericTest.java:114) 
-14:37:21 DEBUG Wed Sep 04 14:37:21 CST 2019
+10:58:41 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:41 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:41 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:41 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:41 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:41 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:41 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceNoSrcCallFixupNoDestCallFixup ✖	   (AbstractGenericTest.java:114) 
+10:58:41 DEBUG Thu Sep 05 10:58:41 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testExcludeReturnType *****   (AbstractGenericTest.java:114) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:21 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testExcludeReturnType ✖	   (AbstractGenericTest.java:114) 
-14:37:21 DEBUG Wed Sep 04 14:37:21 CST 2019
+10:58:41 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:41 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:41 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:41 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:41 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:41 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:41 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testExcludeReturnType ✖	   (AbstractGenericTest.java:114) 
+10:58:41 DEBUG Thu Sep 05 10:58:41 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testNameMatchReplaceCallingConventionBothSpecified *****   (AbstractGenericTest.java:114) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:21 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testNameMatchReplaceCallingConventionBothSpecified ✖	   (AbstractGenericTest.java:114) 
-14:37:21 DEBUG Wed Sep 04 14:37:21 CST 2019
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:42 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:42 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:42 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testNameMatchReplaceCallingConventionBothSpecified ✖	   (AbstractGenericTest.java:114) 
+10:58:42 DEBUG Thu Sep 05 10:58:42 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupSameDestCallFixup *****   (AbstractGenericTest.java:114) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:22 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:22 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:22 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupSameDestCallFixup ✖	   (AbstractGenericTest.java:114) 
-14:37:22 DEBUG Wed Sep 04 14:37:22 CST 2019
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:42 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:42 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:42 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupSameDestCallFixup ✖	   (AbstractGenericTest.java:114) 
+10:58:42 DEBUG Thu Sep 05 10:58:42 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceNoSrcCallFixupDestCallFixup *****   (AbstractGenericTest.java:114) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:22 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:22 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:22 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceNoSrcCallFixupDestCallFixup ✖	   (AbstractGenericTest.java:114) 
-14:37:22 DEBUG Wed Sep 04 14:37:22 CST 2019
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:42 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:42 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:42 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:42 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceNoSrcCallFixupDestCallFixup ✖	   (AbstractGenericTest.java:114) 
+10:58:42 DEBUG Thu Sep 05 10:58:42 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupDifferentDestCallFixup *****   (AbstractGenericTest.java:114) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:22 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:22 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:22 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:22 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupDifferentDestCallFixup ✖	   (AbstractGenericTest.java:114) 
-14:37:22 DEBUG Wed Sep 04 14:37:22 CST 2019
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:43 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:43 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:43 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupDifferentDestCallFixup ✖	   (AbstractGenericTest.java:114) 
+10:58:43 DEBUG Thu Sep 05 10:58:43 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testExcludeSrcCallFixupDifferentDestCallFixup *****   (AbstractGenericTest.java:114) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:23 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testExcludeSrcCallFixupDifferentDestCallFixup ✖	   (AbstractGenericTest.java:114) 
-14:37:23 DEBUG Wed Sep 04 14:37:23 CST 2019
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:43 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:43 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:43 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testExcludeSrcCallFixupDifferentDestCallFixup ✖	   (AbstractGenericTest.java:114) 
+10:58:43 DEBUG Thu Sep 05 10:58:43 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testDontReplaceDefinedReturnTypeWithUndefined *****   (AbstractGenericTest.java:114) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:23 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testDontReplaceDefinedReturnTypeWithUndefined ✖	   (AbstractGenericTest.java:114) 
-14:37:23 DEBUG Wed Sep 04 14:37:23 CST 2019
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:43 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:43 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:43 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testDontReplaceDefinedReturnTypeWithUndefined ✖	   (AbstractGenericTest.java:114) 
+10:58:43 DEBUG Thu Sep 05 10:58:43 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceUndefinedReturnTypeWithDefinedForUndefinedOnly *****   (AbstractGenericTest.java:114) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:23 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceUndefinedReturnTypeWithDefinedForUndefinedOnly ✖	   (AbstractGenericTest.java:114) 
-14:37:23 DEBUG Wed Sep 04 14:37:23 CST 2019
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:43 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:43 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:43 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:43 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceUndefinedReturnTypeWithDefinedForUndefinedOnly ✖	   (AbstractGenericTest.java:114) 
+10:58:43 DEBUG Thu Sep 05 10:58:43 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testDontReplaceDefinedReturnTypeWithDefinedForUndefinedOnly *****   (AbstractGenericTest.java:114) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:23 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testDontReplaceDefinedReturnTypeWithDefinedForUndefinedOnly ✖	   (AbstractGenericTest.java:114) 
-14:37:23 DEBUG Wed Sep 04 14:37:23 CST 2019
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:44 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:44 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:44 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testDontReplaceDefinedReturnTypeWithDefinedForUndefinedOnly ✖	   (AbstractGenericTest.java:114) 
+10:58:44 DEBUG Thu Sep 05 10:58:44 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testExcludeCallingConvention *****   (AbstractGenericTest.java:114) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:23 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:23 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:23 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testExcludeCallingConvention ✖	   (AbstractGenericTest.java:114) 
-14:37:23 DEBUG Wed Sep 04 14:37:23 CST 2019
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:44 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:44 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:44 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testExcludeCallingConvention ✖	   (AbstractGenericTest.java:114) 
+10:58:44 DEBUG Thu Sep 05 10:58:44 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testNameMatchNotFoundCallingConventionBothSpecified *****   (AbstractGenericTest.java:114) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:24 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:24 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:24 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testNameMatchNotFoundCallingConventionBothSpecified ✖	   (AbstractGenericTest.java:114) 
-14:37:24 DEBUG Wed Sep 04 14:37:24 CST 2019
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:44 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:44 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:44 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testNameMatchNotFoundCallingConventionBothSpecified ✖	   (AbstractGenericTest.java:114) 
+10:58:44 DEBUG Thu Sep 05 10:58:44 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceDefaultReturnTypeWithUndefined *****   (AbstractGenericTest.java:114) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:24 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:24 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:24 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceDefaultReturnTypeWithUndefined ✖	   (AbstractGenericTest.java:114) 
-14:37:24 DEBUG Wed Sep 04 14:37:24 CST 2019
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:44 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:44 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:44 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:44 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceDefaultReturnTypeWithUndefined ✖	   (AbstractGenericTest.java:114) 
+10:58:44 DEBUG Thu Sep 05 10:58:44 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupNoDestCallFixup *****   (AbstractGenericTest.java:114) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:24 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:24 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:24 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupNoDestCallFixup ✖	   (AbstractGenericTest.java:114) 
-14:37:24 DEBUG Wed Sep 04 14:37:24 CST 2019
+10:58:45 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:45 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:45 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:45 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:45 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:45 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:45 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceSrcCallFixupNoDestCallFixup ✖	   (AbstractGenericTest.java:114) 
+10:58:45 DEBUG Thu Sep 05 10:58:45 CST 2019
 ***** STARTING Test: FunctionSignatureMarkupOptionsTest - testReplaceUndefinedReturnTypeWithDefinedForReplace *****   (AbstractGenericTest.java:114) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:24 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:24 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:24 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:24 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceUndefinedReturnTypeWithDefinedForReplace ✖	   (AbstractGenericTest.java:114) 
+10:58:45 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:58:45 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:58:45 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:58:45 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:58:45 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:58:45 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:58:45 DEBUG 	✖ FAILED Test: FunctionSignatureMarkupOptionsTest - testReplaceUndefinedReturnTypeWithDefinedForReplace ✖	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -552,7 +552,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

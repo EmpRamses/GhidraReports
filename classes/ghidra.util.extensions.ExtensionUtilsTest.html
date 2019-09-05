@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.147s</div>
+<div class="counter">1.142s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,42 +79,42 @@
 </thead>
 <tr>
 <td class="success">testBadInputs</td>
-<td class="success">0.103s</td>
+<td class="success">0.105s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetExtensions</td>
-<td class="success">0.103s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testInstallExtensionDuplicate</td>
-<td class="success">0.103s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testInstallExtensionFromFolder</td>
-<td class="success">0.102s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testInstallExtensionFromZip</td>
-<td class="success">0.323s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testIsExtension_Folder</td>
 <td class="success">0.104s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testIsExtension_Zip</td>
+<td class="success">testInstallExtensionDuplicate</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInstallExtensionFromFolder</td>
 <td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testIsZip</td>
+<td class="success">testInstallExtensionFromZip</td>
+<td class="success">0.319s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsExtension_Folder</td>
 <td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsExtension_Zip</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testIsZip</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -127,12 +127,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_fab5407e-1637-467d-aa5e-92a7338375bf/temp.data
-13:57:04 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-13:57:04 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_fab5407e-1637-467d-aa5e-92a7338375bf/temp.data/application.log   (LoggingInitialization.java:60) 
-13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_325bdce5-4623-44a6-88a3-c7e996b78157/temp.data
+10:18:59 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:18:59 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_325bdce5-4623-44a6-88a3-c7e996b78157/temp.data/application.log   (LoggingInitialization.java:60) 
+10:18:59 DEBUG Thu Sep 05 10:18:59 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testInstallExtensionFromZip *****   (AbstractGenericTest.java:114) 
-13:57:04 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+10:18:59 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
 	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
 	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
 	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
@@ -165,16 +165,16 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at generic.test.TestThread.run(TestThread.java:106)
   (SystemUtilities.java:353) 
-13:57:04 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionFromZip ✓	   (AbstractGenericTest.java:114) 
-13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+10:18:59 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionFromZip ✓	   (AbstractGenericTest.java:114) 
+10:18:59 DEBUG Thu Sep 05 10:18:59 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testIsZip *****   (AbstractGenericTest.java:114) 
-13:57:04 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsZip ✓	   (AbstractGenericTest.java:114) 
-13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+10:18:59 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsZip ✓	   (AbstractGenericTest.java:114) 
+10:18:59 DEBUG Thu Sep 05 10:18:59 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testIsExtension_Zip *****   (AbstractGenericTest.java:114) 
-13:57:04 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsExtension_Zip ✓	   (AbstractGenericTest.java:114) 
-13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+10:19:00 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsExtension_Zip ✓	   (AbstractGenericTest.java:114) 
+10:19:00 DEBUG Thu Sep 05 10:19:00 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testUninstallExtension *****   (AbstractGenericTest.java:114) 
-13:57:04 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+10:19:00 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
 	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
 	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
 	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
@@ -207,10 +207,10 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at generic.test.TestThread.run(TestThread.java:106)
   (SystemUtilities.java:353) 
-13:57:04 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testUninstallExtension ✓	   (AbstractGenericTest.java:114) 
-13:57:04 DEBUG Wed Sep 04 13:57:04 CST 2019
+10:19:00 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testUninstallExtension ✓	   (AbstractGenericTest.java:114) 
+10:19:00 DEBUG Thu Sep 05 10:19:00 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testInstallExtensionDuplicate *****   (AbstractGenericTest.java:114) 
-13:57:04 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+10:19:00 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
 	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
 	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
 	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
@@ -243,7 +243,7 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at generic.test.TestThread.run(TestThread.java:106)
   (SystemUtilities.java:353) 
-13:57:04 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+10:19:00 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
 	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
 	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
 	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
@@ -276,10 +276,10 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at generic.test.TestThread.run(TestThread.java:106)
   (SystemUtilities.java:353) 
-13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionDuplicate ✓	   (AbstractGenericTest.java:114) 
-13:57:05 DEBUG Wed Sep 04 13:57:05 CST 2019
+10:19:00 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionDuplicate ✓	   (AbstractGenericTest.java:114) 
+10:19:00 DEBUG Thu Sep 05 10:19:00 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testGetExtensions *****   (AbstractGenericTest.java:114) 
-13:57:05 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+10:19:00 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
 	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
 	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
 	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
@@ -312,7 +312,7 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at generic.test.TestThread.run(TestThread.java:106)
   (SystemUtilities.java:353) 
-13:57:05 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+10:19:00 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
 	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
 	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
 	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
@@ -345,10 +345,10 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at generic.test.TestThread.run(TestThread.java:106)
   (SystemUtilities.java:353) 
-13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testGetExtensions ✓	   (AbstractGenericTest.java:114) 
-13:57:05 DEBUG Wed Sep 04 13:57:05 CST 2019
+10:19:00 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testGetExtensions ✓	   (AbstractGenericTest.java:114) 
+10:19:00 DEBUG Thu Sep 05 10:19:00 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testInstallExtensionFromFolder *****   (AbstractGenericTest.java:114) 
-13:57:05 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
+10:19:00 ERROR Setting text must be performed on the Swing thread ghidra.util.exception.AssertException: Setting text must be performed on the Swing thread
 	at ghidra.util.SystemUtilities.assertThisIsTheSwingThread(SystemUtilities.java:351)
 	at docking.DialogComponentProvider.doSetStatusText(DialogComponentProvider.java:635)
 	at docking.DialogComponentProvider.lambda$setStatusText$4(DialogComponentProvider.java:630)
@@ -381,19 +381,19 @@
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at generic.test.TestThread.run(TestThread.java:106)
   (SystemUtilities.java:353) 
-13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionFromFolder ✓	   (AbstractGenericTest.java:114) 
-13:57:05 DEBUG Wed Sep 04 13:57:05 CST 2019
+10:19:00 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testInstallExtensionFromFolder ✓	   (AbstractGenericTest.java:114) 
+10:19:00 DEBUG Thu Sep 05 10:19:00 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testIsExtension_Folder *****   (AbstractGenericTest.java:114) 
-13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsExtension_Folder ✓	   (AbstractGenericTest.java:114) 
-13:57:05 DEBUG Wed Sep 04 13:57:05 CST 2019
+10:19:00 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testIsExtension_Folder ✓	   (AbstractGenericTest.java:114) 
+10:19:00 DEBUG Thu Sep 05 10:19:00 CST 2019
 ***** STARTING Test: ExtensionUtilsTest - testBadInputs *****   (AbstractGenericTest.java:114) 
-13:57:05 WARN  Extension to uninstall cannot be null   (ExtensionUtils.java:330) 
-13:57:05 WARN  File to inspect cannot be null   (ExtensionUtils.java:360) 
-13:57:05 WARN  File to inspect cannot be null   (ExtensionUtils.java:429) 
-13:57:05 WARN  /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/this/file/does/not/exist does not point to a valid ghidra extension   (ExtensionUtils.java:242) 
-13:57:05 WARN  Install file cannot be null   (ExtensionUtils.java:236) 
-13:57:05 WARN  Extension to install cannot be null   (ExtensionUtils.java:266) 
-13:57:05 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testBadInputs ✓	   (AbstractGenericTest.java:114) 
+10:19:00 WARN  Extension to uninstall cannot be null   (ExtensionUtils.java:330) 
+10:19:00 WARN  File to inspect cannot be null   (ExtensionUtils.java:360) 
+10:19:00 WARN  File to inspect cannot be null   (ExtensionUtils.java:429) 
+10:19:00 WARN  /home/lcf/repo/ghidra/Ghidra/Features/Base/this/file/does/not/exist does not point to a valid ghidra extension   (ExtensionUtils.java:242) 
+10:19:00 WARN  Install file cannot be null   (ExtensionUtils.java:236) 
+10:19:00 WARN  Extension to install cannot be null   (ExtensionUtils.java:266) 
+10:19:00 DEBUG 	✓ PASSED Test: ExtensionUtilsTest - testBadInputs ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -405,7 +405,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:48 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

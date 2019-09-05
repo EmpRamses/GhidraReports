@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.089s</div>
+<div class="counter">2.998s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">95%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,29 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testDropdownLocationOnParentMove"></a>
+<h3 class="failures">testDropdownLocationOnParentMove</h3>
+<span class="code">
+<pre>java.lang.AssertionError: The completion window's location did not update when its parent window was moved.. Actual: java.awt.Point[x=0,y=92]
+	at docking.widgets.DropDownTextFieldTest.testDropdownLocationOnParentMove(DropDownTextFieldTest.java:217)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -79,67 +95,67 @@
 </thead>
 <tr>
 <td class="success">testClickingList</td>
-<td class="success">0.102s</td>
+<td class="success">0.205s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testDropdownLocationOnParentMove</td>
-<td class="success">0.103s</td>
-<td class="success">passed</td>
+<td class="failures">testDropdownLocationOnParentMove</td>
+<td class="failures">0.103s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testDropdownLocationOnResize</td>
-<td class="success">0.102s</td>
+<td class="success">0.104s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEnterKey_MatchingWindowClosed</td>
-<td class="success">0.103s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEnterKey_MatchingWindowClosed_EnterKeyDisabled</td>
-<td class="success">0.110s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEnterKey_MatchingWindowOpen</td>
-<td class="success">0.316s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEnterKey_MatchingWindowOpen_DontConsumeEvent</td>
-<td class="success">0.203s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEscapeKey_MatchingWindowClosed</td>
-<td class="success">0.107s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEscapeKey_MatchingWindowOpen</td>
 <td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testMovingCaret_WhenFocused</td>
+<td class="success">testEnterKey_MatchingWindowClosed_EnterKeyDisabled</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEnterKey_MatchingWindowOpen</td>
+<td class="success">0.318s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEnterKey_MatchingWindowOpen_DontConsumeEvent</td>
+<td class="success">0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEscapeKey_MatchingWindowClosed</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEscapeKey_MatchingWindowOpen</td>
 <td class="success">0.204s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testMovingCaret_WhenFocused</td>
+<td class="success">0.206s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testNavigationKeysTriggerCompletionWindowToShow</td>
-<td class="success">0.303s</td>
+<td class="success">0.306s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testNavigationKeys_DownArrow_NoSelectionTriggered</td>
-<td class="success">0.106s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testNavigationKeys_UpArrow_NoSelectionTriggered</td>
-<td class="success">0.203s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -149,22 +165,22 @@
 </tr>
 <tr>
 <td class="success">testSetMatchingWindowHeight_MatchingWindowOpen</td>
-<td class="success">0.105s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetSelectedValue_EmptyField</td>
-<td class="success">0.102s</td>
+<td class="success">0.104s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetSelectedValue_TextInField_MatchingWindowOpen</td>
-<td class="success">0.205s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetSelectedValue_TextInField_NoItemSelected</td>
-<td class="success">0.202s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -174,78 +190,78 @@
 </tr>
 <tr>
 <td class="success">testShowDropDownOnTextEntry</td>
-<td class="success">0.102s</td>
+<td class="success">0.114s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_63e5c404-f283-4ee6-af25-9cbeb41a7c19/temp.data
-14:03:29 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:03:29 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_63e5c404-f283-4ee6-af25-9cbeb41a7c19/temp.data/application.log   (LoggingInitialization.java:60) 
-14:03:29 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_63e5c404-f283-4ee6-af25-9cbeb41a7c19/temp.data/preferences   (Preferences.java:122) 
-14:03:29 DEBUG Wed Sep 04 14:03:29 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_fb0b8b16-d2bf-495a-b23a-85aa3dcbe06c/temp.data
+10:25:11 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:25:11 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_fb0b8b16-d2bf-495a-b23a-85aa3dcbe06c/temp.data/application.log   (LoggingInitialization.java:60) 
+10:25:11 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_fb0b8b16-d2bf-495a-b23a-85aa3dcbe06c/temp.data/preferences   (Preferences.java:122) 
+10:25:11 DEBUG Thu Sep 05 10:25:11 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testEnterKey_MatchingWindowOpen *****   (AbstractGenericTest.java:114) 
-14:03:29 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEnterKey_MatchingWindowOpen ✓	   (AbstractGenericTest.java:114) 
-14:03:29 DEBUG Wed Sep 04 14:03:29 CST 2019
+10:25:12 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEnterKey_MatchingWindowOpen ✓	   (AbstractGenericTest.java:114) 
+10:25:12 DEBUG Thu Sep 05 10:25:12 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testSetMatchingWindowHeight_MatchingWindowOpen *****   (AbstractGenericTest.java:114) 
-14:03:29 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetMatchingWindowHeight_MatchingWindowOpen ✓	   (AbstractGenericTest.java:114) 
-14:03:29 DEBUG Wed Sep 04 14:03:29 CST 2019
+10:25:12 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetMatchingWindowHeight_MatchingWindowOpen ✓	   (AbstractGenericTest.java:114) 
+10:25:12 DEBUG Thu Sep 05 10:25:12 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testSetSelectedValue_TextInField_MatchingWindowOpen *****   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetSelectedValue_TextInField_MatchingWindowOpen ✓	   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG Wed Sep 04 14:03:30 CST 2019
+10:25:12 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetSelectedValue_TextInField_MatchingWindowOpen ✓	   (AbstractGenericTest.java:114) 
+10:25:12 DEBUG Thu Sep 05 10:25:12 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testNavigationKeys_DownArrow_NoSelectionTriggered *****   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testNavigationKeys_DownArrow_NoSelectionTriggered ✓	   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG Wed Sep 04 14:03:30 CST 2019
+10:25:12 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testNavigationKeys_DownArrow_NoSelectionTriggered ✓	   (AbstractGenericTest.java:114) 
+10:25:12 DEBUG Thu Sep 05 10:25:12 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testEnterKey_MatchingWindowClosed_EnterKeyDisabled *****   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEnterKey_MatchingWindowClosed_EnterKeyDisabled ✓	   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG Wed Sep 04 14:03:30 CST 2019
+10:25:12 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEnterKey_MatchingWindowClosed_EnterKeyDisabled ✓	   (AbstractGenericTest.java:114) 
+10:25:12 DEBUG Thu Sep 05 10:25:12 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testSetSelectedValue_EmptyField *****   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetSelectedValue_EmptyField ✓	   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG Wed Sep 04 14:03:30 CST 2019
+10:25:12 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetSelectedValue_EmptyField ✓	   (AbstractGenericTest.java:114) 
+10:25:12 DEBUG Thu Sep 05 10:25:12 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testEscapeKey_MatchingWindowClosed *****   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEscapeKey_MatchingWindowClosed ✓	   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG Wed Sep 04 14:03:30 CST 2019
+10:25:12 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEscapeKey_MatchingWindowClosed ✓	   (AbstractGenericTest.java:114) 
+10:25:12 DEBUG Thu Sep 05 10:25:12 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testNavigationKeys_UpArrow_NoSelectionTriggered *****   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testNavigationKeys_UpArrow_NoSelectionTriggered ✓	   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG Wed Sep 04 14:03:30 CST 2019
+10:25:12 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testNavigationKeys_UpArrow_NoSelectionTriggered ✓	   (AbstractGenericTest.java:114) 
+10:25:12 DEBUG Thu Sep 05 10:25:12 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testMovingCaret_WhenFocused *****   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testMovingCaret_WhenFocused ✓	   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG Wed Sep 04 14:03:30 CST 2019
+10:25:13 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testMovingCaret_WhenFocused ✓	   (AbstractGenericTest.java:114) 
+10:25:13 DEBUG Thu Sep 05 10:25:13 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testEnterKey_MatchingWindowClosed *****   (AbstractGenericTest.java:114) 
-14:03:30 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEnterKey_MatchingWindowClosed ✓	   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG Wed Sep 04 14:03:31 CST 2019
+10:25:13 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEnterKey_MatchingWindowClosed ✓	   (AbstractGenericTest.java:114) 
+10:25:13 DEBUG Thu Sep 05 10:25:13 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testShowDropDownOnTextEntry *****   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testShowDropDownOnTextEntry ✓	   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG Wed Sep 04 14:03:31 CST 2019
+10:25:13 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testShowDropDownOnTextEntry ✓	   (AbstractGenericTest.java:114) 
+10:25:13 DEBUG Thu Sep 05 10:25:13 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testDropdownLocationOnResize *****   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testDropdownLocationOnResize ✓	   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG Wed Sep 04 14:03:31 CST 2019
+10:25:13 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testDropdownLocationOnResize ✓	   (AbstractGenericTest.java:114) 
+10:25:13 DEBUG Thu Sep 05 10:25:13 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testSetSelectedValue_TextInField_NoItemSelected *****   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetSelectedValue_TextInField_NoItemSelected ✓	   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG Wed Sep 04 14:03:31 CST 2019
+10:25:13 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetSelectedValue_TextInField_NoItemSelected ✓	   (AbstractGenericTest.java:114) 
+10:25:13 DEBUG Thu Sep 05 10:25:13 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testSetMatchingWindowHeight *****   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetMatchingWindowHeight ✓	   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG Wed Sep 04 14:03:31 CST 2019
+10:25:13 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetMatchingWindowHeight ✓	   (AbstractGenericTest.java:114) 
+10:25:13 DEBUG Thu Sep 05 10:25:13 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testEnterKey_MatchingWindowOpen_DontConsumeEvent *****   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEnterKey_MatchingWindowOpen_DontConsumeEvent ✓	   (AbstractGenericTest.java:114) 
-14:03:31 DEBUG Wed Sep 04 14:03:31 CST 2019
+10:25:13 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEnterKey_MatchingWindowOpen_DontConsumeEvent ✓	   (AbstractGenericTest.java:114) 
+10:25:13 DEBUG Thu Sep 05 10:25:13 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testNavigationKeysTriggerCompletionWindowToShow *****   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testNavigationKeysTriggerCompletionWindowToShow ✓	   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG Wed Sep 04 14:03:32 CST 2019
+10:25:14 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testNavigationKeysTriggerCompletionWindowToShow ✓	   (AbstractGenericTest.java:114) 
+10:25:14 DEBUG Thu Sep 05 10:25:14 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testSetText *****   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetText ✓	   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG Wed Sep 04 14:03:32 CST 2019
+10:25:14 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testSetText ✓	   (AbstractGenericTest.java:114) 
+10:25:14 DEBUG Thu Sep 05 10:25:14 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testDropdownLocationOnParentMove *****   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testDropdownLocationOnParentMove ✓	   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG Wed Sep 04 14:03:32 CST 2019
+10:25:14 DEBUG 	✖ FAILED Test: DropDownTextFieldTest - testDropdownLocationOnParentMove ✖	   (AbstractGenericTest.java:114) 
+10:25:14 DEBUG Thu Sep 05 10:25:14 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testClickingList *****   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testClickingList ✓	   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG Wed Sep 04 14:03:32 CST 2019
+10:25:14 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testClickingList ✓	   (AbstractGenericTest.java:114) 
+10:25:14 DEBUG Thu Sep 05 10:25:14 CST 2019
 ***** STARTING Test: DropDownTextFieldTest - testEscapeKey_MatchingWindowOpen *****   (AbstractGenericTest.java:114) 
-14:03:32 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEscapeKey_MatchingWindowOpen ✓	   (AbstractGenericTest.java:114) 
+10:25:14 DEBUG 	✓ PASSED Test: DropDownTextFieldTest - testEscapeKey_MatchingWindowOpen ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -257,7 +273,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:27 AM</p>
 </div>
 </div>
 </body>

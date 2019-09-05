@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.164s</div>
+<div class="counter">4.048s</div>
 <p>duration</p>
 </div>
 </td>
@@ -245,27 +245,27 @@ Test Thread stack at that time:
 </thead>
 <tr>
 <td class="failures">testClangTextField_getNextTokenIndex</td>
-<td class="failures">0.735s</td>
+<td class="failures">0.829s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testClangTextField_getTokenIndex</td>
-<td class="failures">0.515s</td>
+<td class="failures">0.514s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testCommentAnnotation</td>
-<td class="failures">0.629s</td>
+<td class="failures">0.535s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testDecompiler_CopyFromSymbolWithoutSelection</td>
-<td class="failures">0.438s</td>
+<td class="failures">0.420s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testNewDecompileNavigatesToFunctionSignature</td>
-<td class="failures">1.847s</td>
+<td class="failures">1.750s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -273,57 +273,57 @@ Test Thread stack at that time:
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_4c0ae71e-8d11-48b1-8d5b-b7a88af2e849/temp.data
-14:00:05 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:00:05 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_4c0ae71e-8d11-48b1-8d5b-b7a88af2e849/temp.data/application.log   (LoggingInitialization.java:60) 
-14:00:05 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_4c0ae71e-8d11-48b1-8d5b-b7a88af2e849/temp.data/preferences   (Preferences.java:122) 
-14:00:06 INFO  Class search complete (494 ms)   (ClassSearcher.java:250) 
-14:00:06 DEBUG Wed Sep 04 14:00:06 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_64cf3ef0-00fa-4ed8-8e51-8d1dd0e8dfb3/temp.data
+10:21:56 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:21:56 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_64cf3ef0-00fa-4ed8-8e51-8d1dd0e8dfb3/temp.data/application.log   (LoggingInitialization.java:60) 
+10:21:56 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_64cf3ef0-00fa-4ed8-8e51-8d1dd0e8dfb3/temp.data/preferences   (Preferences.java:122) 
+10:21:57 INFO  Class search complete (461 ms)   (ClassSearcher.java:250) 
+10:21:57 DEBUG Thu Sep 05 10:21:57 CST 2019
 ***** STARTING Test: DecompilerClangTest - testNewDecompileNavigatesToFunctionSignature *****   (AbstractGenericTest.java:114) 
-14:00:06 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
-14:00:06 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
-14:00:06 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
-14:00:08 DEBUG 	✖ FAILED Test: DecompilerClangTest - testNewDecompileNavigatesToFunctionSignature ✖	   (AbstractGenericTest.java:114) 
-14:00:08 DEBUG Wed Sep 04 14:00:08 CST 2019
+10:21:57 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+10:21:57 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+10:21:57 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+10:21:58 DEBUG 	✖ FAILED Test: DecompilerClangTest - testNewDecompileNavigatesToFunctionSignature ✖	   (AbstractGenericTest.java:114) 
+10:21:58 DEBUG Thu Sep 05 10:21:58 CST 2019
 ***** STARTING Test: DecompilerClangTest - testClangTextField_getNextTokenIndex *****   (AbstractGenericTest.java:114) 
-14:00:08 ERROR 
+10:21:58 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:08 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
-14:00:08 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
-14:00:08 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
-14:00:08 DEBUG 	✖ FAILED Test: DecompilerClangTest - testClangTextField_getNextTokenIndex ✖	   (AbstractGenericTest.java:114) 
-14:00:08 DEBUG Wed Sep 04 14:00:08 CST 2019
+10:21:59 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+10:21:59 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+10:21:59 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+10:21:59 DEBUG 	✖ FAILED Test: DecompilerClangTest - testClangTextField_getNextTokenIndex ✖	   (AbstractGenericTest.java:114) 
+10:21:59 DEBUG Thu Sep 05 10:21:59 CST 2019
 ***** STARTING Test: DecompilerClangTest - testCommentAnnotation *****   (AbstractGenericTest.java:114) 
-14:00:08 ERROR 
+10:21:59 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:09 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
-14:00:09 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
-14:00:09 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
-14:00:09 DEBUG 	✖ FAILED Test: DecompilerClangTest - testCommentAnnotation ✖	   (AbstractGenericTest.java:114) 
-14:00:09 DEBUG Wed Sep 04 14:00:09 CST 2019
+10:21:59 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+10:21:59 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+10:21:59 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+10:22:00 DEBUG 	✖ FAILED Test: DecompilerClangTest - testCommentAnnotation ✖	   (AbstractGenericTest.java:114) 
+10:22:00 DEBUG Thu Sep 05 10:22:00 CST 2019
 ***** STARTING Test: DecompilerClangTest - testDecompiler_CopyFromSymbolWithoutSelection *****   (AbstractGenericTest.java:114) 
-14:00:09 ERROR 
+10:22:00 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:09 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
-14:00:09 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
-14:00:09 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
-14:00:09 DEBUG 	✖ FAILED Test: DecompilerClangTest - testDecompiler_CopyFromSymbolWithoutSelection ✖	   (AbstractGenericTest.java:114) 
-14:00:09 DEBUG Wed Sep 04 14:00:09 CST 2019
+10:22:00 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+10:22:00 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+10:22:00 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+10:22:00 DEBUG 	✖ FAILED Test: DecompilerClangTest - testDecompiler_CopyFromSymbolWithoutSelection ✖	   (AbstractGenericTest.java:114) 
+10:22:00 DEBUG Thu Sep 05 10:22:00 CST 2019
 ***** STARTING Test: DecompilerClangTest - testClangTextField_getTokenIndex *****   (AbstractGenericTest.java:114) 
-14:00:10 ERROR 
+10:22:00 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:10 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
-14:00:10 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
-14:00:10 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
-14:00:10 DEBUG 	✖ FAILED Test: DecompilerClangTest - testClangTextField_getTokenIndex ✖	   (AbstractGenericTest.java:114) 
+10:22:00 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.gzf   (AbstractGenericTest.java:381) 
+10:22:00 WARN  Test data file not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage.xml   (AbstractGenericTest.java:381) 
+10:22:00 INFO  Test program not found: ghidra/app/extension/datatype/finder/functions_with_structure_usage   (TestProgramManager.java:351) 
+10:22:01 DEBUG 	✖ FAILED Test: DecompilerClangTest - testClangTextField_getTokenIndex ✖	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -335,7 +335,7 @@ Test Thread stack at that time:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

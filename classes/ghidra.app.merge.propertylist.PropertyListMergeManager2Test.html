@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">9.764s</div>
+<div class="counter">30.319s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">94%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,288 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testMultipleConflicts"></a>
+<h3 class="failures">testMultipleConflicts</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Merge Tool is unexpectedly still not completed after timeout (ms): 20000
+Thread Traces:
+Thread: Reference Handler
+	at java.base@12.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@12.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@12.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+Thread: AWT-XAWT
+	at java.desktop@12.0.2/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+	at java.desktop@12.0.2/sun.awt.X11.XToolkit.run(XToolkit.java:688)
+	at java.desktop@12.0.2/sun.awt.X11.XToolkit.run(XToolkit.java:652)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: /0:0:0:0:0:0:0:1:56524 to /0:0:0:0:0:0:0:1:37546 workers Thread 3
+	at java.base@12.0.2/sun.nio.ch.EPoll.wait(Native Method)
+	at java.base@12.0.2/sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:120)
+	at java.base@12.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:124)
+	at java.base@12.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+	at org.gradle.internal.remote.internal.inet.SocketConnection$SocketInputStream.read(SocketConnection.java:182)
+	at com.esotericsoftware.kryo.io.Input.fill(Input.java:146)
+	at com.esotericsoftware.kryo.io.Input.require(Input.java:178)
+	at com.esotericsoftware.kryo.io.Input.readByte(Input.java:295)
+	at org.gradle.internal.serialize.kryo.KryoBackedDecoder.readByte(KryoBackedDecoder.java:81)
+	at org.gradle.internal.remote.internal.hub.InterHubMessageSerializer$MessageReader.read(InterHubMessageSerializer.java:64)
+	at org.gradle.internal.remote.internal.hub.InterHubMessageSerializer$MessageReader.read(InterHubMessageSerializer.java:52)
+	at org.gradle.internal.remote.internal.inet.SocketConnection.receive(SocketConnection.java:81)
+	at org.gradle.internal.remote.internal.hub.MessageHub$ConnectionReceive.run(MessageHub.java:268)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: AWT-Shutdown
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.Object.wait(Object.java:326)
+	at java.desktop@12.0.2/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: AWT-EventQueue-0
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.desktop@12.0.2/java.awt.EventQueue.getNextEvent(EventQueue.java:566)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:190)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117)
+	at java.desktop@12.0.2/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.desktop@12.0.2/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.desktop@12.0.2/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.base@12.0.2/java.security.AccessController.executePrivileged(AccessController.java:751)
+	at java.base@12.0.2/java.security.AccessController.doPrivileged(AccessController.java:310)
+	at java.desktop@12.0.2/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.desktop@12.0.2/java.awt.Dialog.show(Dialog.java:1070)
+	at java.desktop@12.0.2/java.awt.Component.show(Component.java:1716)
+	at java.desktop@12.0.2/java.awt.Component.setVisible(Component.java:1663)
+	at java.desktop@12.0.2/java.awt.Window.setVisible(Window.java:1021)
+	at java.desktop@12.0.2/java.awt.Dialog.setVisible(Dialog.java:1005)
+	at app//docking.RootNode.setVisible(RootNode.java:196)
+	at app//docking.DockingWindowManager.setVisible(DockingWindowManager.java:443)
+	at app//docking.AbstractDockingTool.setVisible(AbstractDockingTool.java:47)
+	at app//ghidra.app.merge.MergeManager$1.run(MergeManager.java:177)
+	at java.desktop@12.0.2/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:303)
+	at java.desktop@12.0.2/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop@12.0.2/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop@12.0.2/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base@12.0.2/java.security.AccessController.executePrivileged(AccessController.java:751)
+	at java.base@12.0.2/java.security.AccessController.doPrivileged(AccessController.java:389)
+	at java.base@12.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop@12.0.2/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop@12.0.2/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Thread: TimerQueue
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@12.0.2/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+	at java.desktop@12.0.2/javax.swing.TimerQueue.run(TimerQueue.java:171)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: File System Listener
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.Object.wait(Object.java:326)
+	at app//ghidra.framework.store.FileSystemListenerList$FileSystemEventProcessingThread.doWait(FileSystemListenerList.java:301)
+	at app//ghidra.framework.store.FileSystemListenerList$FileSystemEventProcessingThread.run(FileSystemListenerList.java:292)
+Thread: Common-Cleaner
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@12.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+	at java.base@12.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+Thread: Test worker
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at app//generic.test.ConcurrentTestExceptionStatement.waitForTestUnlessExceptions(ConcurrentTestExceptionStatement.java:145)
+	at app//generic.test.ConcurrentTestExceptionStatement.evaluate(ConcurrentTestExceptionStatement.java:68)
+	at app//org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at app//org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at app//org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@12.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@12.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@12.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@12.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: /0:0:0:0:0:0:0:1:56524 to /0:0:0:0:0:0:0:1:37546 workers Thread 2
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at org.gradle.internal.remote.internal.hub.queue.EndPointQueue.take(EndPointQueue.java:49)
+	at org.gradle.internal.remote.internal.hub.MessageHub$ConnectionDispatch.run(MessageHub.java:320)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: Test-Thread-27
+	at java.base@12.0.2/java.lang.Thread.dumpThreads(Native Method)
+	at java.base@12.0.2/java.lang.Thread.getAllStackTraces(Thread.java:1653)
+	at app//utilities.util.reflection.ReflectionUtilities.createStackTraceForAllThreads(ReflectionUtilities.java:385)
+	at app//generic.test.TestUtils.createStackTraceForAllThreads(TestUtils.java:47)
+	at app//generic.test.AbstractGenericTest.createStackTraceForAllThreads(AbstractGenericTest.java:1380)
+	at app//ghidra.app.merge.AbstractMergeTest.waitForMergeCompletion(AbstractMergeTest.java:153)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager2Test.waitForCompletion(PropertyListMergeManager2Test.java:883)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager2Test.selectButtonAndApply(PropertyListMergeManager2Test.java:907)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager2Test.selectButtonAndApply(PropertyListMergeManager2Test.java:917)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager2Test.testMultipleConflicts(PropertyListMergeManager2Test.java:383)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@12.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@12.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@12.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at app//mockit.integration.junit4.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:157)
+	at app//mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at app//mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at app//org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at app//generic.test.TestThread.run(TestThread.java:106)
+Thread: Log4j2-TF-4-Scheduled-1
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@12.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@12.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: Java2D Disposer
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.desktop@12.0.2/sun.java2d.Disposer.run(Disposer.java:144)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: GhidraSwinglessTimer
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+	at java.base@12.0.2/java.util.TimerThread.run(Timer.java:506)
+Thread: GTimer
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+	at java.base@12.0.2/java.util.TimerThread.run(Timer.java:506)
+Thread: Finalizer
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@12.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@12.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+Thread: Signal Dispatcher
+Thread: main
+	at java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@12.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:885)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1039)
+	at java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1345)
+	at java.base@12.0.2/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:232)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:72)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:46)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:91)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:34)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:70)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:68)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:73)
+Thread: Thread-28
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.Object.wait(Object.java:326)
+	at java.desktop@12.0.2/java.awt.EventQueue.invokeAndWait(EventQueue.java:1361)
+	at java.desktop@12.0.2/java.awt.EventQueue.invokeAndWait(EventQueue.java:1342)
+	at java.desktop@12.0.2/javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1480)
+	at app//ghidra.app.merge.MergeManager.merge(MergeManager.java:136)
+	at app//ghidra.app.merge.MergeManager.merge(MergeManager.java:229)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager2Test.lambda$merge$0(PropertyListMergeManager2Test.java:836)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager2Test$$Lambda$405/0x000000080184fc40.run(Unknown Source)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+Thread: Run Manager Worker-pool-6-thread-1
+	at java.base@12.0.2/java.lang.Object.wait(Native Method)
+	at java.base@12.0.2/java.lang.Object.wait(Object.java:326)
+	at app//ghidra.app.merge.MergeManager.waitForInput(MergeManager.java:475)
+	at app//ghidra.app.merge.ProgramMultiUserMergeManager.showComponent(ProgramMultiUserMergeManager.java:230)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager.showMergePanel(PropertyListMergeManager.java:477)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager.processConflictList(PropertyListMergeManager.java:424)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager.processConflicts(PropertyListMergeManager.java:407)
+	at app//ghidra.app.merge.propertylist.PropertyListMergeManager.merge(PropertyListMergeManager.java:162)
+	at app//ghidra.app.merge.MergeManager.lambda$scheduleMerge$5(MergeManager.java:431)
+	at app//ghidra.app.merge.MergeManager$$Lambda$445/0x000000080189d040.monitoredRun(Unknown Source)
+	at app//ghidra.util.task.RunManager$RunnerJob.doExecute(RunManager.java:334)
+	at app//ghidra.util.task.RunManager$RunnerJob.run(RunManager.java:309)
+	at app//ghidra.util.worker.AbstractWorker$JobCallback.process(AbstractWorker.java:133)
+	at app//ghidra.util.worker.AbstractWorker$JobCallback.process(AbstractWorker.java:123)
+	at app//generic.concurrent.ConcurrentQ$CallbackCallable.call(ConcurrentQ.java:655)
+	at java.base@12.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at app//generic.concurrent.FutureTaskMonitor.run(FutureTaskMonitor.java:75)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
+
+	at ghidra.app.merge.AbstractMergeTest.waitForMergeCompletion(AbstractMergeTest.java:154)
+	at ghidra.app.merge.propertylist.PropertyListMergeManager2Test.waitForCompletion(PropertyListMergeManager2Test.java:883)
+	at ghidra.app.merge.propertylist.PropertyListMergeManager2Test.selectButtonAndApply(PropertyListMergeManager2Test.java:907)
+	at ghidra.app.merge.propertylist.PropertyListMergeManager2Test.selectButtonAndApply(PropertyListMergeManager2Test.java:917)
+	at ghidra.app.merge.propertylist.PropertyListMergeManager2Test.testMultipleConflicts(PropertyListMergeManager2Test.java:383)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -79,150 +354,217 @@
 </thead>
 <tr>
 <td class="success">testAnalyzedFalseInBoth</td>
-<td class="success">0.410s</td>
+<td class="success">0.443s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAnalyzedFalseInLatest</td>
-<td class="success">2.386s</td>
+<td class="success">2.271s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAnalyzedFalseInLatestTrueInMy</td>
-<td class="success">0.407s</td>
+<td class="success">0.413s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAnalyzedFalseInMy</td>
-<td class="success">0.304s</td>
+<td class="success">0.426s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAnalyzedTrueInBoth</td>
-<td class="success">0.403s</td>
+<td class="success">0.430s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAnalyzedTrueInLatest</td>
-<td class="success">0.303s</td>
+<td class="success">0.523s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAnalyzedTrueInLatestFalseInMy</td>
-<td class="success">0.405s</td>
+<td class="success">0.308s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testAnalyzedTrueInMy</td>
-<td class="success">0.303s</td>
+<td class="success">0.306s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDateConflicts</td>
-<td class="success">0.418s</td>
+<td class="success">0.412s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDateDeletedConflicts</td>
-<td class="success">0.517s</td>
+<td class="success">0.530s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testMultipleConflicts</td>
-<td class="success">0.518s</td>
-<td class="success">passed</td>
+<td class="failures">testMultipleConflicts</td>
+<td class="failures">20.845s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testTypeMismatchAskTheUserOpt1</td>
-<td class="success">0.524s</td>
+<td class="success">0.526s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTypeMismatchAskTheUserOpt2</td>
-<td class="success">0.515s</td>
+<td class="success">0.506s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTypeMismatchAskTheUserOpt3</td>
-<td class="success">0.507s</td>
+<td class="success">0.510s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testValuesChangedAskTheUserOpt1</td>
-<td class="success">0.615s</td>
+<td class="success">0.713s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testValuesChangedAskTheUserOpt2</td>
-<td class="success">0.611s</td>
+<td class="success">0.514s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testValuesChangedAskTheUserOpt3</td>
-<td class="success">0.618s</td>
+<td class="success">0.643s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_5f036481-f36b-41ce-ab92-a4ce1eaa1447/temp.data
-12:53:47 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-12:53:47 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_5f036481-f36b-41ce-ab92-a4ce1eaa1447/temp.data/application.log   (LoggingInitialization.java:60) 
-12:53:47 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_5f036481-f36b-41ce-ab92-a4ce1eaa1447/temp.data/preferences   (Preferences.java:122) 
-12:53:48 INFO  Class search complete (517 ms)   (ClassSearcher.java:250) 
-12:53:48 DEBUG Wed Sep 04 12:53:48 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_4465bfad-4d89-4835-b142-e5f606123c3f/temp.data
+09:01:12 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+09:01:12 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_4465bfad-4d89-4835-b142-e5f606123c3f/temp.data/application.log   (LoggingInitialization.java:60) 
+09:01:12 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_4465bfad-4d89-4835-b142-e5f606123c3f/temp.data/preferences   (Preferences.java:122) 
+09:01:13 INFO  Class search complete (501 ms)   (ClassSearcher.java:250) 
+09:01:13 DEBUG Thu Sep 05 09:01:13 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testAnalyzedFalseInLatest *****   (AbstractGenericTest.java:114) 
-12:53:50 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedFalseInLatest ✓	   (AbstractGenericTest.java:114) 
-12:53:50 DEBUG Wed Sep 04 12:53:50 CST 2019
+09:01:15 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedFalseInLatest ✓	   (AbstractGenericTest.java:114) 
+09:01:15 DEBUG Thu Sep 05 09:01:15 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt1 *****   (AbstractGenericTest.java:114) 
-12:53:51 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt1 ✓	   (AbstractGenericTest.java:114) 
-12:53:51 DEBUG Wed Sep 04 12:53:51 CST 2019
+09:01:16 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt1 ✓	   (AbstractGenericTest.java:114) 
+09:01:16 DEBUG Thu Sep 05 09:01:16 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt2 *****   (AbstractGenericTest.java:114) 
-12:53:51 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt2 ✓	   (AbstractGenericTest.java:114) 
-12:53:51 DEBUG Wed Sep 04 12:53:51 CST 2019
+09:01:16 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt2 ✓	   (AbstractGenericTest.java:114) 
+09:01:16 DEBUG Thu Sep 05 09:01:16 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt3 *****   (AbstractGenericTest.java:114) 
-12:53:52 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt3 ✓	   (AbstractGenericTest.java:114) 
-12:53:52 DEBUG Wed Sep 04 12:53:52 CST 2019
+09:01:17 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testValuesChangedAskTheUserOpt3 ✓	   (AbstractGenericTest.java:114) 
+09:01:17 DEBUG Thu Sep 05 09:01:17 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testDateDeletedConflicts *****   (AbstractGenericTest.java:114) 
-12:53:53 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testDateDeletedConflicts ✓	   (AbstractGenericTest.java:114) 
-12:53:53 DEBUG Wed Sep 04 12:53:53 CST 2019
+09:01:18 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testDateDeletedConflicts ✓	   (AbstractGenericTest.java:114) 
+09:01:18 DEBUG Thu Sep 05 09:01:18 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt1 *****   (AbstractGenericTest.java:114) 
-12:53:53 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt1 ✓	   (AbstractGenericTest.java:114) 
-12:53:53 DEBUG Wed Sep 04 12:53:53 CST 2019
+09:01:18 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt1 ✓	   (AbstractGenericTest.java:114) 
+09:01:18 DEBUG Thu Sep 05 09:01:18 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt2 *****   (AbstractGenericTest.java:114) 
-12:53:54 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt2 ✓	   (AbstractGenericTest.java:114) 
-12:53:54 DEBUG Wed Sep 04 12:53:54 CST 2019
+09:01:19 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt2 ✓	   (AbstractGenericTest.java:114) 
+09:01:19 DEBUG Thu Sep 05 09:01:19 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt3 *****   (AbstractGenericTest.java:114) 
-12:53:54 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt3 ✓	   (AbstractGenericTest.java:114) 
-12:53:54 DEBUG Wed Sep 04 12:53:54 CST 2019
+09:01:19 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testTypeMismatchAskTheUserOpt3 ✓	   (AbstractGenericTest.java:114) 
+09:01:19 DEBUG Thu Sep 05 09:01:19 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testDateConflicts *****   (AbstractGenericTest.java:114) 
-12:53:55 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testDateConflicts ✓	   (AbstractGenericTest.java:114) 
-12:53:55 DEBUG Wed Sep 04 12:53:55 CST 2019
+09:01:19 DEBUG Uh-Oh  Still processing in TearDown() ...   (AbstractMergeTest.java:84) 
+09:01:19 DEBUG Open windows: 
+   (AbstractDockingTest.java:1958) 
+09:01:19 ERROR Exception disposing java.lang.NullPointerException
+	at ghidra.app.merge.AbstractMergeTest.tryToPressCancel(AbstractMergeTest.java:104)
+	at ghidra.app.merge.AbstractMergeTest.bringDownMergeTool(AbstractMergeTest.java:86)
+	at ghidra.app.merge.AbstractMergeTest.tearDown(AbstractMergeTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:49)
+	at mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at generic.test.TestThread.run(TestThread.java:106)
+  (AbstractMergeTest.java:93) 
+09:01:20 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testDateConflicts ✓	   (AbstractGenericTest.java:114) 
+09:01:20 DEBUG Thu Sep 05 09:01:20 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testAnalyzedTrueInBoth *****   (AbstractGenericTest.java:114) 
-12:53:55 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedTrueInBoth ✓	   (AbstractGenericTest.java:114) 
-12:53:55 DEBUG Wed Sep 04 12:53:55 CST 2019
+09:01:20 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedTrueInBoth ✓	   (AbstractGenericTest.java:114) 
+09:01:20 DEBUG Thu Sep 05 09:01:20 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testAnalyzedFalseInBoth *****   (AbstractGenericTest.java:114) 
-12:53:55 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedFalseInBoth ✓	   (AbstractGenericTest.java:114) 
-12:53:55 DEBUG Wed Sep 04 12:53:55 CST 2019
+09:01:20 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedFalseInBoth ✓	   (AbstractGenericTest.java:114) 
+09:01:20 DEBUG Thu Sep 05 09:01:20 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testMultipleConflicts *****   (AbstractGenericTest.java:114) 
-12:53:56 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testMultipleConflicts ✓	   (AbstractGenericTest.java:114) 
-12:53:56 DEBUG Wed Sep 04 12:53:56 CST 2019
+09:01:41 DEBUG Open modal dialog:    (AbstractMergeTest.java:148) 
+09:01:41 ERROR Unable to capture dialog: javax.swing.JDialog[dialog0,95,87,1740x900,invalid,layout=java.awt.BorderLayout,APPLICATION_MODAL,title=Merge Tool: /notepad,defaultCloseOperation=DO_NOTHING_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1740x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@3b85b21c,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]   (AbstractMergeTest.java:168) 
+09:01:41 DEBUG Uh-Oh  Still processing in TearDown() ...   (AbstractMergeTest.java:84) 
+09:01:41 DEBUG Open windows: 
+Frame: 'null' (not showing)
+	Dialog: 'Merge Tool: /notepad'
+   (AbstractDockingTest.java:1958) 
+09:01:41 DEBUG 	✖ FAILED Test: PropertyListMergeManager2Test - testMultipleConflicts ✖	   (AbstractGenericTest.java:114) 
+09:01:41 DEBUG Thu Sep 05 09:01:41 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testAnalyzedTrueInLatest *****   (AbstractGenericTest.java:114) 
-12:53:56 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedTrueInLatest ✓	   (AbstractGenericTest.java:114) 
-12:53:56 DEBUG Wed Sep 04 12:53:56 CST 2019
+09:01:42 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedTrueInLatest ✓	   (AbstractGenericTest.java:114) 
+09:01:42 DEBUG Thu Sep 05 09:01:42 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testAnalyzedFalseInMy *****   (AbstractGenericTest.java:114) 
-12:53:57 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedFalseInMy ✓	   (AbstractGenericTest.java:114) 
-12:53:57 DEBUG Wed Sep 04 12:53:57 CST 2019
+09:01:42 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedFalseInMy ✓	   (AbstractGenericTest.java:114) 
+09:01:42 DEBUG Thu Sep 05 09:01:42 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testAnalyzedTrueInLatestFalseInMy *****   (AbstractGenericTest.java:114) 
-12:53:57 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedTrueInLatestFalseInMy ✓	   (AbstractGenericTest.java:114) 
-12:53:57 DEBUG Wed Sep 04 12:53:57 CST 2019
+09:01:43 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedTrueInLatestFalseInMy ✓	   (AbstractGenericTest.java:114) 
+09:01:43 DEBUG Thu Sep 05 09:01:43 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testAnalyzedFalseInLatestTrueInMy *****   (AbstractGenericTest.java:114) 
-12:53:57 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedFalseInLatestTrueInMy ✓	   (AbstractGenericTest.java:114) 
-12:53:57 DEBUG Wed Sep 04 12:53:57 CST 2019
+09:01:43 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedFalseInLatestTrueInMy ✓	   (AbstractGenericTest.java:114) 
+09:01:43 DEBUG Thu Sep 05 09:01:43 CST 2019
 ***** STARTING Test: PropertyListMergeManager2Test - testAnalyzedTrueInMy *****   (AbstractGenericTest.java:114) 
-12:53:58 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedTrueInMy ✓	   (AbstractGenericTest.java:114) 
+09:01:43 DEBUG 	✓ PASSED Test: PropertyListMergeManager2Test - testAnalyzedTrueInMy ✓	   (AbstractGenericTest.java:114) 
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>java.io.FileNotFoundException: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/JUnit/reports/PropertyListMergeManager2Test/testMultipleConflicts/modal.dialog.Merge_Tool:_/notepad.png (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:347)
+	at java.base/java.io.RandomAccessFile.&lt;init&gt;(RandomAccessFile.java:261)
+	at java.base/java.io.RandomAccessFile.&lt;init&gt;(RandomAccessFile.java:216)
+	at java.desktop/javax.imageio.stream.FileImageOutputStream.&lt;init&gt;(FileImageOutputStream.java:69)
+	at java.desktop/com.sun.imageio.spi.FileImageOutputStreamSpi.createOutputStreamInstance(FileImageOutputStreamSpi.java:55)
+	at java.desktop/javax.imageio.ImageIO.createImageOutputStream(ImageIO.java:419)
+	at java.desktop/javax.imageio.ImageIO.write(ImageIO.java:1549)
+	at generic.util.image.ImageUtils.writeFile(ImageUtils.java:248)
+	at docking.test.AbstractDockingTest.writeImage(AbstractDockingTest.java:2311)
+	at docking.test.AbstractDockingTest.writeImage(AbstractDockingTest.java:2250)
+	at docking.test.AbstractDockingTest.writeImage(AbstractDockingTest.java:2240)
+	at ghidra.app.merge.AbstractMergeTest.capture(AbstractMergeTest.java:165)
+	at ghidra.app.merge.AbstractMergeTest.waitForMergeCompletion(AbstractMergeTest.java:150)
+	at ghidra.app.merge.propertylist.PropertyListMergeManager2Test.waitForCompletion(PropertyListMergeManager2Test.java:883)
+	at ghidra.app.merge.propertylist.PropertyListMergeManager2Test.selectButtonAndApply(PropertyListMergeManager2Test.java:907)
+	at ghidra.app.merge.propertylist.PropertyListMergeManager2Test.selectButtonAndApply(PropertyListMergeManager2Test.java:917)
+	at ghidra.app.merge.propertylist.PropertyListMergeManager2Test.testMultipleConflicts(PropertyListMergeManager2Test.java:383)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:157)
+	at mockit.integration.junit4.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at mockit.integration.junit4.FakeFrameworkMethod.invokeExplosively(FakeFrameworkMethod.java:29)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at generic.test.TestThread.run(TestThread.java:106)
 </pre>
 </span>
 </div>
@@ -234,7 +576,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

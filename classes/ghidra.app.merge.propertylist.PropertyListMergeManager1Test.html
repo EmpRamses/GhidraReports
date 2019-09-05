@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.834s</div>
+<div class="counter">6.913s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">92%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,29 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testUseForAllPickOriginal"></a>
+<h3 class="failures">testUseForAllPickOriginal</h3>
+<span class="code">
+<pre>org.junit.ComparisonFailure: expected:&lt;[unknown]&gt; but was:&lt;[some undetermined format]&gt;
+	at ghidra.app.merge.propertylist.PropertyListMergeManager1Test.testUseForAllPickOriginal(PropertyListMergeManager1Test.java:539)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -79,118 +95,118 @@
 </thead>
 <tr>
 <td class="success">testAddNewProperty</td>
-<td class="success">0.314s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testAddedValuesChanged</td>
-<td class="success">0.406s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testDoNotUseForAll</td>
-<td class="success">0.820s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testMyValueChanged</td>
-<td class="success">0.329s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testNoChange</td>
-<td class="success">0.208s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testPropertyChangedAndDeleted</td>
-<td class="success">0.321s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testPropertyChangedAndDeleted2</td>
 <td class="success">0.306s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testAddedValuesChanged</td>
+<td class="success">0.304s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDoNotUseForAll</td>
+<td class="success">0.810s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMyValueChanged</td>
+<td class="success">0.304s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNoChange</td>
+<td class="success">0.207s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPropertyChangedAndDeleted</td>
+<td class="success">0.312s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPropertyChangedAndDeleted2</td>
+<td class="success">0.314s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testPropertyDeleted</td>
-<td class="success">0.204s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUseForAllPickLatest</td>
-<td class="success">2.390s</td>
+<td class="success">2.513s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUseForAllPickMy</td>
-<td class="success">0.507s</td>
+<td class="success">0.510s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testUseForAllPickOriginal</td>
-<td class="success">0.508s</td>
-<td class="success">passed</td>
+<td class="failures">testUseForAllPickOriginal</td>
+<td class="failures">0.620s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testValuesChanged</td>
-<td class="success">0.212s</td>
+<td class="success">0.207s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testValuesChanged2</td>
-<td class="success">0.309s</td>
+<td class="success">0.303s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d2ad70e6-bc96-4a58-8ce4-8e4cab17e2e4/temp.data
-12:53:38 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-12:53:38 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d2ad70e6-bc96-4a58-8ce4-8e4cab17e2e4/temp.data/application.log   (LoggingInitialization.java:60) 
-12:53:38 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_d2ad70e6-bc96-4a58-8ce4-8e4cab17e2e4/temp.data/preferences   (Preferences.java:122) 
-12:53:39 INFO  Class search complete (507 ms)   (ClassSearcher.java:250) 
-12:53:39 DEBUG Wed Sep 04 12:53:39 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_2bb43793-f6cf-48ea-807c-517ebaae0cef/temp.data
+09:01:03 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+09:01:03 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_2bb43793-f6cf-48ea-807c-517ebaae0cef/temp.data/application.log   (LoggingInitialization.java:60) 
+09:01:03 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_2bb43793-f6cf-48ea-807c-517ebaae0cef/temp.data/preferences   (Preferences.java:122) 
+09:01:04 INFO  Class search complete (730 ms)   (ClassSearcher.java:250) 
+09:01:04 DEBUG Thu Sep 05 09:01:04 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testUseForAllPickLatest *****   (AbstractGenericTest.java:114) 
-12:53:41 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testUseForAllPickLatest ✓	   (AbstractGenericTest.java:114) 
-12:53:41 DEBUG Wed Sep 04 12:53:41 CST 2019
+09:01:06 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testUseForAllPickLatest ✓	   (AbstractGenericTest.java:114) 
+09:01:06 DEBUG Thu Sep 05 09:01:06 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testAddedValuesChanged *****   (AbstractGenericTest.java:114) 
-12:53:42 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testAddedValuesChanged ✓	   (AbstractGenericTest.java:114) 
-12:53:42 DEBUG Wed Sep 04 12:53:42 CST 2019
+09:01:07 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testAddedValuesChanged ✓	   (AbstractGenericTest.java:114) 
+09:01:07 DEBUG Thu Sep 05 09:01:07 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testValuesChanged2 *****   (AbstractGenericTest.java:114) 
-12:53:42 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testValuesChanged2 ✓	   (AbstractGenericTest.java:114) 
-12:53:42 DEBUG Wed Sep 04 12:53:42 CST 2019
+09:01:07 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testValuesChanged2 ✓	   (AbstractGenericTest.java:114) 
+09:01:07 DEBUG Thu Sep 05 09:01:07 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testAddNewProperty *****   (AbstractGenericTest.java:114) 
-12:53:42 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testAddNewProperty ✓	   (AbstractGenericTest.java:114) 
-12:53:42 DEBUG Wed Sep 04 12:53:42 CST 2019
+09:01:07 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testAddNewProperty ✓	   (AbstractGenericTest.java:114) 
+09:01:07 DEBUG Thu Sep 05 09:01:07 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testPropertyChangedAndDeleted2 *****   (AbstractGenericTest.java:114) 
-12:53:43 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testPropertyChangedAndDeleted2 ✓	   (AbstractGenericTest.java:114) 
-12:53:43 DEBUG Wed Sep 04 12:53:43 CST 2019
+09:01:08 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testPropertyChangedAndDeleted2 ✓	   (AbstractGenericTest.java:114) 
+09:01:08 DEBUG Thu Sep 05 09:01:08 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testMyValueChanged *****   (AbstractGenericTest.java:114) 
-12:53:43 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testMyValueChanged ✓	   (AbstractGenericTest.java:114) 
-12:53:43 DEBUG Wed Sep 04 12:53:43 CST 2019
+09:01:08 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testMyValueChanged ✓	   (AbstractGenericTest.java:114) 
+09:01:08 DEBUG Thu Sep 05 09:01:08 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testUseForAllPickOriginal *****   (AbstractGenericTest.java:114) 
-12:53:43 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testUseForAllPickOriginal ✓	   (AbstractGenericTest.java:114) 
-12:53:43 DEBUG Wed Sep 04 12:53:43 CST 2019
+09:01:09 DEBUG 	✖ FAILED Test: PropertyListMergeManager1Test - testUseForAllPickOriginal ✖	   (AbstractGenericTest.java:114) 
+09:01:09 DEBUG Thu Sep 05 09:01:09 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testPropertyChangedAndDeleted *****   (AbstractGenericTest.java:114) 
-12:53:44 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testPropertyChangedAndDeleted ✓	   (AbstractGenericTest.java:114) 
-12:53:44 DEBUG Wed Sep 04 12:53:44 CST 2019
+09:01:09 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testPropertyChangedAndDeleted ✓	   (AbstractGenericTest.java:114) 
+09:01:09 DEBUG Thu Sep 05 09:01:09 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testPropertyDeleted *****   (AbstractGenericTest.java:114) 
-12:53:44 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testPropertyDeleted ✓	   (AbstractGenericTest.java:114) 
-12:53:44 DEBUG Wed Sep 04 12:53:44 CST 2019
+09:01:09 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testPropertyDeleted ✓	   (AbstractGenericTest.java:114) 
+09:01:09 DEBUG Thu Sep 05 09:01:09 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testDoNotUseForAll *****   (AbstractGenericTest.java:114) 
-12:53:45 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testDoNotUseForAll ✓	   (AbstractGenericTest.java:114) 
-12:53:45 DEBUG Wed Sep 04 12:53:45 CST 2019
+09:01:10 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testDoNotUseForAll ✓	   (AbstractGenericTest.java:114) 
+09:01:10 DEBUG Thu Sep 05 09:01:10 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testNoChange *****   (AbstractGenericTest.java:114) 
-12:53:45 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testNoChange ✓	   (AbstractGenericTest.java:114) 
-12:53:45 DEBUG Wed Sep 04 12:53:45 CST 2019
+09:01:10 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testNoChange ✓	   (AbstractGenericTest.java:114) 
+09:01:10 DEBUG Thu Sep 05 09:01:10 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testUseForAllPickMy *****   (AbstractGenericTest.java:114) 
-12:53:45 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testUseForAllPickMy ✓	   (AbstractGenericTest.java:114) 
-12:53:45 DEBUG Wed Sep 04 12:53:45 CST 2019
+09:01:11 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testUseForAllPickMy ✓	   (AbstractGenericTest.java:114) 
+09:01:11 DEBUG Thu Sep 05 09:01:11 CST 2019
 ***** STARTING Test: PropertyListMergeManager1Test - testValuesChanged *****   (AbstractGenericTest.java:114) 
-12:53:46 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testValuesChanged ✓	   (AbstractGenericTest.java:114) 
+09:01:11 DEBUG 	✓ PASSED Test: PropertyListMergeManager1Test - testValuesChanged ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -202,7 +218,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

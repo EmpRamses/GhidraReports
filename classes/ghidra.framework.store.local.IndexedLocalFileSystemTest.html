@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.274s</div>
+<div class="counter">3.568s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">testCreateDataBase</td>
-<td class="success">0.102s</td>
+<td class="success">0.101s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -99,27 +99,27 @@
 </tr>
 <tr>
 <td class="success">testDeleteDatabase</td>
-<td class="success">0.203s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDeleteFolder</td>
-<td class="success">0.203s</td>
+<td class="success">0.404s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDeleteItem</td>
-<td class="success">0.202s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFileNames</td>
-<td class="success">0.202s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFilePaths</td>
-<td class="success">0.104s</td>
+<td class="success">0.202s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -129,37 +129,37 @@
 </tr>
 <tr>
 <td class="success">testGetFolders</td>
-<td class="success">0.103s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testIndexRebuild</td>
-<td class="success">0.118s</td>
+<td class="success">0.217s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testIndexRecovery</td>
-<td class="success">0.204s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testItemChanged</td>
-<td class="success">0.205s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testMoveDataFile</td>
-<td class="success">0.203s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testMoveDatabase</td>
 <td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testMoveFolder</td>
+<td class="success">testItemChanged</td>
 <td class="success">0.203s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMoveDataFile</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMoveDatabase</td>
+<td class="success">0.203s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMoveFolder</td>
+<td class="success">0.202s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -169,12 +169,12 @@
 </tr>
 <tr>
 <td class="success">testRenameFolder</td>
-<td class="success">0.202s</td>
+<td class="success">0.303s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testReopenFileNames</td>
-<td class="success">0.103s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -182,97 +182,103 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data
-14:04:35 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:04:35 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/application.log   (LoggingInitialization.java:60) 
-14:04:35 DEBUG Wed Sep 04 14:04:35 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data
+10:26:25 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:26:25 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/application.log   (LoggingInitialization.java:60) 
+10:26:25 DEBUG Thu Sep 05 10:26:25 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testIndexRebuild *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:36 ERROR Indexed filesystem error: Filesystem Index error: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject/~index.dat   (IndexedV1LocalFileSystem.java:178) 
-14:04:36 INFO  Attempting index rebuild: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject   (IndexedV1LocalFileSystem.java:180) 
-14:04:36 INFO  Index rebuild completed: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject   (IndexedV1LocalFileSystem.java:212) 
-14:04:36 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testIndexRebuild ✓	   (AbstractGenericTest.java:114) 
-14:04:36 DEBUG Wed Sep 04 14:04:36 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:25 ERROR Indexed filesystem error: Filesystem Index error: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject/~index.dat   (IndexedV1LocalFileSystem.java:178) 
+10:26:25 INFO  Attempting index rebuild: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject   (IndexedV1LocalFileSystem.java:180) 
+10:26:25 INFO  Index rebuild completed: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject   (IndexedV1LocalFileSystem.java:212) 
+10:26:25 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testIndexRebuild ✓	   (AbstractGenericTest.java:114) 
+10:26:25 DEBUG Thu Sep 05 10:26:25 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testIndexRecovery *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:36 INFO  restoring data storage index...   (IndexedLocalFileSystem.java:1409) 
-14:04:36 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testIndexRecovery ✓	   (AbstractGenericTest.java:114) 
-14:04:36 DEBUG Wed Sep 04 14:04:36 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:26 INFO  restoring data storage index...   (IndexedLocalFileSystem.java:1409) 
+10:26:26 ERROR Unexpected Exception: No such file or directory java.io.IOException: No such file or directory
+	at java.base/java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.base/java.io.File.createTempFile(File.java:2090)
+	at ghidra.framework.store.local.LocalDatabaseItem$CleanupRunnable.run(LocalDatabaseItem.java:724)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+  (LocalDatabaseItem.java:732) 
+10:26:26 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testIndexRecovery ✓	   (AbstractGenericTest.java:114) 
+10:26:26 DEBUG Thu Sep 05 10:26:26 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testCreateFolder *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:36 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testCreateFolder ✓	   (AbstractGenericTest.java:114) 
-14:04:36 DEBUG Wed Sep 04 14:04:36 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:26 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testCreateFolder ✓	   (AbstractGenericTest.java:114) 
+10:26:26 DEBUG Thu Sep 05 10:26:26 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testRenameFile *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:36 INFO  /abc/barney: file deleted (test)   (LocalFolderItem.java:384) 
-14:04:36 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testRenameFile ✓	   (AbstractGenericTest.java:114) 
-14:04:36 DEBUG Wed Sep 04 14:04:36 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:26 INFO  /abc/barney: file deleted (test)   (LocalFolderItem.java:384) 
+10:26:26 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testRenameFile ✓	   (AbstractGenericTest.java:114) 
+10:26:26 DEBUG Thu Sep 05 10:26:26 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testMoveDataFile *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:37 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testMoveDataFile ✓	   (AbstractGenericTest.java:114) 
-14:04:37 DEBUG Wed Sep 04 14:04:37 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:26 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testMoveDataFile ✓	   (AbstractGenericTest.java:114) 
+10:26:26 DEBUG Thu Sep 05 10:26:26 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testMoveDatabase *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:37 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testMoveDatabase ✓	   (AbstractGenericTest.java:114) 
-14:04:37 DEBUG Wed Sep 04 14:04:37 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:26 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testMoveDatabase ✓	   (AbstractGenericTest.java:114) 
+10:26:26 DEBUG Thu Sep 05 10:26:26 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testDeleteDatabase *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:37 INFO  /abc/greg: file deleted (test)   (LocalFolderItem.java:384) 
-14:04:37 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testDeleteDatabase ✓	   (AbstractGenericTest.java:114) 
-14:04:37 DEBUG Wed Sep 04 14:04:37 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:26 INFO  /abc/greg: file deleted (test)   (LocalFolderItem.java:384) 
+10:26:27 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testDeleteDatabase ✓	   (AbstractGenericTest.java:114) 
+10:26:27 DEBUG Thu Sep 05 10:26:27 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testReopenFileNames *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:37 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testReopenFileNames ✓	   (AbstractGenericTest.java:114) 
-14:04:37 DEBUG Wed Sep 04 14:04:37 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:27 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testReopenFileNames ✓	   (AbstractGenericTest.java:114) 
+10:26:27 DEBUG Thu Sep 05 10:26:27 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testFileNames *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:37 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testFileNames ✓	   (AbstractGenericTest.java:114) 
-14:04:37 DEBUG Wed Sep 04 14:04:37 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:27 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testFileNames ✓	   (AbstractGenericTest.java:114) 
+10:26:27 DEBUG Thu Sep 05 10:26:27 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testFilePaths *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:37 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testFilePaths ✓	   (AbstractGenericTest.java:114) 
-14:04:37 DEBUG Wed Sep 04 14:04:37 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:27 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testFilePaths ✓	   (AbstractGenericTest.java:114) 
+10:26:27 DEBUG Thu Sep 05 10:26:27 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testItemChanged *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:37 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testItemChanged ✓	   (AbstractGenericTest.java:114) 
-14:04:37 DEBUG Wed Sep 04 14:04:37 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:27 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testItemChanged ✓	   (AbstractGenericTest.java:114) 
+10:26:27 DEBUG Thu Sep 05 10:26:27 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testFilePathsWithSpaces *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:38 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testFilePathsWithSpaces ✓	   (AbstractGenericTest.java:114) 
-14:04:38 DEBUG Wed Sep 04 14:04:38 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:27 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testFilePathsWithSpaces ✓	   (AbstractGenericTest.java:114) 
+10:26:27 DEBUG Thu Sep 05 10:26:27 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testGetFolders *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:38 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testGetFolders ✓	   (AbstractGenericTest.java:114) 
-14:04:38 DEBUG Wed Sep 04 14:04:38 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:27 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testGetFolders ✓	   (AbstractGenericTest.java:114) 
+10:26:27 DEBUG Thu Sep 05 10:26:27 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testDeleteFolder *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:38 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testDeleteFolder ✓	   (AbstractGenericTest.java:114) 
-14:04:38 DEBUG Wed Sep 04 14:04:38 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:28 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testDeleteFolder ✓	   (AbstractGenericTest.java:114) 
+10:26:28 DEBUG Thu Sep 05 10:26:28 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testRenameFolder *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:38 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testRenameFolder ✓	   (AbstractGenericTest.java:114) 
-14:04:38 DEBUG Wed Sep 04 14:04:38 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:28 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testRenameFolder ✓	   (AbstractGenericTest.java:114) 
+10:26:28 DEBUG Thu Sep 05 10:26:28 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testCreateTemporaryDatabase *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:38 INFO  /abc/.ghidra.fred.tmp: file deleted (test)   (LocalFolderItem.java:384) 
-14:04:38 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testCreateTemporaryDatabase ✓	   (AbstractGenericTest.java:114) 
-14:04:38 DEBUG Wed Sep 04 14:04:38 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:28 INFO  /abc/.ghidra.fred.tmp: file deleted (test)   (LocalFolderItem.java:384) 
+10:26:28 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testCreateTemporaryDatabase ✓	   (AbstractGenericTest.java:114) 
+10:26:28 DEBUG Thu Sep 05 10:26:28 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testDeleteItem *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:38 INFO  /abc/wilma: file deleted (test)   (LocalFolderItem.java:384) 
-14:04:38 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testDeleteItem ✓	   (AbstractGenericTest.java:114) 
-14:04:38 DEBUG Wed Sep 04 14:04:38 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:28 INFO  /abc/wilma: file deleted (test)   (LocalFolderItem.java:384) 
+10:26:28 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testDeleteItem ✓	   (AbstractGenericTest.java:114) 
+10:26:28 DEBUG Thu Sep 05 10:26:28 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testCreateDataBase *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:39 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testCreateDataBase ✓	   (AbstractGenericTest.java:114) 
-14:04:39 DEBUG Wed Sep 04 14:04:39 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:29 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testCreateDataBase ✓	   (AbstractGenericTest.java:114) 
+10:26:29 DEBUG Thu Sep 05 10:26:29 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testCreateDataFile *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:39 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testCreateDataFile ✓	   (AbstractGenericTest.java:114) 
-14:04:39 DEBUG Wed Sep 04 14:04:39 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:29 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testCreateDataFile ✓	   (AbstractGenericTest.java:114) 
+10:26:29 DEBUG Thu Sep 05 10:26:29 CST 2019
 ***** STARTING Test: IndexedLocalFileSystemTest - testMoveFolder *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_dce2f879-92c7-444d-af89-a46360109f0b/temp.data/testproject
-14:04:39 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testMoveFolder ✓	   (AbstractGenericTest.java:114) 
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d70ba9e1-dc11-4186-a28d-994dd31e6ac1/temp.data/testproject
+10:26:29 DEBUG 	✓ PASSED Test: IndexedLocalFileSystemTest - testMoveFolder ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -284,7 +290,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

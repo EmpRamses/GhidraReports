@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">27.143s</div>
+<div class="counter">24.525s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">93%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,29 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testPgUpPgDn"></a>
+<h3 class="failures">testPgUpPgDn</h3>
+<span class="code">
+<pre>java.lang.AssertionError: expected:&lt;01001023&gt; but was:&lt;01001024&gt;
+	at ghidra.app.plugin.core.codebrowser.CodeBrowserScreenMovementTest.testPgUpPgDn(CodeBrowserScreenMovementTest.java:179)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -79,67 +95,67 @@
 </thead>
 <tr>
 <td class="success">testBasicControls</td>
-<td class="success">1.250s</td>
+<td class="success">1.227s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testBasicControlsSmallView</td>
-<td class="success">1.125s</td>
+<td class="success">1.032s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testConnectedBrowsers</td>
-<td class="success">2.817s</td>
+<td class="success">2.426s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testConnectedOneOpenOneClosedStructs</td>
-<td class="success">1.629s</td>
+<td class="success">1.341s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testConnectedOpenStructs</td>
-<td class="success">4.882s</td>
+<td class="success">4.785s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testConnectedStructesWithDataXRefFields</td>
-<td class="success">2.326s</td>
+<td class="success">2.453s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetCurrentFieldSelection</td>
-<td class="success">0.608s</td>
+<td class="success">0.505s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testNestedOpenClose</td>
-<td class="success">0.711s</td>
+<td class="success">0.913s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testOpenClose</td>
-<td class="success">3.281s</td>
+<td class="success">3.159s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testOpenCloseArray</td>
-<td class="success">0.717s</td>
+<td class="success">0.709s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testOpenCloseStruct</td>
-<td class="success">1.343s</td>
+<td class="success">1.334s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testPgUpPgDn</td>
-<td class="success">2.180s</td>
-<td class="success">passed</td>
+<td class="failures">testPgUpPgDn</td>
+<td class="failures">0.507s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testPgUpPgDnSmallView</td>
-<td class="success">2.044s</td>
+<td class="success">1.912s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -149,90 +165,90 @@
 </tr>
 <tr>
 <td class="success">testScrollSmallView</td>
-<td class="success">0.813s</td>
+<td class="success">0.904s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testViewSeparator</td>
-<td class="success">0.611s</td>
+<td class="success">0.512s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_b2cb02c4-9261-4566-9e61-f504ccae2884/temp.data
-12:57:52 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-12:57:52 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_b2cb02c4-9261-4566-9e61-f504ccae2884/temp.data/application.log   (LoggingInitialization.java:60) 
-12:57:52 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_b2cb02c4-9261-4566-9e61-f504ccae2884/temp.data/preferences   (Preferences.java:122) 
-12:57:53 INFO  Class search complete (519 ms)   (ClassSearcher.java:250) 
-12:57:53 DEBUG Wed Sep 04 12:57:53 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_e4687fdd-9941-41e0-a73b-98957faf8fdf/temp.data
+09:10:46 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+09:10:46 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_e4687fdd-9941-41e0-a73b-98957faf8fdf/temp.data/application.log   (LoggingInitialization.java:60) 
+09:10:46 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_e4687fdd-9941-41e0-a73b-98957faf8fdf/temp.data/preferences   (Preferences.java:122) 
+09:10:47 INFO  Class search complete (494 ms)   (ClassSearcher.java:250) 
+09:10:47 DEBUG Thu Sep 05 09:10:47 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testOpenClose *****   (AbstractGenericTest.java:114) 
-12:57:56 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testOpenClose ✓	   (AbstractGenericTest.java:114) 
-12:57:56 DEBUG Wed Sep 04 12:57:56 CST 2019
+09:10:50 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testOpenClose ✓	   (AbstractGenericTest.java:114) 
+09:10:50 DEBUG Thu Sep 05 09:10:50 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testOpenCloseStruct *****   (AbstractGenericTest.java:114) 
-12:57:57 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-12:57:57 DEBUG   task finish (0.04 secs)   (ToolTaskManager.java:357) 
-12:57:57 DEBUG   task Complete (0.055 secs)   (ToolTaskManager.java:407) 
-12:57:58 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testOpenCloseStruct ✓	   (AbstractGenericTest.java:114) 
-12:57:58 DEBUG Wed Sep 04 12:57:58 CST 2019
+09:10:51 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:10:51 DEBUG   task finish (0.009 secs)   (ToolTaskManager.java:357) 
+09:10:51 DEBUG   task Complete (0.012 secs)   (ToolTaskManager.java:407) 
+09:10:51 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testOpenCloseStruct ✓	   (AbstractGenericTest.java:114) 
+09:10:51 DEBUG Thu Sep 05 09:10:51 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testConnectedOpenStructs *****   (AbstractGenericTest.java:114) 
-12:57:59 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-12:57:59 DEBUG   task finish (0.09 secs)   (ToolTaskManager.java:357) 
-12:57:59 DEBUG   task Complete (0.145 secs)   (ToolTaskManager.java:407) 
-12:58:03 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testConnectedOpenStructs ✓	   (AbstractGenericTest.java:114) 
-12:58:03 DEBUG Wed Sep 04 12:58:03 CST 2019
+09:10:53 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:10:53 DEBUG   task finish (0.044 secs)   (ToolTaskManager.java:357) 
+09:10:53 DEBUG   task Complete (0.081 secs)   (ToolTaskManager.java:407) 
+09:10:56 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testConnectedOpenStructs ✓	   (AbstractGenericTest.java:114) 
+09:10:56 DEBUG Thu Sep 05 09:10:56 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testConnectedStructesWithDataXRefFields *****   (AbstractGenericTest.java:114) 
-12:58:04 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-12:58:04 DEBUG   task finish (0.043 secs)   (ToolTaskManager.java:357) 
-12:58:04 DEBUG   task Complete (0.044 secs)   (ToolTaskManager.java:407) 
-12:58:05 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testConnectedStructesWithDataXRefFields ✓	   (AbstractGenericTest.java:114) 
-12:58:05 DEBUG Wed Sep 04 12:58:05 CST 2019
+09:10:57 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:10:57 DEBUG   task finish (0.034 secs)   (ToolTaskManager.java:357) 
+09:10:57 DEBUG   task Complete (0.059 secs)   (ToolTaskManager.java:407) 
+09:10:59 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testConnectedStructesWithDataXRefFields ✓	   (AbstractGenericTest.java:114) 
+09:10:59 DEBUG Thu Sep 05 09:10:59 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testViewSeparator *****   (AbstractGenericTest.java:114) 
-12:58:06 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testViewSeparator ✓	   (AbstractGenericTest.java:114) 
-12:58:06 DEBUG Wed Sep 04 12:58:06 CST 2019
+09:10:59 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testViewSeparator ✓	   (AbstractGenericTest.java:114) 
+09:10:59 DEBUG Thu Sep 05 09:10:59 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testConnectedOneOpenOneClosedStructs *****   (AbstractGenericTest.java:114) 
-12:58:07 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-12:58:07 DEBUG   task finish (0.027 secs)   (ToolTaskManager.java:357) 
-12:58:07 DEBUG   task Complete (0.035 secs)   (ToolTaskManager.java:407) 
-12:58:07 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testConnectedOneOpenOneClosedStructs ✓	   (AbstractGenericTest.java:114) 
-12:58:07 DEBUG Wed Sep 04 12:58:07 CST 2019
+09:11:00 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:11:00 DEBUG   task finish (0.03 secs)   (ToolTaskManager.java:357) 
+09:11:00 DEBUG   task Complete (0.039 secs)   (ToolTaskManager.java:407) 
+09:11:00 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testConnectedOneOpenOneClosedStructs ✓	   (AbstractGenericTest.java:114) 
+09:11:00 DEBUG Thu Sep 05 09:11:00 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testBasicControlsSmallView *****   (AbstractGenericTest.java:114) 
-12:58:08 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testBasicControlsSmallView ✓	   (AbstractGenericTest.java:114) 
-12:58:08 DEBUG Wed Sep 04 12:58:08 CST 2019
+09:11:01 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testBasicControlsSmallView ✓	   (AbstractGenericTest.java:114) 
+09:11:01 DEBUG Thu Sep 05 09:11:01 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testBasicControls *****   (AbstractGenericTest.java:114) 
-12:58:10 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testBasicControls ✓	   (AbstractGenericTest.java:114) 
-12:58:10 DEBUG Wed Sep 04 12:58:10 CST 2019
+09:11:03 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testBasicControls ✓	   (AbstractGenericTest.java:114) 
+09:11:03 DEBUG Thu Sep 05 09:11:03 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testOpenCloseArray *****   (AbstractGenericTest.java:114) 
-12:58:10 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-12:58:10 DEBUG   task finish (0.015 secs)   (ToolTaskManager.java:357) 
-12:58:10 DEBUG   task Complete (0.019 secs)   (ToolTaskManager.java:407) 
-12:58:10 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testOpenCloseArray ✓	   (AbstractGenericTest.java:114) 
-12:58:10 DEBUG Wed Sep 04 12:58:10 CST 2019
+09:11:03 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:11:03 DEBUG   task finish (0.013 secs)   (ToolTaskManager.java:357) 
+09:11:03 DEBUG   task Complete (0.018 secs)   (ToolTaskManager.java:407) 
+09:11:03 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testOpenCloseArray ✓	   (AbstractGenericTest.java:114) 
+09:11:03 DEBUG Thu Sep 05 09:11:03 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testConnectedBrowsers *****   (AbstractGenericTest.java:114) 
-12:58:13 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testConnectedBrowsers ✓	   (AbstractGenericTest.java:114) 
-12:58:13 DEBUG Wed Sep 04 12:58:13 CST 2019
+09:11:06 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testConnectedBrowsers ✓	   (AbstractGenericTest.java:114) 
+09:11:06 DEBUG Thu Sep 05 09:11:06 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testScrollSmallView *****   (AbstractGenericTest.java:114) 
-12:58:14 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testScrollSmallView ✓	   (AbstractGenericTest.java:114) 
-12:58:14 DEBUG Wed Sep 04 12:58:14 CST 2019
+09:11:07 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testScrollSmallView ✓	   (AbstractGenericTest.java:114) 
+09:11:07 DEBUG Thu Sep 05 09:11:07 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testGetCurrentFieldSelection *****   (AbstractGenericTest.java:114) 
-12:58:15 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testGetCurrentFieldSelection ✓	   (AbstractGenericTest.java:114) 
-12:58:15 DEBUG Wed Sep 04 12:58:15 CST 2019
+09:11:07 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testGetCurrentFieldSelection ✓	   (AbstractGenericTest.java:114) 
+09:11:07 DEBUG Thu Sep 05 09:11:07 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testNestedOpenClose *****   (AbstractGenericTest.java:114) 
-12:58:15 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
-12:58:15 DEBUG   task finish (0.018 secs)   (ToolTaskManager.java:357) 
-12:58:15 DEBUG   task Complete (0.028 secs)   (ToolTaskManager.java:407) 
-12:58:15 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testNestedOpenClose ✓	   (AbstractGenericTest.java:114) 
-12:58:15 DEBUG Wed Sep 04 12:58:15 CST 2019
+09:11:08 DEBUG Exec Task Auto Analysis   (ToolTaskManager.java:302) 
+09:11:08 DEBUG   task finish (0.019 secs)   (ToolTaskManager.java:357) 
+09:11:08 DEBUG   task Complete (0.023 secs)   (ToolTaskManager.java:407) 
+09:11:08 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testNestedOpenClose ✓	   (AbstractGenericTest.java:114) 
+09:11:08 DEBUG Thu Sep 05 09:11:08 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testScroll *****   (AbstractGenericTest.java:114) 
-12:58:16 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testScroll ✓	   (AbstractGenericTest.java:114) 
-12:58:16 DEBUG Wed Sep 04 12:58:16 CST 2019
+09:11:09 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testScroll ✓	   (AbstractGenericTest.java:114) 
+09:11:09 DEBUG Thu Sep 05 09:11:09 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testPgUpPgDnSmallView *****   (AbstractGenericTest.java:114) 
-12:58:18 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testPgUpPgDnSmallView ✓	   (AbstractGenericTest.java:114) 
-12:58:18 DEBUG Wed Sep 04 12:58:18 CST 2019
+09:11:11 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testPgUpPgDnSmallView ✓	   (AbstractGenericTest.java:114) 
+09:11:11 DEBUG Thu Sep 05 09:11:11 CST 2019
 ***** STARTING Test: CodeBrowserScreenMovementTest - testPgUpPgDn *****   (AbstractGenericTest.java:114) 
-12:58:20 DEBUG 	✓ PASSED Test: CodeBrowserScreenMovementTest - testPgUpPgDn ✓	   (AbstractGenericTest.java:114) 
+09:11:11 DEBUG 	✖ FAILED Test: CodeBrowserScreenMovementTest - testPgUpPgDn ✖	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -244,7 +260,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

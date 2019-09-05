@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.365s</div>
+<div class="counter">4.271s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">testAssociationStatusChangedEvent</td>
-<td class="success">0.314s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEventForCreatingMatchSet</td>
-<td class="success">0.306s</td>
+<td class="success">0.308s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEventsForAddingAdditionalMatchForAssociation</td>
-<td class="success">0.311s</td>
+<td class="success">0.312s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEventsForAddingFirstMatchForAssociation</td>
-<td class="success">0.305s</td>
+<td class="success">0.313s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -104,47 +104,47 @@
 </tr>
 <tr>
 <td class="success">testEventsForRemovingLastMatchForAssociation</td>
-<td class="success">0.210s</td>
+<td class="success">0.207s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEventsForRemovingNonLastMatchForAssociation</td>
-<td class="success">0.205s</td>
+<td class="success">0.208s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEventsForVotes</td>
-<td class="success">0.212s</td>
+<td class="success">0.311s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testMarkupDestinationAddressChangedEvent</td>
-<td class="success">0.303s</td>
+<td class="success">0.213s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testMarkupStatusChangedEventWhenApplying</td>
-<td class="success">0.310s</td>
+<td class="success">0.311s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testMarkupStatusChangedEventWhenSettingStatus</td>
-<td class="success">0.315s</td>
+<td class="success">0.318s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTagAddedEvent</td>
-<td class="success">0.314s</td>
+<td class="success">0.312s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTagAppliedEvent</td>
-<td class="success">0.637s</td>
+<td class="success">0.638s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTagRemovedEvent</td>
-<td class="success">0.312s</td>
+<td class="success">0.306s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -152,346 +152,346 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_c4ada00f-73de-472a-a978-f5342f9dff18/temp.data
-14:39:32 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:39:32 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_c4ada00f-73de-472a-a978-f5342f9dff18/temp.data/application.log   (LoggingInitialization.java:60) 
-14:39:32 DEBUG Wed Sep 04 14:39:32 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_fb77327b-303d-40e5-8ecc-217cb3334d97/temp.data
+11:01:11 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+11:01:11 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_fb77327b-303d-40e5-8ecc-217cb3334d97/temp.data/application.log   (LoggingInitialization.java:60) 
+11:01:11 DEBUG Thu Sep 05 11:01:11 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testTagAppliedEvent *****   (AbstractGenericTest.java:114) 
-14:39:32 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:32 DEBUG 
+11:01:11 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:11 DEBUG 
 
 setUp(): testTagAppliedEvent   (VTDomainObjectEventsTest.java:63) 
-14:39:32 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:32 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:32 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:32 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:32 DEBUG domainObjectChanged(): from thread Test-Thread-4   (VTDomainObjectEventsTest.java:45) 
-14:39:32 DEBUG 	adding record: 1040   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:32 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:32 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:32 DEBUG domainObjectChanged(): from thread Test-Thread-4   (VTDomainObjectEventsTest.java:45) 
-14:39:32 DEBUG 	adding record: 1024   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:32 DEBUG clearEvents() - event count: 1   (VTDomainObjectEventsTest.java:319) 
-14:39:32 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:32 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:32 DEBUG domainObjectChanged(): from thread Test-Thread-4   (VTDomainObjectEventsTest.java:45) 
-14:39:32 DEBUG 	adding record: 1024   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:32 DEBUG tearDown()
+11:01:11 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:11 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:11 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:11 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:11 DEBUG domainObjectChanged(): from thread Test-Thread-4   (VTDomainObjectEventsTest.java:45) 
+11:01:11 DEBUG 	adding record: 1040   (VTDomainObjectEventsTest.java:48) 
+11:01:11 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:11 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:11 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
+11:01:11 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:11 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:11 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:11 DEBUG domainObjectChanged(): from thread Test-Thread-4   (VTDomainObjectEventsTest.java:45) 
+11:01:11 DEBUG 	adding record: 1024   (VTDomainObjectEventsTest.java:48) 
+11:01:11 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:11 DEBUG clearEvents() - event count: 1   (VTDomainObjectEventsTest.java:319) 
+11:01:11 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:11 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:11 DEBUG domainObjectChanged(): from thread Test-Thread-4   (VTDomainObjectEventsTest.java:45) 
+11:01:11 DEBUG 	adding record: 1024   (VTDomainObjectEventsTest.java:48) 
+11:01:11 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:11 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:32 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testTagAppliedEvent ✓	   (AbstractGenericTest.java:114) 
-14:39:32 DEBUG Wed Sep 04 14:39:32 CST 2019
+11:01:12 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testTagAppliedEvent ✓	   (AbstractGenericTest.java:114) 
+11:01:12 DEBUG Thu Sep 05 11:01:12 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testMarkupStatusChangedEventWhenSettingStatus *****   (AbstractGenericTest.java:114) 
-14:39:32 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:32 DEBUG 
+11:01:12 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:12 DEBUG 
 
 setUp(): testMarkupStatusChangedEventWhenSettingStatus   (VTDomainObjectEventsTest.java:63) 
-14:39:32 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:32 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:32 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:32 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:32 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:32 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:32 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:32 DEBUG domainObjectChanged(): from thread Test-Thread-6   (VTDomainObjectEventsTest.java:45) 
-14:39:32 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	adding record: 1031   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:32 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:32 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:32 DEBUG domainObjectChanged(): from thread Test-Thread-6   (VTDomainObjectEventsTest.java:45) 
-14:39:32 DEBUG 	adding record: 1030   (VTDomainObjectEventsTest.java:48) 
-14:39:32 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:32 DEBUG tearDown()
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG domainObjectChanged(): from thread Test-Thread-6   (VTDomainObjectEventsTest.java:45) 
+11:01:12 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1031   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG domainObjectChanged(): from thread Test-Thread-6   (VTDomainObjectEventsTest.java:45) 
+11:01:12 DEBUG 	adding record: 1030   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:12 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:33 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testMarkupStatusChangedEventWhenSettingStatus ✓	   (AbstractGenericTest.java:114) 
-14:39:33 DEBUG Wed Sep 04 14:39:33 CST 2019
+11:01:12 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testMarkupStatusChangedEventWhenSettingStatus ✓	   (AbstractGenericTest.java:114) 
+11:01:12 DEBUG Thu Sep 05 11:01:12 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testEventsForRemovingNonLastMatchForAssociation *****   (AbstractGenericTest.java:114) 
-14:39:33 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:33 DEBUG 
+11:01:12 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:12 DEBUG 
 
 setUp(): testEventsForRemovingNonLastMatchForAssociation   (VTDomainObjectEventsTest.java:63) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG domainObjectChanged(): from thread Test-Thread-7   (VTDomainObjectEventsTest.java:45) 
-14:39:33 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG domainObjectChanged(): from thread Test-Thread-7   (VTDomainObjectEventsTest.java:45) 
-14:39:33 DEBUG 	adding record: 1026   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	adding record: 1023   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:33 DEBUG tearDown()
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG domainObjectChanged(): from thread Test-Thread-7   (VTDomainObjectEventsTest.java:45) 
+11:01:12 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG domainObjectChanged(): from thread Test-Thread-7   (VTDomainObjectEventsTest.java:45) 
+11:01:12 DEBUG 	adding record: 1026   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1023   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:12 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:33 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForRemovingNonLastMatchForAssociation ✓	   (AbstractGenericTest.java:114) 
-14:39:33 DEBUG Wed Sep 04 14:39:33 CST 2019
+11:01:12 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForRemovingNonLastMatchForAssociation ✓	   (AbstractGenericTest.java:114) 
+11:01:12 DEBUG Thu Sep 05 11:01:12 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testEventsForRemovingLastMatchForAssociation *****   (AbstractGenericTest.java:114) 
-14:39:33 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:33 DEBUG 
+11:01:12 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:12 DEBUG 
 
 setUp(): testEventsForRemovingLastMatchForAssociation   (VTDomainObjectEventsTest.java:63) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG domainObjectChanged(): from thread Test-Thread-8   (VTDomainObjectEventsTest.java:45) 
-14:39:33 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG domainObjectChanged(): from thread Test-Thread-8   (VTDomainObjectEventsTest.java:45) 
-14:39:33 DEBUG 	adding record: 1026   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	adding record: 1023   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:33 DEBUG tearDown()
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG domainObjectChanged(): from thread Test-Thread-8   (VTDomainObjectEventsTest.java:45) 
+11:01:12 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG domainObjectChanged(): from thread Test-Thread-8   (VTDomainObjectEventsTest.java:45) 
+11:01:12 DEBUG 	adding record: 1026   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1023   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:12 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:33 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForRemovingLastMatchForAssociation ✓	   (AbstractGenericTest.java:114) 
-14:39:33 DEBUG Wed Sep 04 14:39:33 CST 2019
+11:01:12 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForRemovingLastMatchForAssociation ✓	   (AbstractGenericTest.java:114) 
+11:01:12 DEBUG Thu Sep 05 11:01:12 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testMarkupDestinationAddressChangedEvent *****   (AbstractGenericTest.java:114) 
-14:39:33 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:33 DEBUG 
+11:01:12 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:12 DEBUG 
 
 setUp(): testMarkupDestinationAddressChangedEvent   (VTDomainObjectEventsTest.java:63) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG 	calling getManualMatchSet()   (VTDomainObjectEventsTest.java:193) 
-14:39:33 DEBUG 	calling clrearEvents()   (VTDomainObjectEventsTest.java:195) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG 	calling createRandomMatch()   (VTDomainObjectEventsTest.java:197) 
-14:39:33 DEBUG 	calling addMatch()   (VTDomainObjectEventsTest.java:199) 
-14:39:33 DEBUG 	calling setAccepted()   (VTDomainObjectEventsTest.java:201) 
-14:39:33 DEBUG 	calling createRandomMarkupItemStub()   (VTDomainObjectEventsTest.java:203) 
-14:39:33 DEBUG 	calling clearEvents()   (VTDomainObjectEventsTest.java:207) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG domainObjectChanged(): from thread Test-Thread-9   (VTDomainObjectEventsTest.java:45) 
-14:39:33 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG 	calling setDestinationAddress()   (VTDomainObjectEventsTest.java:210) 
-14:39:33 DEBUG 		after setDestinationAddress()   (VTDomainObjectEventsTest.java:212) 
-14:39:33 DEBUG domainObjectChanged(): from thread Test-Thread-9   (VTDomainObjectEventsTest.java:45) 
-14:39:33 DEBUG 	adding record: 1031   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:33 DEBUG tearDown()
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG 	calling getManualMatchSet()   (VTDomainObjectEventsTest.java:193) 
+11:01:12 DEBUG 	calling clrearEvents()   (VTDomainObjectEventsTest.java:195) 
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG 	calling createRandomMatch()   (VTDomainObjectEventsTest.java:197) 
+11:01:12 DEBUG 	calling addMatch()   (VTDomainObjectEventsTest.java:199) 
+11:01:12 DEBUG 	calling setAccepted()   (VTDomainObjectEventsTest.java:201) 
+11:01:12 DEBUG 	calling createRandomMarkupItemStub()   (VTDomainObjectEventsTest.java:203) 
+11:01:12 DEBUG 	calling clearEvents()   (VTDomainObjectEventsTest.java:207) 
+11:01:12 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:12 DEBUG domainObjectChanged(): from thread Test-Thread-9   (VTDomainObjectEventsTest.java:45) 
+11:01:12 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:12 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:12 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:12 DEBUG 	calling setDestinationAddress()   (VTDomainObjectEventsTest.java:210) 
+11:01:12 DEBUG 		after setDestinationAddress()   (VTDomainObjectEventsTest.java:212) 
+11:01:12 DEBUG domainObjectChanged(): from thread Test-Thread-9   (VTDomainObjectEventsTest.java:45) 
+11:01:12 DEBUG 	adding record: 1031   (VTDomainObjectEventsTest.java:48) 
+11:01:12 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:12 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:33 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testMarkupDestinationAddressChangedEvent ✓	   (AbstractGenericTest.java:114) 
-14:39:33 DEBUG Wed Sep 04 14:39:33 CST 2019
+11:01:12 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testMarkupDestinationAddressChangedEvent ✓	   (AbstractGenericTest.java:114) 
+11:01:12 DEBUG Thu Sep 05 11:01:12 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testAssociationStatusChangedEvent *****   (AbstractGenericTest.java:114) 
-14:39:33 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:33 DEBUG 
+11:01:13 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:13 DEBUG 
 
 setUp(): testAssociationStatusChangedEvent   (VTDomainObjectEventsTest.java:63) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:33 DEBUG domainObjectChanged(): from thread Test-Thread-10   (VTDomainObjectEventsTest.java:45) 
-14:39:33 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:33 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:33 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:33 DEBUG domainObjectChanged(): from thread Test-Thread-10   (VTDomainObjectEventsTest.java:45) 
-14:39:33 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
-14:39:33 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:33 DEBUG tearDown()
+11:01:13 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:13 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:13 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:13 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:13 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:13 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:13 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:13 DEBUG domainObjectChanged(): from thread Test-Thread-10   (VTDomainObjectEventsTest.java:45) 
+11:01:13 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:13 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:13 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:13 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:13 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:13 DEBUG domainObjectChanged(): from thread Test-Thread-10   (VTDomainObjectEventsTest.java:45) 
+11:01:13 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
+11:01:13 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:13 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:34 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testAssociationStatusChangedEvent ✓	   (AbstractGenericTest.java:114) 
-14:39:34 DEBUG Wed Sep 04 14:39:34 CST 2019
+11:01:13 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testAssociationStatusChangedEvent ✓	   (AbstractGenericTest.java:114) 
+11:01:13 DEBUG Thu Sep 05 11:01:13 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testTagRemovedEvent *****   (AbstractGenericTest.java:114) 
-14:39:34 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:34 DEBUG 
+11:01:13 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:13 DEBUG 
 
 setUp(): testTagRemovedEvent   (VTDomainObjectEventsTest.java:63) 
-14:39:34 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:34 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:34 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:34 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:34 DEBUG domainObjectChanged(): from thread Test-Thread-11   (VTDomainObjectEventsTest.java:45) 
-14:39:34 DEBUG 	adding record: 1040   (VTDomainObjectEventsTest.java:48) 
-14:39:34 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:34 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:34 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:34 DEBUG domainObjectChanged(): from thread Test-Thread-11   (VTDomainObjectEventsTest.java:45) 
-14:39:34 DEBUG 	adding record: 1041   (VTDomainObjectEventsTest.java:48) 
-14:39:34 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:34 DEBUG tearDown()
+11:01:13 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:13 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:13 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:13 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:13 DEBUG domainObjectChanged(): from thread Test-Thread-11   (VTDomainObjectEventsTest.java:45) 
+11:01:13 DEBUG 	adding record: 1040   (VTDomainObjectEventsTest.java:48) 
+11:01:13 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:13 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:13 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:13 DEBUG domainObjectChanged(): from thread Test-Thread-11   (VTDomainObjectEventsTest.java:45) 
+11:01:13 DEBUG 	adding record: 1041   (VTDomainObjectEventsTest.java:48) 
+11:01:13 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:13 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:34 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testTagRemovedEvent ✓	   (AbstractGenericTest.java:114) 
-14:39:34 DEBUG Wed Sep 04 14:39:34 CST 2019
+11:01:13 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testTagRemovedEvent ✓	   (AbstractGenericTest.java:114) 
+11:01:13 DEBUG Thu Sep 05 11:01:13 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testEventsForVotes *****   (AbstractGenericTest.java:114) 
-14:39:34 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:34 DEBUG 
+11:01:13 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:13 DEBUG 
 
 setUp(): testEventsForVotes   (VTDomainObjectEventsTest.java:63) 
-14:39:34 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:34 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:34 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:34 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:34 DEBUG domainObjectChanged(): from thread Test-Thread-12   (VTDomainObjectEventsTest.java:45) 
-14:39:34 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:34 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:34 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:34 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:34 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:34 DEBUG domainObjectChanged(): from thread Test-Thread-12   (VTDomainObjectEventsTest.java:45) 
-14:39:34 DEBUG 	adding record: 1050   (VTDomainObjectEventsTest.java:48) 
-14:39:34 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:34 DEBUG tearDown()
+11:01:13 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:13 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:13 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:13 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:13 DEBUG domainObjectChanged(): from thread Test-Thread-12   (VTDomainObjectEventsTest.java:45) 
+11:01:13 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:13 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:13 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:13 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:13 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:13 DEBUG domainObjectChanged(): from thread Test-Thread-12   (VTDomainObjectEventsTest.java:45) 
+11:01:13 DEBUG 	adding record: 1050   (VTDomainObjectEventsTest.java:48) 
+11:01:13 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:13 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:34 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForVotes ✓	   (AbstractGenericTest.java:114) 
-14:39:34 DEBUG Wed Sep 04 14:39:34 CST 2019
+11:01:13 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForVotes ✓	   (AbstractGenericTest.java:114) 
+11:01:13 DEBUG Thu Sep 05 11:01:13 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testEventForCreatingMatchSet *****   (AbstractGenericTest.java:114) 
-14:39:34 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:34 DEBUG 
+11:01:14 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:14 DEBUG 
 
 setUp(): testEventForCreatingMatchSet   (VTDomainObjectEventsTest.java:63) 
-14:39:34 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:34 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:34 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:34 DEBUG domainObjectChanged(): from thread Test-Thread-13   (VTDomainObjectEventsTest.java:45) 
-14:39:34 DEBUG 	adding record: 1010   (VTDomainObjectEventsTest.java:48) 
-14:39:34 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:34 DEBUG tearDown()
+11:01:14 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:14 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:14 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:14 DEBUG domainObjectChanged(): from thread Test-Thread-13   (VTDomainObjectEventsTest.java:45) 
+11:01:14 DEBUG 	adding record: 1010   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:14 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:34 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventForCreatingMatchSet ✓	   (AbstractGenericTest.java:114) 
-14:39:34 DEBUG Wed Sep 04 14:39:34 CST 2019
+11:01:14 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventForCreatingMatchSet ✓	   (AbstractGenericTest.java:114) 
+11:01:14 DEBUG Thu Sep 05 11:01:14 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testEventsForRejectingMatch *****   (AbstractGenericTest.java:114) 
-14:39:35 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:35 DEBUG 
+11:01:14 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:14 DEBUG 
 
 setUp(): testEventsForRejectingMatch   (VTDomainObjectEventsTest.java:63) 
-14:39:35 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:35 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:35 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:35 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:35 DEBUG domainObjectChanged(): from thread Test-Thread-14   (VTDomainObjectEventsTest.java:45) 
-14:39:35 DEBUG 	adding record: 1010   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:35 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:35 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:35 DEBUG domainObjectChanged(): from thread Test-Thread-14   (VTDomainObjectEventsTest.java:45) 
-14:39:35 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:35 DEBUG tearDown()
+11:01:14 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:14 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:14 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:14 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:14 DEBUG domainObjectChanged(): from thread Test-Thread-14   (VTDomainObjectEventsTest.java:45) 
+11:01:14 DEBUG 	adding record: 1010   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:14 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:14 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:14 DEBUG domainObjectChanged(): from thread Test-Thread-14   (VTDomainObjectEventsTest.java:45) 
+11:01:14 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:14 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:35 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForRejectingMatch ✓	   (AbstractGenericTest.java:114) 
-14:39:35 DEBUG Wed Sep 04 14:39:35 CST 2019
+11:01:14 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForRejectingMatch ✓	   (AbstractGenericTest.java:114) 
+11:01:14 DEBUG Thu Sep 05 11:01:14 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testMarkupStatusChangedEventWhenApplying *****   (AbstractGenericTest.java:114) 
-14:39:35 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:35 DEBUG 
+11:01:14 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:14 DEBUG 
 
 setUp(): testMarkupStatusChangedEventWhenApplying   (VTDomainObjectEventsTest.java:63) 
-14:39:35 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:35 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:35 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:35 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:35 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:35 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:35 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:35 DEBUG domainObjectChanged(): from thread Test-Thread-15   (VTDomainObjectEventsTest.java:45) 
-14:39:35 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	adding record: 1031   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:35 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:35 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:35 DEBUG domainObjectChanged(): from thread Test-Thread-15   (VTDomainObjectEventsTest.java:45) 
-14:39:35 DEBUG 	adding record: 1030   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:35 DEBUG tearDown()
+11:01:14 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:14 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:14 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:14 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:14 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:14 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:14 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:14 DEBUG domainObjectChanged(): from thread Test-Thread-15   (VTDomainObjectEventsTest.java:45) 
+11:01:14 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	adding record: 1021   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	adding record: 1031   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:14 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:14 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:14 DEBUG domainObjectChanged(): from thread Test-Thread-15   (VTDomainObjectEventsTest.java:45) 
+11:01:14 DEBUG 	adding record: 1030   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:14 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:35 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testMarkupStatusChangedEventWhenApplying ✓	   (AbstractGenericTest.java:114) 
-14:39:35 DEBUG Wed Sep 04 14:39:35 CST 2019
+11:01:14 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testMarkupStatusChangedEventWhenApplying ✓	   (AbstractGenericTest.java:114) 
+11:01:14 DEBUG Thu Sep 05 11:01:14 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testEventsForAddingFirstMatchForAssociation *****   (AbstractGenericTest.java:114) 
-14:39:35 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:35 DEBUG 
+11:01:14 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:14 DEBUG 
 
 setUp(): testEventsForAddingFirstMatchForAssociation   (VTDomainObjectEventsTest.java:63) 
-14:39:35 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:35 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:35 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:35 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:35 DEBUG domainObjectChanged(): from thread Test-Thread-16   (VTDomainObjectEventsTest.java:45) 
-14:39:35 DEBUG 	adding record: 1010   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:35 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:35 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:35 DEBUG domainObjectChanged(): from thread Test-Thread-16   (VTDomainObjectEventsTest.java:45) 
-14:39:35 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:35 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:35 DEBUG tearDown()
+11:01:14 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:14 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:14 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:14 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:14 DEBUG domainObjectChanged(): from thread Test-Thread-16   (VTDomainObjectEventsTest.java:45) 
+11:01:14 DEBUG 	adding record: 1010   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:14 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:14 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:14 DEBUG domainObjectChanged(): from thread Test-Thread-16   (VTDomainObjectEventsTest.java:45) 
+11:01:14 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:14 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:14 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:35 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForAddingFirstMatchForAssociation ✓	   (AbstractGenericTest.java:114) 
-14:39:35 DEBUG Wed Sep 04 14:39:35 CST 2019
+11:01:15 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForAddingFirstMatchForAssociation ✓	   (AbstractGenericTest.java:114) 
+11:01:15 DEBUG Thu Sep 05 11:01:15 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testTagAddedEvent *****   (AbstractGenericTest.java:114) 
-14:39:36 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:36 DEBUG 
+11:01:15 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:15 DEBUG 
 
 setUp(): testTagAddedEvent   (VTDomainObjectEventsTest.java:63) 
-14:39:36 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:36 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:36 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:36 DEBUG domainObjectChanged(): from thread Test-Thread-17   (VTDomainObjectEventsTest.java:45) 
-14:39:36 DEBUG 	adding record: 1040   (VTDomainObjectEventsTest.java:48) 
-14:39:36 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:36 DEBUG tearDown()
+11:01:15 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:15 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:15 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:15 DEBUG domainObjectChanged(): from thread Test-Thread-17   (VTDomainObjectEventsTest.java:45) 
+11:01:15 DEBUG 	adding record: 1040   (VTDomainObjectEventsTest.java:48) 
+11:01:15 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:15 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:36 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testTagAddedEvent ✓	   (AbstractGenericTest.java:114) 
-14:39:36 DEBUG Wed Sep 04 14:39:36 CST 2019
+11:01:15 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testTagAddedEvent ✓	   (AbstractGenericTest.java:114) 
+11:01:15 DEBUG Thu Sep 05 11:01:15 CST 2019
 ***** STARTING Test: VTDomainObjectEventsTest - testEventsForAddingAdditionalMatchForAssociation *****   (AbstractGenericTest.java:114) 
-14:39:36 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
-14:39:36 DEBUG 
+11:01:15 DEBUG Attempted to synchronize to a domainObject that is not a domainObjectDB: class ghidra.program.model.listing.$Impl_Program   (DomainObjectAdapterDB.java:154) 
+11:01:15 DEBUG 
 
 setUp(): testEventsForAddingAdditionalMatchForAssociation   (VTDomainObjectEventsTest.java:63) 
-14:39:36 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:36 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:36 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:36 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
-14:39:36 DEBUG domainObjectChanged(): from thread Test-Thread-18   (VTDomainObjectEventsTest.java:45) 
-14:39:36 DEBUG 	adding record: 1010   (VTDomainObjectEventsTest.java:48) 
-14:39:36 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
-14:39:36 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:36 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:36 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
-14:39:36 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
-14:39:36 DEBUG domainObjectChanged(): from thread Test-Thread-18   (VTDomainObjectEventsTest.java:45) 
-14:39:36 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
-14:39:36 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
-14:39:36 DEBUG tearDown()
+11:01:15 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:15 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:15 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:15 DEBUG clearEvents() - event count: 0   (VTDomainObjectEventsTest.java:319) 
+11:01:15 DEBUG domainObjectChanged(): from thread Test-Thread-18   (VTDomainObjectEventsTest.java:45) 
+11:01:15 DEBUG 	adding record: 1010   (VTDomainObjectEventsTest.java:48) 
+11:01:15 DEBUG 	adding record: 1025   (VTDomainObjectEventsTest.java:48) 
+11:01:15 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:15 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:15 DEBUG 	after flushEvents   (VTDomainObjectEventsTest.java:321) 
+11:01:15 DEBUG 	after clear   (VTDomainObjectEventsTest.java:323) 
+11:01:15 DEBUG domainObjectChanged(): from thread Test-Thread-18   (VTDomainObjectEventsTest.java:45) 
+11:01:15 DEBUG 	adding record: 1022   (VTDomainObjectEventsTest.java:48) 
+11:01:15 DEBUG 	finished adding records   (VTDomainObjectEventsTest.java:51) 
+11:01:15 DEBUG tearDown()
    (VTDomainObjectEventsTest.java:92) 
-14:39:36 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForAddingAdditionalMatchForAssociation ✓	   (AbstractGenericTest.java:114) 
+11:01:15 DEBUG 	✓ PASSED Test: VTDomainObjectEventsTest - testEventsForAddingAdditionalMatchForAssociation ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -503,7 +503,7 @@ setUp(): testEventsForAddingAdditionalMatchForAssociation   (VTDomainObjectEvent
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

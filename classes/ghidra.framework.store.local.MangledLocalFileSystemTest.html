@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.470s</div>
+<div class="counter">3.767s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">testCreateDataBase</td>
-<td class="success">0.103s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testCreateDataFile</td>
 <td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testCreateFolder</td>
+<td class="success">testCreateDataFile</td>
 <td class="success">0.204s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateFolder</td>
+<td class="success">0.304s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -109,12 +109,12 @@
 </tr>
 <tr>
 <td class="success">testDeleteItem</td>
-<td class="success">0.204s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFileNames</td>
-<td class="success">0.304s</td>
+<td class="success">0.202s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -134,17 +134,17 @@
 </tr>
 <tr>
 <td class="success">testItemChanged</td>
-<td class="success">0.203s</td>
+<td class="success">0.202s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testMigration</td>
-<td class="success">0.319s</td>
+<td class="success">0.318s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testMoveDataFile</td>
-<td class="success">0.102s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@
 </tr>
 <tr>
 <td class="success">testMoveFolder</td>
-<td class="success">0.203s</td>
+<td class="success">0.303s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -164,12 +164,12 @@
 </tr>
 <tr>
 <td class="success">testRenameFolder</td>
-<td class="success">0.202s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testReopenFileNames</td>
-<td class="success">0.103s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -177,113 +177,113 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data
-14:04:51 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:04:51 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/application.log   (LoggingInitialization.java:60) 
-14:04:51 DEBUG Wed Sep 04 14:04:51 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data
+10:26:41 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:26:41 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/application.log   (LoggingInitialization.java:60) 
+10:26:41 DEBUG Thu Sep 05 10:26:41 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testMigration *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:51 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:51 ERROR Indexed filesystem error: Filesystem Index error: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject/~index.dat   (IndexedV1LocalFileSystem.java:178) 
-14:04:51 INFO  Attempting index rebuild: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (IndexedV1LocalFileSystem.java:180) 
-14:04:51 INFO  Index rebuild completed: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (IndexedV1LocalFileSystem.java:212) 
-14:04:51 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testMigration ✓	   (AbstractGenericTest.java:114) 
-14:04:51 DEBUG Wed Sep 04 14:04:51 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:41 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:41 ERROR Indexed filesystem error: Filesystem Index error: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject/~index.dat   (IndexedV1LocalFileSystem.java:178) 
+10:26:41 INFO  Attempting index rebuild: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (IndexedV1LocalFileSystem.java:180) 
+10:26:41 INFO  Index rebuild completed: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (IndexedV1LocalFileSystem.java:212) 
+10:26:41 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testMigration ✓	   (AbstractGenericTest.java:114) 
+10:26:41 DEBUG Thu Sep 05 10:26:41 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testCreateFolder *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:51 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:51 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testCreateFolder ✓	   (AbstractGenericTest.java:114) 
-14:04:51 DEBUG Wed Sep 04 14:04:51 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:41 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:42 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testCreateFolder ✓	   (AbstractGenericTest.java:114) 
+10:26:42 DEBUG Thu Sep 05 10:26:42 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testRenameFile *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:52 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:52 INFO  /abc/barney: file deleted (test)   (LocalFolderItem.java:384) 
-14:04:52 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testRenameFile ✓	   (AbstractGenericTest.java:114) 
-14:04:52 DEBUG Wed Sep 04 14:04:52 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:42 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:42 INFO  /abc/barney: file deleted (test)   (LocalFolderItem.java:384) 
+10:26:42 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testRenameFile ✓	   (AbstractGenericTest.java:114) 
+10:26:42 DEBUG Thu Sep 05 10:26:42 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testMoveDataFile *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:52 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:52 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testMoveDataFile ✓	   (AbstractGenericTest.java:114) 
-14:04:52 DEBUG Wed Sep 04 14:04:52 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:42 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:42 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testMoveDataFile ✓	   (AbstractGenericTest.java:114) 
+10:26:42 DEBUG Thu Sep 05 10:26:42 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testMoveDatabase *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:52 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:52 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testMoveDatabase ✓	   (AbstractGenericTest.java:114) 
-14:04:52 DEBUG Wed Sep 04 14:04:52 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:42 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:42 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testMoveDatabase ✓	   (AbstractGenericTest.java:114) 
+10:26:42 DEBUG Thu Sep 05 10:26:42 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testDeleteDatabase *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:52 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:52 INFO  /abc/greg: file deleted (test)   (LocalFolderItem.java:384) 
-14:04:52 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testDeleteDatabase ✓	   (AbstractGenericTest.java:114) 
-14:04:52 DEBUG Wed Sep 04 14:04:52 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:42 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:42 INFO  /abc/greg: file deleted (test)   (LocalFolderItem.java:384) 
+10:26:42 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testDeleteDatabase ✓	   (AbstractGenericTest.java:114) 
+10:26:42 DEBUG Thu Sep 05 10:26:42 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testReopenFileNames *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:52 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:52 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:52 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testReopenFileNames ✓	   (AbstractGenericTest.java:114) 
-14:04:52 DEBUG Wed Sep 04 14:04:52 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:42 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:42 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:42 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testReopenFileNames ✓	   (AbstractGenericTest.java:114) 
+10:26:42 DEBUG Thu Sep 05 10:26:42 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testFileNames *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:52 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:53 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testFileNames ✓	   (AbstractGenericTest.java:114) 
-14:04:53 DEBUG Wed Sep 04 14:04:53 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:42 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:43 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testFileNames ✓	   (AbstractGenericTest.java:114) 
+10:26:43 DEBUG Thu Sep 05 10:26:43 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testFilePaths *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:53 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:53 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testFilePaths ✓	   (AbstractGenericTest.java:114) 
-14:04:53 DEBUG Wed Sep 04 14:04:53 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:43 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:43 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testFilePaths ✓	   (AbstractGenericTest.java:114) 
+10:26:43 DEBUG Thu Sep 05 10:26:43 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testItemChanged *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:53 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:53 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testItemChanged ✓	   (AbstractGenericTest.java:114) 
-14:04:53 DEBUG Wed Sep 04 14:04:53 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:43 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:43 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testItemChanged ✓	   (AbstractGenericTest.java:114) 
+10:26:43 DEBUG Thu Sep 05 10:26:43 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testFilePathsWithSpaces *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:53 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:53 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:53 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testFilePathsWithSpaces ✓	   (AbstractGenericTest.java:114) 
-14:04:53 DEBUG Wed Sep 04 14:04:53 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:43 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:43 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:43 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testFilePathsWithSpaces ✓	   (AbstractGenericTest.java:114) 
+10:26:43 DEBUG Thu Sep 05 10:26:43 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testGetFolders *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:53 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:53 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testGetFolders ✓	   (AbstractGenericTest.java:114) 
-14:04:53 DEBUG Wed Sep 04 14:04:53 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:43 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:43 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testGetFolders ✓	   (AbstractGenericTest.java:114) 
+10:26:43 DEBUG Thu Sep 05 10:26:43 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testDeleteFolder *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:53 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:54 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testDeleteFolder ✓	   (AbstractGenericTest.java:114) 
-14:04:54 DEBUG Wed Sep 04 14:04:54 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:43 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:44 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testDeleteFolder ✓	   (AbstractGenericTest.java:114) 
+10:26:44 DEBUG Thu Sep 05 10:26:44 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testRenameFolder *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:54 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:54 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testRenameFolder ✓	   (AbstractGenericTest.java:114) 
-14:04:54 DEBUG Wed Sep 04 14:04:54 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:44 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:44 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testRenameFolder ✓	   (AbstractGenericTest.java:114) 
+10:26:44 DEBUG Thu Sep 05 10:26:44 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testCreateTemporaryDatabase *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:54 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:54 INFO  /abc/.ghidra.fred.tmp: file deleted (test)   (LocalFolderItem.java:384) 
-14:04:54 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testCreateTemporaryDatabase ✓	   (AbstractGenericTest.java:114) 
-14:04:54 DEBUG Wed Sep 04 14:04:54 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:44 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:44 INFO  /abc/.ghidra.fred.tmp: file deleted (test)   (LocalFolderItem.java:384) 
+10:26:44 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testCreateTemporaryDatabase ✓	   (AbstractGenericTest.java:114) 
+10:26:44 DEBUG Thu Sep 05 10:26:44 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testDeleteItem *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:54 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:54 INFO  /abc/wilma: file deleted (test)   (LocalFolderItem.java:384) 
-14:04:54 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testDeleteItem ✓	   (AbstractGenericTest.java:114) 
-14:04:54 DEBUG Wed Sep 04 14:04:54 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:44 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:44 INFO  /abc/wilma: file deleted (test)   (LocalFolderItem.java:384) 
+10:26:44 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testDeleteItem ✓	   (AbstractGenericTest.java:114) 
+10:26:44 DEBUG Thu Sep 05 10:26:44 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testCreateDataBase *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:54 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:54 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testCreateDataBase ✓	   (AbstractGenericTest.java:114) 
-14:04:54 DEBUG Wed Sep 04 14:04:54 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:44 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:44 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testCreateDataBase ✓	   (AbstractGenericTest.java:114) 
+10:26:44 DEBUG Thu Sep 05 10:26:44 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testCreateDataFile *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:54 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:54 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testCreateDataFile ✓	   (AbstractGenericTest.java:114) 
-14:04:54 DEBUG Wed Sep 04 14:04:54 CST 2019
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:44 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:44 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testCreateDataFile ✓	   (AbstractGenericTest.java:114) 
+10:26:44 DEBUG Thu Sep 05 10:26:44 CST 2019
 ***** STARTING Test: MangledLocalFileSystemTest - testMoveFolder *****   (AbstractGenericTest.java:114) 
-/home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject
-14:04:54 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_6803312f-3ff9-48c0-851c-588501aaab65/temp.data/testproject   (LocalFileSystem.java:133) 
-14:04:55 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testMoveFolder ✓	   (AbstractGenericTest.java:114) 
+/home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject
+10:26:44 WARN  Using deprecated Mangled filesystem: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_f9f1bf40-0e56-442f-98f6-243d4fefc99a/temp.data/testproject   (LocalFileSystem.java:133) 
+10:26:45 DEBUG 	✓ PASSED Test: MangledLocalFileSystemTest - testMoveFolder ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -295,7 +295,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

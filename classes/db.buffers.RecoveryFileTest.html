@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.732s</div>
+<div class="counter">1.639s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">testRecovery</td>
-<td class="success">0.404s</td>
+<td class="success">0.304s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -89,12 +89,12 @@
 </tr>
 <tr>
 <td class="success">testRecoveryAfterUndo</td>
-<td class="success">0.421s</td>
+<td class="success">0.419s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testRecoveryWithSave</td>
-<td class="success">0.604s</td>
+<td class="success">0.613s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,64 +102,64 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data
-14:04:33 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:04:33 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/application.log   (LoggingInitialization.java:60) 
-14:04:33 DEBUG Wed Sep 04 14:04:33 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data
+10:26:22 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:26:22 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/application.log   (LoggingInitialization.java:60) 
+10:26:22 DEBUG Thu Sep 05 10:26:22 CST 2019
 ***** STARTING Test: RecoveryFileTest - testRecoveryAfterUndo *****   (AbstractGenericTest.java:114) 
 Added 379 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
 Deleted 2084 buffers
 Modified 105 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
 Modified 104 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
 Modified 208 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
-14:04:33 INFO  Applying buffer file recovery data: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/db.1.gbf   (RecoveryMgr.java:86) 
-14:04:33 DEBUG 	✓ PASSED Test: RecoveryFileTest - testRecoveryAfterUndo ✓	   (AbstractGenericTest.java:114) 
-14:04:33 DEBUG Wed Sep 04 14:04:33 CST 2019
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Applying buffer file recovery data: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/db.1.gbf   (RecoveryMgr.java:86) 
+10:26:23 DEBUG 	✓ PASSED Test: RecoveryFileTest - testRecoveryAfterUndo ✓	   (AbstractGenericTest.java:114) 
+10:26:23 DEBUG Thu Sep 05 10:26:23 CST 2019
 ***** STARTING Test: RecoveryFileTest - testRecoveryAfterMultiUndo *****   (AbstractGenericTest.java:114) 
 Added 379 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
 Deleted 2084 buffers
 Modified 105 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
 Modified 104 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
 Modified 208 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
-14:04:33 INFO  Applying buffer file recovery data: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/db.1.gbf   (RecoveryMgr.java:86) 
-14:04:33 DEBUG 	✓ PASSED Test: RecoveryFileTest - testRecoveryAfterMultiUndo ✓	   (AbstractGenericTest.java:114) 
-14:04:33 DEBUG Wed Sep 04 14:04:33 CST 2019
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Applying buffer file recovery data: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/db.1.gbf   (RecoveryMgr.java:86) 
+10:26:23 DEBUG 	✓ PASSED Test: RecoveryFileTest - testRecoveryAfterMultiUndo ✓	   (AbstractGenericTest.java:114) 
+10:26:23 DEBUG Thu Sep 05 10:26:23 CST 2019
 ***** STARTING Test: RecoveryFileTest - testRecovery *****   (AbstractGenericTest.java:114) 
 Added 379 buffers
-14:04:33 INFO  Wed Sep 04 14:04:33 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
 Deleted 2084 buffers
 Modified 105 buffers
-14:04:34 INFO  Wed Sep 04 14:04:34 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
 Modified 104 buffers
-14:04:34 INFO  Wed Sep 04 14:04:34 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
 Modified 208 buffers
-14:04:34 INFO  Wed Sep 04 14:04:34 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
-14:04:34 INFO  Applying buffer file recovery data: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/db.1.gbf   (RecoveryMgr.java:86) 
-14:04:34 DEBUG 	✓ PASSED Test: RecoveryFileTest - testRecovery ✓	   (AbstractGenericTest.java:114) 
-14:04:34 DEBUG Wed Sep 04 14:04:34 CST 2019
+10:26:23 INFO  Thu Sep 05 10:26:23 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
+10:26:23 INFO  Applying buffer file recovery data: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/db.1.gbf   (RecoveryMgr.java:86) 
+10:26:24 DEBUG 	✓ PASSED Test: RecoveryFileTest - testRecovery ✓	   (AbstractGenericTest.java:114) 
+10:26:24 DEBUG Thu Sep 05 10:26:24 CST 2019
 ***** STARTING Test: RecoveryFileTest - testRecoveryWithSave *****   (AbstractGenericTest.java:114) 
 Added 379 buffers
-14:04:34 INFO  Wed Sep 04 14:04:34 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:24 INFO  Thu Sep 05 10:26:24 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
 Deleted 2084 buffers
 Modified 105 buffers
-14:04:34 INFO  Wed Sep 04 14:04:34 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
+10:26:24 INFO  Thu Sep 05 10:26:24 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
 Modified 104 buffers
-14:04:34 INFO  Wed Sep 04 14:04:34 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
+10:26:24 INFO  Thu Sep 05 10:26:24 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotA.grf   (RecoveryMgr.java:385) 
 Modified 208 buffers
-14:04:34 INFO  Wed Sep 04 14:04:34 CST 2019 Recovery snapshot created: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
-14:04:34 INFO  Applying buffer file recovery data: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/db.1.gbf   (RecoveryMgr.java:86) 
-14:04:34 INFO  Removed old presave file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d355eeb4-4ad0-48de-a0e4-c25c357c2261/temp.data/test/tmp16049766460965556959.ps   (LocalBufferFile.java:1520) 
-14:04:34 DEBUG 	✓ PASSED Test: RecoveryFileTest - testRecoveryWithSave ✓	   (AbstractGenericTest.java:114) 
+10:26:24 INFO  Thu Sep 05 10:26:24 CST 2019 Recovery snapshot created: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/snapshotB.grf   (RecoveryMgr.java:385) 
+10:26:24 INFO  Applying buffer file recovery data: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/db.1.gbf   (RecoveryMgr.java:86) 
+10:26:24 INFO  Removed old presave file: /home/lcf/repo/ghidra/Ghidra/Framework/FileSystem/build/Ghidra_test_d814a3dd-013e-401a-a543-36860db76efe/temp.data/test/tmp10454910393677985925.ps   (LocalBufferFile.java:1520) 
+10:26:24 DEBUG 	✓ PASSED Test: RecoveryFileTest - testRecoveryWithSave ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -171,7 +171,7 @@ Modified 208 buffers
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

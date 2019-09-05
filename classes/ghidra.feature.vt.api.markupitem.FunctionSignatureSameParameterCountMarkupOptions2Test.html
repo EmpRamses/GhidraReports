@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.977s</div>
+<div class="counter">5.198s</div>
 <p>duration</p>
 </div>
 </td>
@@ -300,32 +300,32 @@
 </tr>
 <tr>
 <td class="failures">testSameLanguageReplaceCallingConventionNoSrcButDestSpecified</td>
-<td class="failures">0.205s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">testSameLanguageReplaceCallingConventionSameSpecified</td>
 <td class="failures">0.202s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
+<td class="failures">testSameLanguageReplaceCallingConventionSameSpecified</td>
+<td class="failures">0.203s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
 <td class="failures">testSameLanguageReplaceCallingConventionSrcSpecifiedButNoDest</td>
-<td class="failures">0.204s</td>
+<td class="failures">0.206s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testSameParamCount_ExcludeInline</td>
-<td class="failures">1.363s</td>
+<td class="failures">1.406s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testSameParamCount_ExcludeNoReturn</td>
-<td class="failures">0.208s</td>
+<td class="failures">0.204s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testSameParamCount_ExcludeSignature</td>
-<td class="failures">0.320s</td>
+<td class="failures">0.309s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -335,27 +335,27 @@
 </tr>
 <tr>
 <td class="failures">testSameParamCount_InlineNotInline</td>
-<td class="failures">0.204s</td>
+<td class="failures">0.205s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testSameParamCount_NoReturnNoReturn</td>
-<td class="failures">0.206s</td>
+<td class="failures">0.306s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testSameParamCount_NoReturnNotANoReturn</td>
-<td class="failures">0.204s</td>
+<td class="failures">0.304s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testSameParamCount_NotANoReturnNoReturn</td>
-<td class="failures">0.311s</td>
+<td class="failures">0.309s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testSameParamCount_NotANoReturnNotANoReturn</td>
-<td class="failures">0.415s</td>
+<td class="failures">0.419s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -365,7 +365,7 @@
 </tr>
 <tr>
 <td class="failures">testSameParamCount_NotInlineNotInline</td>
-<td class="failures">0.313s</td>
+<td class="failures">0.303s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -373,146 +373,146 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_89a7b6df-eed2-4b2b-b88c-419151197ea5/temp.data
-14:37:55 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:37:55 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_89a7b6df-eed2-4b2b-b88c-419151197ea5/temp.data/application.log   (LoggingInitialization.java:60) 
-14:37:55 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_89a7b6df-eed2-4b2b-b88c-419151197ea5/temp.data/preferences   (Preferences.java:122) 
-14:37:56 INFO  Class search complete (475 ms)   (ClassSearcher.java:250) 
-14:37:56 DEBUG Wed Sep 04 14:37:56 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_598e14aa-1f0c-4e77-84a7-9a8ecf88d2a3/temp.data
+10:59:15 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:59:15 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_598e14aa-1f0c-4e77-84a7-9a8ecf88d2a3/temp.data/application.log   (LoggingInitialization.java:60) 
+10:59:15 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/VersionTracking/build/Ghidra_test_598e14aa-1f0c-4e77-84a7-9a8ecf88d2a3/temp.data/preferences   (Preferences.java:122) 
+10:59:16 INFO  Class search complete (492 ms)   (ClassSearcher.java:250) 
+10:59:16 DEBUG Thu Sep 05 10:59:16 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeInline *****   (AbstractGenericTest.java:114) 
-14:37:57 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:57 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:57 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:57 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:57 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:57 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:57 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeInline ✖	   (AbstractGenericTest.java:114) 
-14:37:57 DEBUG Wed Sep 04 14:37:57 CST 2019
+10:59:17 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:17 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:17 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:17 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:17 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:17 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:17 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeInline ✖	   (AbstractGenericTest.java:114) 
+10:59:17 DEBUG Thu Sep 05 10:59:17 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_InlineInline *****   (AbstractGenericTest.java:114) 
-14:37:57 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:57 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:57 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:57 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:57 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:57 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:57 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_InlineInline ✖	   (AbstractGenericTest.java:114) 
-14:37:57 DEBUG Wed Sep 04 14:37:57 CST 2019
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:18 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:18 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:18 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_InlineInline ✖	   (AbstractGenericTest.java:114) 
+10:59:18 DEBUG Thu Sep 05 10:59:18 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotANoReturnNotANoReturn *****   (AbstractGenericTest.java:114) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:58 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:58 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:58 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotANoReturnNotANoReturn ✖	   (AbstractGenericTest.java:114) 
-14:37:58 DEBUG Wed Sep 04 14:37:58 CST 2019
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:18 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:18 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:18 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotANoReturnNotANoReturn ✖	   (AbstractGenericTest.java:114) 
+10:59:18 DEBUG Thu Sep 05 10:59:18 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeSignature *****   (AbstractGenericTest.java:114) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:58 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:58 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:58 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeSignature ✖	   (AbstractGenericTest.java:114) 
-14:37:58 DEBUG Wed Sep 04 14:37:58 CST 2019
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:18 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:18 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:18 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:19 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeSignature ✖	   (AbstractGenericTest.java:114) 
+10:59:19 DEBUG Thu Sep 05 10:59:19 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotANoReturnNoReturn *****   (AbstractGenericTest.java:114) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:58 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:58 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:58 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:59 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotANoReturnNoReturn ✖	   (AbstractGenericTest.java:114) 
-14:37:59 DEBUG Wed Sep 04 14:37:59 CST 2019
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:19 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:19 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:19 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotANoReturnNoReturn ✖	   (AbstractGenericTest.java:114) 
+10:59:19 DEBUG Thu Sep 05 10:59:19 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionSrcSpecifiedButNoDest *****   (AbstractGenericTest.java:114) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:59 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:59 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:59 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionSrcSpecifiedButNoDest ✖	   (AbstractGenericTest.java:114) 
-14:37:59 DEBUG Wed Sep 04 14:37:59 CST 2019
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:19 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:19 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:19 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionSrcSpecifiedButNoDest ✖	   (AbstractGenericTest.java:114) 
+10:59:19 DEBUG Thu Sep 05 10:59:19 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotInlineNotInline *****   (AbstractGenericTest.java:114) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:59 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:59 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:59 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotInlineNotInline ✖	   (AbstractGenericTest.java:114) 
-14:37:59 DEBUG Wed Sep 04 14:37:59 CST 2019
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:19 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:19 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:19 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:19 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotInlineNotInline ✖	   (AbstractGenericTest.java:114) 
+10:59:19 DEBUG Thu Sep 05 10:59:19 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionBothSpecified *****   (AbstractGenericTest.java:114) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:59 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:59 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:59 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionBothSpecified ✖	   (AbstractGenericTest.java:114) 
-14:37:59 DEBUG Wed Sep 04 14:37:59 CST 2019
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:20 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionBothSpecified ✖	   (AbstractGenericTest.java:114) 
+10:59:20 DEBUG Thu Sep 05 10:59:20 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotInlineInline *****   (AbstractGenericTest.java:114) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:37:59 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:37:59 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:37:59 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:37:59 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotInlineInline ✖	   (AbstractGenericTest.java:114) 
-14:37:59 DEBUG Wed Sep 04 14:37:59 CST 2019
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:20 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NotInlineInline ✖	   (AbstractGenericTest.java:114) 
+10:59:20 DEBUG Thu Sep 05 10:59:20 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_InlineNotInline *****   (AbstractGenericTest.java:114) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:38:00 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_InlineNotInline ✖	   (AbstractGenericTest.java:114) 
-14:38:00 DEBUG Wed Sep 04 14:38:00 CST 2019
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:20 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_InlineNotInline ✖	   (AbstractGenericTest.java:114) 
+10:59:20 DEBUG Thu Sep 05 10:59:20 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionNoSrcButDestSpecified *****   (AbstractGenericTest.java:114) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:38:00 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionNoSrcButDestSpecified ✖	   (AbstractGenericTest.java:114) 
-14:38:00 DEBUG Wed Sep 04 14:38:00 CST 2019
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:20 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionNoSrcButDestSpecified ✖	   (AbstractGenericTest.java:114) 
+10:59:20 DEBUG Thu Sep 05 10:59:20 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NoReturnNoReturn *****   (AbstractGenericTest.java:114) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:38:00 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NoReturnNoReturn ✖	   (AbstractGenericTest.java:114) 
-14:38:00 DEBUG Wed Sep 04 14:38:00 CST 2019
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:20 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:20 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:21 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NoReturnNoReturn ✖	   (AbstractGenericTest.java:114) 
+10:59:21 DEBUG Thu Sep 05 10:59:21 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NoReturnNotANoReturn *****   (AbstractGenericTest.java:114) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:38:00 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NoReturnNotANoReturn ✖	   (AbstractGenericTest.java:114) 
-14:38:00 DEBUG Wed Sep 04 14:38:00 CST 2019
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:21 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_NoReturnNotANoReturn ✖	   (AbstractGenericTest.java:114) 
+10:59:21 DEBUG Thu Sep 05 10:59:21 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeNoReturn *****   (AbstractGenericTest.java:114) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:38:00 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:38:00 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:38:01 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeNoReturn ✖	   (AbstractGenericTest.java:114) 
-14:38:01 DEBUG Wed Sep 04 14:38:01 CST 2019
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:21 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameParamCount_ExcludeNoReturn ✖	   (AbstractGenericTest.java:114) 
+10:59:21 DEBUG Thu Sep 05 10:59:21 CST 2019
 ***** STARTING Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionSameSpecified *****   (AbstractGenericTest.java:114) 
-14:38:01 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
-14:38:01 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
-14:38:01 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
-14:38:01 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
-14:38:01 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
-14:38:01 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
-14:38:01 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionSameSpecified ✖	   (AbstractGenericTest.java:114) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceSrc.gzf   (AbstractGenericTest.java:381) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceSrc.xml   (AbstractGenericTest.java:381) 
+10:59:21 INFO  Test program not found: VersionTracking/WallaceSrc   (TestProgramManager.java:351) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.gzf   (AbstractGenericTest.java:381) 
+10:59:21 WARN  Test data file not found: VersionTracking/WallaceVersion2.xml   (AbstractGenericTest.java:381) 
+10:59:21 INFO  Test program not found: VersionTracking/WallaceVersion2   (TestProgramManager.java:351) 
+10:59:21 DEBUG 	✖ FAILED Test: FunctionSignatureSameParameterCountMarkupOptions2Test - testSameLanguageReplaceCallingConventionSameSpecified ✖	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -524,7 +524,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

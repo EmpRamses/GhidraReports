@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">13.477s</div>
+<div class="counter">12.971s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">95%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,29 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testInsertRow"></a>
+<h3 class="failures">testInsertRow</h3>
+<span class="code">
+<pre>org.junit.ComparisonFailure: expected:&lt;[Gold]&gt; but was:&lt;[New_Name]&gt;
+	at ghidra.app.plugin.core.datamgr.editor.EnumEditor2Test.testInsertRow(EnumEditor2Test.java:97)
+	at generic.test.TestThread.run(TestThread.java:106)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -79,42 +95,42 @@
 </thead>
 <tr>
 <td class="success">testChangesBeforeUndoNo</td>
-<td class="success">0.309s</td>
+<td class="success">0.315s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testChangesBeforeUndoYes</td>
-<td class="success">0.596s</td>
+<td class="success">0.508s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testClearDescription</td>
-<td class="success">0.304s</td>
+<td class="success">0.308s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testCloseEditorWithError</td>
-<td class="success">0.603s</td>
+<td class="success">0.503s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testCloseEditorWithErrorCancel</td>
-<td class="success">2.510s</td>
+<td class="success">0.606s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testCloseEditorWithErrorNoSave</td>
-<td class="success">0.304s</td>
+<td class="success">0.410s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDeleteAllRows</td>
-<td class="success">0.506s</td>
+<td class="success">2.507s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDeleteFirstRow</td>
-<td class="success">0.204s</td>
+<td class="success">0.205s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -124,37 +140,37 @@
 </tr>
 <tr>
 <td class="success">testDuplicateName</td>
-<td class="success">2.208s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDuplicateValue</td>
-<td class="success">0.605s</td>
+<td class="success">0.604s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditDescription</td>
-<td class="success">0.309s</td>
+<td class="success">0.205s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditName</td>
-<td class="success">1.761s</td>
+<td class="success">1.745s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEmptyEnum</td>
-<td class="success">0.513s</td>
+<td class="success">0.508s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testInsertRow</td>
-<td class="success">0.603s</td>
-<td class="success">passed</td>
+<td class="failures">testInsertRow</td>
+<td class="failures">0.404s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testInsertRowByName</td>
-<td class="success">0.714s</td>
+<td class="success">0.707s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -164,12 +180,12 @@
 </tr>
 <tr>
 <td class="success">testSortColumns</td>
-<td class="success">0.308s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSortOrder</td>
-<td class="success">0.304s</td>
+<td class="success">2.214s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -179,75 +195,75 @@
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_a53d0cc5-9318-4fe4-a368-c9770e0bc5f1/temp.data
-13:15:48 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-13:15:48 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_a53d0cc5-9318-4fe4-a368-c9770e0bc5f1/temp.data/application.log   (LoggingInitialization.java:60) 
-13:15:48 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_a53d0cc5-9318-4fe4-a368-c9770e0bc5f1/temp.data/preferences   (Preferences.java:122) 
-13:15:49 INFO  Class search complete (540 ms)   (ClassSearcher.java:250) 
-13:15:49 DEBUG Wed Sep 04 13:15:49 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_38b33caa-00ed-4218-9db0-68fce7a819d9/temp.data
+09:23:27 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+09:23:27 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_38b33caa-00ed-4218-9db0-68fce7a819d9/temp.data/application.log   (LoggingInitialization.java:60) 
+09:23:27 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_38b33caa-00ed-4218-9db0-68fce7a819d9/temp.data/preferences   (Preferences.java:122) 
+09:23:28 INFO  Class search complete (508 ms)   (ClassSearcher.java:250) 
+09:23:28 DEBUG Thu Sep 05 09:23:28 CST 2019
 ***** STARTING Test: EnumEditor2Test - testEditName *****   (AbstractGenericTest.java:114) 
-13:15:51 DEBUG 	✓ PASSED Test: EnumEditor2Test - testEditName ✓	   (AbstractGenericTest.java:114) 
-13:15:51 DEBUG Wed Sep 04 13:15:51 CST 2019
+09:23:29 DEBUG 	✓ PASSED Test: EnumEditor2Test - testEditName ✓	   (AbstractGenericTest.java:114) 
+09:23:29 DEBUG Thu Sep 05 09:23:29 CST 2019
 ***** STARTING Test: EnumEditor2Test - testInsertRowByName *****   (AbstractGenericTest.java:114) 
-13:15:52 DEBUG 	✓ PASSED Test: EnumEditor2Test - testInsertRowByName ✓	   (AbstractGenericTest.java:114) 
-13:15:52 DEBUG Wed Sep 04 13:15:52 CST 2019
+09:23:30 DEBUG 	✓ PASSED Test: EnumEditor2Test - testInsertRowByName ✓	   (AbstractGenericTest.java:114) 
+09:23:30 DEBUG Thu Sep 05 09:23:30 CST 2019
 ***** STARTING Test: EnumEditor2Test - testDuplicateValue *****   (AbstractGenericTest.java:114) 
-13:15:52 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDuplicateValue ✓	   (AbstractGenericTest.java:114) 
-13:15:52 DEBUG Wed Sep 04 13:15:52 CST 2019
+09:23:31 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDuplicateValue ✓	   (AbstractGenericTest.java:114) 
+09:23:31 DEBUG Thu Sep 05 09:23:31 CST 2019
 ***** STARTING Test: EnumEditor2Test - testChangesBeforeUndoYes *****   (AbstractGenericTest.java:114) 
-13:15:53 DEBUG 	✓ PASSED Test: EnumEditor2Test - testChangesBeforeUndoYes ✓	   (AbstractGenericTest.java:114) 
-13:15:53 DEBUG Wed Sep 04 13:15:53 CST 2019
+09:23:31 DEBUG 	✓ PASSED Test: EnumEditor2Test - testChangesBeforeUndoYes ✓	   (AbstractGenericTest.java:114) 
+09:23:31 DEBUG Thu Sep 05 09:23:31 CST 2019
 ***** STARTING Test: EnumEditor2Test - testCloseEditorWithErrorCancel *****   (AbstractGenericTest.java:114) 
-13:15:55 DEBUG 	✓ PASSED Test: EnumEditor2Test - testCloseEditorWithErrorCancel ✓	   (AbstractGenericTest.java:114) 
-13:15:55 DEBUG Wed Sep 04 13:15:55 CST 2019
+09:23:32 DEBUG 	✓ PASSED Test: EnumEditor2Test - testCloseEditorWithErrorCancel ✓	   (AbstractGenericTest.java:114) 
+09:23:32 DEBUG Thu Sep 05 09:23:32 CST 2019
 ***** STARTING Test: EnumEditor2Test - testClearDescription *****   (AbstractGenericTest.java:114) 
-13:15:56 DEBUG 	✓ PASSED Test: EnumEditor2Test - testClearDescription ✓	   (AbstractGenericTest.java:114) 
-13:15:56 DEBUG Wed Sep 04 13:15:56 CST 2019
+09:23:32 DEBUG 	✓ PASSED Test: EnumEditor2Test - testClearDescription ✓	   (AbstractGenericTest.java:114) 
+09:23:32 DEBUG Thu Sep 05 09:23:32 CST 2019
 ***** STARTING Test: EnumEditor2Test - testEmptyEnum *****   (AbstractGenericTest.java:114) 
-13:15:56 DEBUG 	✓ PASSED Test: EnumEditor2Test - testEmptyEnum ✓	   (AbstractGenericTest.java:114) 
-13:15:56 DEBUG Wed Sep 04 13:15:56 CST 2019
+09:23:33 DEBUG 	✓ PASSED Test: EnumEditor2Test - testEmptyEnum ✓	   (AbstractGenericTest.java:114) 
+09:23:33 DEBUG Thu Sep 05 09:23:33 CST 2019
 ***** STARTING Test: EnumEditor2Test - testCloseEditorWithErrorNoSave *****   (AbstractGenericTest.java:114) 
-13:15:56 DEBUG 	✓ PASSED Test: EnumEditor2Test - testCloseEditorWithErrorNoSave ✓	   (AbstractGenericTest.java:114) 
-13:15:56 DEBUG Wed Sep 04 13:15:56 CST 2019
+09:23:33 DEBUG 	✓ PASSED Test: EnumEditor2Test - testCloseEditorWithErrorNoSave ✓	   (AbstractGenericTest.java:114) 
+09:23:33 DEBUG Thu Sep 05 09:23:33 CST 2019
 ***** STARTING Test: EnumEditor2Test - testEditDescription *****   (AbstractGenericTest.java:114) 
-13:15:57 DEBUG 	✓ PASSED Test: EnumEditor2Test - testEditDescription ✓	   (AbstractGenericTest.java:114) 
-13:15:57 DEBUG Wed Sep 04 13:15:57 CST 2019
+09:23:33 DEBUG 	✓ PASSED Test: EnumEditor2Test - testEditDescription ✓	   (AbstractGenericTest.java:114) 
+09:23:33 DEBUG Thu Sep 05 09:23:33 CST 2019
 ***** STARTING Test: EnumEditor2Test - testChangesBeforeUndoNo *****   (AbstractGenericTest.java:114) 
-13:15:57 DEBUG 	✓ PASSED Test: EnumEditor2Test - testChangesBeforeUndoNo ✓	   (AbstractGenericTest.java:114) 
-13:15:57 DEBUG Wed Sep 04 13:15:57 CST 2019
+09:23:34 DEBUG 	✓ PASSED Test: EnumEditor2Test - testChangesBeforeUndoNo ✓	   (AbstractGenericTest.java:114) 
+09:23:34 DEBUG Thu Sep 05 09:23:34 CST 2019
 ***** STARTING Test: EnumEditor2Test - testUndoRedo *****   (AbstractGenericTest.java:114) 
-13:15:57 DEBUG 	✓ PASSED Test: EnumEditor2Test - testUndoRedo ✓	   (AbstractGenericTest.java:114) 
-13:15:57 DEBUG Wed Sep 04 13:15:57 CST 2019
+09:23:34 DEBUG 	✓ PASSED Test: EnumEditor2Test - testUndoRedo ✓	   (AbstractGenericTest.java:114) 
+09:23:34 DEBUG Thu Sep 05 09:23:34 CST 2019
 ***** STARTING Test: EnumEditor2Test - testInsertRow *****   (AbstractGenericTest.java:114) 
-13:15:58 DEBUG 	✓ PASSED Test: EnumEditor2Test - testInsertRow ✓	   (AbstractGenericTest.java:114) 
-13:15:58 DEBUG Wed Sep 04 13:15:58 CST 2019
+09:23:34 DEBUG 	✖ FAILED Test: EnumEditor2Test - testInsertRow ✖	   (AbstractGenericTest.java:114) 
+09:23:34 DEBUG Thu Sep 05 09:23:34 CST 2019
 ***** STARTING Test: EnumEditor2Test - testMoveColumns *****   (AbstractGenericTest.java:114) 
-13:15:58 DEBUG 	✓ PASSED Test: EnumEditor2Test - testMoveColumns ✓	   (AbstractGenericTest.java:114) 
-13:15:58 DEBUG Wed Sep 04 13:15:58 CST 2019
+09:23:35 DEBUG 	✓ PASSED Test: EnumEditor2Test - testMoveColumns ✓	   (AbstractGenericTest.java:114) 
+09:23:35 DEBUG Thu Sep 05 09:23:35 CST 2019
 ***** STARTING Test: EnumEditor2Test - testDeleteFirstRow *****   (AbstractGenericTest.java:114) 
-13:15:59 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDeleteFirstRow ✓	   (AbstractGenericTest.java:114) 
-13:15:59 DEBUG Wed Sep 04 13:15:59 CST 2019
+09:23:35 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDeleteFirstRow ✓	   (AbstractGenericTest.java:114) 
+09:23:35 DEBUG Thu Sep 05 09:23:35 CST 2019
 ***** STARTING Test: EnumEditor2Test - testSortOrder *****   (AbstractGenericTest.java:114) 
-13:15:59 DEBUG 	✓ PASSED Test: EnumEditor2Test - testSortOrder ✓	   (AbstractGenericTest.java:114) 
-13:15:59 DEBUG Wed Sep 04 13:15:59 CST 2019
+09:23:37 DEBUG 	✓ PASSED Test: EnumEditor2Test - testSortOrder ✓	   (AbstractGenericTest.java:114) 
+09:23:37 DEBUG Thu Sep 05 09:23:37 CST 2019
 ***** STARTING Test: EnumEditor2Test - testDuplicateName *****   (AbstractGenericTest.java:114) 
-13:15:59 ERROR Duplicate Name: FavoriteColors already exists.   (EnumEditorProvider.java:447) 
-13:16:01 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDuplicateName ✓	   (AbstractGenericTest.java:114) 
-13:16:01 DEBUG Wed Sep 04 13:16:01 CST 2019
+09:23:37 ERROR Duplicate Name: FavoriteColors already exists.   (EnumEditorProvider.java:447) 
+09:23:37 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDuplicateName ✓	   (AbstractGenericTest.java:114) 
+09:23:37 DEBUG Thu Sep 05 09:23:37 CST 2019
 ***** STARTING Test: EnumEditor2Test - testDeleteAllRows *****   (AbstractGenericTest.java:114) 
-13:16:02 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDeleteAllRows ✓	   (AbstractGenericTest.java:114) 
-13:16:02 DEBUG Wed Sep 04 13:16:02 CST 2019
+09:23:40 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDeleteAllRows ✓	   (AbstractGenericTest.java:114) 
+09:23:40 DEBUG Thu Sep 05 09:23:40 CST 2019
 ***** STARTING Test: EnumEditor2Test - testCloseEditorWithError *****   (AbstractGenericTest.java:114) 
-13:16:02 DEBUG 	✓ PASSED Test: EnumEditor2Test - testCloseEditorWithError ✓	   (AbstractGenericTest.java:114) 
-13:16:02 DEBUG Wed Sep 04 13:16:02 CST 2019
+09:23:40 DEBUG 	✓ PASSED Test: EnumEditor2Test - testCloseEditorWithError ✓	   (AbstractGenericTest.java:114) 
+09:23:40 DEBUG Thu Sep 05 09:23:40 CST 2019
 ***** STARTING Test: EnumEditor2Test - testDeleteRows *****   (AbstractGenericTest.java:114) 
-13:16:02 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDeleteRows ✓	   (AbstractGenericTest.java:114) 
-13:16:02 DEBUG Wed Sep 04 13:16:02 CST 2019
+09:23:40 DEBUG 	✓ PASSED Test: EnumEditor2Test - testDeleteRows ✓	   (AbstractGenericTest.java:114) 
+09:23:40 DEBUG Thu Sep 05 09:23:40 CST 2019
 ***** STARTING Test: EnumEditor2Test - testSortColumns *****   (AbstractGenericTest.java:114) 
-13:16:03 DEBUG 	✓ PASSED Test: EnumEditor2Test - testSortColumns ✓	   (AbstractGenericTest.java:114) 
+09:23:41 DEBUG 	✓ PASSED Test: EnumEditor2Test - testSortColumns ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -259,7 +275,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

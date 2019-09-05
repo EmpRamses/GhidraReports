@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">41.529s</div>
+<div class="counter">41.869s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">91%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,29 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="testOpenVersion"></a>
-<h3 class="failures">testOpenVersion</h3>
-<span class="code">
-<pre>java.lang.AssertionError
-	at ghidra.framework.main.datatree.VersionControlAction1Test.testOpenVersion(VersionControlAction1Test.java:386)
-	at generic.test.TestThread.run(TestThread.java:106)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -95,253 +79,253 @@
 </thead>
 <tr>
 <td class="success">testFindMyCheckouts</td>
-<td class="success">4.425s</td>
+<td class="success">4.340s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testMultipleCheckIns</td>
-<td class="success">3.626s</td>
+<td class="success">3.625s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testOpenVersion</td>
-<td class="failures">3.628s</td>
-<td class="failures">failed</td>
+<td class="success">testOpenVersion</td>
+<td class="success">3.926s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testOpenVersionDoubleClick</td>
-<td class="success">8.559s</td>
+<td class="success">8.566s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testOpenVersionWith</td>
-<td class="success">6.254s</td>
+<td class="success">4.263s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testRefreshFolder</td>
-<td class="success">3.653s</td>
+<td class="success">3.442s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testShowHistory</td>
-<td class="success">3.224s</td>
+<td class="success">5.340s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUndoCheckOutModified</td>
-<td class="success">1.410s</td>
+<td class="success">1.512s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUndoCheckout</td>
-<td class="success">1.309s</td>
+<td class="success">1.312s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUndoCheckoutFromFindDialog</td>
-<td class="success">2.013s</td>
+<td class="success">2.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUndoCheckoutFromFindDialogMultiSelection</td>
-<td class="success">1.919s</td>
+<td class="success">2.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUndoHijack</td>
-<td class="success">1.509s</td>
+<td class="success">1.515s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_73f804a3-eda8-4e1b-b616-984288132448/temp.data
-14:18:09 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:18:09 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_73f804a3-eda8-4e1b-b616-984288132448/temp.data/application.log   (LoggingInitialization.java:60) 
-14:18:09 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_73f804a3-eda8-4e1b-b616-984288132448/temp.data/preferences   (Preferences.java:122) 
-14:18:10 INFO  Class search complete (694 ms)   (ClassSearcher.java:250) 
-14:18:10 DEBUG Wed Sep 04 14:18:10 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_862bac8c-c879-4f6d-adc9-75534a7446ae/temp.data
+10:40:10 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:40:10 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_862bac8c-c879-4f6d-adc9-75534a7446ae/temp.data/application.log   (LoggingInitialization.java:60) 
+10:40:10 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Test/IntegrationTest/build/Ghidra_test_862bac8c-c879-4f6d-adc9-75534a7446ae/temp.data/preferences   (Preferences.java:122) 
+10:40:11 INFO  Class search complete (712 ms)   (ClassSearcher.java:250) 
+10:40:11 DEBUG Thu Sep 05 10:40:11 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testOpenVersionDoubleClick *****   (AbstractGenericTest.java:114) 
-14:18:14 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:14 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:14 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:14 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:15 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
-14:18:15 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:16 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
-14:18:16 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:17 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
-14:18:17 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:19 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:19 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testOpenVersionDoubleClick ✓	   (AbstractGenericTest.java:114) 
-14:18:19 DEBUG Wed Sep 04 14:18:19 CST 2019
+10:40:15 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:15 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:15 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:15 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:16 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
+10:40:16 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:17 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
+10:40:17 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:18 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
+10:40:18 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:20 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:20 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testOpenVersionDoubleClick ✓	   (AbstractGenericTest.java:114) 
+10:40:20 DEBUG Thu Sep 05 10:40:20 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testOpenVersionWith *****   (AbstractGenericTest.java:114) 
-14:18:20 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:20 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:20 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:20 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:21 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
-14:18:21 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:22 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
-14:18:22 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:24 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
-14:18:24 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:25 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:25 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testOpenVersionWith ✓	   (AbstractGenericTest.java:114) 
-14:18:25 DEBUG Wed Sep 04 14:18:25 CST 2019
+10:40:21 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:21 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:21 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:21 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:22 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
+10:40:22 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:23 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
+10:40:23 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:23 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
+10:40:23 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:24 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:24 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testOpenVersionWith ✓	   (AbstractGenericTest.java:114) 
+10:40:24 DEBUG Thu Sep 05 10:40:24 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testFindMyCheckouts *****   (AbstractGenericTest.java:114) 
-14:18:26 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:26 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:26 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:26 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:27 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
-14:18:27 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:28 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
-14:18:28 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:28 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
-14:18:28 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:29 INFO  /myFolder_1/myFolder_2/My_Program: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:29 INFO  /myFolder_1/myFolder_2/My_Program: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:29 INFO  /myFolder_1/myFolder_2/My_Program: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:29 INFO  /myFolder_1/myFolder_2/My_Program: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:29 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:29 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testFindMyCheckouts ✓	   (AbstractGenericTest.java:114) 
-14:18:29 DEBUG Wed Sep 04 14:18:29 CST 2019
+10:40:25 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:25 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:25 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:25 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:26 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
+10:40:26 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:27 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
+10:40:27 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:27 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
+10:40:27 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:28 INFO  /myFolder_1/myFolder_2/My_Program: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:28 INFO  /myFolder_1/myFolder_2/My_Program: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:28 INFO  /myFolder_1/myFolder_2/My_Program: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:28 INFO  /myFolder_1/myFolder_2/My_Program: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:28 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:28 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testFindMyCheckouts ✓	   (AbstractGenericTest.java:114) 
+10:40:28 DEBUG Thu Sep 05 10:40:28 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testUndoCheckout *****   (AbstractGenericTest.java:114) 
-14:18:31 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:31 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:31 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:31 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:31 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:31 INFO  Checkout completed for 1 file(s)   (VersionControlCheckOutAction.java:219) 
-14:18:31 INFO  /Program_A: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:18:31 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:31 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:31 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoCheckout ✓	   (AbstractGenericTest.java:114) 
-14:18:31 DEBUG Wed Sep 04 14:18:31 CST 2019
+10:40:29 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:29 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:29 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:29 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:30 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:30 INFO  Checkout completed for 1 file(s)   (VersionControlCheckOutAction.java:219) 
+10:40:30 INFO  /Program_A: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:40:30 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:30 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:30 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoCheckout ✓	   (AbstractGenericTest.java:114) 
+10:40:30 DEBUG Thu Sep 05 10:40:30 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testOpenVersion *****   (AbstractGenericTest.java:114) 
-14:18:32 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:32 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:32 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:32 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:33 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
-14:18:33 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:33 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
-14:18:33 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:34 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
-14:18:34 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:34 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:34 DEBUG 	✖ FAILED Test: VersionControlAction1Test - testOpenVersion ✖	   (AbstractGenericTest.java:114) 
-14:18:34 DEBUG Wed Sep 04 14:18:34 CST 2019
+10:40:31 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:31 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:31 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:31 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:32 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
+10:40:32 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:32 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
+10:40:32 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:33 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
+10:40:33 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:34 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:34 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testOpenVersion ✓	   (AbstractGenericTest.java:114) 
+10:40:34 DEBUG Thu Sep 05 10:40:34 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testRefreshFolder *****   (AbstractGenericTest.java:114) 
-14:18:36 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:36 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:36 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:36 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:36 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
-14:18:36 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:37 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
-14:18:37 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:38 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
-14:18:38 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:38 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:38 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testRefreshFolder ✓	   (AbstractGenericTest.java:114) 
-14:18:38 DEBUG Wed Sep 04 14:18:38 CST 2019
+10:40:35 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:35 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:35 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:35 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:35 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
+10:40:35 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:36 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
+10:40:36 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:37 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
+10:40:37 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:37 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:37 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testRefreshFolder ✓	   (AbstractGenericTest.java:114) 
+10:40:37 DEBUG Thu Sep 05 10:40:37 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testUndoCheckoutFromFindDialog *****   (AbstractGenericTest.java:114) 
-14:18:39 INFO  /Program_B: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:39 INFO  /Program_B: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:39 INFO  /Program_B: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:39 INFO  /Program_B: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:40 INFO  /Program_C: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:40 INFO  /Program_C: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:40 INFO  /Program_C: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:40 INFO  /Program_C: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:40 INFO  /Program_C: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:18:40 INFO  /Program_C: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:40 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:40 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoCheckoutFromFindDialog ✓	   (AbstractGenericTest.java:114) 
-14:18:40 DEBUG Wed Sep 04 14:18:40 CST 2019
+10:40:38 INFO  /Program_B: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:38 INFO  /Program_B: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:38 INFO  /Program_B: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:38 INFO  /Program_B: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:39 INFO  /Program_C: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:39 INFO  /Program_C: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:39 INFO  /Program_C: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:39 INFO  /Program_C: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:39 INFO  /Program_C: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:40:39 INFO  /Program_C: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:39 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:39 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoCheckoutFromFindDialog ✓	   (AbstractGenericTest.java:114) 
+10:40:39 DEBUG Thu Sep 05 10:40:39 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testShowHistory *****   (AbstractGenericTest.java:114) 
-14:18:41 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:41 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:41 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:41 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:41 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:41 INFO  Checkout completed for 1 file(s)   (VersionControlCheckOutAction.java:219) 
-14:18:42 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
-14:18:42 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:43 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
-14:18:43 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:43 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
-14:18:43 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:43 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:43 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testShowHistory ✓	   (AbstractGenericTest.java:114) 
-14:18:43 DEBUG Wed Sep 04 14:18:43 CST 2019
+10:40:42 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:42 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:42 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:42 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:42 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:42 INFO  Checkout completed for 1 file(s)   (VersionControlCheckOutAction.java:219) 
+10:40:43 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
+10:40:43 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:44 INFO  /Program_A: version 3 created (lcf)   (HistoryManager.java:127) 
+10:40:44 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:44 INFO  /Program_A: version 4 created (lcf)   (HistoryManager.java:127) 
+10:40:44 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:44 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:44 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testShowHistory ✓	   (AbstractGenericTest.java:114) 
+10:40:44 DEBUG Thu Sep 05 10:40:44 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testUndoHijack *****   (AbstractGenericTest.java:114) 
-14:18:44 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:44 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:44 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:44 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:44 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:44 INFO  Checkout completed for 1 file(s)   (VersionControlCheckOutAction.java:219) 
-14:18:45 INFO  /Program_A: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:18:45 WARN  WARNING! changing file-ID for /Program_A.keep   (DomainFileIndex.java:81) 
-14:18:45 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:45 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoHijack ✓	   (AbstractGenericTest.java:114) 
-14:18:45 DEBUG Wed Sep 04 14:18:45 CST 2019
+10:40:45 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:45 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:45 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:45 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:46 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:46 INFO  Checkout completed for 1 file(s)   (VersionControlCheckOutAction.java:219) 
+10:40:46 INFO  /Program_A: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:40:46 WARN  WARNING! changing file-ID for /Program_A.keep   (DomainFileIndex.java:81) 
+10:40:46 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:46 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoHijack ✓	   (AbstractGenericTest.java:114) 
+10:40:46 DEBUG Thu Sep 05 10:40:46 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testUndoCheckOutModified *****   (AbstractGenericTest.java:114) 
-14:18:46 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:46 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:46 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:46 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:46 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:46 INFO  Checkout completed for 1 file(s)   (VersionControlCheckOutAction.java:219) 
-14:18:46 INFO  /Program_A: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:18:46 WARN  WARNING! changing file-ID for /Program_A.keep   (DomainFileIndex.java:81) 
-14:18:46 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:46 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoCheckOutModified ✓	   (AbstractGenericTest.java:114) 
-14:18:46 DEBUG Wed Sep 04 14:18:46 CST 2019
+10:40:47 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:47 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:47 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:47 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:47 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:47 INFO  Checkout completed for 1 file(s)   (VersionControlCheckOutAction.java:219) 
+10:40:47 INFO  /Program_A: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:40:47 WARN  WARNING! changing file-ID for /Program_A.keep   (DomainFileIndex.java:81) 
+10:40:47 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:47 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoCheckOutModified ✓	   (AbstractGenericTest.java:114) 
+10:40:47 DEBUG Thu Sep 05 10:40:47 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testUndoCheckoutFromFindDialogMultiSelection *****   (AbstractGenericTest.java:114) 
-14:18:47 INFO  /Program_B: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:47 INFO  /Program_B: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:47 INFO  /Program_B: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:47 INFO  /Program_B: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:48 INFO  /Program_C: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:48 INFO  /Program_C: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:48 INFO  /Program_C: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:48 INFO  /Program_C: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:48 INFO  /Program_B: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:18:48 INFO  /Program_B: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:48 INFO  /Program_C: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:18:48 INFO  /Program_C: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:48 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:48 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoCheckoutFromFindDialogMultiSelection ✓	   (AbstractGenericTest.java:114) 
-14:18:48 DEBUG Wed Sep 04 14:18:48 CST 2019
+10:40:48 INFO  /Program_B: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:48 INFO  /Program_B: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:48 INFO  /Program_B: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:48 INFO  /Program_B: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:49 INFO  /Program_C: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:49 INFO  /Program_C: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:49 INFO  /Program_C: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:49 INFO  /Program_C: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:49 INFO  /Program_B: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:40:49 INFO  /Program_B: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:49 INFO  /Program_C: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:40:49 INFO  /Program_C: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:49 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:49 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testUndoCheckoutFromFindDialogMultiSelection ✓	   (AbstractGenericTest.java:114) 
+10:40:49 DEBUG Thu Sep 05 10:40:49 CST 2019
 ***** STARTING Test: VersionControlAction1Test - testMultipleCheckIns *****   (AbstractGenericTest.java:114) 
-14:18:49 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:49 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:49 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:49 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:50 INFO  /Program_B: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
-14:18:50 INFO  /Program_B: version 1 created (lcf)   (HistoryManager.java:127) 
-14:18:50 INFO  /Program_B: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
-14:18:50 INFO  /Program_B: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:50 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:50 INFO  /Program_B: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
-14:18:50 INFO  Checkout completed for 2 file(s)   (VersionControlCheckOutAction.java:219) 
-14:18:51 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
-14:18:51 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
-14:18:51 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:51 INFO  /Program_A: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:18:52 INFO  /Program_B: version 2 created (lcf)   (HistoryManager.java:127) 
-14:18:52 INFO  Checkin completed for Program_B   (GhidraFileData.java:1103) 
-14:18:52 INFO  /Program_B: file deleted (lcf)   (LocalFolderItem.java:384) 
-14:18:52 INFO  /Program_B: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
-14:18:52 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
-14:18:52 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testMultipleCheckIns ✓	   (AbstractGenericTest.java:114) 
+10:40:50 INFO  /Program_A: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:50 INFO  /Program_A: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:50 INFO  /Program_A: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:50 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:51 INFO  /Program_B: checkout (1) granted (lcf)   (CheckoutManager.java:104) 
+10:40:51 INFO  /Program_B: version 1 created (lcf)   (HistoryManager.java:127) 
+10:40:51 INFO  /Program_B: checkout (1) ended (lcf)   (CheckoutManager.java:143) 
+10:40:51 INFO  /Program_B: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:52 INFO  /Program_A: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:52 INFO  /Program_B: checkout (2) granted (lcf)   (CheckoutManager.java:104) 
+10:40:52 INFO  Checkout completed for 2 file(s)   (VersionControlCheckOutAction.java:219) 
+10:40:53 INFO  /Program_A: version 2 created (lcf)   (HistoryManager.java:127) 
+10:40:53 INFO  Checkin completed for Program_A   (GhidraFileData.java:1103) 
+10:40:53 INFO  /Program_A: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:53 INFO  /Program_A: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:40:53 INFO  /Program_B: version 2 created (lcf)   (HistoryManager.java:127) 
+10:40:53 INFO  Checkin completed for Program_B   (GhidraFileData.java:1103) 
+10:40:53 INFO  /Program_B: file deleted (lcf)   (LocalFolderItem.java:384) 
+10:40:53 INFO  /Program_B: checkout (2) ended (lcf)   (CheckoutManager.java:143) 
+10:40:53 DEBUG disposeServer() - process exist? null   (ServerTestUtil.java:632) 
+10:40:53 DEBUG 	✓ PASSED Test: VersionControlAction1Test - testMultipleCheckIns ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -353,7 +337,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.698s</div>
+<div class="counter">4.706s</div>
 <p>duration</p>
 </div>
 </td>
@@ -316,37 +316,37 @@ Test Thread stack at that time:
 </thead>
 <tr>
 <td class="failures">testActionEnablement</td>
-<td class="failures">0.514s</td>
+<td class="failures">0.413s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testFindDataTypeReferences_ToCastSymbol</td>
-<td class="failures">0.758s</td>
+<td class="failures">0.856s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testFindDataTypeReferences_ToCurrentAddress</td>
-<td class="failures">0.518s</td>
+<td class="failures">0.519s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testFindDataTypeReferences_ToCurrentFunction</td>
-<td class="failures">0.423s</td>
+<td class="failures">0.430s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testFindDataTypeReferences_ToEntireDataType_FromParameter</td>
-<td class="failures">0.411s</td>
+<td class="failures">0.423s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testFindDataTypeReferences_ToEntireDataType_FromVariable</td>
-<td class="failures">1.755s</td>
+<td class="failures">1.648s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">testFindDataTypeReferences_ToFieldOfDataType</td>
-<td class="failures">0.319s</td>
+<td class="failures">0.417s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -354,77 +354,77 @@ Test Thread stack at that time:
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_79356af5-e9e6-4eb2-8719-0226d28265da/temp.data
-14:00:11 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:00:11 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_79356af5-e9e6-4eb2-8719-0226d28265da/temp.data/application.log   (LoggingInitialization.java:60) 
-14:00:11 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_79356af5-e9e6-4eb2-8719-0226d28265da/temp.data/preferences   (Preferences.java:122) 
-14:00:12 INFO  Class search complete (466 ms)   (ClassSearcher.java:250) 
-14:00:12 DEBUG Wed Sep 04 14:00:12 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_2c6c3b56-5703-42af-91e4-1544138bb259/temp.data
+10:22:02 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:22:02 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_2c6c3b56-5703-42af-91e4-1544138bb259/temp.data/application.log   (LoggingInitialization.java:60) 
+10:22:02 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Decompiler/build/Ghidra_test_2c6c3b56-5703-42af-91e4-1544138bb259/temp.data/preferences   (Preferences.java:122) 
+10:22:03 INFO  Class search complete (460 ms)   (ClassSearcher.java:250) 
+10:22:03 DEBUG Thu Sep 05 10:22:03 CST 2019
 ***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromVariable *****   (AbstractGenericTest.java:114) 
-14:00:12 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
-14:00:12 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
-14:00:12 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
-14:00:14 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromVariable ✖	   (AbstractGenericTest.java:114) 
-14:00:14 DEBUG Wed Sep 04 14:00:14 CST 2019
+10:22:03 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+10:22:03 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+10:22:03 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+10:22:04 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromVariable ✖	   (AbstractGenericTest.java:114) 
+10:22:04 DEBUG Thu Sep 05 10:22:04 CST 2019
 ***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCastSymbol *****   (AbstractGenericTest.java:114) 
-14:00:14 ERROR 
+10:22:04 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:14 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
-14:00:14 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
-14:00:14 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
-14:00:15 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCastSymbol ✖	   (AbstractGenericTest.java:114) 
-14:00:15 DEBUG Wed Sep 04 14:00:15 CST 2019
+10:22:05 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+10:22:05 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+10:22:05 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+10:22:05 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCastSymbol ✖	   (AbstractGenericTest.java:114) 
+10:22:05 DEBUG Thu Sep 05 10:22:05 CST 2019
 ***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentAddress *****   (AbstractGenericTest.java:114) 
-14:00:15 ERROR 
+10:22:05 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:15 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
-14:00:15 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
-14:00:15 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
-14:00:15 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentAddress ✖	   (AbstractGenericTest.java:114) 
-14:00:15 DEBUG Wed Sep 04 14:00:15 CST 2019
+10:22:05 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+10:22:05 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+10:22:05 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+10:22:06 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentAddress ✖	   (AbstractGenericTest.java:114) 
+10:22:06 DEBUG Thu Sep 05 10:22:06 CST 2019
 ***** STARTING Test: DecompilerFindReferencesToActionTest - testActionEnablement *****   (AbstractGenericTest.java:114) 
-14:00:15 ERROR 
+10:22:06 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:15 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
-14:00:15 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
-14:00:15 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
-14:00:16 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testActionEnablement ✖	   (AbstractGenericTest.java:114) 
-14:00:16 DEBUG Wed Sep 04 14:00:16 CST 2019
+10:22:06 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+10:22:06 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+10:22:06 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+10:22:06 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testActionEnablement ✖	   (AbstractGenericTest.java:114) 
+10:22:06 DEBUG Thu Sep 05 10:22:06 CST 2019
 ***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromParameter *****   (AbstractGenericTest.java:114) 
-14:00:16 ERROR 
+10:22:06 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:16 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
-14:00:16 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
-14:00:16 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
-14:00:16 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromParameter ✖	   (AbstractGenericTest.java:114) 
-14:00:16 DEBUG Wed Sep 04 14:00:16 CST 2019
+10:22:06 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+10:22:06 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+10:22:06 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+10:22:07 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToEntireDataType_FromParameter ✖	   (AbstractGenericTest.java:114) 
+10:22:07 DEBUG Thu Sep 05 10:22:07 CST 2019
 ***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToFieldOfDataType *****   (AbstractGenericTest.java:114) 
-14:00:16 ERROR 
+10:22:07 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:16 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
-14:00:16 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
-14:00:16 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
-14:00:16 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToFieldOfDataType ✖	   (AbstractGenericTest.java:114) 
-14:00:16 DEBUG Wed Sep 04 14:00:16 CST 2019
+10:22:07 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+10:22:07 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+10:22:07 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+10:22:07 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToFieldOfDataType ✖	   (AbstractGenericTest.java:114) 
+10:22:07 DEBUG Thu Sep 05 10:22:07 CST 2019
 ***** STARTING Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentFunction *****   (AbstractGenericTest.java:114) 
-14:00:16 ERROR 
+10:22:07 ERROR 
 	Found non-disposed() TestEnv instances.  Please examine this test!
 
    (TestEnv.java:162) 
-14:00:17 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
-14:00:17 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
-14:00:17 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
-14:00:17 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentFunction ✖	   (AbstractGenericTest.java:114) 
+10:22:07 WARN  Test data file not found: elf/CentOS/32bit/decomp.gzf   (AbstractGenericTest.java:381) 
+10:22:07 WARN  Test data file not found: elf/CentOS/32bit/decomp.xml   (AbstractGenericTest.java:381) 
+10:22:07 INFO  Test program not found: elf/CentOS/32bit/decomp   (TestProgramManager.java:351) 
+10:22:08 DEBUG 	✖ FAILED Test: DecompilerFindReferencesToActionTest - testFindDataTypeReferences_ToCurrentFunction ✖	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -436,7 +436,7 @@ Test Thread stack at that time:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

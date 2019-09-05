@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">16.761s</div>
+<div class="counter">15.417s</div>
 <p>duration</p>
 </div>
 </td>
@@ -89,7 +89,7 @@
 </tr>
 <tr>
 <td class="success">testDispose_WithCurrentJob_NoPendingJobs</td>
-<td class="success">0.202s</td>
+<td class="success">0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -99,7 +99,7 @@
 </tr>
 <tr>
 <td class="success">testDispose_WithCurrentJob_WithPendingJobs</td>
-<td class="success">0.106s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -109,22 +109,22 @@
 </tr>
 <tr>
 <td class="success">testFinalJobGetsRunAfterQueuedJobs</td>
-<td class="success">2.721s</td>
+<td class="success">2.217s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFinishAllJobs_WhenEmpty</td>
-<td class="success">0.104s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFinishAllJobs_WithCurrentJob_FinalJobGetsRun</td>
-<td class="success">0.203s</td>
+<td class="success">0.202s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFinishAllJobs_WithCurrentJob_NoPendingJobs</td>
-<td class="success">0.419s</td>
+<td class="success">0.215s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -139,37 +139,37 @@
 </tr>
 <tr>
 <td class="success">testRunFinalJob</td>
-<td class="success">0.707s</td>
+<td class="success">1.110s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testRunJob</td>
-<td class="success">1.917s</td>
+<td class="success">1.512s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testRunJobDoesNotShortCutJobsThatCannotBeShortcut</td>
-<td class="success">2.113s</td>
+<td class="success">2.107s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testRunJobShortCutsQueuedJobsButLastOne</td>
-<td class="success">1.008s</td>
+<td class="success">0.808s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testRunJobShortCutsRunningJob</td>
-<td class="success">0.807s</td>
+<td class="success">0.804s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSchedule_ShortCutsQueuedJobs_ButNotThoseThatCannotBeShortcutOrThoseThatFollow</td>
-<td class="success">3.021s</td>
+<td class="success">2.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetFinalJobDoesNotShortCutRunningJob</td>
-<td class="success">2.315s</td>
+<td class="success">2.910s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -177,66 +177,66 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_6a894be3-6f3c-4d1e-9baa-a223ddd06a05/temp.data
-14:13:41 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:13:41 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_6a894be3-6f3c-4d1e-9baa-a223ddd06a05/temp.data/application.log   (LoggingInitialization.java:60) 
-14:13:41 DEBUG Wed Sep 04 14:13:41 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_cf84bf12-344c-4720-b38a-474648978738/temp.data
+10:35:30 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:35:30 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Framework/Graph/build/Ghidra_test_cf84bf12-344c-4720-b38a-474648978738/temp.data/application.log   (LoggingInitialization.java:60) 
+10:35:30 DEBUG Thu Sep 05 10:35:30 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_NoPendingJobs *****   (AbstractGenericTest.java:114) 
-14:13:41 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_NoPendingJobs ✓	   (AbstractGenericTest.java:114) 
-14:13:41 DEBUG Wed Sep 04 14:13:41 CST 2019
+10:35:30 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_NoPendingJobs ✓	   (AbstractGenericTest.java:114) 
+10:35:30 DEBUG Thu Sep 05 10:35:30 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testCannotScheduleFinishedJob *****   (AbstractGenericTest.java:114) 
-14:13:41 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testCannotScheduleFinishedJob ✓	   (AbstractGenericTest.java:114) 
-14:13:41 DEBUG Wed Sep 04 14:13:41 CST 2019
+10:35:30 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testCannotScheduleFinishedJob ✓	   (AbstractGenericTest.java:114) 
+10:35:30 DEBUG Thu Sep 05 10:35:30 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_WithPendingJobs *****   (AbstractGenericTest.java:114) 
-14:13:41 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_WithPendingJobs ✓	   (AbstractGenericTest.java:114) 
-14:13:41 DEBUG Wed Sep 04 14:13:41 CST 2019
+10:35:31 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_WithPendingJobs ✓	   (AbstractGenericTest.java:114) 
+10:35:31 DEBUG Thu Sep 05 10:35:31 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testRunJobShortCutsRunningJob *****   (AbstractGenericTest.java:114) 
-14:13:42 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunJobShortCutsRunningJob ✓	   (AbstractGenericTest.java:114) 
-14:13:42 DEBUG Wed Sep 04 14:13:42 CST 2019
+10:35:31 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunJobShortCutsRunningJob ✓	   (AbstractGenericTest.java:114) 
+10:35:31 DEBUG Thu Sep 05 10:35:31 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_NoPendingJobs *****   (AbstractGenericTest.java:114) 
-14:13:42 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_NoPendingJobs ✓	   (AbstractGenericTest.java:114) 
-14:13:42 DEBUG Wed Sep 04 14:13:42 CST 2019
+10:35:32 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_NoPendingJobs ✓	   (AbstractGenericTest.java:114) 
+10:35:32 DEBUG Thu Sep 05 10:35:32 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testDispose_WhenEmpty *****   (AbstractGenericTest.java:114) 
-14:13:43 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WhenEmpty ✓	   (AbstractGenericTest.java:114) 
-14:13:43 DEBUG Wed Sep 04 14:13:43 CST 2019
+10:35:32 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WhenEmpty ✓	   (AbstractGenericTest.java:114) 
+10:35:32 DEBUG Thu Sep 05 10:35:32 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_WithPendingJobs *****   (AbstractGenericTest.java:114) 
-14:13:43 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_WithPendingJobs ✓	   (AbstractGenericTest.java:114) 
-14:13:43 DEBUG Wed Sep 04 14:13:43 CST 2019
+10:35:32 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_WithPendingJobs ✓	   (AbstractGenericTest.java:114) 
+10:35:32 DEBUG Thu Sep 05 10:35:32 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testSetFinalJobDoesNotShortCutRunningJob *****   (AbstractGenericTest.java:114) 
-14:13:45 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testSetFinalJobDoesNotShortCutRunningJob ✓	   (AbstractGenericTest.java:114) 
-14:13:45 DEBUG Wed Sep 04 14:13:45 CST 2019
+10:35:35 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testSetFinalJobDoesNotShortCutRunningJob ✓	   (AbstractGenericTest.java:114) 
+10:35:35 DEBUG Thu Sep 05 10:35:35 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_FinalJobGetsRun *****   (AbstractGenericTest.java:114) 
-14:13:45 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_FinalJobGetsRun ✓	   (AbstractGenericTest.java:114) 
-14:13:45 DEBUG Wed Sep 04 14:13:45 CST 2019
+10:35:35 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithCurrentJob_FinalJobGetsRun ✓	   (AbstractGenericTest.java:114) 
+10:35:35 DEBUG Thu Sep 05 10:35:35 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithFinalJob *****   (AbstractGenericTest.java:114) 
-14:13:45 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithFinalJob ✓	   (AbstractGenericTest.java:114) 
-14:13:45 DEBUG Wed Sep 04 14:13:45 CST 2019
+10:35:35 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WithFinalJob ✓	   (AbstractGenericTest.java:114) 
+10:35:35 DEBUG Thu Sep 05 10:35:35 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testRunJobDoesNotShortCutJobsThatCannotBeShortcut *****   (AbstractGenericTest.java:114) 
-14:13:48 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunJobDoesNotShortCutJobsThatCannotBeShortcut ✓	   (AbstractGenericTest.java:114) 
-14:13:48 DEBUG Wed Sep 04 14:13:48 CST 2019
+10:35:37 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunJobDoesNotShortCutJobsThatCannotBeShortcut ✓	   (AbstractGenericTest.java:114) 
+10:35:37 DEBUG Thu Sep 05 10:35:37 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testSchedule_ShortCutsQueuedJobs_ButNotThoseThatCannotBeShortcutOrThoseThatFollow *****   (AbstractGenericTest.java:114) 
-14:13:51 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testSchedule_ShortCutsQueuedJobs_ButNotThoseThatCannotBeShortcutOrThoseThatFollow ✓	   (AbstractGenericTest.java:114) 
-14:13:51 DEBUG Wed Sep 04 14:13:51 CST 2019
+10:35:39 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testSchedule_ShortCutsQueuedJobs_ButNotThoseThatCannotBeShortcutOrThoseThatFollow ✓	   (AbstractGenericTest.java:114) 
+10:35:39 DEBUG Thu Sep 05 10:35:39 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testDispose_WithFinalJob *****   (AbstractGenericTest.java:114) 
-14:13:51 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WithFinalJob ✓	   (AbstractGenericTest.java:114) 
-14:13:51 DEBUG Wed Sep 04 14:13:51 CST 2019
+10:35:39 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WithFinalJob ✓	   (AbstractGenericTest.java:114) 
+10:35:39 DEBUG Thu Sep 05 10:35:39 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testFinishAllJobs_WhenEmpty *****   (AbstractGenericTest.java:114) 
-14:13:51 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WhenEmpty ✓	   (AbstractGenericTest.java:114) 
-14:13:51 DEBUG Wed Sep 04 14:13:51 CST 2019
+10:35:40 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinishAllJobs_WhenEmpty ✓	   (AbstractGenericTest.java:114) 
+10:35:40 DEBUG Thu Sep 05 10:35:40 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testRunFinalJob *****   (AbstractGenericTest.java:114) 
-14:13:52 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunFinalJob ✓	   (AbstractGenericTest.java:114) 
-14:13:52 DEBUG Wed Sep 04 14:13:52 CST 2019
+10:35:41 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunFinalJob ✓	   (AbstractGenericTest.java:114) 
+10:35:41 DEBUG Thu Sep 05 10:35:41 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testRunJob *****   (AbstractGenericTest.java:114) 
-14:13:53 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunJob ✓	   (AbstractGenericTest.java:114) 
-14:13:53 DEBUG Wed Sep 04 14:13:53 CST 2019
+10:35:42 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunJob ✓	   (AbstractGenericTest.java:114) 
+10:35:42 DEBUG Thu Sep 05 10:35:42 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testRunJobShortCutsQueuedJobsButLastOne *****   (AbstractGenericTest.java:114) 
-14:13:55 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunJobShortCutsQueuedJobsButLastOne ✓	   (AbstractGenericTest.java:114) 
-14:13:55 DEBUG Wed Sep 04 14:13:55 CST 2019
+10:35:43 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testRunJobShortCutsQueuedJobsButLastOne ✓	   (AbstractGenericTest.java:114) 
+10:35:43 DEBUG Thu Sep 05 10:35:43 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_WithFinalJob *****   (AbstractGenericTest.java:114) 
-14:13:55 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_WithFinalJob ✓	   (AbstractGenericTest.java:114) 
-14:13:55 DEBUG Wed Sep 04 14:13:55 CST 2019
+10:35:43 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testDispose_WithCurrentJob_WithFinalJob ✓	   (AbstractGenericTest.java:114) 
+10:35:43 DEBUG Thu Sep 05 10:35:43 CST 2019
 ***** STARTING Test: VisualGraphJobRunnerTest - testFinalJobGetsRunAfterQueuedJobs *****   (AbstractGenericTest.java:114) 
-14:13:57 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinalJobGetsRunAfterQueuedJobs ✓	   (AbstractGenericTest.java:114) 
+10:35:45 DEBUG 	✓ PASSED Test: VisualGraphJobRunnerTest - testFinalJobGetsRunAfterQueuedJobs ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -248,7 +248,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.052s</div>
+<div class="counter">6.202s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">testInvalidMagicNumV1FuncInfo32</td>
-<td class="success">0.102s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testInvalidV1FuncInfo64NonVS</td>
-<td class="success">0.101s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@
 </tr>
 <tr>
 <td class="success">testInvalidV3FuncInfo32NotAligned</td>
-<td class="success">2.673s</td>
+<td class="success">2.805s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -109,12 +109,12 @@
 </tr>
 <tr>
 <td class="success">testValidIPToState32</td>
-<td class="success">0.102s</td>
+<td class="success">0.106s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testValidTryBlock32</td>
-<td class="success">0.106s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@
 </tr>
 <tr>
 <td class="success">testValidUnwind32</td>
-<td class="success">0.104s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -139,22 +139,22 @@
 </tr>
 <tr>
 <td class="success">testValidV1FuncInfo32withBbtBits</td>
-<td class="success">0.103s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testValidV1FuncInfo64</td>
-<td class="success">0.103s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testValidV2FuncInfo32</td>
-<td class="success">0.109s</td>
+<td class="success">0.104s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testValidV2FuncInfo64</td>
-<td class="success">1.518s</td>
+<td class="success">1.546s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@
 </tr>
 <tr>
 <td class="success">testValidV3FuncInfo64</td>
-<td class="success">0.107s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -182,76 +182,76 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_e7e339c1-5d19-4f66-8e6e-ca00edebbfe3/temp.data
-14:20:57 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:20:57 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_e7e339c1-5d19-4f66-8e6e-ca00edebbfe3/temp.data/application.log   (LoggingInitialization.java:60) 
-14:20:57 DEBUG Wed Sep 04 14:20:57 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_2a32d3e6-20b8-4683-839b-b6467d2850ab/temp.data
+10:42:46 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:42:46 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_2a32d3e6-20b8-4683-839b-b6467d2850ab/temp.data/application.log   (LoggingInitialization.java:60) 
+10:42:46 DEBUG Thu Sep 05 10:42:46 CST 2019
 ***** STARTING Test: EHModelTest - testInvalidV3FuncInfo32NotAligned *****   (AbstractGenericTest.java:114) 
-14:20:58 INFO  Packed database cache: /home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_e7e339c1-5d19-4f66-8e6e-ca00edebbfe3/temp.data/packed-db-cache   (PackedDatabaseCache.java:64) 
-14:20:58 DEBUG Caching packed database: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_32.gdt   (PackedDatabaseCache.java:362) 
-14:20:58 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_32.gdt -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_e7e339c1-5d19-4f66-8e6e-ca00edebbfe3/temp.data/packed-db-cache/pdbE59B5C1A/db.1.gbf   (PackedDatabase.java:521) 
-14:20:59 DEBUG Cache update completed: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_32.gdt   (PackedDatabaseCache.java:397) 
-14:21:00 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidV3FuncInfo32NotAligned ✓	   (AbstractGenericTest.java:114) 
-14:21:00 DEBUG Wed Sep 04 14:21:00 CST 2019
+10:42:47 INFO  Packed database cache: /home/lcf/repo/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_2a32d3e6-20b8-4683-839b-b6467d2850ab/temp.data/packed-db-cache   (PackedDatabaseCache.java:64) 
+10:42:47 DEBUG Caching packed database: /home/lcf/repo/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_32.gdt   (PackedDatabaseCache.java:362) 
+10:42:47 DEBUG Unpacking database /home/lcf/repo/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_32.gdt -&gt; /home/lcf/repo/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_2a32d3e6-20b8-4683-839b-b6467d2850ab/temp.data/packed-db-cache/pdbD3AC6D81/db.1.gbf   (PackedDatabase.java:521) 
+10:42:47 DEBUG Cache update completed: /home/lcf/repo/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_32.gdt   (PackedDatabaseCache.java:397) 
+10:42:48 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidV3FuncInfo32NotAligned ✓	   (AbstractGenericTest.java:114) 
+10:42:48 DEBUG Thu Sep 05 10:42:48 CST 2019
 ***** STARTING Test: EHModelTest - testValidTryBlock32 *****   (AbstractGenericTest.java:114) 
-14:21:00 DEBUG 	✓ PASSED Test: EHModelTest - testValidTryBlock32 ✓	   (AbstractGenericTest.java:114) 
-14:21:00 DEBUG Wed Sep 04 14:21:00 CST 2019
+10:42:48 DEBUG 	✓ PASSED Test: EHModelTest - testValidTryBlock32 ✓	   (AbstractGenericTest.java:114) 
+10:42:48 DEBUG Thu Sep 05 10:42:48 CST 2019
 ***** STARTING Test: EHModelTest - testValidV2FuncInfo32 *****   (AbstractGenericTest.java:114) 
-14:21:00 DEBUG 	✓ PASSED Test: EHModelTest - testValidV2FuncInfo32 ✓	   (AbstractGenericTest.java:114) 
-14:21:00 DEBUG Wed Sep 04 14:21:00 CST 2019
+10:42:49 DEBUG 	✓ PASSED Test: EHModelTest - testValidV2FuncInfo32 ✓	   (AbstractGenericTest.java:114) 
+10:42:49 DEBUG Thu Sep 05 10:42:49 CST 2019
 ***** STARTING Test: EHModelTest - testValidV2FuncInfo64 *****   (AbstractGenericTest.java:114) 
-14:21:00 DEBUG Caching packed database: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_64.gdt   (PackedDatabaseCache.java:362) 
-14:21:00 DEBUG Unpacking database /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_64.gdt -&gt; /home/lcf/repo/190904/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_e7e339c1-5d19-4f66-8e6e-ca00edebbfe3/temp.data/packed-db-cache/pdbB77F99BE/db.1.gbf   (PackedDatabase.java:521) 
-14:21:01 DEBUG Cache update completed: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_64.gdt   (PackedDatabaseCache.java:397) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testValidV2FuncInfo64 ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:49 DEBUG Caching packed database: /home/lcf/repo/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_64.gdt   (PackedDatabaseCache.java:362) 
+10:42:49 DEBUG Unpacking database /home/lcf/repo/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_64.gdt -&gt; /home/lcf/repo/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/build/Ghidra_test_2a32d3e6-20b8-4683-839b-b6467d2850ab/temp.data/packed-db-cache/pdb74E2E908/db.1.gbf   (PackedDatabase.java:521) 
+10:42:49 DEBUG Cache update completed: /home/lcf/repo/ghidra/Ghidra/Features/Base/data/typeinfo/win32/windows_vs12_64.gdt   (PackedDatabaseCache.java:397) 
+10:42:50 DEBUG 	✓ PASSED Test: EHModelTest - testValidV2FuncInfo64 ✓	   (AbstractGenericTest.java:114) 
+10:42:50 DEBUG Thu Sep 05 10:42:50 CST 2019
 ***** STARTING Test: EHModelTest - testInvalidV1FuncInfo64UnwindInOtherBlock *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidV1FuncInfo64UnwindInOtherBlock ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:50 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidV1FuncInfo64UnwindInOtherBlock ✓	   (AbstractGenericTest.java:114) 
+10:42:50 DEBUG Thu Sep 05 10:42:50 CST 2019
 ***** STARTING Test: EHModelTest - testValidV3FuncInfo64CompleteFlow *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testValidV3FuncInfo64CompleteFlow ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:50 DEBUG 	✓ PASSED Test: EHModelTest - testValidV3FuncInfo64CompleteFlow ✓	   (AbstractGenericTest.java:114) 
+10:42:50 DEBUG Thu Sep 05 10:42:50 CST 2019
 ***** STARTING Test: EHModelTest - testInvalidMagicNumV1FuncInfo32 *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidMagicNumV1FuncInfo32 ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:50 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidMagicNumV1FuncInfo32 ✓	   (AbstractGenericTest.java:114) 
+10:42:50 DEBUG Thu Sep 05 10:42:50 CST 2019
 ***** STARTING Test: EHModelTest - testValidCatchHandler32 *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testValidCatchHandler32 ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidCatchHandler32 ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testValidTypeList32 *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testValidTypeList32 ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidTypeList32 ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testValidV1FuncInfo32 *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testValidV1FuncInfo32 ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidV1FuncInfo32 ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testValidV1FuncInfo64 *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testValidV1FuncInfo64 ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidV1FuncInfo64 ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testValidV1FuncInfo32withBbtBits *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testValidV1FuncInfo32withBbtBits ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidV1FuncInfo32withBbtBits ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testValidV3FuncInfo32 *****   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG 	✓ PASSED Test: EHModelTest - testValidV3FuncInfo32 ✓	   (AbstractGenericTest.java:114) 
-14:21:02 DEBUG Wed Sep 04 14:21:02 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidV3FuncInfo32 ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testValidV3FuncInfo64 *****   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG 	✓ PASSED Test: EHModelTest - testValidV3FuncInfo64 ✓	   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG Wed Sep 04 14:21:03 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidV3FuncInfo64 ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testValidUnwind32 *****   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG 	✓ PASSED Test: EHModelTest - testValidUnwind32 ✓	   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG Wed Sep 04 14:21:03 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidUnwind32 ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testValidV3FuncInfo32CompleteFlow *****   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG 	✓ PASSED Test: EHModelTest - testValidV3FuncInfo32CompleteFlow ✓	   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG Wed Sep 04 14:21:03 CST 2019
+10:42:51 DEBUG 	✓ PASSED Test: EHModelTest - testValidV3FuncInfo32CompleteFlow ✓	   (AbstractGenericTest.java:114) 
+10:42:51 DEBUG Thu Sep 05 10:42:51 CST 2019
 ***** STARTING Test: EHModelTest - testInvalidV3FuncInfo64DoesNotFit *****   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidV3FuncInfo64DoesNotFit ✓	   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG Wed Sep 04 14:21:03 CST 2019
+10:42:52 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidV3FuncInfo64DoesNotFit ✓	   (AbstractGenericTest.java:114) 
+10:42:52 DEBUG Thu Sep 05 10:42:52 CST 2019
 ***** STARTING Test: EHModelTest - testValidIPToState32 *****   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG 	✓ PASSED Test: EHModelTest - testValidIPToState32 ✓	   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG Wed Sep 04 14:21:03 CST 2019
+10:42:52 DEBUG 	✓ PASSED Test: EHModelTest - testValidIPToState32 ✓	   (AbstractGenericTest.java:114) 
+10:42:52 DEBUG Thu Sep 05 10:42:52 CST 2019
 ***** STARTING Test: EHModelTest - testInvalidV1FuncInfo64NonVS *****   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidV1FuncInfo64NonVS ✓	   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG Wed Sep 04 14:21:03 CST 2019
+10:42:52 DEBUG 	✓ PASSED Test: EHModelTest - testInvalidV1FuncInfo64NonVS ✓	   (AbstractGenericTest.java:114) 
+10:42:52 DEBUG Thu Sep 05 10:42:52 CST 2019
 ***** STARTING Test: EHModelTest - testValidTypeDescriptor32 *****   (AbstractGenericTest.java:114) 
-14:21:03 DEBUG 	✓ PASSED Test: EHModelTest - testValidTypeDescriptor32 ✓	   (AbstractGenericTest.java:114) 
+10:42:52 DEBUG 	✓ PASSED Test: EHModelTest - testValidTypeDescriptor32 ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -263,7 +263,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

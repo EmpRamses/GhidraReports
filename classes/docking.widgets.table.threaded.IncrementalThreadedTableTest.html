@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">12.574s</div>
+<div class="counter">14.154s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,20 +73,68 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="testIncrementalLoadingShowsResultsBeforeFinished"></a>
-<h3 class="failures">testIncrementalLoadingShowsResultsBeforeFinished</h3>
+<a name="testSortingBytes"></a>
+<h3 class="failures">testSortingBytes</h3>
 <span class="code">
-<pre>java.lang.RuntimeException: Unable to use reflection to obtain field: updateManager from class: class docking.widgets.table.threaded.ThreadedTableModelUpdateMgr
-	at generic.test.TestUtils.getInstanceField(TestUtils.java:129)
-	at generic.test.AbstractGenericTest.getInstanceField(AbstractGenericTest.java:539)
-	at docking.widgets.table.threaded.IncrementalThreadedTableTest.debugBusyModel(IncrementalThreadedTableTest.java:518)
-	at docking.widgets.table.threaded.IncrementalThreadedTableTest.wait(IncrementalThreadedTableTest.java:497)
-	at docking.widgets.table.threaded.IncrementalThreadedTableTest.waitForSomeData(IncrementalThreadedTableTest.java:441)
-	at docking.widgets.table.threaded.IncrementalThreadedTableTest.testIncrementalLoadingShowsResultsBeforeFinished(IncrementalThreadedTableTest.java:137)
+<pre>java.lang.AssertionError: Worker has not yet been created
+	at docking.widgets.table.threaded.IncrementalThreadedTableTest.installWorkerDebugListener(IncrementalThreadedTableTest.java:75)
+	at docking.widgets.table.threaded.IncrementalThreadedTableTest.setUp(IncrementalThreadedTableTest.java:61)
 	at generic.test.TestThread.run(TestThread.java:106)
-Caused by: java.lang.NullPointerException
-	at generic.test.TestUtils.getInstanceField(TestUtils.java:123)
-	... 6 more
+</pre>
+</span>
+<span class="code">
+<pre>junit.framework.AssertionFailedError: Timed-out waiting for condition
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:451)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:426)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:393)
+	at generic.test.AbstractGTest.waitForCondition(AbstractGTest.java:380)
+	at docking.widgets.table.threaded.IncrementalThreadedTableTest.waitForNotBusy(IncrementalThreadedTableTest.java:462)
+	at docking.widgets.table.threaded.IncrementalThreadedTableTest.testFailed(IncrementalThreadedTableTest.java:90)
+	at generic.test.AbstractGenericTest$1.failed(AbstractGenericTest.java:89)
+	at org.junit.rules.TestWatcher.failedQuietly(TestWatcher.java:84)
+	at org.junit.rules.TestWatcher.access$300(TestWatcher.java:46)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:62)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre>
 </span>
 </div>
@@ -103,77 +151,77 @@ Caused by: java.lang.NullPointerException
 </thead>
 <tr>
 <td class="success">testCancel</td>
-<td class="success">1.109s</td>
+<td class="success">1.110s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExceptionWhileLoading</td>
-<td class="success">0.206s</td>
+<td class="success">0.207s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFilter_FilterDuringDataLoad</td>
-<td class="success">2.115s</td>
+<td class="success">2.108s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFilter_FilterSetAfterDataLoad</td>
-<td class="success">0.312s</td>
+<td class="success">0.311s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testFilter_FilterSetBeforeDataLoad</td>
-<td class="success">0.203s</td>
+<td class="success">0.204s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testIncrementalLoadingShowsResultsBeforeFinished</td>
-<td class="failures">0.637s</td>
-<td class="failures">failed</td>
+<td class="success">testIncrementalLoadingShowsResultsBeforeFinished</td>
+<td class="success">0.724s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testNoShowPendingWhileLoading</td>
-<td class="success">0.103s</td>
+<td class="success">0.102s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testReload</td>
-<td class="success">3.627s</td>
+<td class="success">3.411s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSelectionRestoringAsIncrementalUpdatesArrive</td>
-<td class="success">3.024s</td>
+<td class="success">2.923s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testSortingBytes</td>
-<td class="success">0.108s</td>
-<td class="success">passed</td>
+<td class="failures">testSortingBytes</td>
+<td class="failures">2.130s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">testSortingDoubles</td>
-<td class="success">0.305s</td>
+<td class="success">0.204s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSortingFloats</td>
-<td class="success">0.203s</td>
+<td class="success">0.204s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSortingInts</td>
-<td class="success">0.214s</td>
+<td class="success">0.204s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSortingLong</td>
-<td class="success">0.204s</td>
+<td class="success">0.105s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSortingShorts</td>
-<td class="success">0.204s</td>
+<td class="success">0.207s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -181,112 +229,60 @@ Caused by: java.lang.NullPointerException
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_52b319db-0c15-4840-a55e-63d2a0c2af32/temp.data
-14:02:16 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-14:02:16 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_52b319db-0c15-4840-a55e-63d2a0c2af32/temp.data/application.log   (LoggingInitialization.java:60) 
-14:02:16 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_52b319db-0c15-4840-a55e-63d2a0c2af32/temp.data/preferences   (Preferences.java:122) 
-14:02:16 DEBUG Wed Sep 04 14:02:16 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_1b693d4a-7817-4d7f-b14e-17bffc4a9c1c/temp.data
+10:24:10 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+10:24:10 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_1b693d4a-7817-4d7f-b14e-17bffc4a9c1c/temp.data/application.log   (LoggingInitialization.java:60) 
+10:24:10 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Framework/Docking/build/Ghidra_test_1b693d4a-7817-4d7f-b14e-17bffc4a9c1c/temp.data/preferences   (Preferences.java:122) 
+10:24:10 DEBUG Thu Sep 05 10:24:10 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testIncrementalLoadingShowsResultsBeforeFinished *****   (AbstractGenericTest.java:114) 
-14:02:17 DEBUG Recorded Events - IncrementalThreadedTableTest
-(1)  T14:02:16:938 Swing - listener - loadStarted()
-(2)  T14:02:16:938 Table Queue - taskEnded() - docking.widgets.table.threaded.IncrementalLoadJob@12c84fa0; total submitted items: 1
-(3)  T14:02:16:938 setUp() - called reload - waiting for not busy
-(4)  T14:02:16:939 
-	Row count: 0
-(5)  T14:02:16:940 Table Queue - taskStarted() - docking.widgets.table.threaded.IncrementalLoadJob@7b888b33
-(6)  T14:02:16:980 Swing - listener - loadingFinished() - cancelled? true; size: 0
-(7)  T14:02:16:983 Swing - listener - loadStarted()
-(8)  T14:02:17:084 Table Queue - taskEnded() - docking.widgets.table.threaded.IncrementalLoadJob@7b888b33; total submitted items: 2
-(9)  T14:02:17:084 
-	Row count: 12	row value: 2
-	row value: 4
-	row value: 1
-	row value: 8
-	row value: 3
-	row value: 7
-	row value: 5
-	row value: 9
-	row value: 10
-	row value: 11
-	row value: 6
-	row value: 0
-
-(10) T14:02:17:085 Swing - listener - loadingFinished() - cancelled? false; size: 12
-(11) T14:02:17:094 Check model for busy status
-(12) T14:02:17:096 Test - listener - doneWork()? true - completed? true; cancelled? false
-(13) T14:02:17:143 Swing - listener - loadStarted()
-(14) T14:02:17:148 Swing - listener - loadingFinished() - cancelled? false; size: 0
-(15) T14:02:17:150 Check model for busy status
-(16) T14:02:17:150 Test - listener - doneWork()? true - completed? true; cancelled? false
-(17) T14:02:17:150 Test - listener - reset()
-(18) T14:02:17:163 Swing - listener - loadStarted()
-(19) T14:02:17:168 Swing - listener - loadingFinished() - cancelled? false; size: 0
-(20) T14:02:17:186 Test - listener - reset()
-(21) T14:02:17:187 Swing - listener - loadStarted()
-(22) T14:02:17:187 Test - listener - startedWork() - updating? true
-(23) T14:02:17:188 Table Queue - taskStarted() - docking.widgets.table.threaded.IncrementalLoadJob@4ad3658e
-(24) T14:02:17:189 Swing - listener - loadStarted()
-(25) T14:02:17:209 Check model for busy status
-(26) T14:02:17:209 Model is busy - why?
-(27) T14:02:17:210 	ThreadedTableModelUpdateMgr busy? true
-(28) T14:02:17:245 Table Queue - taskEnded() - docking.widgets.table.threaded.IncrementalLoadJob@4ad3658e; total submitted items: 3
-(29) T14:02:17:245 
-	Row count: 0
-(30) T14:02:17:245 Swing - listener - loadingFinished() - cancelled? true; size: 0
-(31) T14:02:17:333 Test - testFailed()
-(32) T14:02:17:333 Check model for busy status
-(33) T14:02:17:333 Check model for busy status
-(34) T14:02:17:333 Test - listener - doneWork()? true - completed? false; cancelled? true
-   (SpyEventRecorder.java:74) 
-14:02:17 DEBUG 	✖ FAILED Test: IncrementalThreadedTableTest - testIncrementalLoadingShowsResultsBeforeFinished ✖	   (AbstractGenericTest.java:114) 
-14:02:17 DEBUG Wed Sep 04 14:02:17 CST 2019
+10:24:11 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testIncrementalLoadingShowsResultsBeforeFinished ✓	   (AbstractGenericTest.java:114) 
+10:24:11 DEBUG Thu Sep 05 10:24:11 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testFilter_FilterSetAfterDataLoad *****   (AbstractGenericTest.java:114) 
-14:02:17 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testFilter_FilterSetAfterDataLoad ✓	   (AbstractGenericTest.java:114) 
-14:02:17 DEBUG Wed Sep 04 14:02:17 CST 2019
+10:24:11 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testFilter_FilterSetAfterDataLoad ✓	   (AbstractGenericTest.java:114) 
+10:24:11 DEBUG Thu Sep 05 10:24:11 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testExceptionWhileLoading *****   (AbstractGenericTest.java:114) 
-14:02:17 ERROR &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Expected Exception   (AbstractDockingTest.java:1842) 
-14:02:17 DEBUG 
+10:24:11 ERROR &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Expected Exception   (AbstractDockingTest.java:1842) 
+10:24:11 DEBUG 
 
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; Expected Test Exception  &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   (IncrementalThreadedTableTest.java:731) 
-14:02:17 ERROR Unexpected Exception: Unexpected exception loading table model &quot;Test Data Key Model&quot;   (IncrementalLoadJob.java:69) 
-14:02:17 ERROR &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; End Expected Exception   (AbstractDockingTest.java:1846) 
-14:02:17 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testExceptionWhileLoading ✓	   (AbstractGenericTest.java:114) 
-14:02:17 DEBUG Wed Sep 04 14:02:17 CST 2019
+10:24:11 ERROR Unexpected Exception: Unexpected exception loading table model &quot;Test Data Key Model&quot;   (IncrementalLoadJob.java:69) 
+10:24:11 ERROR &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; End Expected Exception   (AbstractDockingTest.java:1846) 
+10:24:11 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testExceptionWhileLoading ✓	   (AbstractGenericTest.java:114) 
+10:24:11 DEBUG Thu Sep 05 10:24:11 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testFilter_FilterSetBeforeDataLoad *****   (AbstractGenericTest.java:114) 
-14:02:18 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testFilter_FilterSetBeforeDataLoad ✓	   (AbstractGenericTest.java:114) 
-14:02:18 DEBUG Wed Sep 04 14:02:18 CST 2019
+10:24:11 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testFilter_FilterSetBeforeDataLoad ✓	   (AbstractGenericTest.java:114) 
+10:24:11 DEBUG Thu Sep 05 10:24:11 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testSortingDoubles *****   (AbstractGenericTest.java:114) 
-14:02:18 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingDoubles ✓	   (AbstractGenericTest.java:114) 
-14:02:18 DEBUG Wed Sep 04 14:02:18 CST 2019
+10:24:11 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingDoubles ✓	   (AbstractGenericTest.java:114) 
+10:24:11 DEBUG Thu Sep 05 10:24:11 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testSelectionRestoringAsIncrementalUpdatesArrive *****   (AbstractGenericTest.java:114) 
-14:02:21 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSelectionRestoringAsIncrementalUpdatesArrive ✓	   (AbstractGenericTest.java:114) 
-14:02:21 DEBUG Wed Sep 04 14:02:21 CST 2019
+10:24:14 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSelectionRestoringAsIncrementalUpdatesArrive ✓	   (AbstractGenericTest.java:114) 
+10:24:14 DEBUG Thu Sep 05 10:24:14 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testSortingFloats *****   (AbstractGenericTest.java:114) 
-14:02:21 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingFloats ✓	   (AbstractGenericTest.java:114) 
-14:02:21 DEBUG Wed Sep 04 14:02:21 CST 2019
+10:24:15 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingFloats ✓	   (AbstractGenericTest.java:114) 
+10:24:15 DEBUG Thu Sep 05 10:24:15 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testSortingInts *****   (AbstractGenericTest.java:114) 
-14:02:21 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingInts ✓	   (AbstractGenericTest.java:114) 
-14:02:21 DEBUG Wed Sep 04 14:02:21 CST 2019
+10:24:15 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingInts ✓	   (AbstractGenericTest.java:114) 
+10:24:15 DEBUG Thu Sep 05 10:24:15 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testSortingLong *****   (AbstractGenericTest.java:114) 
-14:02:22 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingLong ✓	   (AbstractGenericTest.java:114) 
-14:02:22 DEBUG Wed Sep 04 14:02:22 CST 2019
+10:24:15 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingLong ✓	   (AbstractGenericTest.java:114) 
+10:24:15 DEBUG Thu Sep 05 10:24:15 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testSortingShorts *****   (AbstractGenericTest.java:114) 
-14:02:22 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingShorts ✓	   (AbstractGenericTest.java:114) 
-14:02:22 DEBUG Wed Sep 04 14:02:22 CST 2019
+10:24:15 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingShorts ✓	   (AbstractGenericTest.java:114) 
+10:24:15 DEBUG Thu Sep 05 10:24:15 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testSortingBytes *****   (AbstractGenericTest.java:114) 
-14:02:22 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testSortingBytes ✓	   (AbstractGenericTest.java:114) 
-14:02:22 DEBUG Wed Sep 04 14:02:22 CST 2019
+10:24:17 DEBUG Thu Sep 05 10:24:17 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testCancel *****   (AbstractGenericTest.java:114) 
-14:02:23 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testCancel ✓	   (AbstractGenericTest.java:114) 
-14:02:23 DEBUG Wed Sep 04 14:02:23 CST 2019
+10:24:18 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testCancel ✓	   (AbstractGenericTest.java:114) 
+10:24:18 DEBUG Thu Sep 05 10:24:18 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testFilter_FilterDuringDataLoad *****   (AbstractGenericTest.java:114) 
-14:02:25 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testFilter_FilterDuringDataLoad ✓	   (AbstractGenericTest.java:114) 
-14:02:25 DEBUG Wed Sep 04 14:02:25 CST 2019
+10:24:21 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testFilter_FilterDuringDataLoad ✓	   (AbstractGenericTest.java:114) 
+10:24:21 DEBUG Thu Sep 05 10:24:21 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testReload *****   (AbstractGenericTest.java:114) 
-14:02:29 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testReload ✓	   (AbstractGenericTest.java:114) 
-14:02:29 DEBUG Wed Sep 04 14:02:29 CST 2019
+10:24:24 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testReload ✓	   (AbstractGenericTest.java:114) 
+10:24:24 DEBUG Thu Sep 05 10:24:24 CST 2019
 ***** STARTING Test: IncrementalThreadedTableTest - testNoShowPendingWhileLoading *****   (AbstractGenericTest.java:114) 
-14:02:29 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testNoShowPendingWhileLoading ✓	   (AbstractGenericTest.java:114) 
+10:24:24 DEBUG 	✓ PASSED Test: IncrementalThreadedTableTest - testNoShowPendingWhileLoading ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -298,7 +294,7 @@ Caused by: java.lang.NullPointerException
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>

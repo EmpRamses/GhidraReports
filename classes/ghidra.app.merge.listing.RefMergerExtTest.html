@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">15.354s</div>
+<div class="counter">15.073s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">testExtRefAddDiff2KeepBothLatestRef</td>
-<td class="success">0.811s</td>
+<td class="success">0.821s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefAddDiff2KeepBothMyRef</td>
-<td class="success">0.850s</td>
+<td class="success">0.912s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefAddDiff2MergeBothKeepVarious1</td>
-<td class="success">0.814s</td>
+<td class="success">0.906s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefAddDiff2MergeBothKeepVarious2</td>
-<td class="success">0.826s</td>
+<td class="success">0.732s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -104,52 +104,52 @@
 </tr>
 <tr>
 <td class="success">testExtRefAddDiff2PickMy</td>
-<td class="success">0.812s</td>
+<td class="success">0.721s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefAddDiffPickLatest</td>
-<td class="success">3.267s</td>
+<td class="success">3.093s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefAddDiffPickMy</td>
-<td class="success">1.235s</td>
+<td class="success">1.132s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefAddSameNoConflict</td>
-<td class="success">0.914s</td>
+<td class="success">0.926s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefChangePickLatest</td>
-<td class="success">0.824s</td>
+<td class="success">0.823s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefChangePickMy</td>
-<td class="success">0.811s</td>
+<td class="success">0.906s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefChangeRefTypeConflictPickMy</td>
-<td class="success">0.603s</td>
+<td class="success">0.607s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefRemoveNoConflict</td>
-<td class="success">0.831s</td>
+<td class="success">0.733s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefRemoveVsChangePickLatest</td>
-<td class="success">0.815s</td>
+<td class="success">0.910s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExtRefRemoveVsChangePickMy</td>
-<td class="success">1.012s</td>
+<td class="success">0.922s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -157,44 +157,44 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Created test directory: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_6d4d530d-2ddb-4e6a-95e1-e000f0e3fa11/temp.data
-12:50:03 INFO  Using log config file: file:/home/lcf/repo/190904/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
-12:50:03 INFO  Using log file: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_6d4d530d-2ddb-4e6a-95e1-e000f0e3fa11/temp.data/application.log   (LoggingInitialization.java:60) 
-12:50:03 INFO  Loading user preferences: /home/lcf/repo/190904/ghidra/Ghidra/Features/Base/build/Ghidra_test_6d4d530d-2ddb-4e6a-95e1-e000f0e3fa11/temp.data/preferences   (Preferences.java:122) 
-12:50:04 INFO  Class search complete (537 ms)   (ClassSearcher.java:250) 
-12:50:04 DEBUG Wed Sep 04 12:50:04 CST 2019
+<pre>Created test directory: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_6df459b2-9aa5-4062-bb46-674b10ef8e10/temp.data
+09:57:38 INFO  Using log config file: file:/home/lcf/repo/ghidra/Ghidra/Framework/Generic/src/main/resources/generic.log4jtest.xml   (LoggingInitialization.java:59) 
+09:57:38 INFO  Using log file: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_6df459b2-9aa5-4062-bb46-674b10ef8e10/temp.data/application.log   (LoggingInitialization.java:60) 
+09:57:38 INFO  Loading user preferences: /home/lcf/repo/ghidra/Ghidra/Features/Base/build/Ghidra_test_6df459b2-9aa5-4062-bb46-674b10ef8e10/temp.data/preferences   (Preferences.java:122) 
+09:57:39 INFO  Class search complete (512 ms)   (ClassSearcher.java:250) 
+09:57:39 DEBUG Thu Sep 05 09:57:39 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddDiffPickLatest *****   (AbstractGenericTest.java:114) 
-12:50:07 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:07 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiffPickLatest ✓	   (AbstractGenericTest.java:114) 
-12:50:07 DEBUG Wed Sep 04 12:50:07 CST 2019
+09:57:42 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:42 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiffPickLatest ✓	   (AbstractGenericTest.java:114) 
+09:57:42 DEBUG Thu Sep 05 09:57:42 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddDiffPickMy *****   (AbstractGenericTest.java:114) 
-12:50:08 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:09 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiffPickMy ✓	   (AbstractGenericTest.java:114) 
-12:50:09 DEBUG Wed Sep 04 12:50:09 CST 2019
+09:57:43 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:43 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiffPickMy ✓	   (AbstractGenericTest.java:114) 
+09:57:43 DEBUG Thu Sep 05 09:57:43 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddSameNoConflict *****   (AbstractGenericTest.java:114) 
-12:50:09 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:09 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:10 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddSameNoConflict ✓	   (AbstractGenericTest.java:114) 
-12:50:10 DEBUG Wed Sep 04 12:50:10 CST 2019
+09:57:44 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:44 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:44 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddSameNoConflict ✓	   (AbstractGenericTest.java:114) 
+09:57:44 DEBUG Thu Sep 05 09:57:44 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddDiff2PickLatest *****   (AbstractGenericTest.java:114) 
-12:50:10 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:10 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:10 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2PickLatest ✓	   (AbstractGenericTest.java:114) 
-12:50:10 DEBUG Wed Sep 04 12:50:10 CST 2019
+09:57:45 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:45 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:45 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2PickLatest ✓	   (AbstractGenericTest.java:114) 
+09:57:45 DEBUG Thu Sep 05 09:57:45 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefRemoveNoConflict *****   (AbstractGenericTest.java:114) 
-12:50:11 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefRemoveNoConflict ✓	   (AbstractGenericTest.java:114) 
-12:50:11 DEBUG Wed Sep 04 12:50:11 CST 2019
+09:57:46 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefRemoveNoConflict ✓	   (AbstractGenericTest.java:114) 
+09:57:46 DEBUG Thu Sep 05 09:57:46 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefRemoveVsChangePickMy *****   (AbstractGenericTest.java:114) 
-12:50:12 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefRemoveVsChangePickMy ✓	   (AbstractGenericTest.java:114) 
-12:50:12 DEBUG Wed Sep 04 12:50:12 CST 2019
+09:57:47 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefRemoveVsChangePickMy ✓	   (AbstractGenericTest.java:114) 
+09:57:47 DEBUG Thu Sep 05 09:57:47 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefRemoveVsChangePickLatest *****   (AbstractGenericTest.java:114) 
-12:50:13 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefRemoveVsChangePickLatest ✓	   (AbstractGenericTest.java:114) 
-12:50:13 DEBUG Wed Sep 04 12:50:13 CST 2019
+09:57:48 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefRemoveVsChangePickLatest ✓	   (AbstractGenericTest.java:114) 
+09:57:48 DEBUG Thu Sep 05 09:57:48 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddDiff2PickMy *****   (AbstractGenericTest.java:114) 
-12:50:14 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:14 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:14 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2PickMy ✓	   (AbstractGenericTest.java:114) 
-12:50:14 DEBUG Wed Sep 04 12:50:14 CST 2019
+09:57:48 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:48 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:48 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2PickMy ✓	   (AbstractGenericTest.java:114) 
+09:57:48 DEBUG Thu Sep 05 09:57:48 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddDiff2KeepBothMyRef *****   (AbstractGenericTest.java:114) 
 Location=ADVAPI32.DLL::IsTextUnicode
 Location=ADVAPI32.DLL::RegCreateKeyW
@@ -208,15 +208,15 @@ Location=ADVAPI32.DLL::RegQueryValueExW
 Location=ADVAPI32.DLL::RegOpenKeyExA
 Location=ADVAPI32.DLL::WhatEver
 Location=ADVAPI32.DLL::EXT_77db2233
-12:50:15 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:15 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2KeepBothMyRef ✓	   (AbstractGenericTest.java:114) 
-12:50:15 DEBUG Wed Sep 04 12:50:15 CST 2019
+09:57:49 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:49 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2KeepBothMyRef ✓	   (AbstractGenericTest.java:114) 
+09:57:49 DEBUG Thu Sep 05 09:57:49 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefChangePickLatest *****   (AbstractGenericTest.java:114) 
-12:50:16 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefChangePickLatest ✓	   (AbstractGenericTest.java:114) 
-12:50:16 DEBUG Wed Sep 04 12:50:16 CST 2019
+09:57:50 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefChangePickLatest ✓	   (AbstractGenericTest.java:114) 
+09:57:50 DEBUG Thu Sep 05 09:57:50 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefChangePickMy *****   (AbstractGenericTest.java:114) 
-12:50:16 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefChangePickMy ✓	   (AbstractGenericTest.java:114) 
-12:50:16 DEBUG Wed Sep 04 12:50:16 CST 2019
+09:57:51 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefChangePickMy ✓	   (AbstractGenericTest.java:114) 
+09:57:51 DEBUG Thu Sep 05 09:57:51 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddDiff2KeepBothLatestRef *****   (AbstractGenericTest.java:114) 
 Location=ADVAPI32.DLL::IsTextUnicode
 Location=ADVAPI32.DLL::RegCreateKeyW
@@ -230,21 +230,21 @@ Location=ADVAPI32.DLL::RegQueryValueExW
 Location=ADVAPI32.DLL::RegOpenKeyExA
 Location=ADVAPI32.DLL::WhatEver
 Location=ADVAPI32.DLL::EXT_77db2233
-12:50:17 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:17 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2KeepBothLatestRef ✓	   (AbstractGenericTest.java:114) 
-12:50:17 DEBUG Wed Sep 04 12:50:17 CST 2019
+09:57:52 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:52 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2KeepBothLatestRef ✓	   (AbstractGenericTest.java:114) 
+09:57:52 DEBUG Thu Sep 05 09:57:52 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefChangeRefTypeConflictPickMy *****   (AbstractGenericTest.java:114) 
-12:50:18 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefChangeRefTypeConflictPickMy ✓	   (AbstractGenericTest.java:114) 
-12:50:18 DEBUG Wed Sep 04 12:50:18 CST 2019
+09:57:52 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefChangeRefTypeConflictPickMy ✓	   (AbstractGenericTest.java:114) 
+09:57:52 DEBUG Thu Sep 05 09:57:52 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddDiff2MergeBothKeepVarious1 *****   (AbstractGenericTest.java:114) 
-12:50:19 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:19 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:19 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2MergeBothKeepVarious1 ✓	   (AbstractGenericTest.java:114) 
-12:50:19 DEBUG Wed Sep 04 12:50:19 CST 2019
+09:57:53 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:53 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:53 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2MergeBothKeepVarious1 ✓	   (AbstractGenericTest.java:114) 
+09:57:53 DEBUG Thu Sep 05 09:57:53 CST 2019
 ***** STARTING Test: RefMergerExtTest - testExtRefAddDiff2MergeBothKeepVarious2 *****   (AbstractGenericTest.java:114) 
-12:50:19 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:19 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
-12:50:19 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2MergeBothKeepVarious2 ✓	   (AbstractGenericTest.java:114) 
+09:57:54 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:54 TRACE !!! Both references resolved to the same external. !!!   (ReferenceMerger.java:325) 
+09:57:54 DEBUG 	✓ PASSED Test: RefMergerExtTest - testExtRefAddDiff2MergeBothKeepVarious2 ✓	   (AbstractGenericTest.java:114) 
 </pre>
 </span>
 </div>
@@ -256,7 +256,7 @@ Location=ADVAPI32.DLL::EXT_77db2233
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 4, 2019, 2:39:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6.1</a> at Sep 5, 2019, 11:01:28 AM</p>
 </div>
 </div>
 </body>
